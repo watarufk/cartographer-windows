@@ -1,0 +1,18 @@
+[submodule "cartographer"]
+	path = cartographer
+	url = https://github.com/googlecartographer/cartographer
+[submodule "googletest"]
+	path = googletest
+	url = https://github.com/google/googletest
+[submodule "protobuf"]
+	path = protobuf
+	url = https://github.com/google/protobuf.git
+[submodule "lua"]
+	path = lua
+	url = https://github.com/LuaDist/lua.git
+[submodule "ceres-solver-windows"]
+	path = ceres-solver-windows
+	url = https://github.com/kishimoto-exvision/ceres-solver-windows.git
+[submodule "gtkPlusBuiltFilesForWindows"]
+	path = gtkPlusBuiltFilesForWindows
+	url = https://github.com/kishimoto-exvision/gtkPlusBuiltFilesForWindows.git

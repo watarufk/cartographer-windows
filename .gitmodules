@@ -16,3 +16,6 @@
 [submodule "gtkPlusBuiltFilesForWindows"]
 	path = gtkPlusBuiltFilesForWindows
 	url = https://github.com/kishimoto-exvision/gtkPlusBuiltFilesForWindows.git
+[submodule "cairo"]
+	path = cairo
+	url = https://github.com/CMakePorts/cairo

@@ -42,16 +42,17 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>cartographer;..\boostorg\assert\include;..\boostorg\config\include;..\boostorg\core\include;..\boostorg\detail\include;..\boostorg\iostreams\include;..\boostorg\iterator\include;..\boostorg\mpl\include;..\boostorg\preprocessor\include;..\boostorg\range\include;..\boostorg\static_assert\include;..\boostorg\utility\include;..\boostorg\type_traits\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <IncludePath>cartographer;C:\SDKs\boost_1_64_0;..\ceres-solver-windows\eigen-eigen-5a0156e40feb;..\ceres-solver-windows\glog\src\windows;..\ceres-solver-windows\ceres-solver\include;..\ceres-solver-windows\ceres-solver\config;..\googletest\googletest\include;..\lua\src;..\lua\etc;..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include\luajit-2.0;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>cartographer;..\boostorg\assert\include;..\boostorg\config\include;..\boostorg\core\include;..\boostorg\detail\include;..\boostorg\iostreams\include;..\boostorg\iterator\include;..\boostorg\mpl\include;..\boostorg\preprocessor\include;..\boostorg\range\include;..\boostorg\static_assert\include;..\boostorg\utility\include;..\boostorg\type_traits\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <IncludePath>cartographer;C:\SDKs\boost_1_64_0;..\ceres-solver-windows\eigen-eigen-5a0156e40feb;..\ceres-solver-windows\glog\src\windows;..\ceres-solver-windows\ceres-solver\include;..\ceres-solver-windows\ceres-solver\config;..\googletest\googletest\include;..\lua\src;..\lua\etc;..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include\luajit-2.0;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;CERES_MSVC_USE_UNDERSCORE_PREFIXED_BESSEL_FUNCTIONS;M_PI=3.14159265358979;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -61,6 +62,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;CERES_MSVC_USE_UNDERSCORE_PREFIXED_BESSEL_FUNCTIONS;M_PI=3.14159265358979;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>

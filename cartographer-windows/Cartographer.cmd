@@ -39,13 +39,15 @@ cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
 -DProtobuf_LIBRARY_RELEASE:FILEPATH="libprotobuf.lib" ^
 -DProtobuf_LITE_LIBRARY_RELEASE:FILEPATH="libprotobuf-lite.lib" ^
 -DProtobuf_PROTOC_LIBRARY_RELEASE:FILEPATH="libprotoc.lib" ^
--DProtobuf_PROTOC_EXECUTABLE:FILEPATH="protoc.exe"
+-DProtobuf_PROTOC_EXECUTABLE:FILEPATH="protoc.exe" ^
+-DCAIRO_DIR="..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\" ^
+-DCAIRO_INCLUDE_DIRS:PATH="..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include" ^
+-DCAIRO_LIBRARIES:FILEPATH="..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\lib" ^
+-DPKG_CONFIG_EXECUTABLE:FILEPATH="../cartographer/configuration_files"
 
 REM cmake.exe --build "." --target "ALL_BUILD" --config "Release"
 
 goto :exit
-
--DPKG_CONFIG_EXECU\GitHub\kishimoto-exvision\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\lib\pkgconfig
 
 
 

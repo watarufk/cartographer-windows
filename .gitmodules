@@ -19,3 +19,6 @@
 [submodule "Projects/cartographer"]
 	path = Projects/cartographer
 	url = https://github.com/googlecartographer/cartographer
+[submodule "pthread-win32"]
+	path = pthread-win32
+	url = https://github.com/GerHobbelt/pthread-win32.git

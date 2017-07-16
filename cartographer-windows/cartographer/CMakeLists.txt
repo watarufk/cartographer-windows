@@ -27,7 +27,7 @@ google_initialize_cartographer_project()
 google_enable_testing()
 
 find_package(Boost REQUIRED COMPONENTS iostreams)
-#find_package(Ceres REQUIRED COMPONENTS SparseLinearAlgebraLibrary)
+find_package(Ceres REQUIRED COMPONENTS SparseLinearAlgebraLibrary)
 find_package(Eigen3 REQUIRED)
 find_package(LuaGoogle REQUIRED)
 find_package(Protobuf REQUIRED)
@@ -35,7 +35,6 @@ find_package(Protobuf REQUIRED)
 #include(FindPkgConfig)
 #PKG_SEARCH_MODULE(CAIRO REQUIRED cairo>=1.12.16)
 find_package(CAIRO REQUIRED cairo>=1.12.16)
-
 
 # Only build the documentation if we can find Sphinx.
 find_package(Sphinx)

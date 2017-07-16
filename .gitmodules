@@ -1,6 +1,3 @@
-[submodule "cartographer"]
-	path = cartographer
-	url = https://github.com/googlecartographer/cartographer
 [submodule "googletest"]
 	path = googletest
 	url = https://github.com/google/googletest
@@ -19,3 +16,6 @@
 [submodule "cairo"]
 	path = cairo
 	url = https://github.com/CMakePorts/cairo
+[submodule "Projects/cartographer"]
+	path = Projects/cartographer
+	url = https://github.com/googlecartographer/cartographer

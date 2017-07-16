@@ -34,7 +34,10 @@ find_package(Protobuf REQUIRED)
 
 #include(FindPkgConfig)
 #PKG_SEARCH_MODULE(CAIRO REQUIRED cairo>=1.12.16)
-find_package(CAIRO REQUIRED cairo>=1.12.16)
+#find_package(PkgConfig REQUIRED)
+#pkg_check_modules(GTK3 REQUIRED gtk+-3.0)
+include_directories(${GTK3_INCLUDE_DIRS})
+link_directories(${GTK3_LIBRARY_DIRS})
 
 # Only build the documentation if we can find Sphinx.
 find_package(Sphinx)

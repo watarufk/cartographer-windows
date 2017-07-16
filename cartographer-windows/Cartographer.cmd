@@ -1,6 +1,9 @@
-REM copy cartographer\CMakeLists.txt ..\Projects\cartographer
+REM Set "Assume Unchanged to the ..\Projects\cartographer\CMakeLists.txt".
+copy cartographer\CMakeLists.txt ..\Projects\cartographer
+
+
+
 REM call GoogleTest.cmd
-REM call Eigen3.cmd
 
 
 
@@ -13,11 +16,12 @@ mkdir cartographer_build_x64
 cd cartographer_build_x64
 
 cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
--DCMAKE_SUPPRESS_REGENERATION:BOOL=TRUE ^
 -DGTEST_INCLUDE_DIRS:PATH="..\..\googletest\googletest\include" ^
 -DGMOCK_INCLUDE_DIRS:PATH="..\..\googletest\googlemock\include" ^
 -DGMOCK_LIBRARIES:FILEPATH="..\..\googletest_build_x64\googlemock\Release" ^
 -DGMOCK_SRC_DIR:PATH="..\..\googletest\googlemock\src" ^
+-DGFLAGS_LIBRARY:PATH="../../ceres-solver-windows/gflags_build_x64/lib/Release" ^
+-DGFLAGS_NAMESPACE="google" ^
 -DEIGEN3_INCLUDE_DIR="..\..\ceres-solver-windows\eigen-eigen-5a0156e40feb" ^
 -DCeres_DIR:PATH="..\..\ceres-solver-windows\ceres-solver" ^
 -DCeres_INCLUDE_DIRS:PATH="..\..\ceres-solver-windows\ceres-solver\include" ^
@@ -33,21 +37,25 @@ cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
 -DLUA_INCLUDE_DIR="..\..\lua\src" ^
 -DLUA_LIBRARIES="..\..\lua_build_x64\Release" ^
 -DLUA_LIBRARY:FILEPATH="..\..\lua_build_x64\Release" ^
--DProtobuf_INCLUDE_DIR="..\..\protobuf\src\google\protobuf" ^
--DProtobuf_SRC_ROOT_FOLDER="..\..\protobuf\src\google\protobuf" ^
--DProtobuf_LIBRARIES="..\..\protobuf_cmake_build_x64\Release" ^
--DProtobuf_LIBRARY_RELEASE:FILEPATH="libprotobuf.lib" ^
--DProtobuf_LITE_LIBRARY_RELEASE:FILEPATH="libprotobuf-lite.lib" ^
--DProtobuf_PROTOC_LIBRARY_RELEASE:FILEPATH="libprotoc.lib" ^
--DProtobuf_PROTOC_EXECUTABLE:FILEPATH="protoc.exe" ^
--DCAIRO_DIR="..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\" ^
--DCAIRO_INCLUDE_DIRS:PATH="..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include" ^
--DCAIRO_LIBRARIES:FILEPATH="..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\lib" ^
--DPKG_CONFIG_EXECUTABLE:FILEPATH="..\..\cartographer\configuration_files"
+-DProtobuf_INCLUDE_DIR:PATH="..\..\protobuf\src" ^
+-DProtobuf_LIBRARIES:PATH="..\..\protobuf_cmake_build_x64\Release" ^
+-DProtobuf_LITE_LIBRARY_DEBUG:FILEPATH="..\..\protobuf_cmake_build_x64\Debug\libprotobuf-lited.lib" ^
+-DProtobuf_LITE_LIBRARY_RELEASE:FILEPATH="..\..\protobuf_cmake_build_x64\Release\libprotobuf-lite.lib" ^
+-DProtobuf_PROTOC_EXECUTABLE:FILEPATH="..\..\protobuf_cmake_build_x64\Release\protoc.exe" ^
+-DProtobuf_PROTOC_LIBRARY_DEBUG:FILEPATH="..\..\protobuf_cmake_build_x64\Debug\protocd.lib" ^
+-DProtobuf_PROTOC_LIBRARY_RELEASE:FILEPATH="..\..\protobuf_cmake_build_x64\Release\libprotoc.lib" ^
+-DGTK3_INCLUDE_DIRS:PATH="..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include" ^
+-DGTK3_LIBRARY_DIRS:FILEPATH="..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\lib" ^
+-DCARTOGRAPHER_CONFIGURATION_FILES_DIRECTORY:PATH="..\..\cartographer\configuration_files" ^
+-DCMAKE_SUPPRESS_REGENERATION:BOOL=TRUE
 
 REM cmake.exe --build "." --target "ALL_BUILD" --config "Release"
 
 goto :exit
+
+echo ^
+-DProtobuf_SRC_ROOT_FOLDER="..\..\protobuf\src" ^
+ 
 
 
 

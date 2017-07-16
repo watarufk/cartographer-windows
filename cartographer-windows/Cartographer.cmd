@@ -16,6 +16,8 @@ mkdir cartographer_build_x64
 cd cartographer_build_x64
 
 cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
+-DTHREADS_PTHREADS_INCLUDE_DIR:PATH="C:/pthread" ^
+-DTHREADS_PTHREADS_LIBRARY_DIR:PATH="C:/pthread/bin/x64_MSVC2015.Release" ^
 -DGTEST_INCLUDE_DIRS:PATH="../../googletest/googletest/include" ^
 -DGMOCK_INCLUDE_DIRS:PATH="../../googletest/googlemock/include" ^
 -DGMOCK_LIBRARIES:FILEPATH="../../googletest_build_x64/googlemock/Release" ^

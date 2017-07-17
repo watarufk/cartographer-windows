@@ -49,11 +49,12 @@ cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
 -DLUA_INCLUDE_DIR="C:/SDKs/lua/lua/include" ^
 -DLUA_LIBRARIES="C:/SDKs/lua/lua/lib" ^
 -DLUA_LIBRARY:FILEPATH="C:/SDKs/lua/lua/lib/lua.lib" ^
--DProtobuf_INCLUDE_DIR:PATH="C:\SDKs\google\protobuf\include" ^
--DProtobuf_LIBRARIES:PATH="C:\SDKs\google\protobuf\lib" ^
--DProtobuf_PROTOC_EXECUTABLE:FILEPATH="C:\SDKs\google\protobuf\bin/protoc.exe" ^
--DProtobuf_LITE_LIBRARY_RELEASE:FILEPATH="C:\SDKs\google\protobuf\lib/libprotobuf-lite.lib" ^
--DProtobuf_PROTOC_LIBRARY_RELEASE:FILEPATH="C:\SDKs\google\protobuf\lib/libprotoc.lib" ^
+-DProtobuf_SRC_ROOT_FOLDER:PATH="../../protobuf/src" ^
+-DProtobuf_INCLUDE_DIR:PATH="C:/SDKs/google/protobuf/include" ^
+-DProtobuf_LIBRARIES:PATH="C:/SDKs/google/protobuf/lib" ^
+-DProtobuf_PROTOC_EXECUTABLE:FILEPATH="C:/SDKs/google/protobuf/bin/protoc.exe" ^
+-DProtobuf_LITE_LIBRARY_RELEASE:FILEPATH="C:/SDKs/google/protobuf/lib/libprotobuf-lite.lib" ^
+-DProtobuf_PROTOC_LIBRARY_RELEASE:FILEPATH="C:/SDKs/google/protobuf/lib/libprotoc.lib" ^
 -DGTK3_INCLUDE_DIRS:PATH="../../gtkPlusBuiltFilesForWindows/gtk-build/gtk/x64/include" ^
 -DGTK3_LIBRARY_DIRS:FILEPATH="../../gtkPlusBuiltFilesForWindows/gtk-build/gtk/x64/lib" ^
 -Dgtest_build_samples:BOOL=FALSE ^

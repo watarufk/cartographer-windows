@@ -1,9 +1,17 @@
-REM Set "Assume Unchanged to the ..\Projects\cartographer\CMakeLists.txt".
+call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64
+echo on
+
+
+
+REM On your git client, please set "Assume Unchanged" to the "..\Projects\cartographer\CMakeLists.txt".
 copy cartographer\CMakeLists.txt ..\Projects\cartographer
 
 
 
+REM call Pthread.cmd
 REM call GoogleTest.cmd
+REM call Lua.cmd
+REM call Protobuf.cmd
 
 
 
@@ -16,49 +24,49 @@ mkdir cartographer_build_x64
 cd cartographer_build_x64
 
 cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
--DTHREADS_PTHREADS_INCLUDE_DIR:PATH="C:/pthread" ^
--DTHREADS_PTHREADS_LIBRARY_DIR:PATH="C:/pthread/bin/x64_MSVC2015.Release" ^
--DGTEST_INCLUDE_DIRS:PATH="../../googletest/googletest/include" ^
--DGMOCK_INCLUDE_DIRS:PATH="../../googletest/googlemock/include" ^
--DGMOCK_LIBRARIES:FILEPATH="../../googletest_build_x64/googlemock/Release" ^
--DGMOCK_SRC_DIR:PATH="../../googletest/googlemock/src" ^
--Dgflags_DIR:PATH="../../ceres-solver-windows/gflags_build_x64" ^
--DGFLAGS_INCLUDE_DIR_HINTS:PATH="../../ceres-solver-windows/gflags_build_x64/include" ^
--DGFLAGS_INCLUDE_DIR:PATH="../../ceres-solver-windows/gflags_build_x64/include" ^
--DGFLAGS_LIBRARY:FILEPATH="../../ceres-solver-windows/gflags_build_x64/lib/Release/gflags_nothreads_static.lib" ^
+-DCMAKE_CONFIGURATION_TYPES:STRING="Release" ^
+-DTHREADS_PTHREADS_INCLUDE_DIR:PATH="C:/SDKs/GerHobbelt/pthread-win32" ^
+-DTHREADS_PTHREADS_LIBRARY_DIR:PATH="C:/SDKs/GerHobbelt/pthread-win32/bin/x64_MSVC2015.Release" ^
+-Dgflags_DIR:PATH="C:/SDKs/gflags/gflags/lib/cmake/gflags" ^
 -DGFLAGS_NAMESPACE:STRING="google" ^
--Dglog_DIR:PATH="../../ceres-solver-windows/glog_build_x64" ^
--DGLOG_INCLUDE_DIR:PATH="../../ceres-solver-windows/glog_build_x64" ^
--DGLOG_LIBRARY:FILEPATH="../../ceres-solver-windows/glog_build_x64/Release/glog.lib" ^
--DEIGEN_INCLUDE_DIR:PATH="../../ceres-solver-windows/eigen-eigen-5a0156e40feb" ^
--DEigen3_DIR:PATH="../../ceres-solver-windows/eigen-eigen-5a0156e40feb_build_x64_cuda_openmp" ^
--DCeres_DIR:PATH="../../ceres-solver-windows/ceres-solver_build_x64" ^
--DCeres_INCLUDE_DIRS:PATH="../../ceres-solver-windows/ceres-solver/include" ^
--DCeres_LIBRARIES:PATH="../../ceres-solver-windows/ceres-solver_build_x64/lib/Release" ^
--DBoost_DIR:PATH="D:/Shared/SDKs/boost_1_64_0" ^
--DBoost_INCLUDE_DIR:PATH="D:/Shared/SDKs/boost_1_64_0" ^
--DBoost_LIBRARY_DIR:FILEPATH="D:/Shared/SDKs/boost_1_64_0/lib64-msvc-14.1" ^
+-Dglog_DIR:PATH="C:/SDKs/google/glog/lib/cmake/glog" ^
+-Dglog_INCLUDE_DIRS:PATH="C:/SDKs/google/glog/include" ^
+-DEIGEN_INCLUDE_DIR:PATH="C:/SDKs/eigen/eigen3/include/eigen3" ^
+-DEIGEN3_INCLUDE_DIR:PATH="C:/SDKs/eigen/eigen3/include/eigen3" ^
+-DEigen3_DIR:PATH="C:/SDKs/eigen/eigen3/share/eigen3/cmake" ^
+-DCeres_DIR:PATH="C:/SDKs/ceres-solver/ceres-solver/CMake" ^
+-DGTEST_INCLUDE_DIRS:PATH="C:/SDKs/google/googletest/include/gtest" ^
+-DGMOCK_INCLUDE_DIRS:PATH="C:/SDKs/google/googletest/include/gmock" ^
+-DGMOCK_LIBRARIES:FILEPATH="C:/SDKs/google/googletest/lib" ^
+-Dgmock_build_tests:BOOL=FALSE ^
+-DBoost_DIR:PATH="C:/SDKs/boost_1_64_0" ^
+-DBoost_INCLUDE_DIR:PATH="C:/SDKs/boost_1_64_0" ^
+-DBoost_LIBRARY_DIR:FILEPATH="C:/SDKs/boost_1_64_0/lib64-msvc-14.1" ^
 -DBoost_IOSTREAMS_LIBRARY_DEBUG:FILEPATH="boost_iostreams-vc141-mt-gd-1_64.lib" ^
 -DBoost_IOSTREAMS_LIBRARY_RELEASE:FILEPATH="boost_iostreams-vc141-mt-1_64.lib" ^
 -DBoost_REGEX_LIBRARY_DEBUG:FILEPATH="boost_regex-vc141-mt-gd-1_64.lib" ^
 -DBoost_REGEX_LIBRARY_RELEASE:FILEPATH="boost_regex-vc141-mt-1_64.lib" ^
--DLUA_INCLUDE_PREFIX:PATH="../../lua/src" ^
--DLUA_INCLUDE_DIR="../../lua/src" ^
--DLUA_LIBRARIES="../../lua_build_x64/Release" ^
--DLUA_LIBRARY:FILEPATH="../../lua_build_x64/Release" ^
--DProtobuf_SRC_ROOT_FOLDER="../../protobuf/src" ^
--DProtobuf_INCLUDE_DIR:PATH="../../protobuf/src" ^
--DProtobuf_LIBRARIES:PATH="../../protobuf_cmake_build_x64/Release" ^
--DProtobuf_LITE_LIBRARY_DEBUG:FILEPATH="../../protobuf_cmake_build_x64/Debug/libprotobuf-lited.lib" ^
--DProtobuf_LITE_LIBRARY_RELEASE:FILEPATH="../../protobuf_cmake_build_x64/Release/libprotobuf-lite.lib" ^
--DProtobuf_PROTOC_EXECUTABLE:FILEPATH="../../protobuf_cmake_build_x64/Release/protoc.exe" ^
--DProtobuf_PROTOC_LIBRARY_DEBUG:FILEPATH="../../protobuf_cmake_build_x64/Debug/protocd.lib" ^
--DProtobuf_PROTOC_LIBRARY_RELEASE:FILEPATH="../../protobuf_cmake_build_x64/Release/libprotoc.lib" ^
+-DLUA_INCLUDE_DIR="C:/SDKs/lua/lua/include" ^
+-DLUA_LIBRARIES="C:/SDKs/lua/lua/lib" ^
+-DLUA_LIBRARY:FILEPATH="C:/SDKs/lua/lua/lib/lua.lib" ^
+-DProtobuf_SRC_ROOT_FOLDER:PATH="../../protobuf/src" ^
+-DProtobuf_INCLUDE_DIR:PATH="C:/SDKs/google/protobuf/include" ^
+-DProtobuf_LIBRARIES:PATH="C:/SDKs/google/protobuf/lib" ^
+-DProtobuf_PROTOC_EXECUTABLE:FILEPATH="C:/SDKs/google/protobuf/bin/protoc.exe" ^
+-DProtobuf_LITE_LIBRARY_RELEASE:FILEPATH="C:/SDKs/google/protobuf/lib/libprotobuf-lite.lib" ^
+-DProtobuf_PROTOC_LIBRARY_RELEASE:FILEPATH="C:/SDKs/google/protobuf/lib/libprotoc.lib" ^
 -DGTK3_INCLUDE_DIRS:PATH="../../gtkPlusBuiltFilesForWindows/gtk-build/gtk/x64/include" ^
 -DGTK3_LIBRARY_DIRS:FILEPATH="../../gtkPlusBuiltFilesForWindows/gtk-build/gtk/x64/lib" ^
--DCARTOGRAPHER_CONFIGURATION_FILES_DIRECTORY:PATH="../../cartographer/configuration_files"
+-Dgtest_build_samples:BOOL=FALSE ^
+-Dgtest_build_tests:BOOL=FALSE ^
+-Dgtest_disable_pthreads:BOOL=TRUE ^
+-Dgtest_force_shared_crt:BOOL=FALSE ^
+-DCARTOGRAPHER_CONFIGURATION_FILES_DIRECTORY:PATH="../../cartographer/configuration_files" ^
+-DCMAKE_INSTALL_PREFIX:PATH="C:/SDKs/googlecartographer/cartographer"
 
 REM cmake.exe --build "." --target "ALL_BUILD" --config "Release"
+REM cmake.exe --build "." --target "RUN_TESTS" --config "Release"
+REM cmake.exe --build "." --target "INSTALL" --config "Release"
 
 goto :exit
 
@@ -69,4 +77,4 @@ echo ^
 
 
 :exit
-cd "..\..\cartographer-windows"
+cd /d "%~dp0"

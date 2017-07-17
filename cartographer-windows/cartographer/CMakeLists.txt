@@ -22,8 +22,8 @@ set(CARTOGRAPHER_PATCH_VERSION 0)
 set(CARTOGRAPHER_VERSION ${CARTOGRAPHER_MAJOR_VERSION}.${CARTOGRAPHER_MINOR_VERSION}.${CARTOGRAPHER_PATCH_VERSION})
 set(CARTOGRAPHER_SOVERSION ${CARTOGRAPHER_MAJOR_VERSION}.${CARTOGRAPHER_MINOR_VERSION})
 
-include_directories(${THREADS_PTHREADS_INCLUDE_DIR})
-link_directories(${THREADS_PTHREADS_LIBRARY_DIR})
+#include_directories(${THREADS_PTHREADS_INCLUDE_DIR})
+#link_directories(${THREADS_PTHREADS_LIBRARY_DIR})
 
 include("${PROJECT_SOURCE_DIR}/cmake/functions.cmake")
 google_initialize_cartographer_project()
@@ -37,8 +37,6 @@ find_package(Protobuf REQUIRED)
 
 #include(FindPkgConfig)
 #PKG_SEARCH_MODULE(CAIRO REQUIRED cairo>=1.12.16)
-#find_package(PkgConfig REQUIRED)
-#pkg_check_modules(GTK3 REQUIRED gtk+-3.0)
 include_directories(${GTK3_INCLUDE_DIRS})
 link_directories(${GTK3_LIBRARY_DIRS})
 

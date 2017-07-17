@@ -21,8 +21,8 @@ namespace cartographer {
 namespace common {
 
 constexpr char kConfigurationFilesDirectory[] =
-    "/usr/local/share/cartographer/configuration_files";
-constexpr char kSourceDirectory[] = "/home/kishimoto/cartographer";
+    "../../cartographer/configuration_files";
+constexpr char kSourceDirectory[] = "D:/cartographer-windows/Projects/cartographer";
 
 }  // namespace common
 }  // namespace cartographer

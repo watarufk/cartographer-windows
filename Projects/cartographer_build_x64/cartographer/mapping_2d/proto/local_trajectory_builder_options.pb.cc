@@ -7,6 +7,7 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -19,134 +20,196 @@
 namespace cartographer {
 namespace mapping_2d {
 namespace proto {
+class LocalTrajectoryBuilderOptionsDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<LocalTrajectoryBuilderOptions> {
+} _LocalTrajectoryBuilderOptions_default_instance_;
+
+namespace protobuf_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto {
+
 
 namespace {
 
-const ::google::protobuf::Descriptor* LocalTrajectoryBuilderOptions_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  LocalTrajectoryBuilderOptions_reflection_ = NULL;
+::google::protobuf::Metadata file_level_metadata[1];
 
 }  // namespace
 
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
+    const TableStruct::entries[] = {
+  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
+};
 
-void protobuf_AssignDesc_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto() {
-  protobuf_AddDesc_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto();
-  const ::google::protobuf::FileDescriptor* file =
-    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
-      "cartographer/mapping_2d/proto/local_trajectory_builder_options.proto");
-  GOOGLE_CHECK(file != NULL);
-  LocalTrajectoryBuilderOptions_descriptor_ = file->message_type(0);
-  static const int LocalTrajectoryBuilderOptions_offsets_[15] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, min_range_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, max_range_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, min_z_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, max_z_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, missing_data_ray_length_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, voxel_filter_size_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, adaptive_voxel_filter_options_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, use_online_correlative_scan_matching_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, real_time_correlative_scan_matcher_options_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, ceres_scan_matcher_options_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, motion_filter_options_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, imu_gravity_time_constant_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, num_odometry_states_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, submaps_options_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, use_imu_data_),
-  };
-  LocalTrajectoryBuilderOptions_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      LocalTrajectoryBuilderOptions_descriptor_,
-      LocalTrajectoryBuilderOptions::default_instance_,
-      LocalTrajectoryBuilderOptions_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(LocalTrajectoryBuilderOptions));
-}
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
+    const TableStruct::aux[] = {
+  ::google::protobuf::internal::AuxillaryParseTableField(),
+};
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
+    TableStruct::schema[] = {
+  { NULL, NULL, 0, -1, -1, false },
+};
+
+const ::google::protobuf::uint32 TableStruct::offsets[] = {
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, min_range_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, max_range_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, min_z_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, max_z_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, missing_data_ray_length_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, voxel_filter_size_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, adaptive_voxel_filter_options_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, use_online_correlative_scan_matching_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, real_time_correlative_scan_matcher_options_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, ceres_scan_matcher_options_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, motion_filter_options_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, imu_gravity_time_constant_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, num_odometry_states_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, submaps_options_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocalTrajectoryBuilderOptions, use_imu_data_),
+  10,
+  11,
+  5,
+  6,
+  13,
+  7,
+  0,
+  8,
+  1,
+  2,
+  4,
+  12,
+  14,
+  3,
+  9,
+};
+
+static const ::google::protobuf::internal::MigrationSchema schemas[] = {
+  { 0, 20, sizeof(LocalTrajectoryBuilderOptions)},
+};
+
+static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&_LocalTrajectoryBuilderOptions_default_instance_),
+};
 
 namespace {
 
-GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
-  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
-                 &protobuf_AssignDesc_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto);
+void protobuf_AssignDescriptors() {
+  AddDescriptors();
+  ::google::protobuf::MessageFactory* factory = NULL;
+  AssignDescriptors(
+      "cartographer/mapping_2d/proto/local_trajectory_builder_options.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      file_level_metadata, NULL, NULL);
 }
 
+void protobuf_AssignDescriptorsOnce() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+}
+
+void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    LocalTrajectoryBuilderOptions_descriptor_, &LocalTrajectoryBuilderOptions::default_instance());
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
 }
 
 }  // namespace
 
-void protobuf_ShutdownFile_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto() {
-  delete LocalTrajectoryBuilderOptions::default_instance_;
-  delete LocalTrajectoryBuilderOptions_reflection_;
+void TableStruct::Shutdown() {
+  _LocalTrajectoryBuilderOptions_default_instance_.Shutdown();
+  delete file_level_metadata[0].reflection;
 }
 
-void protobuf_AddDesc_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void TableStruct::InitDefaultsImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::cartographer::mapping_3d::proto::protobuf_AddDesc_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto();
-  ::cartographer::sensor::proto::protobuf_AddDesc_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto();
-  ::cartographer::mapping_2d::proto::protobuf_AddDesc_cartographer_2fmapping_5f2d_2fproto_2fsubmaps_5foptions_2eproto();
-  ::cartographer::mapping_2d::scan_matching::proto::protobuf_AddDesc_cartographer_2fmapping_5f2d_2fscan_5fmatching_2fproto_2fceres_5fscan_5fmatcher_5foptions_2eproto();
-  ::cartographer::mapping_2d::scan_matching::proto::protobuf_AddDesc_cartographer_2fmapping_5f2d_2fscan_5fmatching_2fproto_2freal_5ftime_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto();
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\nDcartographer/mapping_2d/proto/local_tr"
-    "ajectory_builder_options.proto\022\035cartogra"
-    "pher.mapping_2d.proto\0329cartographer/mapp"
-    "ing_3d/proto/motion_filter_options.proto"
-    "\032=cartographer/sensor/proto/adaptive_vox"
-    "el_filter_options.proto\0323cartographer/ma"
-    "pping_2d/proto/submaps_options.proto\032Lca"
-    "rtographer/mapping_2d/scan_matching/prot"
-    "o/ceres_scan_matcher_options.proto\032\\cart"
-    "ographer/mapping_2d/scan_matching/proto/"
-    "real_time_correlative_scan_matcher_optio"
-    "ns.proto\"\217\006\n\035LocalTrajectoryBuilderOptio"
-    "ns\022\021\n\tmin_range\030\016 \001(\002\022\021\n\tmax_range\030\017 \001(\002"
-    "\022\r\n\005min_z\030\001 \001(\002\022\r\n\005max_z\030\002 \001(\002\022\037\n\027missin"
-    "g_data_ray_length\030\020 \001(\002\022\031\n\021voxel_filter_"
-    "size\030\003 \001(\002\022\\\n\035adaptive_voxel_filter_opti"
-    "ons\030\006 \001(\01325.cartographer.sensor.proto.Ad"
-    "aptiveVoxelFilterOptions\022,\n$use_online_c"
-    "orrelative_scan_matching\030\005 \001(\010\022\206\001\n*real_"
-    "time_correlative_scan_matcher_options\030\007 "
-    "\001(\0132R.cartographer.mapping_2d.scan_match"
-    "ing.proto.RealTimeCorrelativeScanMatcher"
-    "Options\022h\n\032ceres_scan_matcher_options\030\010 "
-    "\001(\0132D.cartographer.mapping_2d.scan_match"
-    "ing.proto.CeresScanMatcherOptions\022Q\n\025mot"
-    "ion_filter_options\030\r \001(\01322.cartographer."
-    "mapping_3d.proto.MotionFilterOptions\022!\n\031"
-    "imu_gravity_time_constant\030\021 \001(\001\022\033\n\023num_o"
-    "dometry_states\030\022 \001(\005\022F\n\017submaps_options\030"
-    "\013 \001(\0132-.cartographer.mapping_2d.proto.Su"
-    "bmapsOptions\022\024\n\014use_imu_data\030\014 \001(\010", 1234);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "cartographer/mapping_2d/proto/local_trajectory_builder_options.proto", &protobuf_RegisterTypes);
-  LocalTrajectoryBuilderOptions::default_instance_ = new LocalTrajectoryBuilderOptions();
-  LocalTrajectoryBuilderOptions::default_instance_->InitAsDefaultInstance();
-  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto);
+  ::google::protobuf::internal::InitProtobufDefaults();
+  ::cartographer::mapping_3d::proto::protobuf_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto::InitDefaults();
+  ::cartographer::sensor::proto::protobuf_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto::InitDefaults();
+  ::cartographer::mapping_2d::proto::protobuf_cartographer_2fmapping_5f2d_2fproto_2fsubmaps_5foptions_2eproto::InitDefaults();
+  ::cartographer::mapping_2d::scan_matching::proto::protobuf_cartographer_2fmapping_5f2d_2fscan_5fmatching_2fproto_2fceres_5fscan_5fmatcher_5foptions_2eproto::InitDefaults();
+  ::cartographer::mapping_2d::scan_matching::proto::protobuf_cartographer_2fmapping_5f2d_2fscan_5fmatching_2fproto_2freal_5ftime_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto::InitDefaults();
+  _LocalTrajectoryBuilderOptions_default_instance_.DefaultConstruct();
+  _LocalTrajectoryBuilderOptions_default_instance_.get_mutable()->adaptive_voxel_filter_options_ = const_cast< ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions*>(
+      ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::internal_default_instance());
+  _LocalTrajectoryBuilderOptions_default_instance_.get_mutable()->real_time_correlative_scan_matcher_options_ = const_cast< ::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions*>(
+      ::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions::internal_default_instance());
+  _LocalTrajectoryBuilderOptions_default_instance_.get_mutable()->ceres_scan_matcher_options_ = const_cast< ::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions*>(
+      ::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions::internal_default_instance());
+  _LocalTrajectoryBuilderOptions_default_instance_.get_mutable()->motion_filter_options_ = const_cast< ::cartographer::mapping_3d::proto::MotionFilterOptions*>(
+      ::cartographer::mapping_3d::proto::MotionFilterOptions::internal_default_instance());
+  _LocalTrajectoryBuilderOptions_default_instance_.get_mutable()->submaps_options_ = const_cast< ::cartographer::mapping_2d::proto::SubmapsOptions*>(
+      ::cartographer::mapping_2d::proto::SubmapsOptions::internal_default_instance());
 }
 
+void InitDefaults() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
+}
+void AddDescriptorsImpl() {
+  InitDefaults();
+  static const char descriptor[] = {
+      "\nDcartographer/mapping_2d/proto/local_tr"
+      "ajectory_builder_options.proto\022\035cartogra"
+      "pher.mapping_2d.proto\0329cartographer/mapp"
+      "ing_3d/proto/motion_filter_options.proto"
+      "\032=cartographer/sensor/proto/adaptive_vox"
+      "el_filter_options.proto\0323cartographer/ma"
+      "pping_2d/proto/submaps_options.proto\032Lca"
+      "rtographer/mapping_2d/scan_matching/prot"
+      "o/ceres_scan_matcher_options.proto\032\\cart"
+      "ographer/mapping_2d/scan_matching/proto/"
+      "real_time_correlative_scan_matcher_optio"
+      "ns.proto\"\217\006\n\035LocalTrajectoryBuilderOptio"
+      "ns\022\021\n\tmin_range\030\016 \001(\002\022\021\n\tmax_range\030\017 \001(\002"
+      "\022\r\n\005min_z\030\001 \001(\002\022\r\n\005max_z\030\002 \001(\002\022\037\n\027missin"
+      "g_data_ray_length\030\020 \001(\002\022\031\n\021voxel_filter_"
+      "size\030\003 \001(\002\022\\\n\035adaptive_voxel_filter_opti"
+      "ons\030\006 \001(\01325.cartographer.sensor.proto.Ad"
+      "aptiveVoxelFilterOptions\022,\n$use_online_c"
+      "orrelative_scan_matching\030\005 \001(\010\022\206\001\n*real_"
+      "time_correlative_scan_matcher_options\030\007 "
+      "\001(\0132R.cartographer.mapping_2d.scan_match"
+      "ing.proto.RealTimeCorrelativeScanMatcher"
+      "Options\022h\n\032ceres_scan_matcher_options\030\010 "
+      "\001(\0132D.cartographer.mapping_2d.scan_match"
+      "ing.proto.CeresScanMatcherOptions\022Q\n\025mot"
+      "ion_filter_options\030\r \001(\01322.cartographer."
+      "mapping_3d.proto.MotionFilterOptions\022!\n\031"
+      "imu_gravity_time_constant\030\021 \001(\001\022\033\n\023num_o"
+      "dometry_states\030\022 \001(\005\022F\n\017submaps_options\030"
+      "\013 \001(\0132-.cartographer.mapping_2d.proto.Su"
+      "bmapsOptions\022\024\n\014use_imu_data\030\014 \001(\010"
+  };
+  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+      descriptor, 1234);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
+    "cartographer/mapping_2d/proto/local_trajectory_builder_options.proto", &protobuf_RegisterTypes);
+  ::cartographer::mapping_3d::proto::protobuf_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto::AddDescriptors();
+  ::cartographer::sensor::proto::protobuf_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto::AddDescriptors();
+  ::cartographer::mapping_2d::proto::protobuf_cartographer_2fmapping_5f2d_2fproto_2fsubmaps_5foptions_2eproto::AddDescriptors();
+  ::cartographer::mapping_2d::scan_matching::proto::protobuf_cartographer_2fmapping_5f2d_2fscan_5fmatching_2fproto_2fceres_5fscan_5fmatcher_5foptions_2eproto::AddDescriptors();
+  ::cartographer::mapping_2d::scan_matching::proto::protobuf_cartographer_2fmapping_5f2d_2fscan_5fmatching_2fproto_2freal_5ftime_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto::AddDescriptors();
+  ::google::protobuf::internal::OnShutdown(&TableStruct::Shutdown);
+}
+
+void AddDescriptors() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+}
 // Force AddDescriptors() to be called at static initialization time.
-struct StaticDescriptorInitializer_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto {
-  StaticDescriptorInitializer_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto() {
-    protobuf_AddDesc_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto();
+struct StaticDescriptorInitializer {
+  StaticDescriptorInitializer() {
+    AddDescriptors();
   }
-} static_descriptor_initializer_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto_;
+} static_descriptor_initializer;
+
+}  // namespace protobuf_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto
+
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LocalTrajectoryBuilderOptions::kMinRangeFieldNumber;
 const int LocalTrajectoryBuilderOptions::kMaxRangeFieldNumber;
 const int LocalTrajectoryBuilderOptions::kMinZFieldNumber;
@@ -162,58 +225,80 @@ const int LocalTrajectoryBuilderOptions::kImuGravityTimeConstantFieldNumber;
 const int LocalTrajectoryBuilderOptions::kNumOdometryStatesFieldNumber;
 const int LocalTrajectoryBuilderOptions::kSubmapsOptionsFieldNumber;
 const int LocalTrajectoryBuilderOptions::kUseImuDataFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LocalTrajectoryBuilderOptions::LocalTrajectoryBuilderOptions()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
 }
-
-void LocalTrajectoryBuilderOptions::InitAsDefaultInstance() {
-  adaptive_voxel_filter_options_ = const_cast< ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions*>(&::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::default_instance());
-  real_time_correlative_scan_matcher_options_ = const_cast< ::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions*>(&::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions::default_instance());
-  ceres_scan_matcher_options_ = const_cast< ::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions*>(&::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions::default_instance());
-  motion_filter_options_ = const_cast< ::cartographer::mapping_3d::proto::MotionFilterOptions*>(&::cartographer::mapping_3d::proto::MotionFilterOptions::default_instance());
-  submaps_options_ = const_cast< ::cartographer::mapping_2d::proto::SubmapsOptions*>(&::cartographer::mapping_2d::proto::SubmapsOptions::default_instance());
-}
-
 LocalTrajectoryBuilderOptions::LocalTrajectoryBuilderOptions(const LocalTrajectoryBuilderOptions& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_adaptive_voxel_filter_options()) {
+    adaptive_voxel_filter_options_ = new ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions(*from.adaptive_voxel_filter_options_);
+  } else {
+    adaptive_voxel_filter_options_ = NULL;
+  }
+  if (from.has_real_time_correlative_scan_matcher_options()) {
+    real_time_correlative_scan_matcher_options_ = new ::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions(*from.real_time_correlative_scan_matcher_options_);
+  } else {
+    real_time_correlative_scan_matcher_options_ = NULL;
+  }
+  if (from.has_ceres_scan_matcher_options()) {
+    ceres_scan_matcher_options_ = new ::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions(*from.ceres_scan_matcher_options_);
+  } else {
+    ceres_scan_matcher_options_ = NULL;
+  }
+  if (from.has_submaps_options()) {
+    submaps_options_ = new ::cartographer::mapping_2d::proto::SubmapsOptions(*from.submaps_options_);
+  } else {
+    submaps_options_ = NULL;
+  }
+  if (from.has_motion_filter_options()) {
+    motion_filter_options_ = new ::cartographer::mapping_3d::proto::MotionFilterOptions(*from.motion_filter_options_);
+  } else {
+    motion_filter_options_ = NULL;
+  }
+  ::memcpy(&min_z_, &from.min_z_,
+    static_cast<size_t>(reinterpret_cast<char*>(&num_odometry_states_) -
+    reinterpret_cast<char*>(&min_z_)) + sizeof(num_odometry_states_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
 }
 
 void LocalTrajectoryBuilderOptions::SharedCtor() {
   _cached_size_ = 0;
-  min_range_ = 0;
-  max_range_ = 0;
-  min_z_ = 0;
-  max_z_ = 0;
-  missing_data_ray_length_ = 0;
-  voxel_filter_size_ = 0;
-  adaptive_voxel_filter_options_ = NULL;
-  use_online_correlative_scan_matching_ = false;
-  real_time_correlative_scan_matcher_options_ = NULL;
-  ceres_scan_matcher_options_ = NULL;
-  motion_filter_options_ = NULL;
-  imu_gravity_time_constant_ = 0;
-  num_odometry_states_ = 0;
-  submaps_options_ = NULL;
-  use_imu_data_ = false;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&adaptive_voxel_filter_options_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&num_odometry_states_) -
+      reinterpret_cast<char*>(&adaptive_voxel_filter_options_)) + sizeof(num_odometry_states_));
 }
 
 LocalTrajectoryBuilderOptions::~LocalTrajectoryBuilderOptions() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
   SharedDtor();
 }
 
 void LocalTrajectoryBuilderOptions::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != internal_default_instance()) {
     delete adaptive_voxel_filter_options_;
+  }
+  if (this != internal_default_instance()) {
     delete real_time_correlative_scan_matcher_options_;
+  }
+  if (this != internal_default_instance()) {
     delete ceres_scan_matcher_options_;
-    delete motion_filter_options_;
+  }
+  if (this != internal_default_instance()) {
     delete submaps_options_;
+  }
+  if (this != internal_default_instance()) {
+    delete motion_filter_options_;
   }
 }
 
@@ -223,295 +308,277 @@ void LocalTrajectoryBuilderOptions::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* LocalTrajectoryBuilderOptions::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return LocalTrajectoryBuilderOptions_descriptor_;
+  protobuf_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const LocalTrajectoryBuilderOptions& LocalTrajectoryBuilderOptions::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-LocalTrajectoryBuilderOptions* LocalTrajectoryBuilderOptions::default_instance_ = NULL;
-
-LocalTrajectoryBuilderOptions* LocalTrajectoryBuilderOptions::New() const {
-  return new LocalTrajectoryBuilderOptions;
+LocalTrajectoryBuilderOptions* LocalTrajectoryBuilderOptions::New(::google::protobuf::Arena* arena) const {
+  LocalTrajectoryBuilderOptions* n = new LocalTrajectoryBuilderOptions;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void LocalTrajectoryBuilderOptions::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    min_range_ = 0;
-    max_range_ = 0;
-    min_z_ = 0;
-    max_z_ = 0;
-    missing_data_ray_length_ = 0;
-    voxel_filter_size_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
+  if (_has_bits_[0 / 32] & 31u) {
     if (has_adaptive_voxel_filter_options()) {
-      if (adaptive_voxel_filter_options_ != NULL) adaptive_voxel_filter_options_->::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::Clear();
+      GOOGLE_DCHECK(adaptive_voxel_filter_options_ != NULL);
+      adaptive_voxel_filter_options_->::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::Clear();
     }
-    use_online_correlative_scan_matching_ = false;
-  }
-  if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
     if (has_real_time_correlative_scan_matcher_options()) {
-      if (real_time_correlative_scan_matcher_options_ != NULL) real_time_correlative_scan_matcher_options_->::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions::Clear();
+      GOOGLE_DCHECK(real_time_correlative_scan_matcher_options_ != NULL);
+      real_time_correlative_scan_matcher_options_->::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions::Clear();
     }
     if (has_ceres_scan_matcher_options()) {
-      if (ceres_scan_matcher_options_ != NULL) ceres_scan_matcher_options_->::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions::Clear();
+      GOOGLE_DCHECK(ceres_scan_matcher_options_ != NULL);
+      ceres_scan_matcher_options_->::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions::Clear();
+    }
+    if (has_submaps_options()) {
+      GOOGLE_DCHECK(submaps_options_ != NULL);
+      submaps_options_->::cartographer::mapping_2d::proto::SubmapsOptions::Clear();
     }
     if (has_motion_filter_options()) {
-      if (motion_filter_options_ != NULL) motion_filter_options_->::cartographer::mapping_3d::proto::MotionFilterOptions::Clear();
+      GOOGLE_DCHECK(motion_filter_options_ != NULL);
+      motion_filter_options_->::cartographer::mapping_3d::proto::MotionFilterOptions::Clear();
     }
-    imu_gravity_time_constant_ = 0;
-    num_odometry_states_ = 0;
-    if (has_submaps_options()) {
-      if (submaps_options_ != NULL) submaps_options_->::cartographer::mapping_2d::proto::SubmapsOptions::Clear();
-    }
-    use_imu_data_ = false;
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_has_bits_[0 / 32] & 224u) {
+    ::memset(&min_z_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&voxel_filter_size_) -
+        reinterpret_cast<char*>(&min_z_)) + sizeof(voxel_filter_size_));
+  }
+  if (_has_bits_[8 / 32] & 32512u) {
+    ::memset(&use_online_correlative_scan_matching_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&num_odometry_states_) -
+        reinterpret_cast<char*>(&use_online_correlative_scan_matching_)) + sizeof(num_odometry_states_));
+  }
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool LocalTrajectoryBuilderOptions::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional float min_z = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(13u)) {
+          set_has_min_z();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &min_z_)));
-          set_has_min_z();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(21)) goto parse_max_z;
         break;
       }
 
       // optional float max_z = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_max_z:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(21u)) {
+          set_has_max_z();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &max_z_)));
-          set_has_max_z();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(29)) goto parse_voxel_filter_size;
         break;
       }
 
       // optional float voxel_filter_size = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_voxel_filter_size:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(29u)) {
+          set_has_voxel_filter_size();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &voxel_filter_size_)));
-          set_has_voxel_filter_size();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(40)) goto parse_use_online_correlative_scan_matching;
         break;
       }
 
       // optional bool use_online_correlative_scan_matching = 5;
       case 5: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_use_online_correlative_scan_matching:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(40u)) {
+          set_has_use_online_correlative_scan_matching();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &use_online_correlative_scan_matching_)));
-          set_has_use_online_correlative_scan_matching();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(50)) goto parse_adaptive_voxel_filter_options;
         break;
       }
 
       // optional .cartographer.sensor.proto.AdaptiveVoxelFilterOptions adaptive_voxel_filter_options = 6;
       case 6: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_adaptive_voxel_filter_options:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(50u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_adaptive_voxel_filter_options()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(58)) goto parse_real_time_correlative_scan_matcher_options;
         break;
       }
 
       // optional .cartographer.mapping_2d.scan_matching.proto.RealTimeCorrelativeScanMatcherOptions real_time_correlative_scan_matcher_options = 7;
       case 7: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_real_time_correlative_scan_matcher_options:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(58u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_real_time_correlative_scan_matcher_options()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(66)) goto parse_ceres_scan_matcher_options;
         break;
       }
 
       // optional .cartographer.mapping_2d.scan_matching.proto.CeresScanMatcherOptions ceres_scan_matcher_options = 8;
       case 8: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_ceres_scan_matcher_options:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(66u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_ceres_scan_matcher_options()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(90)) goto parse_submaps_options;
         break;
       }
 
       // optional .cartographer.mapping_2d.proto.SubmapsOptions submaps_options = 11;
       case 11: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_submaps_options:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(90u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_submaps_options()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(96)) goto parse_use_imu_data;
         break;
       }
 
       // optional bool use_imu_data = 12;
       case 12: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_use_imu_data:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(96u)) {
+          set_has_use_imu_data();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &use_imu_data_)));
-          set_has_use_imu_data();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(106)) goto parse_motion_filter_options;
         break;
       }
 
       // optional .cartographer.mapping_3d.proto.MotionFilterOptions motion_filter_options = 13;
       case 13: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_motion_filter_options:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(106u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_motion_filter_options()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(117)) goto parse_min_range;
         break;
       }
 
       // optional float min_range = 14;
       case 14: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_min_range:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(117u)) {
+          set_has_min_range();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &min_range_)));
-          set_has_min_range();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(125)) goto parse_max_range;
         break;
       }
 
       // optional float max_range = 15;
       case 15: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_max_range:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(125u)) {
+          set_has_max_range();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &max_range_)));
-          set_has_max_range();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(133)) goto parse_missing_data_ray_length;
         break;
       }
 
       // optional float missing_data_ray_length = 16;
       case 16: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_missing_data_ray_length:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(133u)) {
+          set_has_missing_data_ray_length();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &missing_data_ray_length_)));
-          set_has_missing_data_ray_length();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(137)) goto parse_imu_gravity_time_constant;
         break;
       }
 
       // optional double imu_gravity_time_constant = 17;
       case 17: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_imu_gravity_time_constant:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(137u)) {
+          set_has_imu_gravity_time_constant();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &imu_gravity_time_constant_)));
-          set_has_imu_gravity_time_constant();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(144)) goto parse_num_odometry_states;
         break;
       }
 
       // optional int32 num_odometry_states = 18;
       case 18: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_num_odometry_states:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(144u)) {
+          set_has_num_odometry_states();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &num_odometry_states_)));
-          set_has_num_odometry_states();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -519,204 +586,252 @@ bool LocalTrajectoryBuilderOptions::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
+  return false;
 #undef DO_
 }
 
 void LocalTrajectoryBuilderOptions::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional float min_z = 1;
-  if (has_min_z()) {
+  if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(1, this->min_z(), output);
   }
 
   // optional float max_z = 2;
-  if (has_max_z()) {
+  if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(2, this->max_z(), output);
   }
 
   // optional float voxel_filter_size = 3;
-  if (has_voxel_filter_size()) {
+  if (cached_has_bits & 0x00000080u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->voxel_filter_size(), output);
   }
 
   // optional bool use_online_correlative_scan_matching = 5;
-  if (has_use_online_correlative_scan_matching()) {
+  if (cached_has_bits & 0x00000100u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(5, this->use_online_correlative_scan_matching(), output);
   }
 
   // optional .cartographer.sensor.proto.AdaptiveVoxelFilterOptions adaptive_voxel_filter_options = 6;
-  if (has_adaptive_voxel_filter_options()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, this->adaptive_voxel_filter_options(), output);
+      6, *this->adaptive_voxel_filter_options_, output);
   }
 
   // optional .cartographer.mapping_2d.scan_matching.proto.RealTimeCorrelativeScanMatcherOptions real_time_correlative_scan_matcher_options = 7;
-  if (has_real_time_correlative_scan_matcher_options()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, this->real_time_correlative_scan_matcher_options(), output);
+      7, *this->real_time_correlative_scan_matcher_options_, output);
   }
 
   // optional .cartographer.mapping_2d.scan_matching.proto.CeresScanMatcherOptions ceres_scan_matcher_options = 8;
-  if (has_ceres_scan_matcher_options()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      8, this->ceres_scan_matcher_options(), output);
+      8, *this->ceres_scan_matcher_options_, output);
   }
 
   // optional .cartographer.mapping_2d.proto.SubmapsOptions submaps_options = 11;
-  if (has_submaps_options()) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      11, this->submaps_options(), output);
+      11, *this->submaps_options_, output);
   }
 
   // optional bool use_imu_data = 12;
-  if (has_use_imu_data()) {
+  if (cached_has_bits & 0x00000200u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(12, this->use_imu_data(), output);
   }
 
   // optional .cartographer.mapping_3d.proto.MotionFilterOptions motion_filter_options = 13;
-  if (has_motion_filter_options()) {
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      13, this->motion_filter_options(), output);
+      13, *this->motion_filter_options_, output);
   }
 
   // optional float min_range = 14;
-  if (has_min_range()) {
+  if (cached_has_bits & 0x00000400u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(14, this->min_range(), output);
   }
 
   // optional float max_range = 15;
-  if (has_max_range()) {
+  if (cached_has_bits & 0x00000800u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(15, this->max_range(), output);
   }
 
   // optional float missing_data_ray_length = 16;
-  if (has_missing_data_ray_length()) {
+  if (cached_has_bits & 0x00002000u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(16, this->missing_data_ray_length(), output);
   }
 
   // optional double imu_gravity_time_constant = 17;
-  if (has_imu_gravity_time_constant()) {
+  if (cached_has_bits & 0x00001000u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(17, this->imu_gravity_time_constant(), output);
   }
 
   // optional int32 num_odometry_states = 18;
-  if (has_num_odometry_states()) {
+  if (cached_has_bits & 0x00004000u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(18, this->num_odometry_states(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
 }
 
-::google::protobuf::uint8* LocalTrajectoryBuilderOptions::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* LocalTrajectoryBuilderOptions::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional float min_z = 1;
-  if (has_min_z()) {
+  if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(1, this->min_z(), target);
   }
 
   // optional float max_z = 2;
-  if (has_max_z()) {
+  if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(2, this->max_z(), target);
   }
 
   // optional float voxel_filter_size = 3;
-  if (has_voxel_filter_size()) {
+  if (cached_has_bits & 0x00000080u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->voxel_filter_size(), target);
   }
 
   // optional bool use_online_correlative_scan_matching = 5;
-  if (has_use_online_correlative_scan_matching()) {
+  if (cached_has_bits & 0x00000100u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(5, this->use_online_correlative_scan_matching(), target);
   }
 
   // optional .cartographer.sensor.proto.AdaptiveVoxelFilterOptions adaptive_voxel_filter_options = 6;
-  if (has_adaptive_voxel_filter_options()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        6, this->adaptive_voxel_filter_options(), target);
+      InternalWriteMessageNoVirtualToArray(
+        6, *this->adaptive_voxel_filter_options_, deterministic, target);
   }
 
   // optional .cartographer.mapping_2d.scan_matching.proto.RealTimeCorrelativeScanMatcherOptions real_time_correlative_scan_matcher_options = 7;
-  if (has_real_time_correlative_scan_matcher_options()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        7, this->real_time_correlative_scan_matcher_options(), target);
+      InternalWriteMessageNoVirtualToArray(
+        7, *this->real_time_correlative_scan_matcher_options_, deterministic, target);
   }
 
   // optional .cartographer.mapping_2d.scan_matching.proto.CeresScanMatcherOptions ceres_scan_matcher_options = 8;
-  if (has_ceres_scan_matcher_options()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        8, this->ceres_scan_matcher_options(), target);
+      InternalWriteMessageNoVirtualToArray(
+        8, *this->ceres_scan_matcher_options_, deterministic, target);
   }
 
   // optional .cartographer.mapping_2d.proto.SubmapsOptions submaps_options = 11;
-  if (has_submaps_options()) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        11, this->submaps_options(), target);
+      InternalWriteMessageNoVirtualToArray(
+        11, *this->submaps_options_, deterministic, target);
   }
 
   // optional bool use_imu_data = 12;
-  if (has_use_imu_data()) {
+  if (cached_has_bits & 0x00000200u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(12, this->use_imu_data(), target);
   }
 
   // optional .cartographer.mapping_3d.proto.MotionFilterOptions motion_filter_options = 13;
-  if (has_motion_filter_options()) {
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        13, this->motion_filter_options(), target);
+      InternalWriteMessageNoVirtualToArray(
+        13, *this->motion_filter_options_, deterministic, target);
   }
 
   // optional float min_range = 14;
-  if (has_min_range()) {
+  if (cached_has_bits & 0x00000400u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(14, this->min_range(), target);
   }
 
   // optional float max_range = 15;
-  if (has_max_range()) {
+  if (cached_has_bits & 0x00000800u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(15, this->max_range(), target);
   }
 
   // optional float missing_data_ray_length = 16;
-  if (has_missing_data_ray_length()) {
+  if (cached_has_bits & 0x00002000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(16, this->missing_data_ray_length(), target);
   }
 
   // optional double imu_gravity_time_constant = 17;
-  if (has_imu_gravity_time_constant()) {
+  if (cached_has_bits & 0x00001000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(17, this->imu_gravity_time_constant(), target);
   }
 
   // optional int32 num_odometry_states = 18;
-  if (has_num_odometry_states()) {
+  if (cached_has_bits & 0x00004000u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(18, this->num_odometry_states(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
   return target;
 }
 
-int LocalTrajectoryBuilderOptions::ByteSize() const {
-  int total_size = 0;
+size_t LocalTrajectoryBuilderOptions::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional float min_range = 14;
-    if (has_min_range()) {
-      total_size += 1 + 4;
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 255u) {
+    // optional .cartographer.sensor.proto.AdaptiveVoxelFilterOptions adaptive_voxel_filter_options = 6;
+    if (has_adaptive_voxel_filter_options()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          *this->adaptive_voxel_filter_options_);
     }
 
-    // optional float max_range = 15;
-    if (has_max_range()) {
-      total_size += 1 + 4;
+    // optional .cartographer.mapping_2d.scan_matching.proto.RealTimeCorrelativeScanMatcherOptions real_time_correlative_scan_matcher_options = 7;
+    if (has_real_time_correlative_scan_matcher_options()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          *this->real_time_correlative_scan_matcher_options_);
+    }
+
+    // optional .cartographer.mapping_2d.scan_matching.proto.CeresScanMatcherOptions ceres_scan_matcher_options = 8;
+    if (has_ceres_scan_matcher_options()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          *this->ceres_scan_matcher_options_);
+    }
+
+    // optional .cartographer.mapping_2d.proto.SubmapsOptions submaps_options = 11;
+    if (has_submaps_options()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          *this->submaps_options_);
+    }
+
+    // optional .cartographer.mapping_3d.proto.MotionFilterOptions motion_filter_options = 13;
+    if (has_motion_filter_options()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          *this->motion_filter_options_);
     }
 
     // optional float min_z = 1;
@@ -729,54 +844,41 @@ int LocalTrajectoryBuilderOptions::ByteSize() const {
       total_size += 1 + 4;
     }
 
-    // optional float missing_data_ray_length = 16;
-    if (has_missing_data_ray_length()) {
-      total_size += 2 + 4;
-    }
-
     // optional float voxel_filter_size = 3;
     if (has_voxel_filter_size()) {
       total_size += 1 + 4;
     }
 
-    // optional .cartographer.sensor.proto.AdaptiveVoxelFilterOptions adaptive_voxel_filter_options = 6;
-    if (has_adaptive_voxel_filter_options()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->adaptive_voxel_filter_options());
-    }
-
+  }
+  if (_has_bits_[8 / 32] & 32512u) {
     // optional bool use_online_correlative_scan_matching = 5;
     if (has_use_online_correlative_scan_matching()) {
       total_size += 1 + 1;
     }
 
-  }
-  if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
-    // optional .cartographer.mapping_2d.scan_matching.proto.RealTimeCorrelativeScanMatcherOptions real_time_correlative_scan_matcher_options = 7;
-    if (has_real_time_correlative_scan_matcher_options()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->real_time_correlative_scan_matcher_options());
+    // optional bool use_imu_data = 12;
+    if (has_use_imu_data()) {
+      total_size += 1 + 1;
     }
 
-    // optional .cartographer.mapping_2d.scan_matching.proto.CeresScanMatcherOptions ceres_scan_matcher_options = 8;
-    if (has_ceres_scan_matcher_options()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->ceres_scan_matcher_options());
+    // optional float min_range = 14;
+    if (has_min_range()) {
+      total_size += 1 + 4;
     }
 
-    // optional .cartographer.mapping_3d.proto.MotionFilterOptions motion_filter_options = 13;
-    if (has_motion_filter_options()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->motion_filter_options());
+    // optional float max_range = 15;
+    if (has_max_range()) {
+      total_size += 1 + 4;
     }
 
     // optional double imu_gravity_time_constant = 17;
     if (has_imu_gravity_time_constant()) {
       total_size += 2 + 8;
+    }
+
+    // optional float missing_data_ray_length = 16;
+    if (has_missing_data_ray_length()) {
+      total_size += 2 + 4;
     }
 
     // optional int32 num_odometry_states = 18;
@@ -786,144 +888,607 @@ int LocalTrajectoryBuilderOptions::ByteSize() const {
           this->num_odometry_states());
     }
 
-    // optional .cartographer.mapping_2d.proto.SubmapsOptions submaps_options = 11;
-    if (has_submaps_options()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->submaps_options());
-    }
-
-    // optional bool use_imu_data = 12;
-    if (has_use_imu_data()) {
-      total_size += 1 + 1;
-    }
-
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void LocalTrajectoryBuilderOptions::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
+  GOOGLE_DCHECK_NE(&from, this);
   const LocalTrajectoryBuilderOptions* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const LocalTrajectoryBuilderOptions*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const LocalTrajectoryBuilderOptions>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
     MergeFrom(*source);
   }
 }
 
 void LocalTrajectoryBuilderOptions::MergeFrom(const LocalTrajectoryBuilderOptions& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_min_range()) {
-      set_min_range(from.min_range());
-    }
-    if (from.has_max_range()) {
-      set_max_range(from.max_range());
-    }
-    if (from.has_min_z()) {
-      set_min_z(from.min_z());
-    }
-    if (from.has_max_z()) {
-      set_max_z(from.max_z());
-    }
-    if (from.has_missing_data_ray_length()) {
-      set_missing_data_ray_length(from.missing_data_ray_length());
-    }
-    if (from.has_voxel_filter_size()) {
-      set_voxel_filter_size(from.voxel_filter_size());
-    }
-    if (from.has_adaptive_voxel_filter_options()) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 255u) {
+    if (cached_has_bits & 0x00000001u) {
       mutable_adaptive_voxel_filter_options()->::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::MergeFrom(from.adaptive_voxel_filter_options());
     }
-    if (from.has_use_online_correlative_scan_matching()) {
-      set_use_online_correlative_scan_matching(from.use_online_correlative_scan_matching());
-    }
-  }
-  if (from._has_bits_[8 / 32] & (0xffu << (8 % 32))) {
-    if (from.has_real_time_correlative_scan_matcher_options()) {
+    if (cached_has_bits & 0x00000002u) {
       mutable_real_time_correlative_scan_matcher_options()->::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions::MergeFrom(from.real_time_correlative_scan_matcher_options());
     }
-    if (from.has_ceres_scan_matcher_options()) {
+    if (cached_has_bits & 0x00000004u) {
       mutable_ceres_scan_matcher_options()->::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions::MergeFrom(from.ceres_scan_matcher_options());
     }
-    if (from.has_motion_filter_options()) {
-      mutable_motion_filter_options()->::cartographer::mapping_3d::proto::MotionFilterOptions::MergeFrom(from.motion_filter_options());
-    }
-    if (from.has_imu_gravity_time_constant()) {
-      set_imu_gravity_time_constant(from.imu_gravity_time_constant());
-    }
-    if (from.has_num_odometry_states()) {
-      set_num_odometry_states(from.num_odometry_states());
-    }
-    if (from.has_submaps_options()) {
+    if (cached_has_bits & 0x00000008u) {
       mutable_submaps_options()->::cartographer::mapping_2d::proto::SubmapsOptions::MergeFrom(from.submaps_options());
     }
-    if (from.has_use_imu_data()) {
-      set_use_imu_data(from.use_imu_data());
+    if (cached_has_bits & 0x00000010u) {
+      mutable_motion_filter_options()->::cartographer::mapping_3d::proto::MotionFilterOptions::MergeFrom(from.motion_filter_options());
     }
+    if (cached_has_bits & 0x00000020u) {
+      min_z_ = from.min_z_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      max_z_ = from.max_z_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      voxel_filter_size_ = from.voxel_filter_size_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (cached_has_bits & 32512u) {
+    if (cached_has_bits & 0x00000100u) {
+      use_online_correlative_scan_matching_ = from.use_online_correlative_scan_matching_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      use_imu_data_ = from.use_imu_data_;
+    }
+    if (cached_has_bits & 0x00000400u) {
+      min_range_ = from.min_range_;
+    }
+    if (cached_has_bits & 0x00000800u) {
+      max_range_ = from.max_range_;
+    }
+    if (cached_has_bits & 0x00001000u) {
+      imu_gravity_time_constant_ = from.imu_gravity_time_constant_;
+    }
+    if (cached_has_bits & 0x00002000u) {
+      missing_data_ray_length_ = from.missing_data_ray_length_;
+    }
+    if (cached_has_bits & 0x00004000u) {
+      num_odometry_states_ = from.num_odometry_states_;
+    }
+    _has_bits_[0] |= cached_has_bits;
+  }
 }
 
 void LocalTrajectoryBuilderOptions::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void LocalTrajectoryBuilderOptions::CopyFrom(const LocalTrajectoryBuilderOptions& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool LocalTrajectoryBuilderOptions::IsInitialized() const {
-
   return true;
 }
 
 void LocalTrajectoryBuilderOptions::Swap(LocalTrajectoryBuilderOptions* other) {
-  if (other != this) {
-    std::swap(min_range_, other->min_range_);
-    std::swap(max_range_, other->max_range_);
-    std::swap(min_z_, other->min_z_);
-    std::swap(max_z_, other->max_z_);
-    std::swap(missing_data_ray_length_, other->missing_data_ray_length_);
-    std::swap(voxel_filter_size_, other->voxel_filter_size_);
-    std::swap(adaptive_voxel_filter_options_, other->adaptive_voxel_filter_options_);
-    std::swap(use_online_correlative_scan_matching_, other->use_online_correlative_scan_matching_);
-    std::swap(real_time_correlative_scan_matcher_options_, other->real_time_correlative_scan_matcher_options_);
-    std::swap(ceres_scan_matcher_options_, other->ceres_scan_matcher_options_);
-    std::swap(motion_filter_options_, other->motion_filter_options_);
-    std::swap(imu_gravity_time_constant_, other->imu_gravity_time_constant_);
-    std::swap(num_odometry_states_, other->num_odometry_states_);
-    std::swap(submaps_options_, other->submaps_options_);
-    std::swap(use_imu_data_, other->use_imu_data_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void LocalTrajectoryBuilderOptions::InternalSwap(LocalTrajectoryBuilderOptions* other) {
+  std::swap(adaptive_voxel_filter_options_, other->adaptive_voxel_filter_options_);
+  std::swap(real_time_correlative_scan_matcher_options_, other->real_time_correlative_scan_matcher_options_);
+  std::swap(ceres_scan_matcher_options_, other->ceres_scan_matcher_options_);
+  std::swap(submaps_options_, other->submaps_options_);
+  std::swap(motion_filter_options_, other->motion_filter_options_);
+  std::swap(min_z_, other->min_z_);
+  std::swap(max_z_, other->max_z_);
+  std::swap(voxel_filter_size_, other->voxel_filter_size_);
+  std::swap(use_online_correlative_scan_matching_, other->use_online_correlative_scan_matching_);
+  std::swap(use_imu_data_, other->use_imu_data_);
+  std::swap(min_range_, other->min_range_);
+  std::swap(max_range_, other->max_range_);
+  std::swap(imu_gravity_time_constant_, other->imu_gravity_time_constant_);
+  std::swap(missing_data_ray_length_, other->missing_data_ray_length_);
+  std::swap(num_odometry_states_, other->num_odometry_states_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata LocalTrajectoryBuilderOptions::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = LocalTrajectoryBuilderOptions_descriptor_;
-  metadata.reflection = LocalTrajectoryBuilderOptions_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_5f2d_2fproto_2flocal_5ftrajectory_5fbuilder_5foptions_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// LocalTrajectoryBuilderOptions
+
+// optional float min_range = 14;
+bool LocalTrajectoryBuilderOptions::has_min_range() const {
+  return (_has_bits_[0] & 0x00000400u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_min_range() {
+  _has_bits_[0] |= 0x00000400u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_min_range() {
+  _has_bits_[0] &= ~0x00000400u;
+}
+void LocalTrajectoryBuilderOptions::clear_min_range() {
+  min_range_ = 0;
+  clear_has_min_range();
+}
+float LocalTrajectoryBuilderOptions::min_range() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.min_range)
+  return min_range_;
+}
+void LocalTrajectoryBuilderOptions::set_min_range(float value) {
+  set_has_min_range();
+  min_range_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.min_range)
+}
+
+// optional float max_range = 15;
+bool LocalTrajectoryBuilderOptions::has_max_range() const {
+  return (_has_bits_[0] & 0x00000800u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_max_range() {
+  _has_bits_[0] |= 0x00000800u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_max_range() {
+  _has_bits_[0] &= ~0x00000800u;
+}
+void LocalTrajectoryBuilderOptions::clear_max_range() {
+  max_range_ = 0;
+  clear_has_max_range();
+}
+float LocalTrajectoryBuilderOptions::max_range() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.max_range)
+  return max_range_;
+}
+void LocalTrajectoryBuilderOptions::set_max_range(float value) {
+  set_has_max_range();
+  max_range_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.max_range)
+}
+
+// optional float min_z = 1;
+bool LocalTrajectoryBuilderOptions::has_min_z() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_min_z() {
+  _has_bits_[0] |= 0x00000020u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_min_z() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+void LocalTrajectoryBuilderOptions::clear_min_z() {
+  min_z_ = 0;
+  clear_has_min_z();
+}
+float LocalTrajectoryBuilderOptions::min_z() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.min_z)
+  return min_z_;
+}
+void LocalTrajectoryBuilderOptions::set_min_z(float value) {
+  set_has_min_z();
+  min_z_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.min_z)
+}
+
+// optional float max_z = 2;
+bool LocalTrajectoryBuilderOptions::has_max_z() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_max_z() {
+  _has_bits_[0] |= 0x00000040u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_max_z() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+void LocalTrajectoryBuilderOptions::clear_max_z() {
+  max_z_ = 0;
+  clear_has_max_z();
+}
+float LocalTrajectoryBuilderOptions::max_z() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.max_z)
+  return max_z_;
+}
+void LocalTrajectoryBuilderOptions::set_max_z(float value) {
+  set_has_max_z();
+  max_z_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.max_z)
+}
+
+// optional float missing_data_ray_length = 16;
+bool LocalTrajectoryBuilderOptions::has_missing_data_ray_length() const {
+  return (_has_bits_[0] & 0x00002000u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_missing_data_ray_length() {
+  _has_bits_[0] |= 0x00002000u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_missing_data_ray_length() {
+  _has_bits_[0] &= ~0x00002000u;
+}
+void LocalTrajectoryBuilderOptions::clear_missing_data_ray_length() {
+  missing_data_ray_length_ = 0;
+  clear_has_missing_data_ray_length();
+}
+float LocalTrajectoryBuilderOptions::missing_data_ray_length() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.missing_data_ray_length)
+  return missing_data_ray_length_;
+}
+void LocalTrajectoryBuilderOptions::set_missing_data_ray_length(float value) {
+  set_has_missing_data_ray_length();
+  missing_data_ray_length_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.missing_data_ray_length)
+}
+
+// optional float voxel_filter_size = 3;
+bool LocalTrajectoryBuilderOptions::has_voxel_filter_size() const {
+  return (_has_bits_[0] & 0x00000080u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_voxel_filter_size() {
+  _has_bits_[0] |= 0x00000080u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_voxel_filter_size() {
+  _has_bits_[0] &= ~0x00000080u;
+}
+void LocalTrajectoryBuilderOptions::clear_voxel_filter_size() {
+  voxel_filter_size_ = 0;
+  clear_has_voxel_filter_size();
+}
+float LocalTrajectoryBuilderOptions::voxel_filter_size() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.voxel_filter_size)
+  return voxel_filter_size_;
+}
+void LocalTrajectoryBuilderOptions::set_voxel_filter_size(float value) {
+  set_has_voxel_filter_size();
+  voxel_filter_size_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.voxel_filter_size)
+}
+
+// optional .cartographer.sensor.proto.AdaptiveVoxelFilterOptions adaptive_voxel_filter_options = 6;
+bool LocalTrajectoryBuilderOptions::has_adaptive_voxel_filter_options() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_adaptive_voxel_filter_options() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_adaptive_voxel_filter_options() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void LocalTrajectoryBuilderOptions::clear_adaptive_voxel_filter_options() {
+  if (adaptive_voxel_filter_options_ != NULL) adaptive_voxel_filter_options_->::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::Clear();
+  clear_has_adaptive_voxel_filter_options();
+}
+const ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions& LocalTrajectoryBuilderOptions::adaptive_voxel_filter_options() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.adaptive_voxel_filter_options)
+  return adaptive_voxel_filter_options_ != NULL ? *adaptive_voxel_filter_options_
+                         : *::cartographer::sensor::proto::AdaptiveVoxelFilterOptions::internal_default_instance();
+}
+::cartographer::sensor::proto::AdaptiveVoxelFilterOptions* LocalTrajectoryBuilderOptions::mutable_adaptive_voxel_filter_options() {
+  set_has_adaptive_voxel_filter_options();
+  if (adaptive_voxel_filter_options_ == NULL) {
+    adaptive_voxel_filter_options_ = new ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.adaptive_voxel_filter_options)
+  return adaptive_voxel_filter_options_;
+}
+::cartographer::sensor::proto::AdaptiveVoxelFilterOptions* LocalTrajectoryBuilderOptions::release_adaptive_voxel_filter_options() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.adaptive_voxel_filter_options)
+  clear_has_adaptive_voxel_filter_options();
+  ::cartographer::sensor::proto::AdaptiveVoxelFilterOptions* temp = adaptive_voxel_filter_options_;
+  adaptive_voxel_filter_options_ = NULL;
+  return temp;
+}
+void LocalTrajectoryBuilderOptions::set_allocated_adaptive_voxel_filter_options(::cartographer::sensor::proto::AdaptiveVoxelFilterOptions* adaptive_voxel_filter_options) {
+  delete adaptive_voxel_filter_options_;
+  adaptive_voxel_filter_options_ = adaptive_voxel_filter_options;
+  if (adaptive_voxel_filter_options) {
+    set_has_adaptive_voxel_filter_options();
+  } else {
+    clear_has_adaptive_voxel_filter_options();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.adaptive_voxel_filter_options)
+}
+
+// optional bool use_online_correlative_scan_matching = 5;
+bool LocalTrajectoryBuilderOptions::has_use_online_correlative_scan_matching() const {
+  return (_has_bits_[0] & 0x00000100u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_use_online_correlative_scan_matching() {
+  _has_bits_[0] |= 0x00000100u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_use_online_correlative_scan_matching() {
+  _has_bits_[0] &= ~0x00000100u;
+}
+void LocalTrajectoryBuilderOptions::clear_use_online_correlative_scan_matching() {
+  use_online_correlative_scan_matching_ = false;
+  clear_has_use_online_correlative_scan_matching();
+}
+bool LocalTrajectoryBuilderOptions::use_online_correlative_scan_matching() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.use_online_correlative_scan_matching)
+  return use_online_correlative_scan_matching_;
+}
+void LocalTrajectoryBuilderOptions::set_use_online_correlative_scan_matching(bool value) {
+  set_has_use_online_correlative_scan_matching();
+  use_online_correlative_scan_matching_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.use_online_correlative_scan_matching)
+}
+
+// optional .cartographer.mapping_2d.scan_matching.proto.RealTimeCorrelativeScanMatcherOptions real_time_correlative_scan_matcher_options = 7;
+bool LocalTrajectoryBuilderOptions::has_real_time_correlative_scan_matcher_options() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_real_time_correlative_scan_matcher_options() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_real_time_correlative_scan_matcher_options() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void LocalTrajectoryBuilderOptions::clear_real_time_correlative_scan_matcher_options() {
+  if (real_time_correlative_scan_matcher_options_ != NULL) real_time_correlative_scan_matcher_options_->::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions::Clear();
+  clear_has_real_time_correlative_scan_matcher_options();
+}
+const ::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions& LocalTrajectoryBuilderOptions::real_time_correlative_scan_matcher_options() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.real_time_correlative_scan_matcher_options)
+  return real_time_correlative_scan_matcher_options_ != NULL ? *real_time_correlative_scan_matcher_options_
+                         : *::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions::internal_default_instance();
+}
+::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions* LocalTrajectoryBuilderOptions::mutable_real_time_correlative_scan_matcher_options() {
+  set_has_real_time_correlative_scan_matcher_options();
+  if (real_time_correlative_scan_matcher_options_ == NULL) {
+    real_time_correlative_scan_matcher_options_ = new ::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.real_time_correlative_scan_matcher_options)
+  return real_time_correlative_scan_matcher_options_;
+}
+::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions* LocalTrajectoryBuilderOptions::release_real_time_correlative_scan_matcher_options() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.real_time_correlative_scan_matcher_options)
+  clear_has_real_time_correlative_scan_matcher_options();
+  ::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions* temp = real_time_correlative_scan_matcher_options_;
+  real_time_correlative_scan_matcher_options_ = NULL;
+  return temp;
+}
+void LocalTrajectoryBuilderOptions::set_allocated_real_time_correlative_scan_matcher_options(::cartographer::mapping_2d::scan_matching::proto::RealTimeCorrelativeScanMatcherOptions* real_time_correlative_scan_matcher_options) {
+  delete real_time_correlative_scan_matcher_options_;
+  real_time_correlative_scan_matcher_options_ = real_time_correlative_scan_matcher_options;
+  if (real_time_correlative_scan_matcher_options) {
+    set_has_real_time_correlative_scan_matcher_options();
+  } else {
+    clear_has_real_time_correlative_scan_matcher_options();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.real_time_correlative_scan_matcher_options)
+}
+
+// optional .cartographer.mapping_2d.scan_matching.proto.CeresScanMatcherOptions ceres_scan_matcher_options = 8;
+bool LocalTrajectoryBuilderOptions::has_ceres_scan_matcher_options() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_ceres_scan_matcher_options() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_ceres_scan_matcher_options() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void LocalTrajectoryBuilderOptions::clear_ceres_scan_matcher_options() {
+  if (ceres_scan_matcher_options_ != NULL) ceres_scan_matcher_options_->::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions::Clear();
+  clear_has_ceres_scan_matcher_options();
+}
+const ::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions& LocalTrajectoryBuilderOptions::ceres_scan_matcher_options() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.ceres_scan_matcher_options)
+  return ceres_scan_matcher_options_ != NULL ? *ceres_scan_matcher_options_
+                         : *::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions::internal_default_instance();
+}
+::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions* LocalTrajectoryBuilderOptions::mutable_ceres_scan_matcher_options() {
+  set_has_ceres_scan_matcher_options();
+  if (ceres_scan_matcher_options_ == NULL) {
+    ceres_scan_matcher_options_ = new ::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.ceres_scan_matcher_options)
+  return ceres_scan_matcher_options_;
+}
+::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions* LocalTrajectoryBuilderOptions::release_ceres_scan_matcher_options() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.ceres_scan_matcher_options)
+  clear_has_ceres_scan_matcher_options();
+  ::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions* temp = ceres_scan_matcher_options_;
+  ceres_scan_matcher_options_ = NULL;
+  return temp;
+}
+void LocalTrajectoryBuilderOptions::set_allocated_ceres_scan_matcher_options(::cartographer::mapping_2d::scan_matching::proto::CeresScanMatcherOptions* ceres_scan_matcher_options) {
+  delete ceres_scan_matcher_options_;
+  ceres_scan_matcher_options_ = ceres_scan_matcher_options;
+  if (ceres_scan_matcher_options) {
+    set_has_ceres_scan_matcher_options();
+  } else {
+    clear_has_ceres_scan_matcher_options();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.ceres_scan_matcher_options)
+}
+
+// optional .cartographer.mapping_3d.proto.MotionFilterOptions motion_filter_options = 13;
+bool LocalTrajectoryBuilderOptions::has_motion_filter_options() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_motion_filter_options() {
+  _has_bits_[0] |= 0x00000010u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_motion_filter_options() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+void LocalTrajectoryBuilderOptions::clear_motion_filter_options() {
+  if (motion_filter_options_ != NULL) motion_filter_options_->::cartographer::mapping_3d::proto::MotionFilterOptions::Clear();
+  clear_has_motion_filter_options();
+}
+const ::cartographer::mapping_3d::proto::MotionFilterOptions& LocalTrajectoryBuilderOptions::motion_filter_options() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.motion_filter_options)
+  return motion_filter_options_ != NULL ? *motion_filter_options_
+                         : *::cartographer::mapping_3d::proto::MotionFilterOptions::internal_default_instance();
+}
+::cartographer::mapping_3d::proto::MotionFilterOptions* LocalTrajectoryBuilderOptions::mutable_motion_filter_options() {
+  set_has_motion_filter_options();
+  if (motion_filter_options_ == NULL) {
+    motion_filter_options_ = new ::cartographer::mapping_3d::proto::MotionFilterOptions;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.motion_filter_options)
+  return motion_filter_options_;
+}
+::cartographer::mapping_3d::proto::MotionFilterOptions* LocalTrajectoryBuilderOptions::release_motion_filter_options() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.motion_filter_options)
+  clear_has_motion_filter_options();
+  ::cartographer::mapping_3d::proto::MotionFilterOptions* temp = motion_filter_options_;
+  motion_filter_options_ = NULL;
+  return temp;
+}
+void LocalTrajectoryBuilderOptions::set_allocated_motion_filter_options(::cartographer::mapping_3d::proto::MotionFilterOptions* motion_filter_options) {
+  delete motion_filter_options_;
+  motion_filter_options_ = motion_filter_options;
+  if (motion_filter_options) {
+    set_has_motion_filter_options();
+  } else {
+    clear_has_motion_filter_options();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.motion_filter_options)
+}
+
+// optional double imu_gravity_time_constant = 17;
+bool LocalTrajectoryBuilderOptions::has_imu_gravity_time_constant() const {
+  return (_has_bits_[0] & 0x00001000u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_imu_gravity_time_constant() {
+  _has_bits_[0] |= 0x00001000u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_imu_gravity_time_constant() {
+  _has_bits_[0] &= ~0x00001000u;
+}
+void LocalTrajectoryBuilderOptions::clear_imu_gravity_time_constant() {
+  imu_gravity_time_constant_ = 0;
+  clear_has_imu_gravity_time_constant();
+}
+double LocalTrajectoryBuilderOptions::imu_gravity_time_constant() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.imu_gravity_time_constant)
+  return imu_gravity_time_constant_;
+}
+void LocalTrajectoryBuilderOptions::set_imu_gravity_time_constant(double value) {
+  set_has_imu_gravity_time_constant();
+  imu_gravity_time_constant_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.imu_gravity_time_constant)
+}
+
+// optional int32 num_odometry_states = 18;
+bool LocalTrajectoryBuilderOptions::has_num_odometry_states() const {
+  return (_has_bits_[0] & 0x00004000u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_num_odometry_states() {
+  _has_bits_[0] |= 0x00004000u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_num_odometry_states() {
+  _has_bits_[0] &= ~0x00004000u;
+}
+void LocalTrajectoryBuilderOptions::clear_num_odometry_states() {
+  num_odometry_states_ = 0;
+  clear_has_num_odometry_states();
+}
+::google::protobuf::int32 LocalTrajectoryBuilderOptions::num_odometry_states() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.num_odometry_states)
+  return num_odometry_states_;
+}
+void LocalTrajectoryBuilderOptions::set_num_odometry_states(::google::protobuf::int32 value) {
+  set_has_num_odometry_states();
+  num_odometry_states_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.num_odometry_states)
+}
+
+// optional .cartographer.mapping_2d.proto.SubmapsOptions submaps_options = 11;
+bool LocalTrajectoryBuilderOptions::has_submaps_options() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_submaps_options() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_submaps_options() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void LocalTrajectoryBuilderOptions::clear_submaps_options() {
+  if (submaps_options_ != NULL) submaps_options_->::cartographer::mapping_2d::proto::SubmapsOptions::Clear();
+  clear_has_submaps_options();
+}
+const ::cartographer::mapping_2d::proto::SubmapsOptions& LocalTrajectoryBuilderOptions::submaps_options() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.submaps_options)
+  return submaps_options_ != NULL ? *submaps_options_
+                         : *::cartographer::mapping_2d::proto::SubmapsOptions::internal_default_instance();
+}
+::cartographer::mapping_2d::proto::SubmapsOptions* LocalTrajectoryBuilderOptions::mutable_submaps_options() {
+  set_has_submaps_options();
+  if (submaps_options_ == NULL) {
+    submaps_options_ = new ::cartographer::mapping_2d::proto::SubmapsOptions;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.submaps_options)
+  return submaps_options_;
+}
+::cartographer::mapping_2d::proto::SubmapsOptions* LocalTrajectoryBuilderOptions::release_submaps_options() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.submaps_options)
+  clear_has_submaps_options();
+  ::cartographer::mapping_2d::proto::SubmapsOptions* temp = submaps_options_;
+  submaps_options_ = NULL;
+  return temp;
+}
+void LocalTrajectoryBuilderOptions::set_allocated_submaps_options(::cartographer::mapping_2d::proto::SubmapsOptions* submaps_options) {
+  delete submaps_options_;
+  submaps_options_ = submaps_options;
+  if (submaps_options) {
+    set_has_submaps_options();
+  } else {
+    clear_has_submaps_options();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.submaps_options)
+}
+
+// optional bool use_imu_data = 12;
+bool LocalTrajectoryBuilderOptions::has_use_imu_data() const {
+  return (_has_bits_[0] & 0x00000200u) != 0;
+}
+void LocalTrajectoryBuilderOptions::set_has_use_imu_data() {
+  _has_bits_[0] |= 0x00000200u;
+}
+void LocalTrajectoryBuilderOptions::clear_has_use_imu_data() {
+  _has_bits_[0] &= ~0x00000200u;
+}
+void LocalTrajectoryBuilderOptions::clear_use_imu_data() {
+  use_imu_data_ = false;
+  clear_has_use_imu_data();
+}
+bool LocalTrajectoryBuilderOptions::use_imu_data() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.use_imu_data)
+  return use_imu_data_;
+}
+void LocalTrajectoryBuilderOptions::set_use_imu_data(bool value) {
+  set_has_use_imu_data();
+  use_imu_data_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_2d.proto.LocalTrajectoryBuilderOptions.use_imu_data)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

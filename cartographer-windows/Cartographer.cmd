@@ -35,8 +35,8 @@ cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
 -DEIGEN3_INCLUDE_DIR:PATH="C:/SDKs/eigen/eigen3/include/eigen3" ^
 -DEigen3_DIR:PATH="C:/SDKs/eigen/eigen3/share/eigen3/cmake" ^
 -DCeres_DIR:PATH="C:/SDKs/ceres-solver/ceres-solver/CMake" ^
--DGTEST_INCLUDE_DIRS:PATH="C:/SDKs/google/googletest/include/gtest" ^
--DGMOCK_INCLUDE_DIRS:PATH="C:/SDKs/google/googletest/include/gmock" ^
+-DGTEST_INCLUDE_DIRS:PATH="C:/SDKs/google/googletest/include" ^
+-DGMOCK_INCLUDE_DIRS:PATH="C:/SDKs/google/googletest/include" ^
 -DGMOCK_LIBRARIES:FILEPATH="C:/SDKs/google/googletest/lib" ^
 -Dgmock_build_tests:BOOL=FALSE ^
 -DBoost_DIR:PATH="C:/SDKs/boost_1_64_0" ^
@@ -63,6 +63,10 @@ cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
 -Dgtest_force_shared_crt:BOOL=FALSE ^
 -DCARTOGRAPHER_CONFIGURATION_FILES_DIRECTORY:PATH="../../cartographer/configuration_files" ^
 -DCMAKE_INSTALL_PREFIX:PATH="C:/SDKs/googlecartographer/cartographer"
+
+echo ^
+-DLUA_INCLUDE_PREFIX="C:/SDKs/lua/lua/include" ^
+ 
 
 REM cmake.exe --build "." --target "ALL_BUILD" --config "Release"
 REM cmake.exe --build "." --target "RUN_TESTS" --config "Release"

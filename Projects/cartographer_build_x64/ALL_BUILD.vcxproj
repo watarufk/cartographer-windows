@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{E4E1CABE-FD99-3579-8912-D83758DABDC7}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cartographer-windows\Projects\cartographer\..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cartographer-windows/Projects/cartographer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/cartographer-windows/Projects/cartographer -BD:/cartographer-windows/Projects/cartographer_build_x64 --check-stamp-file D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer/CMakeLists.txt;D:\cartographer-windows\Projects\cartographer\CMakeLists.txt;D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\3.8.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\3.8.0\CMakeCCompiler.cmake;D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\3.8.0\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\3.8.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\cartographer-windows\Projects\cartographer\cmake\functions.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\cartographer-windows\Projects\cartographer_build_x64\AllFiles.cmake;D:\cartographer-windows\Projects\cartographer\cmake\modules\FindGMock.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindBoost.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\CeresConfigVersion.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\CeresConfig.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\FindEigen.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3ConfigVersion.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3Config.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3Targets.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\FindGlog.cmake;C:\SDKs\google\glog\lib\cmake\glog\glog-config-version.cmake;C:\SDKs\google\glog\lib\cmake\glog\glog-config.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeFindDependencyMacro.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\FindGflags.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-config-version.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-config.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-targets.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-targets-release.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\SDKs\google\glog\lib\cmake\glog\glog-targets.cmake;C:\SDKs\google\glog\lib\cmake\glog\glog-targets-release.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\FindGflags.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-config-version.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-config.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-targets.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\CeresTargets.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\CeresTargets-release.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3ConfigVersion.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3Config.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3Targets.cmake;D:\cartographer-windows\Projects\cartographer\cmake\modules\FindLuaGoogle.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindProtobuf.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\cartographer-windows\Projects\cartographer\cmake\modules\FindSphinx.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\cartographer-windows\Projects\cartographer\cartographer\common\config.h.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\WriteBasicConfigVersionFile.cmake;D:\cartographer-windows\Projects\cartographer\cartographer-config.cmake.in;D:\cartographer-windows\Projects\cartographer\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\ZERO_CHECK.vcxproj">
+      <Project>56520080-6B1B-3CDC-828A-DE5DE2FADC93</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\docs\build_doc.vcxproj">
+      <Project>A688CE01-9D02-3848-9E89-12CCBACA8B42</Project>
+      <Name>build_doc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.vcxproj">
+      <Project>4FB3BDBB-4986-3243-A820-1BC917779CF5</Project>
+      <Name>cartographer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.common.blocking_queue_test.vcxproj">
+      <Project>A97B7C32-2CF1-327F-B316-1A7DC6D9438B</Project>
+      <Name>cartographer.common.blocking_queue_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.common.configuration_files_test.vcxproj">
+      <Project>F3E43FDD-2EBF-3C0D-A44F-E278900DFA91</Project>
+      <Name>cartographer.common.configuration_files_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.common.fixed_ratio_sampler_test.vcxproj">
+      <Project>80300375-FA90-3F7B-B0D5-0289C24C28E6</Project>
+      <Name>cartographer.common.fixed_ratio_sampler_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.common.lua_parameter_dictionary_test.vcxproj">
+      <Project>2000E26C-6592-304B-BC73-D1E904E1D3EF</Project>
+      <Name>cartographer.common.lua_parameter_dictionary_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.common.math_test.vcxproj">
+      <Project>749A511A-7C1B-3829-AF1E-58BDA8D4B372</Project>
+      <Name>cartographer.common.math_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.common.rate_timer_test.vcxproj">
+      <Project>873392EA-DE14-36B6-8448-6785C7E0C174</Project>
+      <Name>cartographer.common.rate_timer_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.io.proto_stream_test.vcxproj">
+      <Project>6BF0FA78-7325-3EA6-A0DC-08171930381F</Project>
+      <Name>cartographer.io.proto_stream_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping.pose_graph_trimmer_test.vcxproj">
+      <Project>963ED4CC-8CA0-31C9-AD6C-BF86314C521E</Project>
+      <Name>cartographer.mapping.pose_graph_trimmer_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping.probability_values_test.vcxproj">
+      <Project>D8001BC0-BDC9-341E-B1B0-97346C243F1F</Project>
+      <Name>cartographer.mapping.probability_values_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping.submaps_test.vcxproj">
+      <Project>75D2FA0C-C8E7-381F-966C-C5CBCF735229</Project>
+      <Name>cartographer.mapping.submaps_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping.trajectory_connectivity_test.vcxproj">
+      <Project>89F22101-2F09-3B16-8884-1C02A4E74BDC</Project>
+      <Name>cartographer.mapping.trajectory_connectivity_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_2d.map_limits_test.vcxproj">
+      <Project>CF47567E-678F-3196-B5F0-75AF609C1110</Project>
+      <Name>cartographer.mapping_2d.map_limits_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_2d.probability_grid_test.vcxproj">
+      <Project>C95C7AD0-F704-3626-8D7F-CB3745422CA3</Project>
+      <Name>cartographer.mapping_2d.probability_grid_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_2d.range_data_inserter_test.vcxproj">
+      <Project>A9D3DB5A-EAE4-3B50-8F45-32FCAC645BE9</Project>
+      <Name>cartographer.mapping_2d.range_data_inserter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_2d.scan_matching.ceres_scan_matcher_test.vcxproj">
+      <Project>13882676-19D5-3722-9A2F-8486DF3C5140</Project>
+      <Name>cartographer.mapping_2d.scan_matching.ceres_scan_matcher_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_2d.scan_matching.correlative_scan_matcher_test.vcxproj">
+      <Project>8EE70129-1DFB-3F82-99EF-83BC789001C9</Project>
+      <Name>cartographer.mapping_2d.scan_matching.correlative_scan_matcher_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_2d.scan_matching.fast_correlative_scan_matcher_test.vcxproj">
+      <Project>3D00DCF5-0EAB-368E-AC98-4A446B4B0D62</Project>
+      <Name>cartographer.mapping_2d.scan_matching.fast_correlative_scan_matcher_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_2d.scan_matching.real_time_correlative_scan_matcher_test.vcxproj">
+      <Project>01C2F1A1-2D67-395B-808E-D37A3C03962B</Project>
+      <Name>cartographer.mapping_2d.scan_matching.real_time_correlative_scan_matcher_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_2d.sparse_pose_graph_test.vcxproj">
+      <Project>B4E173F5-C427-38E1-BBA1-6A8E7BFE02A1</Project>
+      <Name>cartographer.mapping_2d.sparse_pose_graph_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_2d.submaps_test.vcxproj">
+      <Project>45018F4B-945E-33A9-817F-6E1E6D42B9E9</Project>
+      <Name>cartographer.mapping_2d.submaps_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_2d.xy_index_test.vcxproj">
+      <Project>6C6DE9A6-C801-3A2E-B012-B38FE3AFD6F9</Project>
+      <Name>cartographer.mapping_2d.xy_index_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_3d.hybrid_grid_test.vcxproj">
+      <Project>1C64705C-514C-35D1-A7F8-F8D2AF03F72B</Project>
+      <Name>cartographer.mapping_3d.hybrid_grid_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_3d.local_trajectory_builder_test.vcxproj">
+      <Project>1CCDBC8A-F0C8-385A-A850-E48B5252D5B2</Project>
+      <Name>cartographer.mapping_3d.local_trajectory_builder_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_3d.motion_filter_test.vcxproj">
+      <Project>B1A855FE-EA61-332B-B63C-BB00D1843AA6</Project>
+      <Name>cartographer.mapping_3d.motion_filter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_3d.range_data_inserter_test.vcxproj">
+      <Project>C2B000EF-A932-3551-BB07-5627F49CCBA9</Project>
+      <Name>cartographer.mapping_3d.range_data_inserter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_3d.scan_matching.ceres_scan_matcher_test.vcxproj">
+      <Project>8D1A04FF-661F-39DB-B12B-C9B2C1F5A79D</Project>
+      <Name>cartographer.mapping_3d.scan_matching.ceres_scan_matcher_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_3d.scan_matching.fast_correlative_scan_matcher_test.vcxproj">
+      <Project>7975851E-3D79-367C-91BB-2737CE1143B3</Project>
+      <Name>cartographer.mapping_3d.scan_matching.fast_correlative_scan_matcher_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_3d.scan_matching.interpolated_grid_test.vcxproj">
+      <Project>EC73C173-7EE3-3078-8054-2AE3FA790D15</Project>
+      <Name>cartographer.mapping_3d.scan_matching.interpolated_grid_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_3d.scan_matching.precomputation_grid_test.vcxproj">
+      <Project>4AB3B1C0-1B76-3F7F-8631-666FE0E35702</Project>
+      <Name>cartographer.mapping_3d.scan_matching.precomputation_grid_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_3d.scan_matching.real_time_correlative_scan_matcher_test.vcxproj">
+      <Project>B979E9EB-CD83-3352-83B1-8BF871741B4B</Project>
+      <Name>cartographer.mapping_3d.scan_matching.real_time_correlative_scan_matcher_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_3d.sparse_pose_graph.optimization_problem_test.vcxproj">
+      <Project>54A2AE89-BD69-328E-A955-3714B541B535</Project>
+      <Name>cartographer.mapping_3d.sparse_pose_graph.optimization_problem_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.mapping_3d.submaps_test.vcxproj">
+      <Project>FE75A593-8431-3B99-8B15-1E5BA6A1F603</Project>
+      <Name>cartographer.mapping_3d.submaps_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.sensor.collator_test.vcxproj">
+      <Project>0575A7C7-8069-3A39-BC78-84B06AD5C18D</Project>
+      <Name>cartographer.sensor.collator_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.sensor.compressed_point_cloud_test.vcxproj">
+      <Project>2AF36F72-CA6D-35EF-87CB-A3CFA9027876</Project>
+      <Name>cartographer.sensor.compressed_point_cloud_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.sensor.ordered_multi_queue_test.vcxproj">
+      <Project>18F02333-41D1-360E-8D88-ECE5691F03B1</Project>
+      <Name>cartographer.sensor.ordered_multi_queue_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.sensor.point_cloud_test.vcxproj">
+      <Project>33069434-315C-3FB2-8EE0-1B6EEB7F9FED</Project>
+      <Name>cartographer.sensor.point_cloud_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.sensor.range_data_test.vcxproj">
+      <Project>07C4E02D-A0A0-369F-B38B-A46B63304161</Project>
+      <Name>cartographer.sensor.range_data_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.sensor.voxel_filter_test.vcxproj">
+      <Project>120332AA-C99C-3F49-8D5E-E746AFBA145F</Project>
+      <Name>cartographer.sensor.voxel_filter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.transform.transform_interpolation_buffer_test.vcxproj">
+      <Project>6B9E34E1-3E7A-3233-A5DC-6C9229ED834E</Project>
+      <Name>cartographer.transform.transform_interpolation_buffer_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.transform.transform_test.vcxproj">
+      <Project>1DA08A10-AB62-3184-B086-ABB50F550E74</Project>
+      <Name>cartographer.transform.transform_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer_autogenerate_ground_truth.vcxproj">
+      <Project>DEFEA824-C3E6-3E68-99AF-099BD82808BD</Project>
+      <Name>cartographer_autogenerate_ground_truth</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer_compute_relations_metrics.vcxproj">
+      <Project>7B1EFEDE-00E9-3A43-89B8-7F701076B3B6</Project>
+      <Name>cartographer_compute_relations_metrics</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer_detect_changes.vcxproj">
+      <Project>68F3D58A-DFD2-3615-A288-E7F2FE268FED</Project>
+      <Name>cartographer_detect_changes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

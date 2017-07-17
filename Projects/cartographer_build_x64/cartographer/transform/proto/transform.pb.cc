@@ -7,6 +7,7 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -19,368 +20,353 @@
 namespace cartographer {
 namespace transform {
 namespace proto {
+class Vector2dDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Vector2d> {
+} _Vector2d_default_instance_;
+class Vector2fDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Vector2f> {
+} _Vector2f_default_instance_;
+class Vector3dDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Vector3d> {
+} _Vector3d_default_instance_;
+class Vector3fDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Vector3f> {
+} _Vector3f_default_instance_;
+class QuaterniondDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Quaterniond> {
+} _Quaterniond_default_instance_;
+class QuaternionfDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Quaternionf> {
+} _Quaternionf_default_instance_;
+class Rigid2dDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Rigid2d> {
+} _Rigid2d_default_instance_;
+class Rigid2fDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Rigid2f> {
+} _Rigid2f_default_instance_;
+class Rigid3dDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Rigid3d> {
+} _Rigid3d_default_instance_;
+class Rigid3fDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Rigid3f> {
+} _Rigid3f_default_instance_;
+
+namespace protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto {
+
 
 namespace {
 
-const ::google::protobuf::Descriptor* Vector2d_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  Vector2d_reflection_ = NULL;
-const ::google::protobuf::Descriptor* Vector2f_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  Vector2f_reflection_ = NULL;
-const ::google::protobuf::Descriptor* Vector3d_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  Vector3d_reflection_ = NULL;
-const ::google::protobuf::Descriptor* Vector3f_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  Vector3f_reflection_ = NULL;
-const ::google::protobuf::Descriptor* Quaterniond_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  Quaterniond_reflection_ = NULL;
-const ::google::protobuf::Descriptor* Quaternionf_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  Quaternionf_reflection_ = NULL;
-const ::google::protobuf::Descriptor* Rigid2d_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  Rigid2d_reflection_ = NULL;
-const ::google::protobuf::Descriptor* Rigid2f_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  Rigid2f_reflection_ = NULL;
-const ::google::protobuf::Descriptor* Rigid3d_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  Rigid3d_reflection_ = NULL;
-const ::google::protobuf::Descriptor* Rigid3f_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  Rigid3f_reflection_ = NULL;
+::google::protobuf::Metadata file_level_metadata[10];
 
 }  // namespace
 
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
+    const TableStruct::entries[] = {
+  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
+};
 
-void protobuf_AssignDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto() {
-  protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
-  const ::google::protobuf::FileDescriptor* file =
-    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
-      "cartographer/transform/proto/transform.proto");
-  GOOGLE_CHECK(file != NULL);
-  Vector2d_descriptor_ = file->message_type(0);
-  static const int Vector2d_offsets_[2] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2d, x_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2d, y_),
-  };
-  Vector2d_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      Vector2d_descriptor_,
-      Vector2d::default_instance_,
-      Vector2d_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2d, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2d, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(Vector2d));
-  Vector2f_descriptor_ = file->message_type(1);
-  static const int Vector2f_offsets_[2] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2f, x_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2f, y_),
-  };
-  Vector2f_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      Vector2f_descriptor_,
-      Vector2f::default_instance_,
-      Vector2f_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2f, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2f, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(Vector2f));
-  Vector3d_descriptor_ = file->message_type(2);
-  static const int Vector3d_offsets_[3] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3d, x_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3d, y_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3d, z_),
-  };
-  Vector3d_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      Vector3d_descriptor_,
-      Vector3d::default_instance_,
-      Vector3d_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3d, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3d, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(Vector3d));
-  Vector3f_descriptor_ = file->message_type(3);
-  static const int Vector3f_offsets_[3] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3f, x_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3f, y_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3f, z_),
-  };
-  Vector3f_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      Vector3f_descriptor_,
-      Vector3f::default_instance_,
-      Vector3f_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3f, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3f, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(Vector3f));
-  Quaterniond_descriptor_ = file->message_type(4);
-  static const int Quaterniond_offsets_[4] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaterniond, x_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaterniond, y_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaterniond, z_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaterniond, w_),
-  };
-  Quaterniond_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      Quaterniond_descriptor_,
-      Quaterniond::default_instance_,
-      Quaterniond_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaterniond, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaterniond, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(Quaterniond));
-  Quaternionf_descriptor_ = file->message_type(5);
-  static const int Quaternionf_offsets_[4] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaternionf, x_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaternionf, y_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaternionf, z_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaternionf, w_),
-  };
-  Quaternionf_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      Quaternionf_descriptor_,
-      Quaternionf::default_instance_,
-      Quaternionf_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaternionf, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaternionf, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(Quaternionf));
-  Rigid2d_descriptor_ = file->message_type(6);
-  static const int Rigid2d_offsets_[2] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2d, translation_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2d, rotation_),
-  };
-  Rigid2d_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      Rigid2d_descriptor_,
-      Rigid2d::default_instance_,
-      Rigid2d_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2d, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2d, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(Rigid2d));
-  Rigid2f_descriptor_ = file->message_type(7);
-  static const int Rigid2f_offsets_[2] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2f, translation_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2f, rotation_),
-  };
-  Rigid2f_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      Rigid2f_descriptor_,
-      Rigid2f::default_instance_,
-      Rigid2f_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2f, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2f, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(Rigid2f));
-  Rigid3d_descriptor_ = file->message_type(8);
-  static const int Rigid3d_offsets_[2] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3d, translation_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3d, rotation_),
-  };
-  Rigid3d_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      Rigid3d_descriptor_,
-      Rigid3d::default_instance_,
-      Rigid3d_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3d, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3d, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(Rigid3d));
-  Rigid3f_descriptor_ = file->message_type(9);
-  static const int Rigid3f_offsets_[2] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3f, translation_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3f, rotation_),
-  };
-  Rigid3f_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      Rigid3f_descriptor_,
-      Rigid3f::default_instance_,
-      Rigid3f_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3f, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3f, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(Rigid3f));
-}
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
+    const TableStruct::aux[] = {
+  ::google::protobuf::internal::AuxillaryParseTableField(),
+};
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
+    TableStruct::schema[] = {
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+};
+
+const ::google::protobuf::uint32 TableStruct::offsets[] = {
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2d, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2d, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2d, x_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2d, y_),
+  0,
+  1,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2f, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2f, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2f, x_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector2f, y_),
+  0,
+  1,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3d, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3d, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3d, x_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3d, y_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3d, z_),
+  0,
+  1,
+  2,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3f, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3f, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3f, x_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3f, y_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vector3f, z_),
+  0,
+  1,
+  2,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaterniond, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaterniond, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaterniond, x_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaterniond, y_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaterniond, z_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaterniond, w_),
+  0,
+  1,
+  2,
+  3,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaternionf, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaternionf, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaternionf, x_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaternionf, y_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaternionf, z_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Quaternionf, w_),
+  0,
+  1,
+  2,
+  3,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2d, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2d, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2d, translation_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2d, rotation_),
+  0,
+  1,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2f, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2f, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2f, translation_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid2f, rotation_),
+  0,
+  1,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3d, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3d, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3d, translation_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3d, rotation_),
+  0,
+  1,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3f, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3f, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3f, translation_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rigid3f, rotation_),
+  0,
+  1,
+};
+
+static const ::google::protobuf::internal::MigrationSchema schemas[] = {
+  { 0, 7, sizeof(Vector2d)},
+  { 9, 16, sizeof(Vector2f)},
+  { 18, 26, sizeof(Vector3d)},
+  { 29, 37, sizeof(Vector3f)},
+  { 40, 49, sizeof(Quaterniond)},
+  { 53, 62, sizeof(Quaternionf)},
+  { 66, 73, sizeof(Rigid2d)},
+  { 75, 82, sizeof(Rigid2f)},
+  { 84, 91, sizeof(Rigid3d)},
+  { 93, 100, sizeof(Rigid3f)},
+};
+
+static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&_Vector2d_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_Vector2f_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_Vector3d_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_Vector3f_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_Quaterniond_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_Quaternionf_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_Rigid2d_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_Rigid2f_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_Rigid3d_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_Rigid3f_default_instance_),
+};
 
 namespace {
 
-GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
-  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
-                 &protobuf_AssignDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto);
+void protobuf_AssignDescriptors() {
+  AddDescriptors();
+  ::google::protobuf::MessageFactory* factory = NULL;
+  AssignDescriptors(
+      "cartographer/transform/proto/transform.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      file_level_metadata, NULL, NULL);
 }
 
+void protobuf_AssignDescriptorsOnce() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+}
+
+void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    Vector2d_descriptor_, &Vector2d::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    Vector2f_descriptor_, &Vector2f::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    Vector3d_descriptor_, &Vector3d::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    Vector3f_descriptor_, &Vector3f::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    Quaterniond_descriptor_, &Quaterniond::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    Quaternionf_descriptor_, &Quaternionf::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    Rigid2d_descriptor_, &Rigid2d::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    Rigid2f_descriptor_, &Rigid2f::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    Rigid3d_descriptor_, &Rigid3d::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    Rigid3f_descriptor_, &Rigid3f::default_instance());
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 10);
 }
 
 }  // namespace
 
-void protobuf_ShutdownFile_cartographer_2ftransform_2fproto_2ftransform_2eproto() {
-  delete Vector2d::default_instance_;
-  delete Vector2d_reflection_;
-  delete Vector2f::default_instance_;
-  delete Vector2f_reflection_;
-  delete Vector3d::default_instance_;
-  delete Vector3d_reflection_;
-  delete Vector3f::default_instance_;
-  delete Vector3f_reflection_;
-  delete Quaterniond::default_instance_;
-  delete Quaterniond_reflection_;
-  delete Quaternionf::default_instance_;
-  delete Quaternionf_reflection_;
-  delete Rigid2d::default_instance_;
-  delete Rigid2d_reflection_;
-  delete Rigid2f::default_instance_;
-  delete Rigid2f_reflection_;
-  delete Rigid3d::default_instance_;
-  delete Rigid3d_reflection_;
-  delete Rigid3f::default_instance_;
-  delete Rigid3f_reflection_;
+void TableStruct::Shutdown() {
+  _Vector2d_default_instance_.Shutdown();
+  delete file_level_metadata[0].reflection;
+  _Vector2f_default_instance_.Shutdown();
+  delete file_level_metadata[1].reflection;
+  _Vector3d_default_instance_.Shutdown();
+  delete file_level_metadata[2].reflection;
+  _Vector3f_default_instance_.Shutdown();
+  delete file_level_metadata[3].reflection;
+  _Quaterniond_default_instance_.Shutdown();
+  delete file_level_metadata[4].reflection;
+  _Quaternionf_default_instance_.Shutdown();
+  delete file_level_metadata[5].reflection;
+  _Rigid2d_default_instance_.Shutdown();
+  delete file_level_metadata[6].reflection;
+  _Rigid2f_default_instance_.Shutdown();
+  delete file_level_metadata[7].reflection;
+  _Rigid3d_default_instance_.Shutdown();
+  delete file_level_metadata[8].reflection;
+  _Rigid3f_default_instance_.Shutdown();
+  delete file_level_metadata[9].reflection;
 }
 
-void protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void TableStruct::InitDefaultsImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n,cartographer/transform/proto/transform"
-    ".proto\022\034cartographer.transform.proto\" \n\010"
-    "Vector2d\022\t\n\001x\030\001 \001(\001\022\t\n\001y\030\002 \001(\001\" \n\010Vector"
-    "2f\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\"+\n\010Vector3d\022\t\n\001"
-    "x\030\001 \001(\001\022\t\n\001y\030\002 \001(\001\022\t\n\001z\030\003 \001(\001\"+\n\010Vector3"
-    "f\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"9\n\013Qu"
-    "aterniond\022\t\n\001x\030\001 \001(\001\022\t\n\001y\030\002 \001(\001\022\t\n\001z\030\003 \001"
-    "(\001\022\t\n\001w\030\004 \001(\001\"9\n\013Quaternionf\022\t\n\001x\030\001 \001(\002\022"
-    "\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\022\t\n\001w\030\004 \001(\002\"X\n\007Rigi"
-    "d2d\022;\n\013translation\030\001 \001(\0132&.cartographer."
-    "transform.proto.Vector2d\022\020\n\010rotation\030\002 \001"
-    "(\001\"X\n\007Rigid2f\022;\n\013translation\030\001 \001(\0132&.car"
-    "tographer.transform.proto.Vector2f\022\020\n\010ro"
-    "tation\030\002 \001(\002\"\203\001\n\007Rigid3d\022;\n\013translation\030"
-    "\001 \001(\0132&.cartographer.transform.proto.Vec"
-    "tor3d\022;\n\010rotation\030\002 \001(\0132).cartographer.t"
-    "ransform.proto.Quaterniond\"\203\001\n\007Rigid3f\022;"
-    "\n\013translation\030\001 \001(\0132&.cartographer.trans"
-    "form.proto.Vector3f\022;\n\010rotation\030\002 \001(\0132)."
-    "cartographer.transform.proto.Quaternionf", 800);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "cartographer/transform/proto/transform.proto", &protobuf_RegisterTypes);
-  Vector2d::default_instance_ = new Vector2d();
-  Vector2f::default_instance_ = new Vector2f();
-  Vector3d::default_instance_ = new Vector3d();
-  Vector3f::default_instance_ = new Vector3f();
-  Quaterniond::default_instance_ = new Quaterniond();
-  Quaternionf::default_instance_ = new Quaternionf();
-  Rigid2d::default_instance_ = new Rigid2d();
-  Rigid2f::default_instance_ = new Rigid2f();
-  Rigid3d::default_instance_ = new Rigid3d();
-  Rigid3f::default_instance_ = new Rigid3f();
-  Vector2d::default_instance_->InitAsDefaultInstance();
-  Vector2f::default_instance_->InitAsDefaultInstance();
-  Vector3d::default_instance_->InitAsDefaultInstance();
-  Vector3f::default_instance_->InitAsDefaultInstance();
-  Quaterniond::default_instance_->InitAsDefaultInstance();
-  Quaternionf::default_instance_->InitAsDefaultInstance();
-  Rigid2d::default_instance_->InitAsDefaultInstance();
-  Rigid2f::default_instance_->InitAsDefaultInstance();
-  Rigid3d::default_instance_->InitAsDefaultInstance();
-  Rigid3f::default_instance_->InitAsDefaultInstance();
-  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_cartographer_2ftransform_2fproto_2ftransform_2eproto);
+  ::google::protobuf::internal::InitProtobufDefaults();
+  _Vector2d_default_instance_.DefaultConstruct();
+  _Vector2f_default_instance_.DefaultConstruct();
+  _Vector3d_default_instance_.DefaultConstruct();
+  _Vector3f_default_instance_.DefaultConstruct();
+  _Quaterniond_default_instance_.DefaultConstruct();
+  _Quaternionf_default_instance_.DefaultConstruct();
+  _Rigid2d_default_instance_.DefaultConstruct();
+  _Rigid2f_default_instance_.DefaultConstruct();
+  _Rigid3d_default_instance_.DefaultConstruct();
+  _Rigid3f_default_instance_.DefaultConstruct();
+  _Rigid2d_default_instance_.get_mutable()->translation_ = const_cast< ::cartographer::transform::proto::Vector2d*>(
+      ::cartographer::transform::proto::Vector2d::internal_default_instance());
+  _Rigid2f_default_instance_.get_mutable()->translation_ = const_cast< ::cartographer::transform::proto::Vector2f*>(
+      ::cartographer::transform::proto::Vector2f::internal_default_instance());
+  _Rigid3d_default_instance_.get_mutable()->translation_ = const_cast< ::cartographer::transform::proto::Vector3d*>(
+      ::cartographer::transform::proto::Vector3d::internal_default_instance());
+  _Rigid3d_default_instance_.get_mutable()->rotation_ = const_cast< ::cartographer::transform::proto::Quaterniond*>(
+      ::cartographer::transform::proto::Quaterniond::internal_default_instance());
+  _Rigid3f_default_instance_.get_mutable()->translation_ = const_cast< ::cartographer::transform::proto::Vector3f*>(
+      ::cartographer::transform::proto::Vector3f::internal_default_instance());
+  _Rigid3f_default_instance_.get_mutable()->rotation_ = const_cast< ::cartographer::transform::proto::Quaternionf*>(
+      ::cartographer::transform::proto::Quaternionf::internal_default_instance());
 }
 
+void InitDefaults() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
+}
+void AddDescriptorsImpl() {
+  InitDefaults();
+  static const char descriptor[] = {
+      "\n,cartographer/transform/proto/transform"
+      ".proto\022\034cartographer.transform.proto\" \n\010"
+      "Vector2d\022\t\n\001x\030\001 \001(\001\022\t\n\001y\030\002 \001(\001\" \n\010Vector"
+      "2f\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\"+\n\010Vector3d\022\t\n\001"
+      "x\030\001 \001(\001\022\t\n\001y\030\002 \001(\001\022\t\n\001z\030\003 \001(\001\"+\n\010Vector3"
+      "f\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"9\n\013Qu"
+      "aterniond\022\t\n\001x\030\001 \001(\001\022\t\n\001y\030\002 \001(\001\022\t\n\001z\030\003 \001"
+      "(\001\022\t\n\001w\030\004 \001(\001\"9\n\013Quaternionf\022\t\n\001x\030\001 \001(\002\022"
+      "\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\022\t\n\001w\030\004 \001(\002\"X\n\007Rigi"
+      "d2d\022;\n\013translation\030\001 \001(\0132&.cartographer."
+      "transform.proto.Vector2d\022\020\n\010rotation\030\002 \001"
+      "(\001\"X\n\007Rigid2f\022;\n\013translation\030\001 \001(\0132&.car"
+      "tographer.transform.proto.Vector2f\022\020\n\010ro"
+      "tation\030\002 \001(\002\"\203\001\n\007Rigid3d\022;\n\013translation\030"
+      "\001 \001(\0132&.cartographer.transform.proto.Vec"
+      "tor3d\022;\n\010rotation\030\002 \001(\0132).cartographer.t"
+      "ransform.proto.Quaterniond\"\203\001\n\007Rigid3f\022;"
+      "\n\013translation\030\001 \001(\0132&.cartographer.trans"
+      "form.proto.Vector3f\022;\n\010rotation\030\002 \001(\0132)."
+      "cartographer.transform.proto.Quaternionf"
+  };
+  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+      descriptor, 800);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
+    "cartographer/transform/proto/transform.proto", &protobuf_RegisterTypes);
+  ::google::protobuf::internal::OnShutdown(&TableStruct::Shutdown);
+}
+
+void AddDescriptors() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+}
 // Force AddDescriptors() to be called at static initialization time.
-struct StaticDescriptorInitializer_cartographer_2ftransform_2fproto_2ftransform_2eproto {
-  StaticDescriptorInitializer_cartographer_2ftransform_2fproto_2ftransform_2eproto() {
-    protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
+struct StaticDescriptorInitializer {
+  StaticDescriptorInitializer() {
+    AddDescriptors();
   }
-} static_descriptor_initializer_cartographer_2ftransform_2fproto_2ftransform_2eproto_;
+} static_descriptor_initializer;
+
+}  // namespace protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto
+
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Vector2d::kXFieldNumber;
 const int Vector2d::kYFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Vector2d::Vector2d()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.transform.proto.Vector2d)
 }
-
-void Vector2d::InitAsDefaultInstance() {
-}
-
 Vector2d::Vector2d(const Vector2d& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&x_, &from.x_,
+    static_cast<size_t>(reinterpret_cast<char*>(&y_) -
+    reinterpret_cast<char*>(&x_)) + sizeof(y_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.transform.proto.Vector2d)
 }
 
 void Vector2d::SharedCtor() {
   _cached_size_ = 0;
-  x_ = 0;
-  y_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&y_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(y_));
 }
 
 Vector2d::~Vector2d() {
+  // @@protoc_insertion_point(destructor:cartographer.transform.proto.Vector2d)
   SharedDtor();
 }
 
 void Vector2d::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void Vector2d::SetCachedSize(int size) const {
@@ -389,72 +375,78 @@ void Vector2d::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* Vector2d::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return Vector2d_descriptor_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Vector2d& Vector2d::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-Vector2d* Vector2d::default_instance_ = NULL;
-
-Vector2d* Vector2d::New() const {
-  return new Vector2d;
+Vector2d* Vector2d::New(::google::protobuf::Arena* arena) const {
+  Vector2d* n = new Vector2d;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void Vector2d::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    x_ = 0;
-    y_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.transform.proto.Vector2d)
+  if (_has_bits_[0 / 32] & 3u) {
+    ::memset(&x_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&y_) -
+        reinterpret_cast<char*>(&x_)) + sizeof(y_));
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool Vector2d::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.transform.proto.Vector2d)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional double x = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(9u)) {
+          set_has_x();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &x_)));
-          set_has_x();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(17)) goto parse_y;
         break;
       }
 
       // optional double y = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_y:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(17u)) {
+          set_has_y();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &y_)));
-          set_has_y();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -462,51 +454,74 @@ bool Vector2d::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.transform.proto.Vector2d)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.transform.proto.Vector2d)
+  return false;
 #undef DO_
 }
 
 void Vector2d::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.transform.proto.Vector2d)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional double x = 1;
-  if (has_x()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->x(), output);
   }
 
   // optional double y = 2;
-  if (has_y()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->y(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.transform.proto.Vector2d)
 }
 
-::google::protobuf::uint8* Vector2d::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* Vector2d::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.transform.proto.Vector2d)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional double x = 1;
-  if (has_x()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->x(), target);
   }
 
   // optional double y = 2;
-  if (has_y()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->y(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.transform.proto.Vector2d)
   return target;
 }
 
-int Vector2d::ByteSize() const {
-  int total_size = 0;
+size_t Vector2d::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.transform.proto.Vector2d)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 3u) {
     // optional double x = 1;
     if (has_x()) {
       total_size += 1 + 8;
@@ -518,113 +533,175 @@ int Vector2d::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Vector2d::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.transform.proto.Vector2d)
+  GOOGLE_DCHECK_NE(&from, this);
   const Vector2d* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const Vector2d*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const Vector2d>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.transform.proto.Vector2d)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.transform.proto.Vector2d)
     MergeFrom(*source);
   }
 }
 
 void Vector2d::MergeFrom(const Vector2d& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_x()) {
-      set_x(from.x());
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.transform.proto.Vector2d)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      x_ = from.x_;
     }
-    if (from.has_y()) {
-      set_y(from.y());
+    if (cached_has_bits & 0x00000002u) {
+      y_ = from.y_;
     }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void Vector2d::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.transform.proto.Vector2d)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Vector2d::CopyFrom(const Vector2d& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.transform.proto.Vector2d)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool Vector2d::IsInitialized() const {
-
   return true;
 }
 
 void Vector2d::Swap(Vector2d* other) {
-  if (other != this) {
-    std::swap(x_, other->x_);
-    std::swap(y_, other->y_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Vector2d::InternalSwap(Vector2d* other) {
+  std::swap(x_, other->x_);
+  std::swap(y_, other->y_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Vector2d::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = Vector2d_descriptor_;
-  metadata.reflection = Vector2d_reflection_;
-  return metadata;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Vector2d
+
+// optional double x = 1;
+bool Vector2d::has_x() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void Vector2d::set_has_x() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void Vector2d::clear_has_x() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void Vector2d::clear_x() {
+  x_ = 0;
+  clear_has_x();
+}
+double Vector2d::x() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Vector2d.x)
+  return x_;
+}
+void Vector2d::set_x(double value) {
+  set_has_x();
+  x_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Vector2d.x)
+}
+
+// optional double y = 2;
+bool Vector2d::has_y() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void Vector2d::set_has_y() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void Vector2d::clear_has_y() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void Vector2d::clear_y() {
+  y_ = 0;
+  clear_has_y();
+}
+double Vector2d::y() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Vector2d.y)
+  return y_;
+}
+void Vector2d::set_y(double value) {
+  set_has_y();
+  y_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Vector2d.y)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Vector2f::kXFieldNumber;
 const int Vector2f::kYFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Vector2f::Vector2f()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.transform.proto.Vector2f)
 }
-
-void Vector2f::InitAsDefaultInstance() {
-}
-
 Vector2f::Vector2f(const Vector2f& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&x_, &from.x_,
+    static_cast<size_t>(reinterpret_cast<char*>(&y_) -
+    reinterpret_cast<char*>(&x_)) + sizeof(y_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.transform.proto.Vector2f)
 }
 
 void Vector2f::SharedCtor() {
   _cached_size_ = 0;
-  x_ = 0;
-  y_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&y_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(y_));
 }
 
 Vector2f::~Vector2f() {
+  // @@protoc_insertion_point(destructor:cartographer.transform.proto.Vector2f)
   SharedDtor();
 }
 
 void Vector2f::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void Vector2f::SetCachedSize(int size) const {
@@ -633,72 +710,78 @@ void Vector2f::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* Vector2f::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return Vector2f_descriptor_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Vector2f& Vector2f::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-Vector2f* Vector2f::default_instance_ = NULL;
-
-Vector2f* Vector2f::New() const {
-  return new Vector2f;
+Vector2f* Vector2f::New(::google::protobuf::Arena* arena) const {
+  Vector2f* n = new Vector2f;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void Vector2f::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    x_ = 0;
-    y_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.transform.proto.Vector2f)
+  if (_has_bits_[0 / 32] & 3u) {
+    ::memset(&x_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&y_) -
+        reinterpret_cast<char*>(&x_)) + sizeof(y_));
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool Vector2f::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.transform.proto.Vector2f)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional float x = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(13u)) {
+          set_has_x();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &x_)));
-          set_has_x();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(21)) goto parse_y;
         break;
       }
 
       // optional float y = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_y:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(21u)) {
+          set_has_y();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &y_)));
-          set_has_y();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -706,51 +789,74 @@ bool Vector2f::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.transform.proto.Vector2f)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.transform.proto.Vector2f)
+  return false;
 #undef DO_
 }
 
 void Vector2f::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.transform.proto.Vector2f)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional float x = 1;
-  if (has_x()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(1, this->x(), output);
   }
 
   // optional float y = 2;
-  if (has_y()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(2, this->y(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.transform.proto.Vector2f)
 }
 
-::google::protobuf::uint8* Vector2f::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* Vector2f::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.transform.proto.Vector2f)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional float x = 1;
-  if (has_x()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(1, this->x(), target);
   }
 
   // optional float y = 2;
-  if (has_y()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(2, this->y(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.transform.proto.Vector2f)
   return target;
 }
 
-int Vector2f::ByteSize() const {
-  int total_size = 0;
+size_t Vector2f::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.transform.proto.Vector2f)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 3u) {
     // optional float x = 1;
     if (has_x()) {
       total_size += 1 + 4;
@@ -762,115 +868,176 @@ int Vector2f::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Vector2f::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.transform.proto.Vector2f)
+  GOOGLE_DCHECK_NE(&from, this);
   const Vector2f* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const Vector2f*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const Vector2f>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.transform.proto.Vector2f)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.transform.proto.Vector2f)
     MergeFrom(*source);
   }
 }
 
 void Vector2f::MergeFrom(const Vector2f& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_x()) {
-      set_x(from.x());
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.transform.proto.Vector2f)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      x_ = from.x_;
     }
-    if (from.has_y()) {
-      set_y(from.y());
+    if (cached_has_bits & 0x00000002u) {
+      y_ = from.y_;
     }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void Vector2f::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.transform.proto.Vector2f)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Vector2f::CopyFrom(const Vector2f& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.transform.proto.Vector2f)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool Vector2f::IsInitialized() const {
-
   return true;
 }
 
 void Vector2f::Swap(Vector2f* other) {
-  if (other != this) {
-    std::swap(x_, other->x_);
-    std::swap(y_, other->y_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Vector2f::InternalSwap(Vector2f* other) {
+  std::swap(x_, other->x_);
+  std::swap(y_, other->y_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Vector2f::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = Vector2f_descriptor_;
-  metadata.reflection = Vector2f_reflection_;
-  return metadata;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Vector2f
+
+// optional float x = 1;
+bool Vector2f::has_x() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void Vector2f::set_has_x() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void Vector2f::clear_has_x() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void Vector2f::clear_x() {
+  x_ = 0;
+  clear_has_x();
+}
+float Vector2f::x() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Vector2f.x)
+  return x_;
+}
+void Vector2f::set_x(float value) {
+  set_has_x();
+  x_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Vector2f.x)
+}
+
+// optional float y = 2;
+bool Vector2f::has_y() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void Vector2f::set_has_y() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void Vector2f::clear_has_y() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void Vector2f::clear_y() {
+  y_ = 0;
+  clear_has_y();
+}
+float Vector2f::y() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Vector2f.y)
+  return y_;
+}
+void Vector2f::set_y(float value) {
+  set_has_y();
+  y_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Vector2f.y)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Vector3d::kXFieldNumber;
 const int Vector3d::kYFieldNumber;
 const int Vector3d::kZFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Vector3d::Vector3d()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.transform.proto.Vector3d)
 }
-
-void Vector3d::InitAsDefaultInstance() {
-}
-
 Vector3d::Vector3d(const Vector3d& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&x_, &from.x_,
+    static_cast<size_t>(reinterpret_cast<char*>(&z_) -
+    reinterpret_cast<char*>(&x_)) + sizeof(z_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.transform.proto.Vector3d)
 }
 
 void Vector3d::SharedCtor() {
   _cached_size_ = 0;
-  x_ = 0;
-  y_ = 0;
-  z_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&z_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(z_));
 }
 
 Vector3d::~Vector3d() {
+  // @@protoc_insertion_point(destructor:cartographer.transform.proto.Vector3d)
   SharedDtor();
 }
 
 void Vector3d::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void Vector3d::SetCachedSize(int size) const {
@@ -879,89 +1046,92 @@ void Vector3d::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* Vector3d::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return Vector3d_descriptor_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Vector3d& Vector3d::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-Vector3d* Vector3d::default_instance_ = NULL;
-
-Vector3d* Vector3d::New() const {
-  return new Vector3d;
+Vector3d* Vector3d::New(::google::protobuf::Arena* arena) const {
+  Vector3d* n = new Vector3d;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void Vector3d::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    x_ = 0;
-    y_ = 0;
-    z_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.transform.proto.Vector3d)
+  if (_has_bits_[0 / 32] & 7u) {
+    ::memset(&x_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&z_) -
+        reinterpret_cast<char*>(&x_)) + sizeof(z_));
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool Vector3d::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.transform.proto.Vector3d)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional double x = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(9u)) {
+          set_has_x();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &x_)));
-          set_has_x();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(17)) goto parse_y;
         break;
       }
 
       // optional double y = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_y:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(17u)) {
+          set_has_y();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &y_)));
-          set_has_y();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(25)) goto parse_z;
         break;
       }
 
       // optional double z = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_z:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(25u)) {
+          set_has_z();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &z_)));
-          set_has_z();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -969,61 +1139,84 @@ bool Vector3d::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.transform.proto.Vector3d)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.transform.proto.Vector3d)
+  return false;
 #undef DO_
 }
 
 void Vector3d::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.transform.proto.Vector3d)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional double x = 1;
-  if (has_x()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->x(), output);
   }
 
   // optional double y = 2;
-  if (has_y()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->y(), output);
   }
 
   // optional double z = 3;
-  if (has_z()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->z(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.transform.proto.Vector3d)
 }
 
-::google::protobuf::uint8* Vector3d::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* Vector3d::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.transform.proto.Vector3d)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional double x = 1;
-  if (has_x()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->x(), target);
   }
 
   // optional double y = 2;
-  if (has_y()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->y(), target);
   }
 
   // optional double z = 3;
-  if (has_z()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->z(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.transform.proto.Vector3d)
   return target;
 }
 
-int Vector3d::ByteSize() const {
-  int total_size = 0;
+size_t Vector3d::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.transform.proto.Vector3d)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 7u) {
     // optional double x = 1;
     if (has_x()) {
       total_size += 1 + 8;
@@ -1040,119 +1233,204 @@ int Vector3d::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Vector3d::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.transform.proto.Vector3d)
+  GOOGLE_DCHECK_NE(&from, this);
   const Vector3d* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const Vector3d*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const Vector3d>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.transform.proto.Vector3d)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.transform.proto.Vector3d)
     MergeFrom(*source);
   }
 }
 
 void Vector3d::MergeFrom(const Vector3d& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_x()) {
-      set_x(from.x());
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.transform.proto.Vector3d)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 7u) {
+    if (cached_has_bits & 0x00000001u) {
+      x_ = from.x_;
     }
-    if (from.has_y()) {
-      set_y(from.y());
+    if (cached_has_bits & 0x00000002u) {
+      y_ = from.y_;
     }
-    if (from.has_z()) {
-      set_z(from.z());
+    if (cached_has_bits & 0x00000004u) {
+      z_ = from.z_;
     }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void Vector3d::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.transform.proto.Vector3d)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Vector3d::CopyFrom(const Vector3d& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.transform.proto.Vector3d)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool Vector3d::IsInitialized() const {
-
   return true;
 }
 
 void Vector3d::Swap(Vector3d* other) {
-  if (other != this) {
-    std::swap(x_, other->x_);
-    std::swap(y_, other->y_);
-    std::swap(z_, other->z_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Vector3d::InternalSwap(Vector3d* other) {
+  std::swap(x_, other->x_);
+  std::swap(y_, other->y_);
+  std::swap(z_, other->z_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Vector3d::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = Vector3d_descriptor_;
-  metadata.reflection = Vector3d_reflection_;
-  return metadata;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Vector3d
+
+// optional double x = 1;
+bool Vector3d::has_x() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void Vector3d::set_has_x() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void Vector3d::clear_has_x() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void Vector3d::clear_x() {
+  x_ = 0;
+  clear_has_x();
+}
+double Vector3d::x() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Vector3d.x)
+  return x_;
+}
+void Vector3d::set_x(double value) {
+  set_has_x();
+  x_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Vector3d.x)
+}
+
+// optional double y = 2;
+bool Vector3d::has_y() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void Vector3d::set_has_y() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void Vector3d::clear_has_y() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void Vector3d::clear_y() {
+  y_ = 0;
+  clear_has_y();
+}
+double Vector3d::y() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Vector3d.y)
+  return y_;
+}
+void Vector3d::set_y(double value) {
+  set_has_y();
+  y_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Vector3d.y)
+}
+
+// optional double z = 3;
+bool Vector3d::has_z() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void Vector3d::set_has_z() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void Vector3d::clear_has_z() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void Vector3d::clear_z() {
+  z_ = 0;
+  clear_has_z();
+}
+double Vector3d::z() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Vector3d.z)
+  return z_;
+}
+void Vector3d::set_z(double value) {
+  set_has_z();
+  z_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Vector3d.z)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Vector3f::kXFieldNumber;
 const int Vector3f::kYFieldNumber;
 const int Vector3f::kZFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Vector3f::Vector3f()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.transform.proto.Vector3f)
 }
-
-void Vector3f::InitAsDefaultInstance() {
-}
-
 Vector3f::Vector3f(const Vector3f& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&x_, &from.x_,
+    static_cast<size_t>(reinterpret_cast<char*>(&z_) -
+    reinterpret_cast<char*>(&x_)) + sizeof(z_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.transform.proto.Vector3f)
 }
 
 void Vector3f::SharedCtor() {
   _cached_size_ = 0;
-  x_ = 0;
-  y_ = 0;
-  z_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&z_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(z_));
 }
 
 Vector3f::~Vector3f() {
+  // @@protoc_insertion_point(destructor:cartographer.transform.proto.Vector3f)
   SharedDtor();
 }
 
 void Vector3f::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void Vector3f::SetCachedSize(int size) const {
@@ -1161,89 +1439,92 @@ void Vector3f::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* Vector3f::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return Vector3f_descriptor_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Vector3f& Vector3f::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-Vector3f* Vector3f::default_instance_ = NULL;
-
-Vector3f* Vector3f::New() const {
-  return new Vector3f;
+Vector3f* Vector3f::New(::google::protobuf::Arena* arena) const {
+  Vector3f* n = new Vector3f;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void Vector3f::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    x_ = 0;
-    y_ = 0;
-    z_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.transform.proto.Vector3f)
+  if (_has_bits_[0 / 32] & 7u) {
+    ::memset(&x_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&z_) -
+        reinterpret_cast<char*>(&x_)) + sizeof(z_));
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool Vector3f::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.transform.proto.Vector3f)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional float x = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(13u)) {
+          set_has_x();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &x_)));
-          set_has_x();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(21)) goto parse_y;
         break;
       }
 
       // optional float y = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_y:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(21u)) {
+          set_has_y();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &y_)));
-          set_has_y();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(29)) goto parse_z;
         break;
       }
 
       // optional float z = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_z:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(29u)) {
+          set_has_z();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &z_)));
-          set_has_z();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -1251,61 +1532,84 @@ bool Vector3f::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.transform.proto.Vector3f)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.transform.proto.Vector3f)
+  return false;
 #undef DO_
 }
 
 void Vector3f::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.transform.proto.Vector3f)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional float x = 1;
-  if (has_x()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(1, this->x(), output);
   }
 
   // optional float y = 2;
-  if (has_y()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(2, this->y(), output);
   }
 
   // optional float z = 3;
-  if (has_z()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->z(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.transform.proto.Vector3f)
 }
 
-::google::protobuf::uint8* Vector3f::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* Vector3f::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.transform.proto.Vector3f)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional float x = 1;
-  if (has_x()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(1, this->x(), target);
   }
 
   // optional float y = 2;
-  if (has_y()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(2, this->y(), target);
   }
 
   // optional float z = 3;
-  if (has_z()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->z(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.transform.proto.Vector3f)
   return target;
 }
 
-int Vector3f::ByteSize() const {
-  int total_size = 0;
+size_t Vector3f::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.transform.proto.Vector3f)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 7u) {
     // optional float x = 1;
     if (has_x()) {
       total_size += 1 + 4;
@@ -1322,121 +1626,205 @@ int Vector3f::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Vector3f::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.transform.proto.Vector3f)
+  GOOGLE_DCHECK_NE(&from, this);
   const Vector3f* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const Vector3f*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const Vector3f>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.transform.proto.Vector3f)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.transform.proto.Vector3f)
     MergeFrom(*source);
   }
 }
 
 void Vector3f::MergeFrom(const Vector3f& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_x()) {
-      set_x(from.x());
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.transform.proto.Vector3f)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 7u) {
+    if (cached_has_bits & 0x00000001u) {
+      x_ = from.x_;
     }
-    if (from.has_y()) {
-      set_y(from.y());
+    if (cached_has_bits & 0x00000002u) {
+      y_ = from.y_;
     }
-    if (from.has_z()) {
-      set_z(from.z());
+    if (cached_has_bits & 0x00000004u) {
+      z_ = from.z_;
     }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void Vector3f::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.transform.proto.Vector3f)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Vector3f::CopyFrom(const Vector3f& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.transform.proto.Vector3f)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool Vector3f::IsInitialized() const {
-
   return true;
 }
 
 void Vector3f::Swap(Vector3f* other) {
-  if (other != this) {
-    std::swap(x_, other->x_);
-    std::swap(y_, other->y_);
-    std::swap(z_, other->z_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Vector3f::InternalSwap(Vector3f* other) {
+  std::swap(x_, other->x_);
+  std::swap(y_, other->y_);
+  std::swap(z_, other->z_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Vector3f::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = Vector3f_descriptor_;
-  metadata.reflection = Vector3f_reflection_;
-  return metadata;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Vector3f
+
+// optional float x = 1;
+bool Vector3f::has_x() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void Vector3f::set_has_x() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void Vector3f::clear_has_x() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void Vector3f::clear_x() {
+  x_ = 0;
+  clear_has_x();
+}
+float Vector3f::x() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Vector3f.x)
+  return x_;
+}
+void Vector3f::set_x(float value) {
+  set_has_x();
+  x_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Vector3f.x)
+}
+
+// optional float y = 2;
+bool Vector3f::has_y() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void Vector3f::set_has_y() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void Vector3f::clear_has_y() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void Vector3f::clear_y() {
+  y_ = 0;
+  clear_has_y();
+}
+float Vector3f::y() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Vector3f.y)
+  return y_;
+}
+void Vector3f::set_y(float value) {
+  set_has_y();
+  y_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Vector3f.y)
+}
+
+// optional float z = 3;
+bool Vector3f::has_z() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void Vector3f::set_has_z() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void Vector3f::clear_has_z() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void Vector3f::clear_z() {
+  z_ = 0;
+  clear_has_z();
+}
+float Vector3f::z() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Vector3f.z)
+  return z_;
+}
+void Vector3f::set_z(float value) {
+  set_has_z();
+  z_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Vector3f.z)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Quaterniond::kXFieldNumber;
 const int Quaterniond::kYFieldNumber;
 const int Quaterniond::kZFieldNumber;
 const int Quaterniond::kWFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Quaterniond::Quaterniond()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.transform.proto.Quaterniond)
 }
-
-void Quaterniond::InitAsDefaultInstance() {
-}
-
 Quaterniond::Quaterniond(const Quaterniond& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&x_, &from.x_,
+    static_cast<size_t>(reinterpret_cast<char*>(&w_) -
+    reinterpret_cast<char*>(&x_)) + sizeof(w_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.transform.proto.Quaterniond)
 }
 
 void Quaterniond::SharedCtor() {
   _cached_size_ = 0;
-  x_ = 0;
-  y_ = 0;
-  z_ = 0;
-  w_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&w_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(w_));
 }
 
 Quaterniond::~Quaterniond() {
+  // @@protoc_insertion_point(destructor:cartographer.transform.proto.Quaterniond)
   SharedDtor();
 }
 
 void Quaterniond::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void Quaterniond::SetCachedSize(int size) const {
@@ -1445,106 +1833,106 @@ void Quaterniond::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* Quaterniond::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return Quaterniond_descriptor_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Quaterniond& Quaterniond::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-Quaterniond* Quaterniond::default_instance_ = NULL;
-
-Quaterniond* Quaterniond::New() const {
-  return new Quaterniond;
+Quaterniond* Quaterniond::New(::google::protobuf::Arena* arena) const {
+  Quaterniond* n = new Quaterniond;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void Quaterniond::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    x_ = 0;
-    y_ = 0;
-    z_ = 0;
-    w_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.transform.proto.Quaterniond)
+  if (_has_bits_[0 / 32] & 15u) {
+    ::memset(&x_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&w_) -
+        reinterpret_cast<char*>(&x_)) + sizeof(w_));
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool Quaterniond::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.transform.proto.Quaterniond)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional double x = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(9u)) {
+          set_has_x();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &x_)));
-          set_has_x();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(17)) goto parse_y;
         break;
       }
 
       // optional double y = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_y:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(17u)) {
+          set_has_y();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &y_)));
-          set_has_y();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(25)) goto parse_z;
         break;
       }
 
       // optional double z = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_z:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(25u)) {
+          set_has_z();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &z_)));
-          set_has_z();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(33)) goto parse_w;
         break;
       }
 
       // optional double w = 4;
       case 4: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_w:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(33u)) {
+          set_has_w();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &w_)));
-          set_has_w();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -1552,71 +1940,94 @@ bool Quaterniond::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.transform.proto.Quaterniond)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.transform.proto.Quaterniond)
+  return false;
 #undef DO_
 }
 
 void Quaterniond::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.transform.proto.Quaterniond)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional double x = 1;
-  if (has_x()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->x(), output);
   }
 
   // optional double y = 2;
-  if (has_y()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->y(), output);
   }
 
   // optional double z = 3;
-  if (has_z()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->z(), output);
   }
 
   // optional double w = 4;
-  if (has_w()) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(4, this->w(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.transform.proto.Quaterniond)
 }
 
-::google::protobuf::uint8* Quaterniond::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* Quaterniond::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.transform.proto.Quaterniond)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional double x = 1;
-  if (has_x()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->x(), target);
   }
 
   // optional double y = 2;
-  if (has_y()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->y(), target);
   }
 
   // optional double z = 3;
-  if (has_z()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->z(), target);
   }
 
   // optional double w = 4;
-  if (has_w()) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(4, this->w(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.transform.proto.Quaterniond)
   return target;
 }
 
-int Quaterniond::ByteSize() const {
-  int total_size = 0;
+size_t Quaterniond::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.transform.proto.Quaterniond)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 15u) {
     // optional double x = 1;
     if (has_x()) {
       total_size += 1 + 8;
@@ -1638,125 +2049,233 @@ int Quaterniond::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Quaterniond::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.transform.proto.Quaterniond)
+  GOOGLE_DCHECK_NE(&from, this);
   const Quaterniond* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const Quaterniond*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const Quaterniond>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.transform.proto.Quaterniond)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.transform.proto.Quaterniond)
     MergeFrom(*source);
   }
 }
 
 void Quaterniond::MergeFrom(const Quaterniond& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_x()) {
-      set_x(from.x());
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.transform.proto.Quaterniond)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 15u) {
+    if (cached_has_bits & 0x00000001u) {
+      x_ = from.x_;
     }
-    if (from.has_y()) {
-      set_y(from.y());
+    if (cached_has_bits & 0x00000002u) {
+      y_ = from.y_;
     }
-    if (from.has_z()) {
-      set_z(from.z());
+    if (cached_has_bits & 0x00000004u) {
+      z_ = from.z_;
     }
-    if (from.has_w()) {
-      set_w(from.w());
+    if (cached_has_bits & 0x00000008u) {
+      w_ = from.w_;
     }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void Quaterniond::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.transform.proto.Quaterniond)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Quaterniond::CopyFrom(const Quaterniond& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.transform.proto.Quaterniond)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool Quaterniond::IsInitialized() const {
-
   return true;
 }
 
 void Quaterniond::Swap(Quaterniond* other) {
-  if (other != this) {
-    std::swap(x_, other->x_);
-    std::swap(y_, other->y_);
-    std::swap(z_, other->z_);
-    std::swap(w_, other->w_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Quaterniond::InternalSwap(Quaterniond* other) {
+  std::swap(x_, other->x_);
+  std::swap(y_, other->y_);
+  std::swap(z_, other->z_);
+  std::swap(w_, other->w_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Quaterniond::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = Quaterniond_descriptor_;
-  metadata.reflection = Quaterniond_reflection_;
-  return metadata;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Quaterniond
+
+// optional double x = 1;
+bool Quaterniond::has_x() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void Quaterniond::set_has_x() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void Quaterniond::clear_has_x() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void Quaterniond::clear_x() {
+  x_ = 0;
+  clear_has_x();
+}
+double Quaterniond::x() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Quaterniond.x)
+  return x_;
+}
+void Quaterniond::set_x(double value) {
+  set_has_x();
+  x_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Quaterniond.x)
+}
+
+// optional double y = 2;
+bool Quaterniond::has_y() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void Quaterniond::set_has_y() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void Quaterniond::clear_has_y() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void Quaterniond::clear_y() {
+  y_ = 0;
+  clear_has_y();
+}
+double Quaterniond::y() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Quaterniond.y)
+  return y_;
+}
+void Quaterniond::set_y(double value) {
+  set_has_y();
+  y_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Quaterniond.y)
+}
+
+// optional double z = 3;
+bool Quaterniond::has_z() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void Quaterniond::set_has_z() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void Quaterniond::clear_has_z() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void Quaterniond::clear_z() {
+  z_ = 0;
+  clear_has_z();
+}
+double Quaterniond::z() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Quaterniond.z)
+  return z_;
+}
+void Quaterniond::set_z(double value) {
+  set_has_z();
+  z_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Quaterniond.z)
+}
+
+// optional double w = 4;
+bool Quaterniond::has_w() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void Quaterniond::set_has_w() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void Quaterniond::clear_has_w() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void Quaterniond::clear_w() {
+  w_ = 0;
+  clear_has_w();
+}
+double Quaterniond::w() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Quaterniond.w)
+  return w_;
+}
+void Quaterniond::set_w(double value) {
+  set_has_w();
+  w_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Quaterniond.w)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Quaternionf::kXFieldNumber;
 const int Quaternionf::kYFieldNumber;
 const int Quaternionf::kZFieldNumber;
 const int Quaternionf::kWFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Quaternionf::Quaternionf()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.transform.proto.Quaternionf)
 }
-
-void Quaternionf::InitAsDefaultInstance() {
-}
-
 Quaternionf::Quaternionf(const Quaternionf& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&x_, &from.x_,
+    static_cast<size_t>(reinterpret_cast<char*>(&w_) -
+    reinterpret_cast<char*>(&x_)) + sizeof(w_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.transform.proto.Quaternionf)
 }
 
 void Quaternionf::SharedCtor() {
   _cached_size_ = 0;
-  x_ = 0;
-  y_ = 0;
-  z_ = 0;
-  w_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&w_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(w_));
 }
 
 Quaternionf::~Quaternionf() {
+  // @@protoc_insertion_point(destructor:cartographer.transform.proto.Quaternionf)
   SharedDtor();
 }
 
 void Quaternionf::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void Quaternionf::SetCachedSize(int size) const {
@@ -1765,106 +2284,106 @@ void Quaternionf::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* Quaternionf::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return Quaternionf_descriptor_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Quaternionf& Quaternionf::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-Quaternionf* Quaternionf::default_instance_ = NULL;
-
-Quaternionf* Quaternionf::New() const {
-  return new Quaternionf;
+Quaternionf* Quaternionf::New(::google::protobuf::Arena* arena) const {
+  Quaternionf* n = new Quaternionf;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void Quaternionf::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    x_ = 0;
-    y_ = 0;
-    z_ = 0;
-    w_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.transform.proto.Quaternionf)
+  if (_has_bits_[0 / 32] & 15u) {
+    ::memset(&x_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&w_) -
+        reinterpret_cast<char*>(&x_)) + sizeof(w_));
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool Quaternionf::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.transform.proto.Quaternionf)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional float x = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(13u)) {
+          set_has_x();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &x_)));
-          set_has_x();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(21)) goto parse_y;
         break;
       }
 
       // optional float y = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_y:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(21u)) {
+          set_has_y();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &y_)));
-          set_has_y();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(29)) goto parse_z;
         break;
       }
 
       // optional float z = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_z:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(29u)) {
+          set_has_z();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &z_)));
-          set_has_z();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(37)) goto parse_w;
         break;
       }
 
       // optional float w = 4;
       case 4: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_w:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(37u)) {
+          set_has_w();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &w_)));
-          set_has_w();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -1872,71 +2391,94 @@ bool Quaternionf::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.transform.proto.Quaternionf)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.transform.proto.Quaternionf)
+  return false;
 #undef DO_
 }
 
 void Quaternionf::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.transform.proto.Quaternionf)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional float x = 1;
-  if (has_x()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(1, this->x(), output);
   }
 
   // optional float y = 2;
-  if (has_y()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(2, this->y(), output);
   }
 
   // optional float z = 3;
-  if (has_z()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->z(), output);
   }
 
   // optional float w = 4;
-  if (has_w()) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(4, this->w(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.transform.proto.Quaternionf)
 }
 
-::google::protobuf::uint8* Quaternionf::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* Quaternionf::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.transform.proto.Quaternionf)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional float x = 1;
-  if (has_x()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(1, this->x(), target);
   }
 
   // optional float y = 2;
-  if (has_y()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(2, this->y(), target);
   }
 
   // optional float z = 3;
-  if (has_z()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->z(), target);
   }
 
   // optional float w = 4;
-  if (has_w()) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(4, this->w(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.transform.proto.Quaternionf)
   return target;
 }
 
-int Quaternionf::ByteSize() const {
-  int total_size = 0;
+size_t Quaternionf::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.transform.proto.Quaternionf)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 15u) {
     // optional float x = 1;
     if (has_x()) {
       total_size += 1 + 4;
@@ -1958,121 +2500,235 @@ int Quaternionf::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Quaternionf::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.transform.proto.Quaternionf)
+  GOOGLE_DCHECK_NE(&from, this);
   const Quaternionf* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const Quaternionf*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const Quaternionf>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.transform.proto.Quaternionf)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.transform.proto.Quaternionf)
     MergeFrom(*source);
   }
 }
 
 void Quaternionf::MergeFrom(const Quaternionf& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_x()) {
-      set_x(from.x());
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.transform.proto.Quaternionf)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 15u) {
+    if (cached_has_bits & 0x00000001u) {
+      x_ = from.x_;
     }
-    if (from.has_y()) {
-      set_y(from.y());
+    if (cached_has_bits & 0x00000002u) {
+      y_ = from.y_;
     }
-    if (from.has_z()) {
-      set_z(from.z());
+    if (cached_has_bits & 0x00000004u) {
+      z_ = from.z_;
     }
-    if (from.has_w()) {
-      set_w(from.w());
+    if (cached_has_bits & 0x00000008u) {
+      w_ = from.w_;
     }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void Quaternionf::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.transform.proto.Quaternionf)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Quaternionf::CopyFrom(const Quaternionf& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.transform.proto.Quaternionf)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool Quaternionf::IsInitialized() const {
-
   return true;
 }
 
 void Quaternionf::Swap(Quaternionf* other) {
-  if (other != this) {
-    std::swap(x_, other->x_);
-    std::swap(y_, other->y_);
-    std::swap(z_, other->z_);
-    std::swap(w_, other->w_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Quaternionf::InternalSwap(Quaternionf* other) {
+  std::swap(x_, other->x_);
+  std::swap(y_, other->y_);
+  std::swap(z_, other->z_);
+  std::swap(w_, other->w_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Quaternionf::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = Quaternionf_descriptor_;
-  metadata.reflection = Quaternionf_reflection_;
-  return metadata;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Quaternionf
+
+// optional float x = 1;
+bool Quaternionf::has_x() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void Quaternionf::set_has_x() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void Quaternionf::clear_has_x() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void Quaternionf::clear_x() {
+  x_ = 0;
+  clear_has_x();
+}
+float Quaternionf::x() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Quaternionf.x)
+  return x_;
+}
+void Quaternionf::set_x(float value) {
+  set_has_x();
+  x_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Quaternionf.x)
+}
+
+// optional float y = 2;
+bool Quaternionf::has_y() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void Quaternionf::set_has_y() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void Quaternionf::clear_has_y() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void Quaternionf::clear_y() {
+  y_ = 0;
+  clear_has_y();
+}
+float Quaternionf::y() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Quaternionf.y)
+  return y_;
+}
+void Quaternionf::set_y(float value) {
+  set_has_y();
+  y_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Quaternionf.y)
+}
+
+// optional float z = 3;
+bool Quaternionf::has_z() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void Quaternionf::set_has_z() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void Quaternionf::clear_has_z() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void Quaternionf::clear_z() {
+  z_ = 0;
+  clear_has_z();
+}
+float Quaternionf::z() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Quaternionf.z)
+  return z_;
+}
+void Quaternionf::set_z(float value) {
+  set_has_z();
+  z_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Quaternionf.z)
+}
+
+// optional float w = 4;
+bool Quaternionf::has_w() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void Quaternionf::set_has_w() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void Quaternionf::clear_has_w() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void Quaternionf::clear_w() {
+  w_ = 0;
+  clear_has_w();
+}
+float Quaternionf::w() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Quaternionf.w)
+  return w_;
+}
+void Quaternionf::set_w(float value) {
+  set_has_w();
+  w_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Quaternionf.w)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Rigid2d::kTranslationFieldNumber;
 const int Rigid2d::kRotationFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Rigid2d::Rigid2d()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.transform.proto.Rigid2d)
 }
-
-void Rigid2d::InitAsDefaultInstance() {
-  translation_ = const_cast< ::cartographer::transform::proto::Vector2d*>(&::cartographer::transform::proto::Vector2d::default_instance());
-}
-
 Rigid2d::Rigid2d(const Rigid2d& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_translation()) {
+    translation_ = new ::cartographer::transform::proto::Vector2d(*from.translation_);
+  } else {
+    translation_ = NULL;
+  }
+  rotation_ = from.rotation_;
+  // @@protoc_insertion_point(copy_constructor:cartographer.transform.proto.Rigid2d)
 }
 
 void Rigid2d::SharedCtor() {
   _cached_size_ = 0;
-  translation_ = NULL;
-  rotation_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&translation_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&rotation_) -
+      reinterpret_cast<char*>(&translation_)) + sizeof(rotation_));
 }
 
 Rigid2d::~Rigid2d() {
+  // @@protoc_insertion_point(destructor:cartographer.transform.proto.Rigid2d)
   SharedDtor();
 }
 
 void Rigid2d::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != internal_default_instance()) {
     delete translation_;
   }
 }
@@ -2083,72 +2739,76 @@ void Rigid2d::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* Rigid2d::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return Rigid2d_descriptor_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Rigid2d& Rigid2d::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-Rigid2d* Rigid2d::default_instance_ = NULL;
-
-Rigid2d* Rigid2d::New() const {
-  return new Rigid2d;
+Rigid2d* Rigid2d::New(::google::protobuf::Arena* arena) const {
+  Rigid2d* n = new Rigid2d;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void Rigid2d::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (has_translation()) {
-      if (translation_ != NULL) translation_->::cartographer::transform::proto::Vector2d::Clear();
-    }
-    rotation_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.transform.proto.Rigid2d)
+  if (has_translation()) {
+    GOOGLE_DCHECK(translation_ != NULL);
+    translation_->::cartographer::transform::proto::Vector2d::Clear();
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  rotation_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool Rigid2d::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.transform.proto.Rigid2d)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .cartographer.transform.proto.Vector2d translation = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_translation()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(17)) goto parse_rotation;
         break;
       }
 
       // optional double rotation = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_rotation:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(17u)) {
+          set_has_rotation();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &rotation_)));
-          set_has_rotation();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -2156,59 +2816,82 @@ bool Rigid2d::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.transform.proto.Rigid2d)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.transform.proto.Rigid2d)
+  return false;
 #undef DO_
 }
 
 void Rigid2d::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.transform.proto.Rigid2d)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional .cartographer.transform.proto.Vector2d translation = 1;
-  if (has_translation()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->translation(), output);
+      1, *this->translation_, output);
   }
 
   // optional double rotation = 2;
-  if (has_rotation()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->rotation(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.transform.proto.Rigid2d)
 }
 
-::google::protobuf::uint8* Rigid2d::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* Rigid2d::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.transform.proto.Rigid2d)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional .cartographer.transform.proto.Vector2d translation = 1;
-  if (has_translation()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        1, this->translation(), target);
+      InternalWriteMessageNoVirtualToArray(
+        1, *this->translation_, deterministic, target);
   }
 
   // optional double rotation = 2;
-  if (has_rotation()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->rotation(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.transform.proto.Rigid2d)
   return target;
 }
 
-int Rigid2d::ByteSize() const {
-  int total_size = 0;
+size_t Rigid2d::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.transform.proto.Rigid2d)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 3u) {
     // optional .cartographer.transform.proto.Vector2d translation = 1;
     if (has_translation()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->translation());
+          *this->translation_);
     }
 
     // optional double rotation = 2;
@@ -2217,113 +2900,200 @@ int Rigid2d::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Rigid2d::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.transform.proto.Rigid2d)
+  GOOGLE_DCHECK_NE(&from, this);
   const Rigid2d* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const Rigid2d*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const Rigid2d>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.transform.proto.Rigid2d)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.transform.proto.Rigid2d)
     MergeFrom(*source);
   }
 }
 
 void Rigid2d::MergeFrom(const Rigid2d& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_translation()) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.transform.proto.Rigid2d)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
       mutable_translation()->::cartographer::transform::proto::Vector2d::MergeFrom(from.translation());
     }
-    if (from.has_rotation()) {
-      set_rotation(from.rotation());
+    if (cached_has_bits & 0x00000002u) {
+      rotation_ = from.rotation_;
     }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void Rigid2d::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.transform.proto.Rigid2d)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Rigid2d::CopyFrom(const Rigid2d& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.transform.proto.Rigid2d)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool Rigid2d::IsInitialized() const {
-
   return true;
 }
 
 void Rigid2d::Swap(Rigid2d* other) {
-  if (other != this) {
-    std::swap(translation_, other->translation_);
-    std::swap(rotation_, other->rotation_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Rigid2d::InternalSwap(Rigid2d* other) {
+  std::swap(translation_, other->translation_);
+  std::swap(rotation_, other->rotation_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Rigid2d::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = Rigid2d_descriptor_;
-  metadata.reflection = Rigid2d_reflection_;
-  return metadata;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Rigid2d
+
+// optional .cartographer.transform.proto.Vector2d translation = 1;
+bool Rigid2d::has_translation() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void Rigid2d::set_has_translation() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void Rigid2d::clear_has_translation() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void Rigid2d::clear_translation() {
+  if (translation_ != NULL) translation_->::cartographer::transform::proto::Vector2d::Clear();
+  clear_has_translation();
+}
+const ::cartographer::transform::proto::Vector2d& Rigid2d::translation() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Rigid2d.translation)
+  return translation_ != NULL ? *translation_
+                         : *::cartographer::transform::proto::Vector2d::internal_default_instance();
+}
+::cartographer::transform::proto::Vector2d* Rigid2d::mutable_translation() {
+  set_has_translation();
+  if (translation_ == NULL) {
+    translation_ = new ::cartographer::transform::proto::Vector2d;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.transform.proto.Rigid2d.translation)
+  return translation_;
+}
+::cartographer::transform::proto::Vector2d* Rigid2d::release_translation() {
+  // @@protoc_insertion_point(field_release:cartographer.transform.proto.Rigid2d.translation)
+  clear_has_translation();
+  ::cartographer::transform::proto::Vector2d* temp = translation_;
+  translation_ = NULL;
+  return temp;
+}
+void Rigid2d::set_allocated_translation(::cartographer::transform::proto::Vector2d* translation) {
+  delete translation_;
+  translation_ = translation;
+  if (translation) {
+    set_has_translation();
+  } else {
+    clear_has_translation();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.transform.proto.Rigid2d.translation)
+}
+
+// optional double rotation = 2;
+bool Rigid2d::has_rotation() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void Rigid2d::set_has_rotation() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void Rigid2d::clear_has_rotation() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void Rigid2d::clear_rotation() {
+  rotation_ = 0;
+  clear_has_rotation();
+}
+double Rigid2d::rotation() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Rigid2d.rotation)
+  return rotation_;
+}
+void Rigid2d::set_rotation(double value) {
+  set_has_rotation();
+  rotation_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Rigid2d.rotation)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Rigid2f::kTranslationFieldNumber;
 const int Rigid2f::kRotationFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Rigid2f::Rigid2f()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.transform.proto.Rigid2f)
 }
-
-void Rigid2f::InitAsDefaultInstance() {
-  translation_ = const_cast< ::cartographer::transform::proto::Vector2f*>(&::cartographer::transform::proto::Vector2f::default_instance());
-}
-
 Rigid2f::Rigid2f(const Rigid2f& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_translation()) {
+    translation_ = new ::cartographer::transform::proto::Vector2f(*from.translation_);
+  } else {
+    translation_ = NULL;
+  }
+  rotation_ = from.rotation_;
+  // @@protoc_insertion_point(copy_constructor:cartographer.transform.proto.Rigid2f)
 }
 
 void Rigid2f::SharedCtor() {
   _cached_size_ = 0;
-  translation_ = NULL;
-  rotation_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&translation_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&rotation_) -
+      reinterpret_cast<char*>(&translation_)) + sizeof(rotation_));
 }
 
 Rigid2f::~Rigid2f() {
+  // @@protoc_insertion_point(destructor:cartographer.transform.proto.Rigid2f)
   SharedDtor();
 }
 
 void Rigid2f::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != internal_default_instance()) {
     delete translation_;
   }
 }
@@ -2334,72 +3104,76 @@ void Rigid2f::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* Rigid2f::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return Rigid2f_descriptor_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Rigid2f& Rigid2f::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-Rigid2f* Rigid2f::default_instance_ = NULL;
-
-Rigid2f* Rigid2f::New() const {
-  return new Rigid2f;
+Rigid2f* Rigid2f::New(::google::protobuf::Arena* arena) const {
+  Rigid2f* n = new Rigid2f;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void Rigid2f::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (has_translation()) {
-      if (translation_ != NULL) translation_->::cartographer::transform::proto::Vector2f::Clear();
-    }
-    rotation_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.transform.proto.Rigid2f)
+  if (has_translation()) {
+    GOOGLE_DCHECK(translation_ != NULL);
+    translation_->::cartographer::transform::proto::Vector2f::Clear();
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  rotation_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool Rigid2f::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.transform.proto.Rigid2f)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .cartographer.transform.proto.Vector2f translation = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_translation()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(21)) goto parse_rotation;
         break;
       }
 
       // optional float rotation = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_rotation:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(21u)) {
+          set_has_rotation();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &rotation_)));
-          set_has_rotation();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -2407,59 +3181,82 @@ bool Rigid2f::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.transform.proto.Rigid2f)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.transform.proto.Rigid2f)
+  return false;
 #undef DO_
 }
 
 void Rigid2f::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.transform.proto.Rigid2f)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional .cartographer.transform.proto.Vector2f translation = 1;
-  if (has_translation()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->translation(), output);
+      1, *this->translation_, output);
   }
 
   // optional float rotation = 2;
-  if (has_rotation()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(2, this->rotation(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.transform.proto.Rigid2f)
 }
 
-::google::protobuf::uint8* Rigid2f::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* Rigid2f::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.transform.proto.Rigid2f)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional .cartographer.transform.proto.Vector2f translation = 1;
-  if (has_translation()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        1, this->translation(), target);
+      InternalWriteMessageNoVirtualToArray(
+        1, *this->translation_, deterministic, target);
   }
 
   // optional float rotation = 2;
-  if (has_rotation()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(2, this->rotation(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.transform.proto.Rigid2f)
   return target;
 }
 
-int Rigid2f::ByteSize() const {
-  int total_size = 0;
+size_t Rigid2f::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.transform.proto.Rigid2f)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 3u) {
     // optional .cartographer.transform.proto.Vector2f translation = 1;
     if (has_translation()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->translation());
+          *this->translation_);
     }
 
     // optional float rotation = 2;
@@ -2468,115 +3265,207 @@ int Rigid2f::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Rigid2f::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.transform.proto.Rigid2f)
+  GOOGLE_DCHECK_NE(&from, this);
   const Rigid2f* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const Rigid2f*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const Rigid2f>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.transform.proto.Rigid2f)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.transform.proto.Rigid2f)
     MergeFrom(*source);
   }
 }
 
 void Rigid2f::MergeFrom(const Rigid2f& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_translation()) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.transform.proto.Rigid2f)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
       mutable_translation()->::cartographer::transform::proto::Vector2f::MergeFrom(from.translation());
     }
-    if (from.has_rotation()) {
-      set_rotation(from.rotation());
+    if (cached_has_bits & 0x00000002u) {
+      rotation_ = from.rotation_;
     }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void Rigid2f::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.transform.proto.Rigid2f)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Rigid2f::CopyFrom(const Rigid2f& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.transform.proto.Rigid2f)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool Rigid2f::IsInitialized() const {
-
   return true;
 }
 
 void Rigid2f::Swap(Rigid2f* other) {
-  if (other != this) {
-    std::swap(translation_, other->translation_);
-    std::swap(rotation_, other->rotation_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Rigid2f::InternalSwap(Rigid2f* other) {
+  std::swap(translation_, other->translation_);
+  std::swap(rotation_, other->rotation_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Rigid2f::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = Rigid2f_descriptor_;
-  metadata.reflection = Rigid2f_reflection_;
-  return metadata;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Rigid2f
+
+// optional .cartographer.transform.proto.Vector2f translation = 1;
+bool Rigid2f::has_translation() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void Rigid2f::set_has_translation() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void Rigid2f::clear_has_translation() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void Rigid2f::clear_translation() {
+  if (translation_ != NULL) translation_->::cartographer::transform::proto::Vector2f::Clear();
+  clear_has_translation();
+}
+const ::cartographer::transform::proto::Vector2f& Rigid2f::translation() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Rigid2f.translation)
+  return translation_ != NULL ? *translation_
+                         : *::cartographer::transform::proto::Vector2f::internal_default_instance();
+}
+::cartographer::transform::proto::Vector2f* Rigid2f::mutable_translation() {
+  set_has_translation();
+  if (translation_ == NULL) {
+    translation_ = new ::cartographer::transform::proto::Vector2f;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.transform.proto.Rigid2f.translation)
+  return translation_;
+}
+::cartographer::transform::proto::Vector2f* Rigid2f::release_translation() {
+  // @@protoc_insertion_point(field_release:cartographer.transform.proto.Rigid2f.translation)
+  clear_has_translation();
+  ::cartographer::transform::proto::Vector2f* temp = translation_;
+  translation_ = NULL;
+  return temp;
+}
+void Rigid2f::set_allocated_translation(::cartographer::transform::proto::Vector2f* translation) {
+  delete translation_;
+  translation_ = translation;
+  if (translation) {
+    set_has_translation();
+  } else {
+    clear_has_translation();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.transform.proto.Rigid2f.translation)
+}
+
+// optional float rotation = 2;
+bool Rigid2f::has_rotation() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void Rigid2f::set_has_rotation() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void Rigid2f::clear_has_rotation() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void Rigid2f::clear_rotation() {
+  rotation_ = 0;
+  clear_has_rotation();
+}
+float Rigid2f::rotation() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Rigid2f.rotation)
+  return rotation_;
+}
+void Rigid2f::set_rotation(float value) {
+  set_has_rotation();
+  rotation_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.transform.proto.Rigid2f.rotation)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Rigid3d::kTranslationFieldNumber;
 const int Rigid3d::kRotationFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Rigid3d::Rigid3d()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.transform.proto.Rigid3d)
 }
-
-void Rigid3d::InitAsDefaultInstance() {
-  translation_ = const_cast< ::cartographer::transform::proto::Vector3d*>(&::cartographer::transform::proto::Vector3d::default_instance());
-  rotation_ = const_cast< ::cartographer::transform::proto::Quaterniond*>(&::cartographer::transform::proto::Quaterniond::default_instance());
-}
-
 Rigid3d::Rigid3d(const Rigid3d& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_translation()) {
+    translation_ = new ::cartographer::transform::proto::Vector3d(*from.translation_);
+  } else {
+    translation_ = NULL;
+  }
+  if (from.has_rotation()) {
+    rotation_ = new ::cartographer::transform::proto::Quaterniond(*from.rotation_);
+  } else {
+    rotation_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:cartographer.transform.proto.Rigid3d)
 }
 
 void Rigid3d::SharedCtor() {
   _cached_size_ = 0;
-  translation_ = NULL;
-  rotation_ = NULL;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&translation_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&rotation_) -
+      reinterpret_cast<char*>(&translation_)) + sizeof(rotation_));
 }
 
 Rigid3d::~Rigid3d() {
+  // @@protoc_insertion_point(destructor:cartographer.transform.proto.Rigid3d)
   SharedDtor();
 }
 
 void Rigid3d::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != internal_default_instance()) {
     delete translation_;
+  }
+  if (this != internal_default_instance()) {
     delete rotation_;
   }
 }
@@ -2587,72 +3476,79 @@ void Rigid3d::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* Rigid3d::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return Rigid3d_descriptor_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Rigid3d& Rigid3d::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-Rigid3d* Rigid3d::default_instance_ = NULL;
-
-Rigid3d* Rigid3d::New() const {
-  return new Rigid3d;
+Rigid3d* Rigid3d::New(::google::protobuf::Arena* arena) const {
+  Rigid3d* n = new Rigid3d;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void Rigid3d::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+// @@protoc_insertion_point(message_clear_start:cartographer.transform.proto.Rigid3d)
+  if (_has_bits_[0 / 32] & 3u) {
     if (has_translation()) {
-      if (translation_ != NULL) translation_->::cartographer::transform::proto::Vector3d::Clear();
+      GOOGLE_DCHECK(translation_ != NULL);
+      translation_->::cartographer::transform::proto::Vector3d::Clear();
     }
     if (has_rotation()) {
-      if (rotation_ != NULL) rotation_->::cartographer::transform::proto::Quaterniond::Clear();
+      GOOGLE_DCHECK(rotation_ != NULL);
+      rotation_->::cartographer::transform::proto::Quaterniond::Clear();
     }
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool Rigid3d::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.transform.proto.Rigid3d)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .cartographer.transform.proto.Vector3d translation = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_translation()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_rotation;
         break;
       }
 
       // optional .cartographer.transform.proto.Quaterniond rotation = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_rotation:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_rotation()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -2660,181 +3556,316 @@ bool Rigid3d::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.transform.proto.Rigid3d)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.transform.proto.Rigid3d)
+  return false;
 #undef DO_
 }
 
 void Rigid3d::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.transform.proto.Rigid3d)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional .cartographer.transform.proto.Vector3d translation = 1;
-  if (has_translation()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->translation(), output);
+      1, *this->translation_, output);
   }
 
   // optional .cartographer.transform.proto.Quaterniond rotation = 2;
-  if (has_rotation()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->rotation(), output);
+      2, *this->rotation_, output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.transform.proto.Rigid3d)
 }
 
-::google::protobuf::uint8* Rigid3d::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* Rigid3d::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.transform.proto.Rigid3d)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional .cartographer.transform.proto.Vector3d translation = 1;
-  if (has_translation()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        1, this->translation(), target);
+      InternalWriteMessageNoVirtualToArray(
+        1, *this->translation_, deterministic, target);
   }
 
   // optional .cartographer.transform.proto.Quaterniond rotation = 2;
-  if (has_rotation()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        2, this->rotation(), target);
+      InternalWriteMessageNoVirtualToArray(
+        2, *this->rotation_, deterministic, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.transform.proto.Rigid3d)
   return target;
 }
 
-int Rigid3d::ByteSize() const {
-  int total_size = 0;
+size_t Rigid3d::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.transform.proto.Rigid3d)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 3u) {
     // optional .cartographer.transform.proto.Vector3d translation = 1;
     if (has_translation()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->translation());
+          *this->translation_);
     }
 
     // optional .cartographer.transform.proto.Quaterniond rotation = 2;
     if (has_rotation()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->rotation());
+          *this->rotation_);
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Rigid3d::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.transform.proto.Rigid3d)
+  GOOGLE_DCHECK_NE(&from, this);
   const Rigid3d* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const Rigid3d*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const Rigid3d>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.transform.proto.Rigid3d)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.transform.proto.Rigid3d)
     MergeFrom(*source);
   }
 }
 
 void Rigid3d::MergeFrom(const Rigid3d& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_translation()) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.transform.proto.Rigid3d)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
       mutable_translation()->::cartographer::transform::proto::Vector3d::MergeFrom(from.translation());
     }
-    if (from.has_rotation()) {
+    if (cached_has_bits & 0x00000002u) {
       mutable_rotation()->::cartographer::transform::proto::Quaterniond::MergeFrom(from.rotation());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void Rigid3d::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.transform.proto.Rigid3d)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Rigid3d::CopyFrom(const Rigid3d& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.transform.proto.Rigid3d)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool Rigid3d::IsInitialized() const {
-
   return true;
 }
 
 void Rigid3d::Swap(Rigid3d* other) {
-  if (other != this) {
-    std::swap(translation_, other->translation_);
-    std::swap(rotation_, other->rotation_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Rigid3d::InternalSwap(Rigid3d* other) {
+  std::swap(translation_, other->translation_);
+  std::swap(rotation_, other->rotation_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Rigid3d::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = Rigid3d_descriptor_;
-  metadata.reflection = Rigid3d_reflection_;
-  return metadata;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Rigid3d
+
+// optional .cartographer.transform.proto.Vector3d translation = 1;
+bool Rigid3d::has_translation() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void Rigid3d::set_has_translation() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void Rigid3d::clear_has_translation() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void Rigid3d::clear_translation() {
+  if (translation_ != NULL) translation_->::cartographer::transform::proto::Vector3d::Clear();
+  clear_has_translation();
+}
+const ::cartographer::transform::proto::Vector3d& Rigid3d::translation() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Rigid3d.translation)
+  return translation_ != NULL ? *translation_
+                         : *::cartographer::transform::proto::Vector3d::internal_default_instance();
+}
+::cartographer::transform::proto::Vector3d* Rigid3d::mutable_translation() {
+  set_has_translation();
+  if (translation_ == NULL) {
+    translation_ = new ::cartographer::transform::proto::Vector3d;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.transform.proto.Rigid3d.translation)
+  return translation_;
+}
+::cartographer::transform::proto::Vector3d* Rigid3d::release_translation() {
+  // @@protoc_insertion_point(field_release:cartographer.transform.proto.Rigid3d.translation)
+  clear_has_translation();
+  ::cartographer::transform::proto::Vector3d* temp = translation_;
+  translation_ = NULL;
+  return temp;
+}
+void Rigid3d::set_allocated_translation(::cartographer::transform::proto::Vector3d* translation) {
+  delete translation_;
+  translation_ = translation;
+  if (translation) {
+    set_has_translation();
+  } else {
+    clear_has_translation();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.transform.proto.Rigid3d.translation)
+}
+
+// optional .cartographer.transform.proto.Quaterniond rotation = 2;
+bool Rigid3d::has_rotation() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void Rigid3d::set_has_rotation() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void Rigid3d::clear_has_rotation() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void Rigid3d::clear_rotation() {
+  if (rotation_ != NULL) rotation_->::cartographer::transform::proto::Quaterniond::Clear();
+  clear_has_rotation();
+}
+const ::cartographer::transform::proto::Quaterniond& Rigid3d::rotation() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Rigid3d.rotation)
+  return rotation_ != NULL ? *rotation_
+                         : *::cartographer::transform::proto::Quaterniond::internal_default_instance();
+}
+::cartographer::transform::proto::Quaterniond* Rigid3d::mutable_rotation() {
+  set_has_rotation();
+  if (rotation_ == NULL) {
+    rotation_ = new ::cartographer::transform::proto::Quaterniond;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.transform.proto.Rigid3d.rotation)
+  return rotation_;
+}
+::cartographer::transform::proto::Quaterniond* Rigid3d::release_rotation() {
+  // @@protoc_insertion_point(field_release:cartographer.transform.proto.Rigid3d.rotation)
+  clear_has_rotation();
+  ::cartographer::transform::proto::Quaterniond* temp = rotation_;
+  rotation_ = NULL;
+  return temp;
+}
+void Rigid3d::set_allocated_rotation(::cartographer::transform::proto::Quaterniond* rotation) {
+  delete rotation_;
+  rotation_ = rotation;
+  if (rotation) {
+    set_has_rotation();
+  } else {
+    clear_has_rotation();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.transform.proto.Rigid3d.rotation)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Rigid3f::kTranslationFieldNumber;
 const int Rigid3f::kRotationFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Rigid3f::Rigid3f()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.transform.proto.Rigid3f)
 }
-
-void Rigid3f::InitAsDefaultInstance() {
-  translation_ = const_cast< ::cartographer::transform::proto::Vector3f*>(&::cartographer::transform::proto::Vector3f::default_instance());
-  rotation_ = const_cast< ::cartographer::transform::proto::Quaternionf*>(&::cartographer::transform::proto::Quaternionf::default_instance());
-}
-
 Rigid3f::Rigid3f(const Rigid3f& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_translation()) {
+    translation_ = new ::cartographer::transform::proto::Vector3f(*from.translation_);
+  } else {
+    translation_ = NULL;
+  }
+  if (from.has_rotation()) {
+    rotation_ = new ::cartographer::transform::proto::Quaternionf(*from.rotation_);
+  } else {
+    rotation_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:cartographer.transform.proto.Rigid3f)
 }
 
 void Rigid3f::SharedCtor() {
   _cached_size_ = 0;
-  translation_ = NULL;
-  rotation_ = NULL;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&translation_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&rotation_) -
+      reinterpret_cast<char*>(&translation_)) + sizeof(rotation_));
 }
 
 Rigid3f::~Rigid3f() {
+  // @@protoc_insertion_point(destructor:cartographer.transform.proto.Rigid3f)
   SharedDtor();
 }
 
 void Rigid3f::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != internal_default_instance()) {
     delete translation_;
+  }
+  if (this != internal_default_instance()) {
     delete rotation_;
   }
 }
@@ -2845,72 +3876,79 @@ void Rigid3f::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* Rigid3f::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return Rigid3f_descriptor_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Rigid3f& Rigid3f::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-Rigid3f* Rigid3f::default_instance_ = NULL;
-
-Rigid3f* Rigid3f::New() const {
-  return new Rigid3f;
+Rigid3f* Rigid3f::New(::google::protobuf::Arena* arena) const {
+  Rigid3f* n = new Rigid3f;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void Rigid3f::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+// @@protoc_insertion_point(message_clear_start:cartographer.transform.proto.Rigid3f)
+  if (_has_bits_[0 / 32] & 3u) {
     if (has_translation()) {
-      if (translation_ != NULL) translation_->::cartographer::transform::proto::Vector3f::Clear();
+      GOOGLE_DCHECK(translation_ != NULL);
+      translation_->::cartographer::transform::proto::Vector3f::Clear();
     }
     if (has_rotation()) {
-      if (rotation_ != NULL) rotation_->::cartographer::transform::proto::Quaternionf::Clear();
+      GOOGLE_DCHECK(rotation_ != NULL);
+      rotation_->::cartographer::transform::proto::Quaternionf::Clear();
     }
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool Rigid3f::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.transform.proto.Rigid3f)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .cartographer.transform.proto.Vector3f translation = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_translation()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_rotation;
         break;
       }
 
       // optional .cartographer.transform.proto.Quaternionf rotation = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_rotation:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_rotation()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -2918,143 +3956,264 @@ bool Rigid3f::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.transform.proto.Rigid3f)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.transform.proto.Rigid3f)
+  return false;
 #undef DO_
 }
 
 void Rigid3f::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.transform.proto.Rigid3f)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional .cartographer.transform.proto.Vector3f translation = 1;
-  if (has_translation()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->translation(), output);
+      1, *this->translation_, output);
   }
 
   // optional .cartographer.transform.proto.Quaternionf rotation = 2;
-  if (has_rotation()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->rotation(), output);
+      2, *this->rotation_, output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.transform.proto.Rigid3f)
 }
 
-::google::protobuf::uint8* Rigid3f::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* Rigid3f::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.transform.proto.Rigid3f)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional .cartographer.transform.proto.Vector3f translation = 1;
-  if (has_translation()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        1, this->translation(), target);
+      InternalWriteMessageNoVirtualToArray(
+        1, *this->translation_, deterministic, target);
   }
 
   // optional .cartographer.transform.proto.Quaternionf rotation = 2;
-  if (has_rotation()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        2, this->rotation(), target);
+      InternalWriteMessageNoVirtualToArray(
+        2, *this->rotation_, deterministic, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.transform.proto.Rigid3f)
   return target;
 }
 
-int Rigid3f::ByteSize() const {
-  int total_size = 0;
+size_t Rigid3f::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.transform.proto.Rigid3f)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 3u) {
     // optional .cartographer.transform.proto.Vector3f translation = 1;
     if (has_translation()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->translation());
+          *this->translation_);
     }
 
     // optional .cartographer.transform.proto.Quaternionf rotation = 2;
     if (has_rotation()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->rotation());
+          *this->rotation_);
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Rigid3f::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.transform.proto.Rigid3f)
+  GOOGLE_DCHECK_NE(&from, this);
   const Rigid3f* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const Rigid3f*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const Rigid3f>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.transform.proto.Rigid3f)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.transform.proto.Rigid3f)
     MergeFrom(*source);
   }
 }
 
 void Rigid3f::MergeFrom(const Rigid3f& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_translation()) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.transform.proto.Rigid3f)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
       mutable_translation()->::cartographer::transform::proto::Vector3f::MergeFrom(from.translation());
     }
-    if (from.has_rotation()) {
+    if (cached_has_bits & 0x00000002u) {
       mutable_rotation()->::cartographer::transform::proto::Quaternionf::MergeFrom(from.rotation());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void Rigid3f::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.transform.proto.Rigid3f)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Rigid3f::CopyFrom(const Rigid3f& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.transform.proto.Rigid3f)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool Rigid3f::IsInitialized() const {
-
   return true;
 }
 
 void Rigid3f::Swap(Rigid3f* other) {
-  if (other != this) {
-    std::swap(translation_, other->translation_);
-    std::swap(rotation_, other->rotation_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Rigid3f::InternalSwap(Rigid3f* other) {
+  std::swap(translation_, other->translation_);
+  std::swap(rotation_, other->rotation_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Rigid3f::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = Rigid3f_descriptor_;
-  metadata.reflection = Rigid3f_reflection_;
-  return metadata;
+  protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Rigid3f
+
+// optional .cartographer.transform.proto.Vector3f translation = 1;
+bool Rigid3f::has_translation() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void Rigid3f::set_has_translation() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void Rigid3f::clear_has_translation() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void Rigid3f::clear_translation() {
+  if (translation_ != NULL) translation_->::cartographer::transform::proto::Vector3f::Clear();
+  clear_has_translation();
+}
+const ::cartographer::transform::proto::Vector3f& Rigid3f::translation() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Rigid3f.translation)
+  return translation_ != NULL ? *translation_
+                         : *::cartographer::transform::proto::Vector3f::internal_default_instance();
+}
+::cartographer::transform::proto::Vector3f* Rigid3f::mutable_translation() {
+  set_has_translation();
+  if (translation_ == NULL) {
+    translation_ = new ::cartographer::transform::proto::Vector3f;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.transform.proto.Rigid3f.translation)
+  return translation_;
+}
+::cartographer::transform::proto::Vector3f* Rigid3f::release_translation() {
+  // @@protoc_insertion_point(field_release:cartographer.transform.proto.Rigid3f.translation)
+  clear_has_translation();
+  ::cartographer::transform::proto::Vector3f* temp = translation_;
+  translation_ = NULL;
+  return temp;
+}
+void Rigid3f::set_allocated_translation(::cartographer::transform::proto::Vector3f* translation) {
+  delete translation_;
+  translation_ = translation;
+  if (translation) {
+    set_has_translation();
+  } else {
+    clear_has_translation();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.transform.proto.Rigid3f.translation)
+}
+
+// optional .cartographer.transform.proto.Quaternionf rotation = 2;
+bool Rigid3f::has_rotation() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void Rigid3f::set_has_rotation() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void Rigid3f::clear_has_rotation() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void Rigid3f::clear_rotation() {
+  if (rotation_ != NULL) rotation_->::cartographer::transform::proto::Quaternionf::Clear();
+  clear_has_rotation();
+}
+const ::cartographer::transform::proto::Quaternionf& Rigid3f::rotation() const {
+  // @@protoc_insertion_point(field_get:cartographer.transform.proto.Rigid3f.rotation)
+  return rotation_ != NULL ? *rotation_
+                         : *::cartographer::transform::proto::Quaternionf::internal_default_instance();
+}
+::cartographer::transform::proto::Quaternionf* Rigid3f::mutable_rotation() {
+  set_has_rotation();
+  if (rotation_ == NULL) {
+    rotation_ = new ::cartographer::transform::proto::Quaternionf;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.transform.proto.Rigid3f.rotation)
+  return rotation_;
+}
+::cartographer::transform::proto::Quaternionf* Rigid3f::release_rotation() {
+  // @@protoc_insertion_point(field_release:cartographer.transform.proto.Rigid3f.rotation)
+  clear_has_rotation();
+  ::cartographer::transform::proto::Quaternionf* temp = rotation_;
+  rotation_ = NULL;
+  return temp;
+}
+void Rigid3f::set_allocated_rotation(::cartographer::transform::proto::Quaternionf* rotation) {
+  delete rotation_;
+  rotation_ = rotation;
+  if (rotation) {
+    set_has_rotation();
+  } else {
+    clear_has_rotation();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.transform.proto.Rigid3f.rotation)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

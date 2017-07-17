@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{EC73C173-7EE3-3078-8054-2AE3FA790D15}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>cartographer.mapping_3d.scan_matching.interpolated_grid_test</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cartographer.mapping_3d.scan_matching.interpolated_grid_test.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cartographer.mapping_3d.scan_matching.interpolated_grid_test</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  -pthread -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\cartographer-windows\Projects\cartographer\..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;D:\cartographer-windows\Projects\cartographer\cartographer;C:\SDKs\google\googletest\include;C:\SDKs\eigen\eigen3\include\eigen3;C:\SDKs\ceres-solver\ceres-solver\include;D:\cartographer-windows\Projects\cartographer;C:\SDKs\boost_1_64_0;C:\SDKs\google\protobuf\include;D:\cartographer-windows\Projects\cartographer_build_x64;C:\SDKs\google\glog\include;C:\SDKs\gflags\gflags\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;GFLAGS_IS_A_DLL=0;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;GFLAGS_IS_A_DLL=0;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cartographer-windows\Projects\cartographer\..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;D:\cartographer-windows\Projects\cartographer\cartographer;C:\SDKs\google\googletest\include;C:\SDKs\eigen\eigen3\include\eigen3;C:\SDKs\ceres-solver\ceres-solver\include;D:\cartographer-windows\Projects\cartographer;C:\SDKs\boost_1_64_0;C:\SDKs\google\protobuf\include;D:\cartographer-windows\Projects\cartographer_build_x64;C:\SDKs\google\glog\include;C:\SDKs\gflags\gflags\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cartographer-windows\Projects\cartographer\..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;D:\cartographer-windows\Projects\cartographer\cartographer;C:\SDKs\google\googletest\include;C:\SDKs\eigen\eigen3\include\eigen3;C:\SDKs\ceres-solver\ceres-solver\include;D:\cartographer-windows\Projects\cartographer;C:\SDKs\boost_1_64_0;C:\SDKs\google\protobuf\include;D:\cartographer-windows\Projects\cartographer_build_x64;C:\SDKs\google\glog\include;C:\SDKs\gflags\gflags\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Release\cartographer.lib;C:\SDKs\ceres-solver\ceres-solver\lib\ceres.lib;C:\SDKs\google\glog\lib\glog.lib;C:\SDKs\gflags\gflags\lib\gflags_static.lib;C:\SDKs\lua\lua\lib\lua.lib;boost_iostreams-vc141-mt-1_64.lib;boost_regex-vc141-mt-1_64.lib;glog.lib;C:\SDKs\gflags\gflags\lib\gflags_static.lib;shlwapi.lib;pthread.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/cartographer-windows/Projects/cartographer/../../gtkPlusBuiltFilesForWindows/gtk-build/gtk/x64/lib;D:/cartographer-windows/Projects/cartographer/../../gtkPlusBuiltFilesForWindows/gtk-build/gtk/x64/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cartographer-windows/Projects/cartographer_build_x64/Release/cartographer.mapping_3d.scan_matching.interpolated_grid_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/cartographer-windows/Projects/cartographer_build_x64/Release/cartographer.mapping_3d.scan_matching.interpolated_grid_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cartographer-windows/Projects/cartographer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/cartographer-windows/Projects/cartographer -BD:/cartographer-windows/Projects/cartographer_build_x64 --check-stamp-file D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer/CMakeLists.txt;D:\cartographer-windows\Projects\cartographer\CMakeLists.txt;D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\3.8.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\3.8.0\CMakeCCompiler.cmake;D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\3.8.0\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\3.8.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\cartographer-windows\Projects\cartographer\cmake\functions.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\cartographer-windows\Projects\cartographer_build_x64\AllFiles.cmake;D:\cartographer-windows\Projects\cartographer\cmake\modules\FindGMock.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindBoost.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\CeresConfigVersion.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\CeresConfig.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\FindEigen.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3ConfigVersion.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3Config.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3Targets.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\FindGlog.cmake;C:\SDKs\google\glog\lib\cmake\glog\glog-config-version.cmake;C:\SDKs\google\glog\lib\cmake\glog\glog-config.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeFindDependencyMacro.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\FindGflags.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-config-version.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-config.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-targets.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-targets-release.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\SDKs\google\glog\lib\cmake\glog\glog-targets.cmake;C:\SDKs\google\glog\lib\cmake\glog\glog-targets-release.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\FindGflags.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-config-version.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-config.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-targets.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\CeresTargets.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\CeresTargets-release.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3ConfigVersion.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3Config.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3Targets.cmake;D:\cartographer-windows\Projects\cartographer\cmake\modules\FindLuaGoogle.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindProtobuf.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\cartographer-windows\Projects\cartographer\cmake\modules\FindSphinx.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\cartographer-windows\Projects\cartographer\cartographer\common\config.h.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\WriteBasicConfigVersionFile.cmake;D:\cartographer-windows\Projects\cartographer\cartographer-config.cmake.in;D:\cartographer-windows\Projects\cartographer\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\interpolated_grid_test.cc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\ZERO_CHECK.vcxproj">
+      <Project>56520080-6B1B-3CDC-828A-DE5DE2FADC93</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer.vcxproj">
+      <Project>4FB3BDBB-4986-3243-A820-1BC917779CF5</Project>
+      <Name>cartographer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

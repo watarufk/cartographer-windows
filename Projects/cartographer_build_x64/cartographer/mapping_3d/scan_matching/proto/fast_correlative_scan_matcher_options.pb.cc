@@ -7,6 +7,7 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -20,100 +21,139 @@ namespace cartographer {
 namespace mapping_3d {
 namespace scan_matching {
 namespace proto {
+class FastCorrelativeScanMatcherOptionsDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<FastCorrelativeScanMatcherOptions> {
+} _FastCorrelativeScanMatcherOptions_default_instance_;
+
+namespace protobuf_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto {
+
 
 namespace {
 
-const ::google::protobuf::Descriptor* FastCorrelativeScanMatcherOptions_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  FastCorrelativeScanMatcherOptions_reflection_ = NULL;
+::google::protobuf::Metadata file_level_metadata[1];
 
 }  // namespace
 
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
+    const TableStruct::entries[] = {
+  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
+};
 
-void protobuf_AssignDesc_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto() {
-  protobuf_AddDesc_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto();
-  const ::google::protobuf::FileDescriptor* file =
-    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
-      "cartographer/mapping_3d/scan_matching/proto/fast_correlative_scan_matcher_options.proto");
-  GOOGLE_CHECK(file != NULL);
-  FastCorrelativeScanMatcherOptions_descriptor_ = file->message_type(0);
-  static const int FastCorrelativeScanMatcherOptions_offsets_[7] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, branch_and_bound_depth_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, full_resolution_depth_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, rotational_histogram_size_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, min_rotational_score_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, linear_xy_search_window_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, linear_z_search_window_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, angular_search_window_),
-  };
-  FastCorrelativeScanMatcherOptions_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      FastCorrelativeScanMatcherOptions_descriptor_,
-      FastCorrelativeScanMatcherOptions::default_instance_,
-      FastCorrelativeScanMatcherOptions_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(FastCorrelativeScanMatcherOptions));
-}
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
+    const TableStruct::aux[] = {
+  ::google::protobuf::internal::AuxillaryParseTableField(),
+};
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
+    TableStruct::schema[] = {
+  { NULL, NULL, 0, -1, -1, false },
+};
+
+const ::google::protobuf::uint32 TableStruct::offsets[] = {
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, branch_and_bound_depth_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, full_resolution_depth_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, rotational_histogram_size_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, min_rotational_score_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, linear_xy_search_window_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, linear_z_search_window_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FastCorrelativeScanMatcherOptions, angular_search_window_),
+  0,
+  6,
+  1,
+  2,
+  3,
+  4,
+  5,
+};
+
+static const ::google::protobuf::internal::MigrationSchema schemas[] = {
+  { 0, 12, sizeof(FastCorrelativeScanMatcherOptions)},
+};
+
+static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&_FastCorrelativeScanMatcherOptions_default_instance_),
+};
 
 namespace {
 
-GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
-  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
-                 &protobuf_AssignDesc_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto);
+void protobuf_AssignDescriptors() {
+  AddDescriptors();
+  ::google::protobuf::MessageFactory* factory = NULL;
+  AssignDescriptors(
+      "cartographer/mapping_3d/scan_matching/proto/fast_correlative_scan_matcher_options.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      file_level_metadata, NULL, NULL);
 }
 
+void protobuf_AssignDescriptorsOnce() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+}
+
+void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    FastCorrelativeScanMatcherOptions_descriptor_, &FastCorrelativeScanMatcherOptions::default_instance());
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
 }
 
 }  // namespace
 
-void protobuf_ShutdownFile_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto() {
-  delete FastCorrelativeScanMatcherOptions::default_instance_;
-  delete FastCorrelativeScanMatcherOptions_reflection_;
+void TableStruct::Shutdown() {
+  _FastCorrelativeScanMatcherOptions_default_instance_.Shutdown();
+  delete file_level_metadata[0].reflection;
 }
 
-void protobuf_AddDesc_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void TableStruct::InitDefaultsImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\nWcartographer/mapping_3d/scan_matching/"
-    "proto/fast_correlative_scan_matcher_opti"
-    "ons.proto\022+cartographer.mapping_3d.scan_"
-    "matching.proto\"\203\002\n!FastCorrelativeScanMa"
-    "tcherOptions\022\036\n\026branch_and_bound_depth\030\002"
-    " \001(\005\022\035\n\025full_resolution_depth\030\010 \001(\005\022!\n\031r"
-    "otational_histogram_size\030\003 \001(\005\022\034\n\024min_ro"
-    "tational_score\030\004 \001(\001\022\037\n\027linear_xy_search"
-    "_window\030\005 \001(\001\022\036\n\026linear_z_search_window\030"
-    "\006 \001(\001\022\035\n\025angular_search_window\030\007 \001(\001", 396);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "cartographer/mapping_3d/scan_matching/proto/fast_correlative_scan_matcher_options.proto", &protobuf_RegisterTypes);
-  FastCorrelativeScanMatcherOptions::default_instance_ = new FastCorrelativeScanMatcherOptions();
-  FastCorrelativeScanMatcherOptions::default_instance_->InitAsDefaultInstance();
-  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto);
+  ::google::protobuf::internal::InitProtobufDefaults();
+  _FastCorrelativeScanMatcherOptions_default_instance_.DefaultConstruct();
 }
 
+void InitDefaults() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
+}
+void AddDescriptorsImpl() {
+  InitDefaults();
+  static const char descriptor[] = {
+      "\nWcartographer/mapping_3d/scan_matching/"
+      "proto/fast_correlative_scan_matcher_opti"
+      "ons.proto\022+cartographer.mapping_3d.scan_"
+      "matching.proto\"\203\002\n!FastCorrelativeScanMa"
+      "tcherOptions\022\036\n\026branch_and_bound_depth\030\002"
+      " \001(\005\022\035\n\025full_resolution_depth\030\010 \001(\005\022!\n\031r"
+      "otational_histogram_size\030\003 \001(\005\022\034\n\024min_ro"
+      "tational_score\030\004 \001(\001\022\037\n\027linear_xy_search"
+      "_window\030\005 \001(\001\022\036\n\026linear_z_search_window\030"
+      "\006 \001(\001\022\035\n\025angular_search_window\030\007 \001(\001"
+  };
+  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+      descriptor, 396);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
+    "cartographer/mapping_3d/scan_matching/proto/fast_correlative_scan_matcher_options.proto", &protobuf_RegisterTypes);
+  ::google::protobuf::internal::OnShutdown(&TableStruct::Shutdown);
+}
+
+void AddDescriptors() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+}
 // Force AddDescriptors() to be called at static initialization time.
-struct StaticDescriptorInitializer_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto {
-  StaticDescriptorInitializer_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto() {
-    protobuf_AddDesc_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto();
+struct StaticDescriptorInitializer {
+  StaticDescriptorInitializer() {
+    AddDescriptors();
   }
-} static_descriptor_initializer_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto_;
+} static_descriptor_initializer;
+
+}  // namespace protobuf_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto
+
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int FastCorrelativeScanMatcherOptions::kBranchAndBoundDepthFieldNumber;
 const int FastCorrelativeScanMatcherOptions::kFullResolutionDepthFieldNumber;
 const int FastCorrelativeScanMatcherOptions::kRotationalHistogramSizeFieldNumber;
@@ -121,41 +161,41 @@ const int FastCorrelativeScanMatcherOptions::kMinRotationalScoreFieldNumber;
 const int FastCorrelativeScanMatcherOptions::kLinearXySearchWindowFieldNumber;
 const int FastCorrelativeScanMatcherOptions::kLinearZSearchWindowFieldNumber;
 const int FastCorrelativeScanMatcherOptions::kAngularSearchWindowFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 FastCorrelativeScanMatcherOptions::FastCorrelativeScanMatcherOptions()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
 }
-
-void FastCorrelativeScanMatcherOptions::InitAsDefaultInstance() {
-}
-
 FastCorrelativeScanMatcherOptions::FastCorrelativeScanMatcherOptions(const FastCorrelativeScanMatcherOptions& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&branch_and_bound_depth_, &from.branch_and_bound_depth_,
+    static_cast<size_t>(reinterpret_cast<char*>(&full_resolution_depth_) -
+    reinterpret_cast<char*>(&branch_and_bound_depth_)) + sizeof(full_resolution_depth_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
 }
 
 void FastCorrelativeScanMatcherOptions::SharedCtor() {
   _cached_size_ = 0;
-  branch_and_bound_depth_ = 0;
-  full_resolution_depth_ = 0;
-  rotational_histogram_size_ = 0;
-  min_rotational_score_ = 0;
-  linear_xy_search_window_ = 0;
-  linear_z_search_window_ = 0;
-  angular_search_window_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&branch_and_bound_depth_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&full_resolution_depth_) -
+      reinterpret_cast<char*>(&branch_and_bound_depth_)) + sizeof(full_resolution_depth_));
 }
 
 FastCorrelativeScanMatcherOptions::~FastCorrelativeScanMatcherOptions() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
   SharedDtor();
 }
 
 void FastCorrelativeScanMatcherOptions::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void FastCorrelativeScanMatcherOptions::SetCachedSize(int size) const {
@@ -164,157 +204,148 @@ void FastCorrelativeScanMatcherOptions::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* FastCorrelativeScanMatcherOptions::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return FastCorrelativeScanMatcherOptions_descriptor_;
+  protobuf_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const FastCorrelativeScanMatcherOptions& FastCorrelativeScanMatcherOptions::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-FastCorrelativeScanMatcherOptions* FastCorrelativeScanMatcherOptions::default_instance_ = NULL;
-
-FastCorrelativeScanMatcherOptions* FastCorrelativeScanMatcherOptions::New() const {
-  return new FastCorrelativeScanMatcherOptions;
+FastCorrelativeScanMatcherOptions* FastCorrelativeScanMatcherOptions::New(::google::protobuf::Arena* arena) const {
+  FastCorrelativeScanMatcherOptions* n = new FastCorrelativeScanMatcherOptions;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void FastCorrelativeScanMatcherOptions::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    branch_and_bound_depth_ = 0;
-    full_resolution_depth_ = 0;
-    rotational_histogram_size_ = 0;
-    min_rotational_score_ = 0;
-    linear_xy_search_window_ = 0;
-    linear_z_search_window_ = 0;
-    angular_search_window_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
+  if (_has_bits_[0 / 32] & 127u) {
+    ::memset(&branch_and_bound_depth_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&full_resolution_depth_) -
+        reinterpret_cast<char*>(&branch_and_bound_depth_)) + sizeof(full_resolution_depth_));
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool FastCorrelativeScanMatcherOptions::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 branch_and_bound_depth = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u)) {
+          set_has_branch_and_bound_depth();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &branch_and_bound_depth_)));
-          set_has_branch_and_bound_depth();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(24)) goto parse_rotational_histogram_size;
         break;
       }
 
       // optional int32 rotational_histogram_size = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_rotational_histogram_size:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u)) {
+          set_has_rotational_histogram_size();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &rotational_histogram_size_)));
-          set_has_rotational_histogram_size();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(33)) goto parse_min_rotational_score;
         break;
       }
 
       // optional double min_rotational_score = 4;
       case 4: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_min_rotational_score:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(33u)) {
+          set_has_min_rotational_score();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &min_rotational_score_)));
-          set_has_min_rotational_score();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(41)) goto parse_linear_xy_search_window;
         break;
       }
 
       // optional double linear_xy_search_window = 5;
       case 5: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_linear_xy_search_window:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(41u)) {
+          set_has_linear_xy_search_window();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &linear_xy_search_window_)));
-          set_has_linear_xy_search_window();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(49)) goto parse_linear_z_search_window;
         break;
       }
 
       // optional double linear_z_search_window = 6;
       case 6: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_linear_z_search_window:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(49u)) {
+          set_has_linear_z_search_window();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &linear_z_search_window_)));
-          set_has_linear_z_search_window();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(57)) goto parse_angular_search_window;
         break;
       }
 
       // optional double angular_search_window = 7;
       case 7: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_angular_search_window:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(57u)) {
+          set_has_angular_search_window();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &angular_search_window_)));
-          set_has_angular_search_window();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(64)) goto parse_full_resolution_depth;
         break;
       }
 
       // optional int32 full_resolution_depth = 8;
       case 8: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_full_resolution_depth:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(64u)) {
+          set_has_full_resolution_depth();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &full_resolution_depth_)));
-          set_has_full_resolution_depth();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -322,113 +353,129 @@ bool FastCorrelativeScanMatcherOptions::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
+  return false;
 #undef DO_
 }
 
 void FastCorrelativeScanMatcherOptions::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int32 branch_and_bound_depth = 2;
-  if (has_branch_and_bound_depth()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->branch_and_bound_depth(), output);
   }
 
   // optional int32 rotational_histogram_size = 3;
-  if (has_rotational_histogram_size()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->rotational_histogram_size(), output);
   }
 
   // optional double min_rotational_score = 4;
-  if (has_min_rotational_score()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(4, this->min_rotational_score(), output);
   }
 
   // optional double linear_xy_search_window = 5;
-  if (has_linear_xy_search_window()) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(5, this->linear_xy_search_window(), output);
   }
 
   // optional double linear_z_search_window = 6;
-  if (has_linear_z_search_window()) {
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(6, this->linear_z_search_window(), output);
   }
 
   // optional double angular_search_window = 7;
-  if (has_angular_search_window()) {
+  if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(7, this->angular_search_window(), output);
   }
 
   // optional int32 full_resolution_depth = 8;
-  if (has_full_resolution_depth()) {
+  if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(8, this->full_resolution_depth(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
 }
 
-::google::protobuf::uint8* FastCorrelativeScanMatcherOptions::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* FastCorrelativeScanMatcherOptions::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int32 branch_and_bound_depth = 2;
-  if (has_branch_and_bound_depth()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->branch_and_bound_depth(), target);
   }
 
   // optional int32 rotational_histogram_size = 3;
-  if (has_rotational_histogram_size()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->rotational_histogram_size(), target);
   }
 
   // optional double min_rotational_score = 4;
-  if (has_min_rotational_score()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(4, this->min_rotational_score(), target);
   }
 
   // optional double linear_xy_search_window = 5;
-  if (has_linear_xy_search_window()) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(5, this->linear_xy_search_window(), target);
   }
 
   // optional double linear_z_search_window = 6;
-  if (has_linear_z_search_window()) {
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(6, this->linear_z_search_window(), target);
   }
 
   // optional double angular_search_window = 7;
-  if (has_angular_search_window()) {
+  if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(7, this->angular_search_window(), target);
   }
 
   // optional int32 full_resolution_depth = 8;
-  if (has_full_resolution_depth()) {
+  if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(8, this->full_resolution_depth(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
   return target;
 }
 
-int FastCorrelativeScanMatcherOptions::ByteSize() const {
-  int total_size = 0;
+size_t FastCorrelativeScanMatcherOptions::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 127u) {
     // optional int32 branch_and_bound_depth = 2;
     if (has_branch_and_bound_depth()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->branch_and_bound_depth());
-    }
-
-    // optional int32 full_resolution_depth = 8;
-    if (has_full_resolution_depth()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->full_resolution_depth());
     }
 
     // optional int32 rotational_histogram_size = 3;
@@ -458,98 +505,282 @@ int FastCorrelativeScanMatcherOptions::ByteSize() const {
       total_size += 1 + 8;
     }
 
+    // optional int32 full_resolution_depth = 8;
+    if (has_full_resolution_depth()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->full_resolution_depth());
+    }
+
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void FastCorrelativeScanMatcherOptions::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
+  GOOGLE_DCHECK_NE(&from, this);
   const FastCorrelativeScanMatcherOptions* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const FastCorrelativeScanMatcherOptions*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const FastCorrelativeScanMatcherOptions>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
     MergeFrom(*source);
   }
 }
 
 void FastCorrelativeScanMatcherOptions::MergeFrom(const FastCorrelativeScanMatcherOptions& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_branch_and_bound_depth()) {
-      set_branch_and_bound_depth(from.branch_and_bound_depth());
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 127u) {
+    if (cached_has_bits & 0x00000001u) {
+      branch_and_bound_depth_ = from.branch_and_bound_depth_;
     }
-    if (from.has_full_resolution_depth()) {
-      set_full_resolution_depth(from.full_resolution_depth());
+    if (cached_has_bits & 0x00000002u) {
+      rotational_histogram_size_ = from.rotational_histogram_size_;
     }
-    if (from.has_rotational_histogram_size()) {
-      set_rotational_histogram_size(from.rotational_histogram_size());
+    if (cached_has_bits & 0x00000004u) {
+      min_rotational_score_ = from.min_rotational_score_;
     }
-    if (from.has_min_rotational_score()) {
-      set_min_rotational_score(from.min_rotational_score());
+    if (cached_has_bits & 0x00000008u) {
+      linear_xy_search_window_ = from.linear_xy_search_window_;
     }
-    if (from.has_linear_xy_search_window()) {
-      set_linear_xy_search_window(from.linear_xy_search_window());
+    if (cached_has_bits & 0x00000010u) {
+      linear_z_search_window_ = from.linear_z_search_window_;
     }
-    if (from.has_linear_z_search_window()) {
-      set_linear_z_search_window(from.linear_z_search_window());
+    if (cached_has_bits & 0x00000020u) {
+      angular_search_window_ = from.angular_search_window_;
     }
-    if (from.has_angular_search_window()) {
-      set_angular_search_window(from.angular_search_window());
+    if (cached_has_bits & 0x00000040u) {
+      full_resolution_depth_ = from.full_resolution_depth_;
     }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void FastCorrelativeScanMatcherOptions::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void FastCorrelativeScanMatcherOptions::CopyFrom(const FastCorrelativeScanMatcherOptions& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool FastCorrelativeScanMatcherOptions::IsInitialized() const {
-
   return true;
 }
 
 void FastCorrelativeScanMatcherOptions::Swap(FastCorrelativeScanMatcherOptions* other) {
-  if (other != this) {
-    std::swap(branch_and_bound_depth_, other->branch_and_bound_depth_);
-    std::swap(full_resolution_depth_, other->full_resolution_depth_);
-    std::swap(rotational_histogram_size_, other->rotational_histogram_size_);
-    std::swap(min_rotational_score_, other->min_rotational_score_);
-    std::swap(linear_xy_search_window_, other->linear_xy_search_window_);
-    std::swap(linear_z_search_window_, other->linear_z_search_window_);
-    std::swap(angular_search_window_, other->angular_search_window_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void FastCorrelativeScanMatcherOptions::InternalSwap(FastCorrelativeScanMatcherOptions* other) {
+  std::swap(branch_and_bound_depth_, other->branch_and_bound_depth_);
+  std::swap(rotational_histogram_size_, other->rotational_histogram_size_);
+  std::swap(min_rotational_score_, other->min_rotational_score_);
+  std::swap(linear_xy_search_window_, other->linear_xy_search_window_);
+  std::swap(linear_z_search_window_, other->linear_z_search_window_);
+  std::swap(angular_search_window_, other->angular_search_window_);
+  std::swap(full_resolution_depth_, other->full_resolution_depth_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata FastCorrelativeScanMatcherOptions::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = FastCorrelativeScanMatcherOptions_descriptor_;
-  metadata.reflection = FastCorrelativeScanMatcherOptions_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_5f3d_2fscan_5fmatching_2fproto_2ffast_5fcorrelative_5fscan_5fmatcher_5foptions_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// FastCorrelativeScanMatcherOptions
+
+// optional int32 branch_and_bound_depth = 2;
+bool FastCorrelativeScanMatcherOptions::has_branch_and_bound_depth() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void FastCorrelativeScanMatcherOptions::set_has_branch_and_bound_depth() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void FastCorrelativeScanMatcherOptions::clear_has_branch_and_bound_depth() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void FastCorrelativeScanMatcherOptions::clear_branch_and_bound_depth() {
+  branch_and_bound_depth_ = 0;
+  clear_has_branch_and_bound_depth();
+}
+::google::protobuf::int32 FastCorrelativeScanMatcherOptions::branch_and_bound_depth() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.branch_and_bound_depth)
+  return branch_and_bound_depth_;
+}
+void FastCorrelativeScanMatcherOptions::set_branch_and_bound_depth(::google::protobuf::int32 value) {
+  set_has_branch_and_bound_depth();
+  branch_and_bound_depth_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.branch_and_bound_depth)
+}
+
+// optional int32 full_resolution_depth = 8;
+bool FastCorrelativeScanMatcherOptions::has_full_resolution_depth() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+void FastCorrelativeScanMatcherOptions::set_has_full_resolution_depth() {
+  _has_bits_[0] |= 0x00000040u;
+}
+void FastCorrelativeScanMatcherOptions::clear_has_full_resolution_depth() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+void FastCorrelativeScanMatcherOptions::clear_full_resolution_depth() {
+  full_resolution_depth_ = 0;
+  clear_has_full_resolution_depth();
+}
+::google::protobuf::int32 FastCorrelativeScanMatcherOptions::full_resolution_depth() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.full_resolution_depth)
+  return full_resolution_depth_;
+}
+void FastCorrelativeScanMatcherOptions::set_full_resolution_depth(::google::protobuf::int32 value) {
+  set_has_full_resolution_depth();
+  full_resolution_depth_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.full_resolution_depth)
+}
+
+// optional int32 rotational_histogram_size = 3;
+bool FastCorrelativeScanMatcherOptions::has_rotational_histogram_size() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void FastCorrelativeScanMatcherOptions::set_has_rotational_histogram_size() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void FastCorrelativeScanMatcherOptions::clear_has_rotational_histogram_size() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void FastCorrelativeScanMatcherOptions::clear_rotational_histogram_size() {
+  rotational_histogram_size_ = 0;
+  clear_has_rotational_histogram_size();
+}
+::google::protobuf::int32 FastCorrelativeScanMatcherOptions::rotational_histogram_size() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.rotational_histogram_size)
+  return rotational_histogram_size_;
+}
+void FastCorrelativeScanMatcherOptions::set_rotational_histogram_size(::google::protobuf::int32 value) {
+  set_has_rotational_histogram_size();
+  rotational_histogram_size_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.rotational_histogram_size)
+}
+
+// optional double min_rotational_score = 4;
+bool FastCorrelativeScanMatcherOptions::has_min_rotational_score() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void FastCorrelativeScanMatcherOptions::set_has_min_rotational_score() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void FastCorrelativeScanMatcherOptions::clear_has_min_rotational_score() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void FastCorrelativeScanMatcherOptions::clear_min_rotational_score() {
+  min_rotational_score_ = 0;
+  clear_has_min_rotational_score();
+}
+double FastCorrelativeScanMatcherOptions::min_rotational_score() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.min_rotational_score)
+  return min_rotational_score_;
+}
+void FastCorrelativeScanMatcherOptions::set_min_rotational_score(double value) {
+  set_has_min_rotational_score();
+  min_rotational_score_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.min_rotational_score)
+}
+
+// optional double linear_xy_search_window = 5;
+bool FastCorrelativeScanMatcherOptions::has_linear_xy_search_window() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void FastCorrelativeScanMatcherOptions::set_has_linear_xy_search_window() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void FastCorrelativeScanMatcherOptions::clear_has_linear_xy_search_window() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void FastCorrelativeScanMatcherOptions::clear_linear_xy_search_window() {
+  linear_xy_search_window_ = 0;
+  clear_has_linear_xy_search_window();
+}
+double FastCorrelativeScanMatcherOptions::linear_xy_search_window() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.linear_xy_search_window)
+  return linear_xy_search_window_;
+}
+void FastCorrelativeScanMatcherOptions::set_linear_xy_search_window(double value) {
+  set_has_linear_xy_search_window();
+  linear_xy_search_window_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.linear_xy_search_window)
+}
+
+// optional double linear_z_search_window = 6;
+bool FastCorrelativeScanMatcherOptions::has_linear_z_search_window() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+void FastCorrelativeScanMatcherOptions::set_has_linear_z_search_window() {
+  _has_bits_[0] |= 0x00000010u;
+}
+void FastCorrelativeScanMatcherOptions::clear_has_linear_z_search_window() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+void FastCorrelativeScanMatcherOptions::clear_linear_z_search_window() {
+  linear_z_search_window_ = 0;
+  clear_has_linear_z_search_window();
+}
+double FastCorrelativeScanMatcherOptions::linear_z_search_window() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.linear_z_search_window)
+  return linear_z_search_window_;
+}
+void FastCorrelativeScanMatcherOptions::set_linear_z_search_window(double value) {
+  set_has_linear_z_search_window();
+  linear_z_search_window_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.linear_z_search_window)
+}
+
+// optional double angular_search_window = 7;
+bool FastCorrelativeScanMatcherOptions::has_angular_search_window() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+void FastCorrelativeScanMatcherOptions::set_has_angular_search_window() {
+  _has_bits_[0] |= 0x00000020u;
+}
+void FastCorrelativeScanMatcherOptions::clear_has_angular_search_window() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+void FastCorrelativeScanMatcherOptions::clear_angular_search_window() {
+  angular_search_window_ = 0;
+  clear_has_angular_search_window();
+}
+double FastCorrelativeScanMatcherOptions::angular_search_window() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.angular_search_window)
+  return angular_search_window_;
+}
+void FastCorrelativeScanMatcherOptions::set_angular_search_window(double value) {
+  set_has_angular_search_window();
+  angular_search_window_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_3d.scan_matching.proto.FastCorrelativeScanMatcherOptions.angular_search_window)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

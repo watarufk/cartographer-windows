@@ -46,7 +46,7 @@ endmacro()
 
 set_and_check(CARTOGRAPHER_CMAKE_DIR "${PACKAGE_PREFIX_DIR}/share/cartographer/cmake")
 
-set(CERES_DIR_HINTS /usr/local/lib/cmake/Ceres)
+set(CERES_DIR_HINTS C:/SDKs/ceres-solver/ceres-solver/CMake)
 
 if (cartographer_FIND_QUIETLY)
    find_package(Ceres QUIET HINTS ${CERES_DIR_HINTS})

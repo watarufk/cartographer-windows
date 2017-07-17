@@ -7,6 +7,7 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -20,104 +21,146 @@ namespace cartographer {
 namespace mapping {
 namespace sparse_pose_graph {
 namespace proto {
+class OptimizationProblemOptionsDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<OptimizationProblemOptions> {
+} _OptimizationProblemOptions_default_instance_;
+
+namespace protobuf_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto {
+
 
 namespace {
 
-const ::google::protobuf::Descriptor* OptimizationProblemOptions_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  OptimizationProblemOptions_reflection_ = NULL;
+::google::protobuf::Metadata file_level_metadata[1];
 
 }  // namespace
 
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
+    const TableStruct::entries[] = {
+  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
+};
 
-void protobuf_AssignDesc_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto() {
-  protobuf_AddDesc_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto();
-  const ::google::protobuf::FileDescriptor* file =
-    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
-      "cartographer/mapping/sparse_pose_graph/proto/optimization_problem_options.proto");
-  GOOGLE_CHECK(file != NULL);
-  OptimizationProblemOptions_descriptor_ = file->message_type(0);
-  static const int OptimizationProblemOptions_offsets_[7] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, huber_scale_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, acceleration_weight_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, rotation_weight_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, consecutive_scan_translation_penalty_factor_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, consecutive_scan_rotation_penalty_factor_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, log_solver_summary_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, ceres_solver_options_),
-  };
-  OptimizationProblemOptions_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      OptimizationProblemOptions_descriptor_,
-      OptimizationProblemOptions::default_instance_,
-      OptimizationProblemOptions_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(OptimizationProblemOptions));
-}
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
+    const TableStruct::aux[] = {
+  ::google::protobuf::internal::AuxillaryParseTableField(),
+};
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
+    TableStruct::schema[] = {
+  { NULL, NULL, 0, -1, -1, false },
+};
+
+const ::google::protobuf::uint32 TableStruct::offsets[] = {
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, huber_scale_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, acceleration_weight_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, rotation_weight_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, consecutive_scan_translation_penalty_factor_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, consecutive_scan_rotation_penalty_factor_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, log_solver_summary_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OptimizationProblemOptions, ceres_solver_options_),
+  1,
+  4,
+  6,
+  2,
+  3,
+  5,
+  0,
+};
+
+static const ::google::protobuf::internal::MigrationSchema schemas[] = {
+  { 0, 12, sizeof(OptimizationProblemOptions)},
+};
+
+static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&_OptimizationProblemOptions_default_instance_),
+};
 
 namespace {
 
-GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
-  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
-                 &protobuf_AssignDesc_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto);
+void protobuf_AssignDescriptors() {
+  AddDescriptors();
+  ::google::protobuf::MessageFactory* factory = NULL;
+  AssignDescriptors(
+      "cartographer/mapping/sparse_pose_graph/proto/optimization_problem_options.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      file_level_metadata, NULL, NULL);
 }
 
+void protobuf_AssignDescriptorsOnce() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+}
+
+void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    OptimizationProblemOptions_descriptor_, &OptimizationProblemOptions::default_instance());
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
 }
 
 }  // namespace
 
-void protobuf_ShutdownFile_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto() {
-  delete OptimizationProblemOptions::default_instance_;
-  delete OptimizationProblemOptions_reflection_;
+void TableStruct::Shutdown() {
+  _OptimizationProblemOptions_default_instance_.Shutdown();
+  delete file_level_metadata[0].reflection;
 }
 
-void protobuf_AddDesc_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void TableStruct::InitDefaultsImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::cartographer::common::proto::protobuf_AddDesc_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto();
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\nOcartographer/mapping/sparse_pose_graph"
-    "/proto/optimization_problem_options.prot"
-    "o\022,cartographer.mapping.sparse_pose_grap"
-    "h.proto\0324cartographer/common/proto/ceres"
-    "_solver_options.proto\"\267\002\n\032OptimizationPr"
-    "oblemOptions\022\023\n\013huber_scale\030\001 \001(\001\022\033\n\023acc"
-    "eleration_weight\030\010 \001(\001\022\027\n\017rotation_weigh"
-    "t\030\t \001(\001\0223\n+consecutive_scan_translation_"
-    "penalty_factor\030\002 \001(\001\0220\n(consecutive_scan"
-    "_rotation_penalty_factor\030\003 \001(\001\022\032\n\022log_so"
-    "lver_summary\030\005 \001(\010\022K\n\024ceres_solver_optio"
-    "ns\030\007 \001(\0132-.cartographer.common.proto.Cer"
-    "esSolverOptions", 495);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "cartographer/mapping/sparse_pose_graph/proto/optimization_problem_options.proto", &protobuf_RegisterTypes);
-  OptimizationProblemOptions::default_instance_ = new OptimizationProblemOptions();
-  OptimizationProblemOptions::default_instance_->InitAsDefaultInstance();
-  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto);
+  ::google::protobuf::internal::InitProtobufDefaults();
+  ::cartographer::common::proto::protobuf_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto::InitDefaults();
+  _OptimizationProblemOptions_default_instance_.DefaultConstruct();
+  _OptimizationProblemOptions_default_instance_.get_mutable()->ceres_solver_options_ = const_cast< ::cartographer::common::proto::CeresSolverOptions*>(
+      ::cartographer::common::proto::CeresSolverOptions::internal_default_instance());
 }
 
+void InitDefaults() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
+}
+void AddDescriptorsImpl() {
+  InitDefaults();
+  static const char descriptor[] = {
+      "\nOcartographer/mapping/sparse_pose_graph"
+      "/proto/optimization_problem_options.prot"
+      "o\022,cartographer.mapping.sparse_pose_grap"
+      "h.proto\0324cartographer/common/proto/ceres"
+      "_solver_options.proto\"\267\002\n\032OptimizationPr"
+      "oblemOptions\022\023\n\013huber_scale\030\001 \001(\001\022\033\n\023acc"
+      "eleration_weight\030\010 \001(\001\022\027\n\017rotation_weigh"
+      "t\030\t \001(\001\0223\n+consecutive_scan_translation_"
+      "penalty_factor\030\002 \001(\001\0220\n(consecutive_scan"
+      "_rotation_penalty_factor\030\003 \001(\001\022\032\n\022log_so"
+      "lver_summary\030\005 \001(\010\022K\n\024ceres_solver_optio"
+      "ns\030\007 \001(\0132-.cartographer.common.proto.Cer"
+      "esSolverOptions"
+  };
+  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+      descriptor, 495);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
+    "cartographer/mapping/sparse_pose_graph/proto/optimization_problem_options.proto", &protobuf_RegisterTypes);
+  ::cartographer::common::proto::protobuf_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto::AddDescriptors();
+  ::google::protobuf::internal::OnShutdown(&TableStruct::Shutdown);
+}
+
+void AddDescriptors() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+}
 // Force AddDescriptors() to be called at static initialization time.
-struct StaticDescriptorInitializer_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto {
-  StaticDescriptorInitializer_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto() {
-    protobuf_AddDesc_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto();
+struct StaticDescriptorInitializer {
+  StaticDescriptorInitializer() {
+    AddDescriptors();
   }
-} static_descriptor_initializer_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto_;
+} static_descriptor_initializer;
+
+}  // namespace protobuf_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto
+
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OptimizationProblemOptions::kHuberScaleFieldNumber;
 const int OptimizationProblemOptions::kAccelerationWeightFieldNumber;
 const int OptimizationProblemOptions::kRotationWeightFieldNumber;
@@ -125,41 +168,47 @@ const int OptimizationProblemOptions::kConsecutiveScanTranslationPenaltyFactorFi
 const int OptimizationProblemOptions::kConsecutiveScanRotationPenaltyFactorFieldNumber;
 const int OptimizationProblemOptions::kLogSolverSummaryFieldNumber;
 const int OptimizationProblemOptions::kCeresSolverOptionsFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OptimizationProblemOptions::OptimizationProblemOptions()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
 }
-
-void OptimizationProblemOptions::InitAsDefaultInstance() {
-  ceres_solver_options_ = const_cast< ::cartographer::common::proto::CeresSolverOptions*>(&::cartographer::common::proto::CeresSolverOptions::default_instance());
-}
-
 OptimizationProblemOptions::OptimizationProblemOptions(const OptimizationProblemOptions& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_ceres_solver_options()) {
+    ceres_solver_options_ = new ::cartographer::common::proto::CeresSolverOptions(*from.ceres_solver_options_);
+  } else {
+    ceres_solver_options_ = NULL;
+  }
+  ::memcpy(&huber_scale_, &from.huber_scale_,
+    static_cast<size_t>(reinterpret_cast<char*>(&rotation_weight_) -
+    reinterpret_cast<char*>(&huber_scale_)) + sizeof(rotation_weight_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
 }
 
 void OptimizationProblemOptions::SharedCtor() {
   _cached_size_ = 0;
-  huber_scale_ = 0;
-  acceleration_weight_ = 0;
-  rotation_weight_ = 0;
-  consecutive_scan_translation_penalty_factor_ = 0;
-  consecutive_scan_rotation_penalty_factor_ = 0;
-  log_solver_summary_ = false;
-  ceres_solver_options_ = NULL;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&ceres_solver_options_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&rotation_weight_) -
+      reinterpret_cast<char*>(&ceres_solver_options_)) + sizeof(rotation_weight_));
 }
 
 OptimizationProblemOptions::~OptimizationProblemOptions() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
   SharedDtor();
 }
 
 void OptimizationProblemOptions::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != internal_default_instance()) {
     delete ceres_solver_options_;
   }
 }
@@ -170,157 +219,150 @@ void OptimizationProblemOptions::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* OptimizationProblemOptions::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return OptimizationProblemOptions_descriptor_;
+  protobuf_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const OptimizationProblemOptions& OptimizationProblemOptions::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-OptimizationProblemOptions* OptimizationProblemOptions::default_instance_ = NULL;
-
-OptimizationProblemOptions* OptimizationProblemOptions::New() const {
-  return new OptimizationProblemOptions;
+OptimizationProblemOptions* OptimizationProblemOptions::New(::google::protobuf::Arena* arena) const {
+  OptimizationProblemOptions* n = new OptimizationProblemOptions;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void OptimizationProblemOptions::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    huber_scale_ = 0;
-    acceleration_weight_ = 0;
-    rotation_weight_ = 0;
-    consecutive_scan_translation_penalty_factor_ = 0;
-    consecutive_scan_rotation_penalty_factor_ = 0;
-    log_solver_summary_ = false;
-    if (has_ceres_solver_options()) {
-      if (ceres_solver_options_ != NULL) ceres_solver_options_->::cartographer::common::proto::CeresSolverOptions::Clear();
-    }
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
+  if (has_ceres_solver_options()) {
+    GOOGLE_DCHECK(ceres_solver_options_ != NULL);
+    ceres_solver_options_->::cartographer::common::proto::CeresSolverOptions::Clear();
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_has_bits_[0 / 32] & 126u) {
+    ::memset(&huber_scale_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&rotation_weight_) -
+        reinterpret_cast<char*>(&huber_scale_)) + sizeof(rotation_weight_));
+  }
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool OptimizationProblemOptions::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional double huber_scale = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(9u)) {
+          set_has_huber_scale();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &huber_scale_)));
-          set_has_huber_scale();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(17)) goto parse_consecutive_scan_translation_penalty_factor;
         break;
       }
 
       // optional double consecutive_scan_translation_penalty_factor = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_consecutive_scan_translation_penalty_factor:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(17u)) {
+          set_has_consecutive_scan_translation_penalty_factor();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &consecutive_scan_translation_penalty_factor_)));
-          set_has_consecutive_scan_translation_penalty_factor();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(25)) goto parse_consecutive_scan_rotation_penalty_factor;
         break;
       }
 
       // optional double consecutive_scan_rotation_penalty_factor = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_consecutive_scan_rotation_penalty_factor:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(25u)) {
+          set_has_consecutive_scan_rotation_penalty_factor();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &consecutive_scan_rotation_penalty_factor_)));
-          set_has_consecutive_scan_rotation_penalty_factor();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(40)) goto parse_log_solver_summary;
         break;
       }
 
       // optional bool log_solver_summary = 5;
       case 5: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_log_solver_summary:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(40u)) {
+          set_has_log_solver_summary();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &log_solver_summary_)));
-          set_has_log_solver_summary();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(58)) goto parse_ceres_solver_options;
         break;
       }
 
       // optional .cartographer.common.proto.CeresSolverOptions ceres_solver_options = 7;
       case 7: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_ceres_solver_options:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(58u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_ceres_solver_options()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(65)) goto parse_acceleration_weight;
         break;
       }
 
       // optional double acceleration_weight = 8;
       case 8: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_acceleration_weight:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(65u)) {
+          set_has_acceleration_weight();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &acceleration_weight_)));
-          set_has_acceleration_weight();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(73)) goto parse_rotation_weight;
         break;
       }
 
       // optional double rotation_weight = 9;
       case 9: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_rotation_weight:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(73u)) {
+          set_has_rotation_weight();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &rotation_weight_)));
-          set_has_rotation_weight();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -328,116 +370,136 @@ bool OptimizationProblemOptions::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
+  return false;
 #undef DO_
 }
 
 void OptimizationProblemOptions::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional double huber_scale = 1;
-  if (has_huber_scale()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->huber_scale(), output);
   }
 
   // optional double consecutive_scan_translation_penalty_factor = 2;
-  if (has_consecutive_scan_translation_penalty_factor()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->consecutive_scan_translation_penalty_factor(), output);
   }
 
   // optional double consecutive_scan_rotation_penalty_factor = 3;
-  if (has_consecutive_scan_rotation_penalty_factor()) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->consecutive_scan_rotation_penalty_factor(), output);
   }
 
   // optional bool log_solver_summary = 5;
-  if (has_log_solver_summary()) {
+  if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(5, this->log_solver_summary(), output);
   }
 
   // optional .cartographer.common.proto.CeresSolverOptions ceres_solver_options = 7;
-  if (has_ceres_solver_options()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, this->ceres_solver_options(), output);
+      7, *this->ceres_solver_options_, output);
   }
 
   // optional double acceleration_weight = 8;
-  if (has_acceleration_weight()) {
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(8, this->acceleration_weight(), output);
   }
 
   // optional double rotation_weight = 9;
-  if (has_rotation_weight()) {
+  if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(9, this->rotation_weight(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
 }
 
-::google::protobuf::uint8* OptimizationProblemOptions::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* OptimizationProblemOptions::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional double huber_scale = 1;
-  if (has_huber_scale()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->huber_scale(), target);
   }
 
   // optional double consecutive_scan_translation_penalty_factor = 2;
-  if (has_consecutive_scan_translation_penalty_factor()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->consecutive_scan_translation_penalty_factor(), target);
   }
 
   // optional double consecutive_scan_rotation_penalty_factor = 3;
-  if (has_consecutive_scan_rotation_penalty_factor()) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->consecutive_scan_rotation_penalty_factor(), target);
   }
 
   // optional bool log_solver_summary = 5;
-  if (has_log_solver_summary()) {
+  if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(5, this->log_solver_summary(), target);
   }
 
   // optional .cartographer.common.proto.CeresSolverOptions ceres_solver_options = 7;
-  if (has_ceres_solver_options()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        7, this->ceres_solver_options(), target);
+      InternalWriteMessageNoVirtualToArray(
+        7, *this->ceres_solver_options_, deterministic, target);
   }
 
   // optional double acceleration_weight = 8;
-  if (has_acceleration_weight()) {
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(8, this->acceleration_weight(), target);
   }
 
   // optional double rotation_weight = 9;
-  if (has_rotation_weight()) {
+  if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(9, this->rotation_weight(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
   return target;
 }
 
-int OptimizationProblemOptions::ByteSize() const {
-  int total_size = 0;
+size_t OptimizationProblemOptions::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 127u) {
+    // optional .cartographer.common.proto.CeresSolverOptions ceres_solver_options = 7;
+    if (has_ceres_solver_options()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          *this->ceres_solver_options_);
+    }
+
     // optional double huber_scale = 1;
     if (has_huber_scale()) {
-      total_size += 1 + 8;
-    }
-
-    // optional double acceleration_weight = 8;
-    if (has_acceleration_weight()) {
-      total_size += 1 + 8;
-    }
-
-    // optional double rotation_weight = 9;
-    if (has_rotation_weight()) {
       total_size += 1 + 8;
     }
 
@@ -451,110 +513,311 @@ int OptimizationProblemOptions::ByteSize() const {
       total_size += 1 + 8;
     }
 
+    // optional double acceleration_weight = 8;
+    if (has_acceleration_weight()) {
+      total_size += 1 + 8;
+    }
+
     // optional bool log_solver_summary = 5;
     if (has_log_solver_summary()) {
       total_size += 1 + 1;
     }
 
-    // optional .cartographer.common.proto.CeresSolverOptions ceres_solver_options = 7;
-    if (has_ceres_solver_options()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->ceres_solver_options());
+    // optional double rotation_weight = 9;
+    if (has_rotation_weight()) {
+      total_size += 1 + 8;
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void OptimizationProblemOptions::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
+  GOOGLE_DCHECK_NE(&from, this);
   const OptimizationProblemOptions* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const OptimizationProblemOptions*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const OptimizationProblemOptions>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
     MergeFrom(*source);
   }
 }
 
 void OptimizationProblemOptions::MergeFrom(const OptimizationProblemOptions& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_huber_scale()) {
-      set_huber_scale(from.huber_scale());
-    }
-    if (from.has_acceleration_weight()) {
-      set_acceleration_weight(from.acceleration_weight());
-    }
-    if (from.has_rotation_weight()) {
-      set_rotation_weight(from.rotation_weight());
-    }
-    if (from.has_consecutive_scan_translation_penalty_factor()) {
-      set_consecutive_scan_translation_penalty_factor(from.consecutive_scan_translation_penalty_factor());
-    }
-    if (from.has_consecutive_scan_rotation_penalty_factor()) {
-      set_consecutive_scan_rotation_penalty_factor(from.consecutive_scan_rotation_penalty_factor());
-    }
-    if (from.has_log_solver_summary()) {
-      set_log_solver_summary(from.log_solver_summary());
-    }
-    if (from.has_ceres_solver_options()) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 127u) {
+    if (cached_has_bits & 0x00000001u) {
       mutable_ceres_solver_options()->::cartographer::common::proto::CeresSolverOptions::MergeFrom(from.ceres_solver_options());
     }
+    if (cached_has_bits & 0x00000002u) {
+      huber_scale_ = from.huber_scale_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      consecutive_scan_translation_penalty_factor_ = from.consecutive_scan_translation_penalty_factor_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      consecutive_scan_rotation_penalty_factor_ = from.consecutive_scan_rotation_penalty_factor_;
+    }
+    if (cached_has_bits & 0x00000010u) {
+      acceleration_weight_ = from.acceleration_weight_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      log_solver_summary_ = from.log_solver_summary_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      rotation_weight_ = from.rotation_weight_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void OptimizationProblemOptions::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void OptimizationProblemOptions::CopyFrom(const OptimizationProblemOptions& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool OptimizationProblemOptions::IsInitialized() const {
-
   return true;
 }
 
 void OptimizationProblemOptions::Swap(OptimizationProblemOptions* other) {
-  if (other != this) {
-    std::swap(huber_scale_, other->huber_scale_);
-    std::swap(acceleration_weight_, other->acceleration_weight_);
-    std::swap(rotation_weight_, other->rotation_weight_);
-    std::swap(consecutive_scan_translation_penalty_factor_, other->consecutive_scan_translation_penalty_factor_);
-    std::swap(consecutive_scan_rotation_penalty_factor_, other->consecutive_scan_rotation_penalty_factor_);
-    std::swap(log_solver_summary_, other->log_solver_summary_);
-    std::swap(ceres_solver_options_, other->ceres_solver_options_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void OptimizationProblemOptions::InternalSwap(OptimizationProblemOptions* other) {
+  std::swap(ceres_solver_options_, other->ceres_solver_options_);
+  std::swap(huber_scale_, other->huber_scale_);
+  std::swap(consecutive_scan_translation_penalty_factor_, other->consecutive_scan_translation_penalty_factor_);
+  std::swap(consecutive_scan_rotation_penalty_factor_, other->consecutive_scan_rotation_penalty_factor_);
+  std::swap(acceleration_weight_, other->acceleration_weight_);
+  std::swap(log_solver_summary_, other->log_solver_summary_);
+  std::swap(rotation_weight_, other->rotation_weight_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata OptimizationProblemOptions::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = OptimizationProblemOptions_descriptor_;
-  metadata.reflection = OptimizationProblemOptions_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// OptimizationProblemOptions
+
+// optional double huber_scale = 1;
+bool OptimizationProblemOptions::has_huber_scale() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void OptimizationProblemOptions::set_has_huber_scale() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void OptimizationProblemOptions::clear_has_huber_scale() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void OptimizationProblemOptions::clear_huber_scale() {
+  huber_scale_ = 0;
+  clear_has_huber_scale();
+}
+double OptimizationProblemOptions::huber_scale() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.huber_scale)
+  return huber_scale_;
+}
+void OptimizationProblemOptions::set_huber_scale(double value) {
+  set_has_huber_scale();
+  huber_scale_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.huber_scale)
+}
+
+// optional double acceleration_weight = 8;
+bool OptimizationProblemOptions::has_acceleration_weight() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+void OptimizationProblemOptions::set_has_acceleration_weight() {
+  _has_bits_[0] |= 0x00000010u;
+}
+void OptimizationProblemOptions::clear_has_acceleration_weight() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+void OptimizationProblemOptions::clear_acceleration_weight() {
+  acceleration_weight_ = 0;
+  clear_has_acceleration_weight();
+}
+double OptimizationProblemOptions::acceleration_weight() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.acceleration_weight)
+  return acceleration_weight_;
+}
+void OptimizationProblemOptions::set_acceleration_weight(double value) {
+  set_has_acceleration_weight();
+  acceleration_weight_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.acceleration_weight)
+}
+
+// optional double rotation_weight = 9;
+bool OptimizationProblemOptions::has_rotation_weight() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+void OptimizationProblemOptions::set_has_rotation_weight() {
+  _has_bits_[0] |= 0x00000040u;
+}
+void OptimizationProblemOptions::clear_has_rotation_weight() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+void OptimizationProblemOptions::clear_rotation_weight() {
+  rotation_weight_ = 0;
+  clear_has_rotation_weight();
+}
+double OptimizationProblemOptions::rotation_weight() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.rotation_weight)
+  return rotation_weight_;
+}
+void OptimizationProblemOptions::set_rotation_weight(double value) {
+  set_has_rotation_weight();
+  rotation_weight_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.rotation_weight)
+}
+
+// optional double consecutive_scan_translation_penalty_factor = 2;
+bool OptimizationProblemOptions::has_consecutive_scan_translation_penalty_factor() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void OptimizationProblemOptions::set_has_consecutive_scan_translation_penalty_factor() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void OptimizationProblemOptions::clear_has_consecutive_scan_translation_penalty_factor() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void OptimizationProblemOptions::clear_consecutive_scan_translation_penalty_factor() {
+  consecutive_scan_translation_penalty_factor_ = 0;
+  clear_has_consecutive_scan_translation_penalty_factor();
+}
+double OptimizationProblemOptions::consecutive_scan_translation_penalty_factor() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.consecutive_scan_translation_penalty_factor)
+  return consecutive_scan_translation_penalty_factor_;
+}
+void OptimizationProblemOptions::set_consecutive_scan_translation_penalty_factor(double value) {
+  set_has_consecutive_scan_translation_penalty_factor();
+  consecutive_scan_translation_penalty_factor_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.consecutive_scan_translation_penalty_factor)
+}
+
+// optional double consecutive_scan_rotation_penalty_factor = 3;
+bool OptimizationProblemOptions::has_consecutive_scan_rotation_penalty_factor() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void OptimizationProblemOptions::set_has_consecutive_scan_rotation_penalty_factor() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void OptimizationProblemOptions::clear_has_consecutive_scan_rotation_penalty_factor() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void OptimizationProblemOptions::clear_consecutive_scan_rotation_penalty_factor() {
+  consecutive_scan_rotation_penalty_factor_ = 0;
+  clear_has_consecutive_scan_rotation_penalty_factor();
+}
+double OptimizationProblemOptions::consecutive_scan_rotation_penalty_factor() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.consecutive_scan_rotation_penalty_factor)
+  return consecutive_scan_rotation_penalty_factor_;
+}
+void OptimizationProblemOptions::set_consecutive_scan_rotation_penalty_factor(double value) {
+  set_has_consecutive_scan_rotation_penalty_factor();
+  consecutive_scan_rotation_penalty_factor_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.consecutive_scan_rotation_penalty_factor)
+}
+
+// optional bool log_solver_summary = 5;
+bool OptimizationProblemOptions::has_log_solver_summary() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+void OptimizationProblemOptions::set_has_log_solver_summary() {
+  _has_bits_[0] |= 0x00000020u;
+}
+void OptimizationProblemOptions::clear_has_log_solver_summary() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+void OptimizationProblemOptions::clear_log_solver_summary() {
+  log_solver_summary_ = false;
+  clear_has_log_solver_summary();
+}
+bool OptimizationProblemOptions::log_solver_summary() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.log_solver_summary)
+  return log_solver_summary_;
+}
+void OptimizationProblemOptions::set_log_solver_summary(bool value) {
+  set_has_log_solver_summary();
+  log_solver_summary_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.log_solver_summary)
+}
+
+// optional .cartographer.common.proto.CeresSolverOptions ceres_solver_options = 7;
+bool OptimizationProblemOptions::has_ceres_solver_options() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void OptimizationProblemOptions::set_has_ceres_solver_options() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void OptimizationProblemOptions::clear_has_ceres_solver_options() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void OptimizationProblemOptions::clear_ceres_solver_options() {
+  if (ceres_solver_options_ != NULL) ceres_solver_options_->::cartographer::common::proto::CeresSolverOptions::Clear();
+  clear_has_ceres_solver_options();
+}
+const ::cartographer::common::proto::CeresSolverOptions& OptimizationProblemOptions::ceres_solver_options() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.ceres_solver_options)
+  return ceres_solver_options_ != NULL ? *ceres_solver_options_
+                         : *::cartographer::common::proto::CeresSolverOptions::internal_default_instance();
+}
+::cartographer::common::proto::CeresSolverOptions* OptimizationProblemOptions::mutable_ceres_solver_options() {
+  set_has_ceres_solver_options();
+  if (ceres_solver_options_ == NULL) {
+    ceres_solver_options_ = new ::cartographer::common::proto::CeresSolverOptions;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.ceres_solver_options)
+  return ceres_solver_options_;
+}
+::cartographer::common::proto::CeresSolverOptions* OptimizationProblemOptions::release_ceres_solver_options() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.ceres_solver_options)
+  clear_has_ceres_solver_options();
+  ::cartographer::common::proto::CeresSolverOptions* temp = ceres_solver_options_;
+  ceres_solver_options_ = NULL;
+  return temp;
+}
+void OptimizationProblemOptions::set_allocated_ceres_solver_options(::cartographer::common::proto::CeresSolverOptions* ceres_solver_options) {
+  delete ceres_solver_options_;
+  ceres_solver_options_ = ceres_solver_options;
+  if (ceres_solver_options) {
+    set_has_ceres_solver_options();
+  } else {
+    clear_has_ceres_solver_options();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions.ceres_solver_options)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

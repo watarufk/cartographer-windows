@@ -7,6 +7,7 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -19,184 +20,218 @@
 namespace cartographer {
 namespace sensor {
 namespace proto {
+class CompressedPointCloudDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CompressedPointCloud> {
+} _CompressedPointCloud_default_instance_;
+class ImuDataDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ImuData> {
+} _ImuData_default_instance_;
+class CompressedRangeDataDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CompressedRangeData> {
+} _CompressedRangeData_default_instance_;
+
+namespace protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto {
+
 
 namespace {
 
-const ::google::protobuf::Descriptor* CompressedPointCloud_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  CompressedPointCloud_reflection_ = NULL;
-const ::google::protobuf::Descriptor* ImuData_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  ImuData_reflection_ = NULL;
-const ::google::protobuf::Descriptor* CompressedRangeData_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  CompressedRangeData_reflection_ = NULL;
+::google::protobuf::Metadata file_level_metadata[3];
 
 }  // namespace
 
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
+    const TableStruct::entries[] = {
+  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
+};
 
-void protobuf_AssignDesc_cartographer_2fsensor_2fproto_2fsensor_2eproto() {
-  protobuf_AddDesc_cartographer_2fsensor_2fproto_2fsensor_2eproto();
-  const ::google::protobuf::FileDescriptor* file =
-    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
-      "cartographer/sensor/proto/sensor.proto");
-  GOOGLE_CHECK(file != NULL);
-  CompressedPointCloud_descriptor_ = file->message_type(0);
-  static const int CompressedPointCloud_offsets_[2] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedPointCloud, num_points_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedPointCloud, point_data_),
-  };
-  CompressedPointCloud_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      CompressedPointCloud_descriptor_,
-      CompressedPointCloud::default_instance_,
-      CompressedPointCloud_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedPointCloud, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedPointCloud, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(CompressedPointCloud));
-  ImuData_descriptor_ = file->message_type(1);
-  static const int ImuData_offsets_[3] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImuData, timestamp_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImuData, linear_acceleration_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImuData, angular_velocity_),
-  };
-  ImuData_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      ImuData_descriptor_,
-      ImuData::default_instance_,
-      ImuData_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImuData, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImuData, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(ImuData));
-  CompressedRangeData_descriptor_ = file->message_type(2);
-  static const int CompressedRangeData_offsets_[3] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedRangeData, origin_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedRangeData, returns_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedRangeData, misses_),
-  };
-  CompressedRangeData_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      CompressedRangeData_descriptor_,
-      CompressedRangeData::default_instance_,
-      CompressedRangeData_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedRangeData, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedRangeData, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(CompressedRangeData));
-}
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
+    const TableStruct::aux[] = {
+  ::google::protobuf::internal::AuxillaryParseTableField(),
+};
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
+    TableStruct::schema[] = {
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+};
+
+const ::google::protobuf::uint32 TableStruct::offsets[] = {
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedPointCloud, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedPointCloud, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedPointCloud, num_points_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedPointCloud, point_data_),
+  0,
+  ~0u,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImuData, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImuData, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImuData, timestamp_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImuData, linear_acceleration_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImuData, angular_velocity_),
+  2,
+  0,
+  1,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedRangeData, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedRangeData, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedRangeData, origin_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedRangeData, returns_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompressedRangeData, misses_),
+  0,
+  1,
+  2,
+};
+
+static const ::google::protobuf::internal::MigrationSchema schemas[] = {
+  { 0, 7, sizeof(CompressedPointCloud)},
+  { 9, 17, sizeof(ImuData)},
+  { 20, 28, sizeof(CompressedRangeData)},
+};
+
+static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&_CompressedPointCloud_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_ImuData_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_CompressedRangeData_default_instance_),
+};
 
 namespace {
 
-GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
-  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
-                 &protobuf_AssignDesc_cartographer_2fsensor_2fproto_2fsensor_2eproto);
+void protobuf_AssignDescriptors() {
+  AddDescriptors();
+  ::google::protobuf::MessageFactory* factory = NULL;
+  AssignDescriptors(
+      "cartographer/sensor/proto/sensor.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      file_level_metadata, NULL, NULL);
 }
 
+void protobuf_AssignDescriptorsOnce() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+}
+
+void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    CompressedPointCloud_descriptor_, &CompressedPointCloud::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    ImuData_descriptor_, &ImuData::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    CompressedRangeData_descriptor_, &CompressedRangeData::default_instance());
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 3);
 }
 
 }  // namespace
 
-void protobuf_ShutdownFile_cartographer_2fsensor_2fproto_2fsensor_2eproto() {
-  delete CompressedPointCloud::default_instance_;
-  delete CompressedPointCloud_reflection_;
-  delete ImuData::default_instance_;
-  delete ImuData_reflection_;
-  delete CompressedRangeData::default_instance_;
-  delete CompressedRangeData_reflection_;
+void TableStruct::Shutdown() {
+  _CompressedPointCloud_default_instance_.Shutdown();
+  delete file_level_metadata[0].reflection;
+  _ImuData_default_instance_.Shutdown();
+  delete file_level_metadata[1].reflection;
+  _CompressedRangeData_default_instance_.Shutdown();
+  delete file_level_metadata[2].reflection;
 }
 
-void protobuf_AddDesc_cartographer_2fsensor_2fproto_2fsensor_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void TableStruct::InitDefaultsImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::cartographer::transform::proto::protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n&cartographer/sensor/proto/sensor.proto"
-    "\022\031cartographer.sensor.proto\032,cartographe"
-    "r/transform/proto/transform.proto\"B\n\024Com"
-    "pressedPointCloud\022\022\n\nnum_points\030\001 \001(\005\022\026\n"
-    "\npoint_data\030\003 \003(\005B\002\020\001\"\243\001\n\007ImuData\022\021\n\ttim"
-    "estamp\030\001 \001(\003\022C\n\023linear_acceleration\030\002 \001("
-    "\0132&.cartographer.transform.proto.Vector3"
-    "d\022@\n\020angular_velocity\030\003 \001(\0132&.cartograph"
-    "er.transform.proto.Vector3d\"\320\001\n\023Compress"
-    "edRangeData\0226\n\006origin\030\001 \001(\0132&.cartograph"
-    "er.transform.proto.Vector3f\022@\n\007returns\030\002"
-    " \001(\0132/.cartographer.sensor.proto.Compres"
-    "sedPointCloud\022\?\n\006misses\030\003 \001(\0132/.cartogra"
-    "pher.sensor.proto.CompressedPointCloudB\010"
-    "B\006Sensor", 568);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "cartographer/sensor/proto/sensor.proto", &protobuf_RegisterTypes);
-  CompressedPointCloud::default_instance_ = new CompressedPointCloud();
-  ImuData::default_instance_ = new ImuData();
-  CompressedRangeData::default_instance_ = new CompressedRangeData();
-  CompressedPointCloud::default_instance_->InitAsDefaultInstance();
-  ImuData::default_instance_->InitAsDefaultInstance();
-  CompressedRangeData::default_instance_->InitAsDefaultInstance();
-  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_cartographer_2fsensor_2fproto_2fsensor_2eproto);
+  ::google::protobuf::internal::InitProtobufDefaults();
+  ::cartographer::transform::proto::protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  _CompressedPointCloud_default_instance_.DefaultConstruct();
+  _ImuData_default_instance_.DefaultConstruct();
+  _CompressedRangeData_default_instance_.DefaultConstruct();
+  _ImuData_default_instance_.get_mutable()->linear_acceleration_ = const_cast< ::cartographer::transform::proto::Vector3d*>(
+      ::cartographer::transform::proto::Vector3d::internal_default_instance());
+  _ImuData_default_instance_.get_mutable()->angular_velocity_ = const_cast< ::cartographer::transform::proto::Vector3d*>(
+      ::cartographer::transform::proto::Vector3d::internal_default_instance());
+  _CompressedRangeData_default_instance_.get_mutable()->origin_ = const_cast< ::cartographer::transform::proto::Vector3f*>(
+      ::cartographer::transform::proto::Vector3f::internal_default_instance());
+  _CompressedRangeData_default_instance_.get_mutable()->returns_ = const_cast< ::cartographer::sensor::proto::CompressedPointCloud*>(
+      ::cartographer::sensor::proto::CompressedPointCloud::internal_default_instance());
+  _CompressedRangeData_default_instance_.get_mutable()->misses_ = const_cast< ::cartographer::sensor::proto::CompressedPointCloud*>(
+      ::cartographer::sensor::proto::CompressedPointCloud::internal_default_instance());
 }
 
+void InitDefaults() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
+}
+void AddDescriptorsImpl() {
+  InitDefaults();
+  static const char descriptor[] = {
+      "\n&cartographer/sensor/proto/sensor.proto"
+      "\022\031cartographer.sensor.proto\032,cartographe"
+      "r/transform/proto/transform.proto\"B\n\024Com"
+      "pressedPointCloud\022\022\n\nnum_points\030\001 \001(\005\022\026\n"
+      "\npoint_data\030\003 \003(\005B\002\020\001\"\243\001\n\007ImuData\022\021\n\ttim"
+      "estamp\030\001 \001(\003\022C\n\023linear_acceleration\030\002 \001("
+      "\0132&.cartographer.transform.proto.Vector3"
+      "d\022@\n\020angular_velocity\030\003 \001(\0132&.cartograph"
+      "er.transform.proto.Vector3d\"\320\001\n\023Compress"
+      "edRangeData\0226\n\006origin\030\001 \001(\0132&.cartograph"
+      "er.transform.proto.Vector3f\022@\n\007returns\030\002"
+      " \001(\0132/.cartographer.sensor.proto.Compres"
+      "sedPointCloud\022\?\n\006misses\030\003 \001(\0132/.cartogra"
+      "pher.sensor.proto.CompressedPointCloudB\010"
+      "B\006Sensor"
+  };
+  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+      descriptor, 568);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
+    "cartographer/sensor/proto/sensor.proto", &protobuf_RegisterTypes);
+  ::cartographer::transform::proto::protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::AddDescriptors();
+  ::google::protobuf::internal::OnShutdown(&TableStruct::Shutdown);
+}
+
+void AddDescriptors() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+}
 // Force AddDescriptors() to be called at static initialization time.
-struct StaticDescriptorInitializer_cartographer_2fsensor_2fproto_2fsensor_2eproto {
-  StaticDescriptorInitializer_cartographer_2fsensor_2fproto_2fsensor_2eproto() {
-    protobuf_AddDesc_cartographer_2fsensor_2fproto_2fsensor_2eproto();
+struct StaticDescriptorInitializer {
+  StaticDescriptorInitializer() {
+    AddDescriptors();
   }
-} static_descriptor_initializer_cartographer_2fsensor_2fproto_2fsensor_2eproto_;
+} static_descriptor_initializer;
+
+}  // namespace protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto
+
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CompressedPointCloud::kNumPointsFieldNumber;
 const int CompressedPointCloud::kPointDataFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CompressedPointCloud::CompressedPointCloud()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.sensor.proto.CompressedPointCloud)
 }
-
-void CompressedPointCloud::InitAsDefaultInstance() {
-}
-
 CompressedPointCloud::CompressedPointCloud(const CompressedPointCloud& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0),
+      point_data_(from.point_data_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  num_points_ = from.num_points_;
+  // @@protoc_insertion_point(copy_constructor:cartographer.sensor.proto.CompressedPointCloud)
 }
 
 void CompressedPointCloud::SharedCtor() {
   _cached_size_ = 0;
   num_points_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 CompressedPointCloud::~CompressedPointCloud() {
+  // @@protoc_insertion_point(destructor:cartographer.sensor.proto.CompressedPointCloud)
   SharedDtor();
 }
 
 void CompressedPointCloud::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void CompressedPointCloud::SetCachedSize(int size) const {
@@ -205,77 +240,79 @@ void CompressedPointCloud::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* CompressedPointCloud::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return CompressedPointCloud_descriptor_;
+  protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const CompressedPointCloud& CompressedPointCloud::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fsensor_2fproto_2fsensor_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-CompressedPointCloud* CompressedPointCloud::default_instance_ = NULL;
-
-CompressedPointCloud* CompressedPointCloud::New() const {
-  return new CompressedPointCloud;
+CompressedPointCloud* CompressedPointCloud::New(::google::protobuf::Arena* arena) const {
+  CompressedPointCloud* n = new CompressedPointCloud;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void CompressedPointCloud::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    num_points_ = 0;
-  }
+// @@protoc_insertion_point(message_clear_start:cartographer.sensor.proto.CompressedPointCloud)
   point_data_.Clear();
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  num_points_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool CompressedPointCloud::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.sensor.proto.CompressedPointCloud)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 num_points = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u)) {
+          set_has_num_points();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &num_points_)));
-          set_has_num_points();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_point_data;
         break;
       }
 
       // repeated int32 point_data = 3 [packed = true];
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_point_data:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, this->mutable_point_data())));
-        } else if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag)
-                   == ::google::protobuf::internal::WireFormatLite::
-                      WIRETYPE_VARINT) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) ==
+                   static_cast< ::google::protobuf::uint8>(24u)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 1, 26, input, this->mutable_point_data())));
+                 1, 26u, input, this->mutable_point_data())));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -283,37 +320,54 @@ bool CompressedPointCloud::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.sensor.proto.CompressedPointCloud)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.sensor.proto.CompressedPointCloud)
+  return false;
 #undef DO_
 }
 
 void CompressedPointCloud::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.sensor.proto.CompressedPointCloud)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int32 num_points = 1;
-  if (has_num_points()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->num_points(), output);
   }
 
   // repeated int32 point_data = 3 [packed = true];
   if (this->point_data_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(3, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_point_data_cached_byte_size_);
+    output->WriteVarint32(static_cast<::google::protobuf::uint32>(
+        _point_data_cached_byte_size_));
   }
-  for (int i = 0; i < this->point_data_size(); i++) {
+  for (int i = 0, n = this->point_data_size(); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32NoTag(
       this->point_data(i), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.sensor.proto.CompressedPointCloud)
 }
 
-::google::protobuf::uint8* CompressedPointCloud::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* CompressedPointCloud::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.sensor.proto.CompressedPointCloud)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int32 num_points = 1;
-  if (has_num_points()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->num_points(), target);
   }
 
@@ -324,158 +378,234 @@ void CompressedPointCloud::SerializeWithCachedSizes(
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _point_data_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->point_data_size(); i++) {
+        static_cast<::google::protobuf::uint32>(
+            _point_data_cached_byte_size_), target);
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteInt32NoTagToArray(this->point_data(i), target);
+      WriteInt32NoTagToArray(this->point_data_, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.sensor.proto.CompressedPointCloud)
   return target;
 }
 
-int CompressedPointCloud::ByteSize() const {
-  int total_size = 0;
+size_t CompressedPointCloud::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.sensor.proto.CompressedPointCloud)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional int32 num_points = 1;
-    if (has_num_points()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->num_points());
-    }
-
-  }
-  // repeated int32 point_data = 3 [packed = true];
-  {
-    int data_size = 0;
-    for (int i = 0; i < this->point_data_size(); i++) {
-      data_size += ::google::protobuf::internal::WireFormatLite::
-        Int32Size(this->point_data(i));
-    }
-    if (data_size > 0) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _point_data_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
   }
+  // repeated int32 point_data = 3 [packed = true];
+  {
+    size_t data_size = ::google::protobuf::internal::WireFormatLite::
+      Int32Size(this->point_data_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+            static_cast<google::protobuf::int32>(data_size));
+    }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _point_data_cached_byte_size_ = cached_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  // optional int32 num_points = 1;
+  if (has_num_points()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->num_points());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CompressedPointCloud::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.sensor.proto.CompressedPointCloud)
+  GOOGLE_DCHECK_NE(&from, this);
   const CompressedPointCloud* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const CompressedPointCloud*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const CompressedPointCloud>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.sensor.proto.CompressedPointCloud)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.sensor.proto.CompressedPointCloud)
     MergeFrom(*source);
   }
 }
 
 void CompressedPointCloud::MergeFrom(const CompressedPointCloud& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.sensor.proto.CompressedPointCloud)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
   point_data_.MergeFrom(from.point_data_);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_num_points()) {
-      set_num_points(from.num_points());
-    }
+  if (from.has_num_points()) {
+    set_num_points(from.num_points());
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void CompressedPointCloud::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.sensor.proto.CompressedPointCloud)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CompressedPointCloud::CopyFrom(const CompressedPointCloud& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.sensor.proto.CompressedPointCloud)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool CompressedPointCloud::IsInitialized() const {
-
   return true;
 }
 
 void CompressedPointCloud::Swap(CompressedPointCloud* other) {
-  if (other != this) {
-    std::swap(num_points_, other->num_points_);
-    point_data_.Swap(&other->point_data_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void CompressedPointCloud::InternalSwap(CompressedPointCloud* other) {
+  point_data_.InternalSwap(&other->point_data_);
+  std::swap(num_points_, other->num_points_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CompressedPointCloud::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = CompressedPointCloud_descriptor_;
-  metadata.reflection = CompressedPointCloud_reflection_;
-  return metadata;
+  protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// CompressedPointCloud
+
+// optional int32 num_points = 1;
+bool CompressedPointCloud::has_num_points() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void CompressedPointCloud::set_has_num_points() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void CompressedPointCloud::clear_has_num_points() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void CompressedPointCloud::clear_num_points() {
+  num_points_ = 0;
+  clear_has_num_points();
+}
+::google::protobuf::int32 CompressedPointCloud::num_points() const {
+  // @@protoc_insertion_point(field_get:cartographer.sensor.proto.CompressedPointCloud.num_points)
+  return num_points_;
+}
+void CompressedPointCloud::set_num_points(::google::protobuf::int32 value) {
+  set_has_num_points();
+  num_points_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.sensor.proto.CompressedPointCloud.num_points)
+}
+
+// repeated int32 point_data = 3 [packed = true];
+int CompressedPointCloud::point_data_size() const {
+  return point_data_.size();
+}
+void CompressedPointCloud::clear_point_data() {
+  point_data_.Clear();
+}
+::google::protobuf::int32 CompressedPointCloud::point_data(int index) const {
+  // @@protoc_insertion_point(field_get:cartographer.sensor.proto.CompressedPointCloud.point_data)
+  return point_data_.Get(index);
+}
+void CompressedPointCloud::set_point_data(int index, ::google::protobuf::int32 value) {
+  point_data_.Set(index, value);
+  // @@protoc_insertion_point(field_set:cartographer.sensor.proto.CompressedPointCloud.point_data)
+}
+void CompressedPointCloud::add_point_data(::google::protobuf::int32 value) {
+  point_data_.Add(value);
+  // @@protoc_insertion_point(field_add:cartographer.sensor.proto.CompressedPointCloud.point_data)
+}
+const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+CompressedPointCloud::point_data() const {
+  // @@protoc_insertion_point(field_list:cartographer.sensor.proto.CompressedPointCloud.point_data)
+  return point_data_;
+}
+::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+CompressedPointCloud::mutable_point_data() {
+  // @@protoc_insertion_point(field_mutable_list:cartographer.sensor.proto.CompressedPointCloud.point_data)
+  return &point_data_;
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ImuData::kTimestampFieldNumber;
 const int ImuData::kLinearAccelerationFieldNumber;
 const int ImuData::kAngularVelocityFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ImuData::ImuData()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.sensor.proto.ImuData)
 }
-
-void ImuData::InitAsDefaultInstance() {
-  linear_acceleration_ = const_cast< ::cartographer::transform::proto::Vector3d*>(&::cartographer::transform::proto::Vector3d::default_instance());
-  angular_velocity_ = const_cast< ::cartographer::transform::proto::Vector3d*>(&::cartographer::transform::proto::Vector3d::default_instance());
-}
-
 ImuData::ImuData(const ImuData& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_linear_acceleration()) {
+    linear_acceleration_ = new ::cartographer::transform::proto::Vector3d(*from.linear_acceleration_);
+  } else {
+    linear_acceleration_ = NULL;
+  }
+  if (from.has_angular_velocity()) {
+    angular_velocity_ = new ::cartographer::transform::proto::Vector3d(*from.angular_velocity_);
+  } else {
+    angular_velocity_ = NULL;
+  }
+  timestamp_ = from.timestamp_;
+  // @@protoc_insertion_point(copy_constructor:cartographer.sensor.proto.ImuData)
 }
 
 void ImuData::SharedCtor() {
   _cached_size_ = 0;
-  timestamp_ = GOOGLE_LONGLONG(0);
-  linear_acceleration_ = NULL;
-  angular_velocity_ = NULL;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&linear_acceleration_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&timestamp_) -
+      reinterpret_cast<char*>(&linear_acceleration_)) + sizeof(timestamp_));
 }
 
 ImuData::~ImuData() {
+  // @@protoc_insertion_point(destructor:cartographer.sensor.proto.ImuData)
   SharedDtor();
 }
 
 void ImuData::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != internal_default_instance()) {
     delete linear_acceleration_;
+  }
+  if (this != internal_default_instance()) {
     delete angular_velocity_;
   }
 }
@@ -486,89 +616,94 @@ void ImuData::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* ImuData::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return ImuData_descriptor_;
+  protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const ImuData& ImuData::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fsensor_2fproto_2fsensor_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-ImuData* ImuData::default_instance_ = NULL;
-
-ImuData* ImuData::New() const {
-  return new ImuData;
+ImuData* ImuData::New(::google::protobuf::Arena* arena) const {
+  ImuData* n = new ImuData;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void ImuData::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    timestamp_ = GOOGLE_LONGLONG(0);
+// @@protoc_insertion_point(message_clear_start:cartographer.sensor.proto.ImuData)
+  if (_has_bits_[0 / 32] & 3u) {
     if (has_linear_acceleration()) {
-      if (linear_acceleration_ != NULL) linear_acceleration_->::cartographer::transform::proto::Vector3d::Clear();
+      GOOGLE_DCHECK(linear_acceleration_ != NULL);
+      linear_acceleration_->::cartographer::transform::proto::Vector3d::Clear();
     }
     if (has_angular_velocity()) {
-      if (angular_velocity_ != NULL) angular_velocity_->::cartographer::transform::proto::Vector3d::Clear();
+      GOOGLE_DCHECK(angular_velocity_ != NULL);
+      angular_velocity_->::cartographer::transform::proto::Vector3d::Clear();
     }
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  timestamp_ = GOOGLE_LONGLONG(0);
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool ImuData::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.sensor.proto.ImuData)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int64 timestamp = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u)) {
+          set_has_timestamp();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &timestamp_)));
-          set_has_timestamp();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_linear_acceleration;
         break;
       }
 
       // optional .cartographer.transform.proto.Vector3d linear_acceleration = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_linear_acceleration:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_linear_acceleration()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_angular_velocity;
         break;
       }
 
       // optional .cartographer.transform.proto.Vector3d angular_velocity = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_angular_velocity:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_angular_velocity()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -576,67 +711,104 @@ bool ImuData::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.sensor.proto.ImuData)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.sensor.proto.ImuData)
+  return false;
 #undef DO_
 }
 
 void ImuData::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.sensor.proto.ImuData)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int64 timestamp = 1;
-  if (has_timestamp()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->timestamp(), output);
   }
 
   // optional .cartographer.transform.proto.Vector3d linear_acceleration = 2;
-  if (has_linear_acceleration()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->linear_acceleration(), output);
+      2, *this->linear_acceleration_, output);
   }
 
   // optional .cartographer.transform.proto.Vector3d angular_velocity = 3;
-  if (has_angular_velocity()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->angular_velocity(), output);
+      3, *this->angular_velocity_, output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.sensor.proto.ImuData)
 }
 
-::google::protobuf::uint8* ImuData::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* ImuData::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.sensor.proto.ImuData)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int64 timestamp = 1;
-  if (has_timestamp()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->timestamp(), target);
   }
 
   // optional .cartographer.transform.proto.Vector3d linear_acceleration = 2;
-  if (has_linear_acceleration()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        2, this->linear_acceleration(), target);
+      InternalWriteMessageNoVirtualToArray(
+        2, *this->linear_acceleration_, deterministic, target);
   }
 
   // optional .cartographer.transform.proto.Vector3d angular_velocity = 3;
-  if (has_angular_velocity()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        3, this->angular_velocity(), target);
+      InternalWriteMessageNoVirtualToArray(
+        3, *this->angular_velocity_, deterministic, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.sensor.proto.ImuData)
   return target;
 }
 
-int ImuData::ByteSize() const {
-  int total_size = 0;
+size_t ImuData::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.sensor.proto.ImuData)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 7u) {
+    // optional .cartographer.transform.proto.Vector3d linear_acceleration = 2;
+    if (has_linear_acceleration()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          *this->linear_acceleration_);
+    }
+
+    // optional .cartographer.transform.proto.Vector3d angular_velocity = 3;
+    if (has_angular_velocity()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          *this->angular_velocity_);
+    }
+
     // optional int64 timestamp = 1;
     if (has_timestamp()) {
       total_size += 1 +
@@ -644,138 +816,266 @@ int ImuData::ByteSize() const {
           this->timestamp());
     }
 
-    // optional .cartographer.transform.proto.Vector3d linear_acceleration = 2;
-    if (has_linear_acceleration()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->linear_acceleration());
-    }
-
-    // optional .cartographer.transform.proto.Vector3d angular_velocity = 3;
-    if (has_angular_velocity()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->angular_velocity());
-    }
-
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ImuData::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.sensor.proto.ImuData)
+  GOOGLE_DCHECK_NE(&from, this);
   const ImuData* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const ImuData*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const ImuData>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.sensor.proto.ImuData)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.sensor.proto.ImuData)
     MergeFrom(*source);
   }
 }
 
 void ImuData::MergeFrom(const ImuData& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_timestamp()) {
-      set_timestamp(from.timestamp());
-    }
-    if (from.has_linear_acceleration()) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.sensor.proto.ImuData)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 7u) {
+    if (cached_has_bits & 0x00000001u) {
       mutable_linear_acceleration()->::cartographer::transform::proto::Vector3d::MergeFrom(from.linear_acceleration());
     }
-    if (from.has_angular_velocity()) {
+    if (cached_has_bits & 0x00000002u) {
       mutable_angular_velocity()->::cartographer::transform::proto::Vector3d::MergeFrom(from.angular_velocity());
     }
+    if (cached_has_bits & 0x00000004u) {
+      timestamp_ = from.timestamp_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void ImuData::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.sensor.proto.ImuData)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void ImuData::CopyFrom(const ImuData& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.sensor.proto.ImuData)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool ImuData::IsInitialized() const {
-
   return true;
 }
 
 void ImuData::Swap(ImuData* other) {
-  if (other != this) {
-    std::swap(timestamp_, other->timestamp_);
-    std::swap(linear_acceleration_, other->linear_acceleration_);
-    std::swap(angular_velocity_, other->angular_velocity_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void ImuData::InternalSwap(ImuData* other) {
+  std::swap(linear_acceleration_, other->linear_acceleration_);
+  std::swap(angular_velocity_, other->angular_velocity_);
+  std::swap(timestamp_, other->timestamp_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ImuData::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = ImuData_descriptor_;
-  metadata.reflection = ImuData_reflection_;
-  return metadata;
+  protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// ImuData
+
+// optional int64 timestamp = 1;
+bool ImuData::has_timestamp() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void ImuData::set_has_timestamp() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void ImuData::clear_has_timestamp() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void ImuData::clear_timestamp() {
+  timestamp_ = GOOGLE_LONGLONG(0);
+  clear_has_timestamp();
+}
+::google::protobuf::int64 ImuData::timestamp() const {
+  // @@protoc_insertion_point(field_get:cartographer.sensor.proto.ImuData.timestamp)
+  return timestamp_;
+}
+void ImuData::set_timestamp(::google::protobuf::int64 value) {
+  set_has_timestamp();
+  timestamp_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.sensor.proto.ImuData.timestamp)
+}
+
+// optional .cartographer.transform.proto.Vector3d linear_acceleration = 2;
+bool ImuData::has_linear_acceleration() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void ImuData::set_has_linear_acceleration() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void ImuData::clear_has_linear_acceleration() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void ImuData::clear_linear_acceleration() {
+  if (linear_acceleration_ != NULL) linear_acceleration_->::cartographer::transform::proto::Vector3d::Clear();
+  clear_has_linear_acceleration();
+}
+const ::cartographer::transform::proto::Vector3d& ImuData::linear_acceleration() const {
+  // @@protoc_insertion_point(field_get:cartographer.sensor.proto.ImuData.linear_acceleration)
+  return linear_acceleration_ != NULL ? *linear_acceleration_
+                         : *::cartographer::transform::proto::Vector3d::internal_default_instance();
+}
+::cartographer::transform::proto::Vector3d* ImuData::mutable_linear_acceleration() {
+  set_has_linear_acceleration();
+  if (linear_acceleration_ == NULL) {
+    linear_acceleration_ = new ::cartographer::transform::proto::Vector3d;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.sensor.proto.ImuData.linear_acceleration)
+  return linear_acceleration_;
+}
+::cartographer::transform::proto::Vector3d* ImuData::release_linear_acceleration() {
+  // @@protoc_insertion_point(field_release:cartographer.sensor.proto.ImuData.linear_acceleration)
+  clear_has_linear_acceleration();
+  ::cartographer::transform::proto::Vector3d* temp = linear_acceleration_;
+  linear_acceleration_ = NULL;
+  return temp;
+}
+void ImuData::set_allocated_linear_acceleration(::cartographer::transform::proto::Vector3d* linear_acceleration) {
+  delete linear_acceleration_;
+  linear_acceleration_ = linear_acceleration;
+  if (linear_acceleration) {
+    set_has_linear_acceleration();
+  } else {
+    clear_has_linear_acceleration();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.sensor.proto.ImuData.linear_acceleration)
+}
+
+// optional .cartographer.transform.proto.Vector3d angular_velocity = 3;
+bool ImuData::has_angular_velocity() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void ImuData::set_has_angular_velocity() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void ImuData::clear_has_angular_velocity() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void ImuData::clear_angular_velocity() {
+  if (angular_velocity_ != NULL) angular_velocity_->::cartographer::transform::proto::Vector3d::Clear();
+  clear_has_angular_velocity();
+}
+const ::cartographer::transform::proto::Vector3d& ImuData::angular_velocity() const {
+  // @@protoc_insertion_point(field_get:cartographer.sensor.proto.ImuData.angular_velocity)
+  return angular_velocity_ != NULL ? *angular_velocity_
+                         : *::cartographer::transform::proto::Vector3d::internal_default_instance();
+}
+::cartographer::transform::proto::Vector3d* ImuData::mutable_angular_velocity() {
+  set_has_angular_velocity();
+  if (angular_velocity_ == NULL) {
+    angular_velocity_ = new ::cartographer::transform::proto::Vector3d;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.sensor.proto.ImuData.angular_velocity)
+  return angular_velocity_;
+}
+::cartographer::transform::proto::Vector3d* ImuData::release_angular_velocity() {
+  // @@protoc_insertion_point(field_release:cartographer.sensor.proto.ImuData.angular_velocity)
+  clear_has_angular_velocity();
+  ::cartographer::transform::proto::Vector3d* temp = angular_velocity_;
+  angular_velocity_ = NULL;
+  return temp;
+}
+void ImuData::set_allocated_angular_velocity(::cartographer::transform::proto::Vector3d* angular_velocity) {
+  delete angular_velocity_;
+  angular_velocity_ = angular_velocity;
+  if (angular_velocity) {
+    set_has_angular_velocity();
+  } else {
+    clear_has_angular_velocity();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.sensor.proto.ImuData.angular_velocity)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CompressedRangeData::kOriginFieldNumber;
 const int CompressedRangeData::kReturnsFieldNumber;
 const int CompressedRangeData::kMissesFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CompressedRangeData::CompressedRangeData()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.sensor.proto.CompressedRangeData)
 }
-
-void CompressedRangeData::InitAsDefaultInstance() {
-  origin_ = const_cast< ::cartographer::transform::proto::Vector3f*>(&::cartographer::transform::proto::Vector3f::default_instance());
-  returns_ = const_cast< ::cartographer::sensor::proto::CompressedPointCloud*>(&::cartographer::sensor::proto::CompressedPointCloud::default_instance());
-  misses_ = const_cast< ::cartographer::sensor::proto::CompressedPointCloud*>(&::cartographer::sensor::proto::CompressedPointCloud::default_instance());
-}
-
 CompressedRangeData::CompressedRangeData(const CompressedRangeData& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_origin()) {
+    origin_ = new ::cartographer::transform::proto::Vector3f(*from.origin_);
+  } else {
+    origin_ = NULL;
+  }
+  if (from.has_returns()) {
+    returns_ = new ::cartographer::sensor::proto::CompressedPointCloud(*from.returns_);
+  } else {
+    returns_ = NULL;
+  }
+  if (from.has_misses()) {
+    misses_ = new ::cartographer::sensor::proto::CompressedPointCloud(*from.misses_);
+  } else {
+    misses_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:cartographer.sensor.proto.CompressedRangeData)
 }
 
 void CompressedRangeData::SharedCtor() {
   _cached_size_ = 0;
-  origin_ = NULL;
-  returns_ = NULL;
-  misses_ = NULL;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&origin_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&misses_) -
+      reinterpret_cast<char*>(&origin_)) + sizeof(misses_));
 }
 
 CompressedRangeData::~CompressedRangeData() {
+  // @@protoc_insertion_point(destructor:cartographer.sensor.proto.CompressedRangeData)
   SharedDtor();
 }
 
 void CompressedRangeData::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != internal_default_instance()) {
     delete origin_;
+  }
+  if (this != internal_default_instance()) {
     delete returns_;
+  }
+  if (this != internal_default_instance()) {
     delete misses_;
   }
 }
@@ -786,89 +1086,95 @@ void CompressedRangeData::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* CompressedRangeData::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return CompressedRangeData_descriptor_;
+  protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const CompressedRangeData& CompressedRangeData::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fsensor_2fproto_2fsensor_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-CompressedRangeData* CompressedRangeData::default_instance_ = NULL;
-
-CompressedRangeData* CompressedRangeData::New() const {
-  return new CompressedRangeData;
+CompressedRangeData* CompressedRangeData::New(::google::protobuf::Arena* arena) const {
+  CompressedRangeData* n = new CompressedRangeData;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void CompressedRangeData::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+// @@protoc_insertion_point(message_clear_start:cartographer.sensor.proto.CompressedRangeData)
+  if (_has_bits_[0 / 32] & 7u) {
     if (has_origin()) {
-      if (origin_ != NULL) origin_->::cartographer::transform::proto::Vector3f::Clear();
+      GOOGLE_DCHECK(origin_ != NULL);
+      origin_->::cartographer::transform::proto::Vector3f::Clear();
     }
     if (has_returns()) {
-      if (returns_ != NULL) returns_->::cartographer::sensor::proto::CompressedPointCloud::Clear();
+      GOOGLE_DCHECK(returns_ != NULL);
+      returns_->::cartographer::sensor::proto::CompressedPointCloud::Clear();
     }
     if (has_misses()) {
-      if (misses_ != NULL) misses_->::cartographer::sensor::proto::CompressedPointCloud::Clear();
+      GOOGLE_DCHECK(misses_ != NULL);
+      misses_->::cartographer::sensor::proto::CompressedPointCloud::Clear();
     }
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool CompressedRangeData::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.sensor.proto.CompressedRangeData)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .cartographer.transform.proto.Vector3f origin = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_origin()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_returns;
         break;
       }
 
       // optional .cartographer.sensor.proto.CompressedPointCloud returns = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_returns:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_returns()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_misses;
         break;
       }
 
       // optional .cartographer.sensor.proto.CompressedPointCloud misses = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_misses:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_misses()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -876,167 +1182,333 @@ bool CompressedRangeData::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.sensor.proto.CompressedRangeData)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.sensor.proto.CompressedRangeData)
+  return false;
 #undef DO_
 }
 
 void CompressedRangeData::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.sensor.proto.CompressedRangeData)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional .cartographer.transform.proto.Vector3f origin = 1;
-  if (has_origin()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->origin(), output);
+      1, *this->origin_, output);
   }
 
   // optional .cartographer.sensor.proto.CompressedPointCloud returns = 2;
-  if (has_returns()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->returns(), output);
+      2, *this->returns_, output);
   }
 
   // optional .cartographer.sensor.proto.CompressedPointCloud misses = 3;
-  if (has_misses()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->misses(), output);
+      3, *this->misses_, output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.sensor.proto.CompressedRangeData)
 }
 
-::google::protobuf::uint8* CompressedRangeData::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* CompressedRangeData::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.sensor.proto.CompressedRangeData)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional .cartographer.transform.proto.Vector3f origin = 1;
-  if (has_origin()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        1, this->origin(), target);
+      InternalWriteMessageNoVirtualToArray(
+        1, *this->origin_, deterministic, target);
   }
 
   // optional .cartographer.sensor.proto.CompressedPointCloud returns = 2;
-  if (has_returns()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        2, this->returns(), target);
+      InternalWriteMessageNoVirtualToArray(
+        2, *this->returns_, deterministic, target);
   }
 
   // optional .cartographer.sensor.proto.CompressedPointCloud misses = 3;
-  if (has_misses()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        3, this->misses(), target);
+      InternalWriteMessageNoVirtualToArray(
+        3, *this->misses_, deterministic, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.sensor.proto.CompressedRangeData)
   return target;
 }
 
-int CompressedRangeData::ByteSize() const {
-  int total_size = 0;
+size_t CompressedRangeData::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.sensor.proto.CompressedRangeData)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 7u) {
     // optional .cartographer.transform.proto.Vector3f origin = 1;
     if (has_origin()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->origin());
+          *this->origin_);
     }
 
     // optional .cartographer.sensor.proto.CompressedPointCloud returns = 2;
     if (has_returns()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->returns());
+          *this->returns_);
     }
 
     // optional .cartographer.sensor.proto.CompressedPointCloud misses = 3;
     if (has_misses()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->misses());
+          *this->misses_);
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CompressedRangeData::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.sensor.proto.CompressedRangeData)
+  GOOGLE_DCHECK_NE(&from, this);
   const CompressedRangeData* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const CompressedRangeData*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const CompressedRangeData>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.sensor.proto.CompressedRangeData)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.sensor.proto.CompressedRangeData)
     MergeFrom(*source);
   }
 }
 
 void CompressedRangeData::MergeFrom(const CompressedRangeData& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_origin()) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.sensor.proto.CompressedRangeData)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 7u) {
+    if (cached_has_bits & 0x00000001u) {
       mutable_origin()->::cartographer::transform::proto::Vector3f::MergeFrom(from.origin());
     }
-    if (from.has_returns()) {
+    if (cached_has_bits & 0x00000002u) {
       mutable_returns()->::cartographer::sensor::proto::CompressedPointCloud::MergeFrom(from.returns());
     }
-    if (from.has_misses()) {
+    if (cached_has_bits & 0x00000004u) {
       mutable_misses()->::cartographer::sensor::proto::CompressedPointCloud::MergeFrom(from.misses());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void CompressedRangeData::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.sensor.proto.CompressedRangeData)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CompressedRangeData::CopyFrom(const CompressedRangeData& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.sensor.proto.CompressedRangeData)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool CompressedRangeData::IsInitialized() const {
-
   return true;
 }
 
 void CompressedRangeData::Swap(CompressedRangeData* other) {
-  if (other != this) {
-    std::swap(origin_, other->origin_);
-    std::swap(returns_, other->returns_);
-    std::swap(misses_, other->misses_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void CompressedRangeData::InternalSwap(CompressedRangeData* other) {
+  std::swap(origin_, other->origin_);
+  std::swap(returns_, other->returns_);
+  std::swap(misses_, other->misses_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CompressedRangeData::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = CompressedRangeData_descriptor_;
-  metadata.reflection = CompressedRangeData_reflection_;
-  return metadata;
+  protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fsensor_2fproto_2fsensor_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// CompressedRangeData
+
+// optional .cartographer.transform.proto.Vector3f origin = 1;
+bool CompressedRangeData::has_origin() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void CompressedRangeData::set_has_origin() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void CompressedRangeData::clear_has_origin() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void CompressedRangeData::clear_origin() {
+  if (origin_ != NULL) origin_->::cartographer::transform::proto::Vector3f::Clear();
+  clear_has_origin();
+}
+const ::cartographer::transform::proto::Vector3f& CompressedRangeData::origin() const {
+  // @@protoc_insertion_point(field_get:cartographer.sensor.proto.CompressedRangeData.origin)
+  return origin_ != NULL ? *origin_
+                         : *::cartographer::transform::proto::Vector3f::internal_default_instance();
+}
+::cartographer::transform::proto::Vector3f* CompressedRangeData::mutable_origin() {
+  set_has_origin();
+  if (origin_ == NULL) {
+    origin_ = new ::cartographer::transform::proto::Vector3f;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.sensor.proto.CompressedRangeData.origin)
+  return origin_;
+}
+::cartographer::transform::proto::Vector3f* CompressedRangeData::release_origin() {
+  // @@protoc_insertion_point(field_release:cartographer.sensor.proto.CompressedRangeData.origin)
+  clear_has_origin();
+  ::cartographer::transform::proto::Vector3f* temp = origin_;
+  origin_ = NULL;
+  return temp;
+}
+void CompressedRangeData::set_allocated_origin(::cartographer::transform::proto::Vector3f* origin) {
+  delete origin_;
+  origin_ = origin;
+  if (origin) {
+    set_has_origin();
+  } else {
+    clear_has_origin();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.sensor.proto.CompressedRangeData.origin)
+}
+
+// optional .cartographer.sensor.proto.CompressedPointCloud returns = 2;
+bool CompressedRangeData::has_returns() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void CompressedRangeData::set_has_returns() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void CompressedRangeData::clear_has_returns() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void CompressedRangeData::clear_returns() {
+  if (returns_ != NULL) returns_->::cartographer::sensor::proto::CompressedPointCloud::Clear();
+  clear_has_returns();
+}
+const ::cartographer::sensor::proto::CompressedPointCloud& CompressedRangeData::returns() const {
+  // @@protoc_insertion_point(field_get:cartographer.sensor.proto.CompressedRangeData.returns)
+  return returns_ != NULL ? *returns_
+                         : *::cartographer::sensor::proto::CompressedPointCloud::internal_default_instance();
+}
+::cartographer::sensor::proto::CompressedPointCloud* CompressedRangeData::mutable_returns() {
+  set_has_returns();
+  if (returns_ == NULL) {
+    returns_ = new ::cartographer::sensor::proto::CompressedPointCloud;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.sensor.proto.CompressedRangeData.returns)
+  return returns_;
+}
+::cartographer::sensor::proto::CompressedPointCloud* CompressedRangeData::release_returns() {
+  // @@protoc_insertion_point(field_release:cartographer.sensor.proto.CompressedRangeData.returns)
+  clear_has_returns();
+  ::cartographer::sensor::proto::CompressedPointCloud* temp = returns_;
+  returns_ = NULL;
+  return temp;
+}
+void CompressedRangeData::set_allocated_returns(::cartographer::sensor::proto::CompressedPointCloud* returns) {
+  delete returns_;
+  returns_ = returns;
+  if (returns) {
+    set_has_returns();
+  } else {
+    clear_has_returns();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.sensor.proto.CompressedRangeData.returns)
+}
+
+// optional .cartographer.sensor.proto.CompressedPointCloud misses = 3;
+bool CompressedRangeData::has_misses() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void CompressedRangeData::set_has_misses() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void CompressedRangeData::clear_has_misses() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void CompressedRangeData::clear_misses() {
+  if (misses_ != NULL) misses_->::cartographer::sensor::proto::CompressedPointCloud::Clear();
+  clear_has_misses();
+}
+const ::cartographer::sensor::proto::CompressedPointCloud& CompressedRangeData::misses() const {
+  // @@protoc_insertion_point(field_get:cartographer.sensor.proto.CompressedRangeData.misses)
+  return misses_ != NULL ? *misses_
+                         : *::cartographer::sensor::proto::CompressedPointCloud::internal_default_instance();
+}
+::cartographer::sensor::proto::CompressedPointCloud* CompressedRangeData::mutable_misses() {
+  set_has_misses();
+  if (misses_ == NULL) {
+    misses_ = new ::cartographer::sensor::proto::CompressedPointCloud;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.sensor.proto.CompressedRangeData.misses)
+  return misses_;
+}
+::cartographer::sensor::proto::CompressedPointCloud* CompressedRangeData::release_misses() {
+  // @@protoc_insertion_point(field_release:cartographer.sensor.proto.CompressedRangeData.misses)
+  clear_has_misses();
+  ::cartographer::sensor::proto::CompressedPointCloud* temp = misses_;
+  misses_ = NULL;
+  return temp;
+}
+void CompressedRangeData::set_allocated_misses(::cartographer::sensor::proto::CompressedPointCloud* misses) {
+  delete misses_;
+  misses_ = misses;
+  if (misses) {
+    set_has_misses();
+  } else {
+    clear_has_misses();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.sensor.proto.CompressedRangeData.misses)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

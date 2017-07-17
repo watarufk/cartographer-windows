@@ -7,6 +7,7 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -19,145 +20,171 @@
 namespace cartographer {
 namespace mapping {
 namespace proto {
+class TrajectoryConnectivity_ConnectedComponentDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<TrajectoryConnectivity_ConnectedComponent> {
+} _TrajectoryConnectivity_ConnectedComponent_default_instance_;
+class TrajectoryConnectivityDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<TrajectoryConnectivity> {
+} _TrajectoryConnectivity_default_instance_;
+
+namespace protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto {
+
 
 namespace {
 
-const ::google::protobuf::Descriptor* TrajectoryConnectivity_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  TrajectoryConnectivity_reflection_ = NULL;
-const ::google::protobuf::Descriptor* TrajectoryConnectivity_ConnectedComponent_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  TrajectoryConnectivity_ConnectedComponent_reflection_ = NULL;
+::google::protobuf::Metadata file_level_metadata[2];
 
 }  // namespace
 
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
+    const TableStruct::entries[] = {
+  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
+};
 
-void protobuf_AssignDesc_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto() {
-  protobuf_AddDesc_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto();
-  const ::google::protobuf::FileDescriptor* file =
-    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
-      "cartographer/mapping/proto/trajectory_connectivity.proto");
-  GOOGLE_CHECK(file != NULL);
-  TrajectoryConnectivity_descriptor_ = file->message_type(0);
-  static const int TrajectoryConnectivity_offsets_[1] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrajectoryConnectivity, connected_component_),
-  };
-  TrajectoryConnectivity_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      TrajectoryConnectivity_descriptor_,
-      TrajectoryConnectivity::default_instance_,
-      TrajectoryConnectivity_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrajectoryConnectivity, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrajectoryConnectivity, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(TrajectoryConnectivity));
-  TrajectoryConnectivity_ConnectedComponent_descriptor_ = TrajectoryConnectivity_descriptor_->nested_type(0);
-  static const int TrajectoryConnectivity_ConnectedComponent_offsets_[1] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrajectoryConnectivity_ConnectedComponent, trajectory_id_),
-  };
-  TrajectoryConnectivity_ConnectedComponent_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      TrajectoryConnectivity_ConnectedComponent_descriptor_,
-      TrajectoryConnectivity_ConnectedComponent::default_instance_,
-      TrajectoryConnectivity_ConnectedComponent_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrajectoryConnectivity_ConnectedComponent, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrajectoryConnectivity_ConnectedComponent, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(TrajectoryConnectivity_ConnectedComponent));
-}
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
+    const TableStruct::aux[] = {
+  ::google::protobuf::internal::AuxillaryParseTableField(),
+};
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
+    TableStruct::schema[] = {
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+};
+
+const ::google::protobuf::uint32 TableStruct::offsets[] = {
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrajectoryConnectivity_ConnectedComponent, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrajectoryConnectivity_ConnectedComponent, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrajectoryConnectivity_ConnectedComponent, trajectory_id_),
+  ~0u,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrajectoryConnectivity, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrajectoryConnectivity, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrajectoryConnectivity, connected_component_),
+  ~0u,
+};
+
+static const ::google::protobuf::internal::MigrationSchema schemas[] = {
+  { 0, 6, sizeof(TrajectoryConnectivity_ConnectedComponent)},
+  { 7, 13, sizeof(TrajectoryConnectivity)},
+};
+
+static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&_TrajectoryConnectivity_ConnectedComponent_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_TrajectoryConnectivity_default_instance_),
+};
 
 namespace {
 
-GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
-  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
-                 &protobuf_AssignDesc_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto);
+void protobuf_AssignDescriptors() {
+  AddDescriptors();
+  ::google::protobuf::MessageFactory* factory = NULL;
+  AssignDescriptors(
+      "cartographer/mapping/proto/trajectory_connectivity.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      file_level_metadata, NULL, NULL);
 }
 
+void protobuf_AssignDescriptorsOnce() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+}
+
+void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    TrajectoryConnectivity_descriptor_, &TrajectoryConnectivity::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    TrajectoryConnectivity_ConnectedComponent_descriptor_, &TrajectoryConnectivity_ConnectedComponent::default_instance());
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 2);
 }
 
 }  // namespace
 
-void protobuf_ShutdownFile_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto() {
-  delete TrajectoryConnectivity::default_instance_;
-  delete TrajectoryConnectivity_reflection_;
-  delete TrajectoryConnectivity_ConnectedComponent::default_instance_;
-  delete TrajectoryConnectivity_ConnectedComponent_reflection_;
+void TableStruct::Shutdown() {
+  _TrajectoryConnectivity_ConnectedComponent_default_instance_.Shutdown();
+  delete file_level_metadata[0].reflection;
+  _TrajectoryConnectivity_default_instance_.Shutdown();
+  delete file_level_metadata[1].reflection;
 }
 
-void protobuf_AddDesc_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void TableStruct::InitDefaultsImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n8cartographer/mapping/proto/trajectory_"
-    "connectivity.proto\022\032cartographer.mapping"
-    ".proto\"\251\001\n\026TrajectoryConnectivity\022b\n\023con"
-    "nected_component\030\001 \003(\0132E.cartographer.ma"
-    "pping.proto.TrajectoryConnectivity.Conne"
-    "ctedComponent\032+\n\022ConnectedComponent\022\025\n\rt"
-    "rajectory_id\030\001 \003(\005B\"B TrajectoryConnecti"
-    "vityOuterClass", 294);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "cartographer/mapping/proto/trajectory_connectivity.proto", &protobuf_RegisterTypes);
-  TrajectoryConnectivity::default_instance_ = new TrajectoryConnectivity();
-  TrajectoryConnectivity_ConnectedComponent::default_instance_ = new TrajectoryConnectivity_ConnectedComponent();
-  TrajectoryConnectivity::default_instance_->InitAsDefaultInstance();
-  TrajectoryConnectivity_ConnectedComponent::default_instance_->InitAsDefaultInstance();
-  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto);
+  ::google::protobuf::internal::InitProtobufDefaults();
+  _TrajectoryConnectivity_ConnectedComponent_default_instance_.DefaultConstruct();
+  _TrajectoryConnectivity_default_instance_.DefaultConstruct();
 }
 
+void InitDefaults() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
+}
+void AddDescriptorsImpl() {
+  InitDefaults();
+  static const char descriptor[] = {
+      "\n8cartographer/mapping/proto/trajectory_"
+      "connectivity.proto\022\032cartographer.mapping"
+      ".proto\"\251\001\n\026TrajectoryConnectivity\022b\n\023con"
+      "nected_component\030\001 \003(\0132E.cartographer.ma"
+      "pping.proto.TrajectoryConnectivity.Conne"
+      "ctedComponent\032+\n\022ConnectedComponent\022\025\n\rt"
+      "rajectory_id\030\001 \003(\005B\"B TrajectoryConnecti"
+      "vityOuterClass"
+  };
+  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+      descriptor, 294);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
+    "cartographer/mapping/proto/trajectory_connectivity.proto", &protobuf_RegisterTypes);
+  ::google::protobuf::internal::OnShutdown(&TableStruct::Shutdown);
+}
+
+void AddDescriptors() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+}
 // Force AddDescriptors() to be called at static initialization time.
-struct StaticDescriptorInitializer_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto {
-  StaticDescriptorInitializer_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto() {
-    protobuf_AddDesc_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto();
+struct StaticDescriptorInitializer {
+  StaticDescriptorInitializer() {
+    AddDescriptors();
   }
-} static_descriptor_initializer_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto_;
+} static_descriptor_initializer;
+
+}  // namespace protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto
+
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TrajectoryConnectivity_ConnectedComponent::kTrajectoryIdFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TrajectoryConnectivity_ConnectedComponent::TrajectoryConnectivity_ConnectedComponent()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
 }
-
-void TrajectoryConnectivity_ConnectedComponent::InitAsDefaultInstance() {
-}
-
 TrajectoryConnectivity_ConnectedComponent::TrajectoryConnectivity_ConnectedComponent(const TrajectoryConnectivity_ConnectedComponent& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0),
+      trajectory_id_(from.trajectory_id_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
 }
 
 void TrajectoryConnectivity_ConnectedComponent::SharedCtor() {
   _cached_size_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 TrajectoryConnectivity_ConnectedComponent::~TrajectoryConnectivity_ConnectedComponent() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
   SharedDtor();
 }
 
 void TrajectoryConnectivity_ConnectedComponent::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void TrajectoryConnectivity_ConnectedComponent::SetCachedSize(int size) const {
@@ -166,60 +193,64 @@ void TrajectoryConnectivity_ConnectedComponent::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* TrajectoryConnectivity_ConnectedComponent::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return TrajectoryConnectivity_ConnectedComponent_descriptor_;
+  protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const TrajectoryConnectivity_ConnectedComponent& TrajectoryConnectivity_ConnectedComponent::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-TrajectoryConnectivity_ConnectedComponent* TrajectoryConnectivity_ConnectedComponent::default_instance_ = NULL;
-
-TrajectoryConnectivity_ConnectedComponent* TrajectoryConnectivity_ConnectedComponent::New() const {
-  return new TrajectoryConnectivity_ConnectedComponent;
+TrajectoryConnectivity_ConnectedComponent* TrajectoryConnectivity_ConnectedComponent::New(::google::protobuf::Arena* arena) const {
+  TrajectoryConnectivity_ConnectedComponent* n = new TrajectoryConnectivity_ConnectedComponent;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void TrajectoryConnectivity_ConnectedComponent::Clear() {
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
   trajectory_id_.Clear();
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool TrajectoryConnectivity_ConnectedComponent::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated int32 trajectory_id = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_trajectory_id:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 1, 8, input, this->mutable_trajectory_id())));
-        } else if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag)
-                   == ::google::protobuf::internal::WireFormatLite::
-                      WIRETYPE_LENGTH_DELIMITED) {
+                 1, 8u, input, this->mutable_trajectory_id())));
+        } else if (static_cast< ::google::protobuf::uint8>(tag) ==
+                   static_cast< ::google::protobuf::uint8>(10u)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, this->mutable_trajectory_id())));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(8)) goto parse_trajectory_id;
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -227,148 +258,205 @@ bool TrajectoryConnectivity_ConnectedComponent::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
+  return false;
 #undef DO_
 }
 
 void TrajectoryConnectivity_ConnectedComponent::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
   // repeated int32 trajectory_id = 1;
-  for (int i = 0; i < this->trajectory_id_size(); i++) {
+  for (int i = 0, n = this->trajectory_id_size(); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(
       1, this->trajectory_id(i), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
 }
 
-::google::protobuf::uint8* TrajectoryConnectivity_ConnectedComponent::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
-  // repeated int32 trajectory_id = 1;
-  for (int i = 0; i < this->trajectory_id_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteInt32ToArray(1, this->trajectory_id(i), target);
-  }
+::google::protobuf::uint8* TrajectoryConnectivity_ConnectedComponent::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
 
-  if (!unknown_fields().empty()) {
+  // repeated int32 trajectory_id = 1;
+  target = ::google::protobuf::internal::WireFormatLite::
+    WriteInt32ToArray(1, this->trajectory_id_, target);
+
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
   return target;
 }
 
-int TrajectoryConnectivity_ConnectedComponent::ByteSize() const {
-  int total_size = 0;
+size_t TrajectoryConnectivity_ConnectedComponent::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
+  size_t total_size = 0;
 
-  // repeated int32 trajectory_id = 1;
-  {
-    int data_size = 0;
-    for (int i = 0; i < this->trajectory_id_size(); i++) {
-      data_size += ::google::protobuf::internal::WireFormatLite::
-        Int32Size(this->trajectory_id(i));
-    }
-    total_size += 1 * this->trajectory_id_size() + data_size;
-  }
-
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
   }
+  // repeated int32 trajectory_id = 1;
+  {
+    size_t data_size = ::google::protobuf::internal::WireFormatLite::
+      Int32Size(this->trajectory_id_);
+    total_size += 1 *
+                  ::google::protobuf::internal::FromIntSize(this->trajectory_id_size());
+    total_size += data_size;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void TrajectoryConnectivity_ConnectedComponent::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
+  GOOGLE_DCHECK_NE(&from, this);
   const TrajectoryConnectivity_ConnectedComponent* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const TrajectoryConnectivity_ConnectedComponent*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const TrajectoryConnectivity_ConnectedComponent>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
     MergeFrom(*source);
   }
 }
 
 void TrajectoryConnectivity_ConnectedComponent::MergeFrom(const TrajectoryConnectivity_ConnectedComponent& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
   trajectory_id_.MergeFrom(from.trajectory_id_);
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void TrajectoryConnectivity_ConnectedComponent::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void TrajectoryConnectivity_ConnectedComponent::CopyFrom(const TrajectoryConnectivity_ConnectedComponent& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool TrajectoryConnectivity_ConnectedComponent::IsInitialized() const {
-
   return true;
 }
 
 void TrajectoryConnectivity_ConnectedComponent::Swap(TrajectoryConnectivity_ConnectedComponent* other) {
-  if (other != this) {
-    trajectory_id_.Swap(&other->trajectory_id_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void TrajectoryConnectivity_ConnectedComponent::InternalSwap(TrajectoryConnectivity_ConnectedComponent* other) {
+  trajectory_id_.InternalSwap(&other->trajectory_id_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TrajectoryConnectivity_ConnectedComponent::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = TrajectoryConnectivity_ConnectedComponent_descriptor_;
-  metadata.reflection = TrajectoryConnectivity_ConnectedComponent_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// TrajectoryConnectivity_ConnectedComponent
 
-// -------------------------------------------------------------------
+// repeated int32 trajectory_id = 1;
+int TrajectoryConnectivity_ConnectedComponent::trajectory_id_size() const {
+  return trajectory_id_.size();
+}
+void TrajectoryConnectivity_ConnectedComponent::clear_trajectory_id() {
+  trajectory_id_.Clear();
+}
+::google::protobuf::int32 TrajectoryConnectivity_ConnectedComponent::trajectory_id(int index) const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent.trajectory_id)
+  return trajectory_id_.Get(index);
+}
+void TrajectoryConnectivity_ConnectedComponent::set_trajectory_id(int index, ::google::protobuf::int32 value) {
+  trajectory_id_.Set(index, value);
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent.trajectory_id)
+}
+void TrajectoryConnectivity_ConnectedComponent::add_trajectory_id(::google::protobuf::int32 value) {
+  trajectory_id_.Add(value);
+  // @@protoc_insertion_point(field_add:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent.trajectory_id)
+}
+const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+TrajectoryConnectivity_ConnectedComponent::trajectory_id() const {
+  // @@protoc_insertion_point(field_list:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent.trajectory_id)
+  return trajectory_id_;
+}
+::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+TrajectoryConnectivity_ConnectedComponent::mutable_trajectory_id() {
+  // @@protoc_insertion_point(field_mutable_list:cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent.trajectory_id)
+  return &trajectory_id_;
+}
 
-#ifndef _MSC_VER
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TrajectoryConnectivity::kConnectedComponentFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TrajectoryConnectivity::TrajectoryConnectivity()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping.proto.TrajectoryConnectivity)
 }
-
-void TrajectoryConnectivity::InitAsDefaultInstance() {
-}
-
 TrajectoryConnectivity::TrajectoryConnectivity(const TrajectoryConnectivity& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0),
+      connected_component_(from.connected_component_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.TrajectoryConnectivity)
 }
 
 void TrajectoryConnectivity::SharedCtor() {
   _cached_size_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 TrajectoryConnectivity::~TrajectoryConnectivity() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping.proto.TrajectoryConnectivity)
   SharedDtor();
 }
 
 void TrajectoryConnectivity::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void TrajectoryConnectivity::SetCachedSize(int size) const {
@@ -377,53 +465,58 @@ void TrajectoryConnectivity::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* TrajectoryConnectivity::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return TrajectoryConnectivity_descriptor_;
+  protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const TrajectoryConnectivity& TrajectoryConnectivity::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-TrajectoryConnectivity* TrajectoryConnectivity::default_instance_ = NULL;
-
-TrajectoryConnectivity* TrajectoryConnectivity::New() const {
-  return new TrajectoryConnectivity;
+TrajectoryConnectivity* TrajectoryConnectivity::New(::google::protobuf::Arena* arena) const {
+  TrajectoryConnectivity* n = new TrajectoryConnectivity;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void TrajectoryConnectivity::Clear() {
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.TrajectoryConnectivity)
   connected_component_.Clear();
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool TrajectoryConnectivity::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping.proto.TrajectoryConnectivity)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent connected_component = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_connected_component:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                 input, add_connected_component()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(10)) goto parse_connected_component;
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -431,114 +524,177 @@ bool TrajectoryConnectivity::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping.proto.TrajectoryConnectivity)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping.proto.TrajectoryConnectivity)
+  return false;
 #undef DO_
 }
 
 void TrajectoryConnectivity::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping.proto.TrajectoryConnectivity)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
   // repeated .cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent connected_component = 1;
-  for (int i = 0; i < this->connected_component_size(); i++) {
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->connected_component_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->connected_component(i), output);
+      1, this->connected_component(static_cast<int>(i)), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping.proto.TrajectoryConnectivity)
 }
 
-::google::protobuf::uint8* TrajectoryConnectivity::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* TrajectoryConnectivity::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.TrajectoryConnectivity)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
   // repeated .cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent connected_component = 1;
-  for (int i = 0; i < this->connected_component_size(); i++) {
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->connected_component_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        1, this->connected_component(i), target);
+      InternalWriteMessageNoVirtualToArray(
+        1, this->connected_component(static_cast<int>(i)), deterministic, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.TrajectoryConnectivity)
   return target;
 }
 
-int TrajectoryConnectivity::ByteSize() const {
-  int total_size = 0;
+size_t TrajectoryConnectivity::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.TrajectoryConnectivity)
+  size_t total_size = 0;
 
-  // repeated .cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent connected_component = 1;
-  total_size += 1 * this->connected_component_size();
-  for (int i = 0; i < this->connected_component_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->connected_component(i));
-  }
-
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
   }
+  // repeated .cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent connected_component = 1;
+  {
+    unsigned int count = static_cast<unsigned int>(this->connected_component_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->connected_component(static_cast<int>(i)));
+    }
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void TrajectoryConnectivity::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.TrajectoryConnectivity)
+  GOOGLE_DCHECK_NE(&from, this);
   const TrajectoryConnectivity* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const TrajectoryConnectivity*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const TrajectoryConnectivity>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.TrajectoryConnectivity)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.TrajectoryConnectivity)
     MergeFrom(*source);
   }
 }
 
 void TrajectoryConnectivity::MergeFrom(const TrajectoryConnectivity& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.TrajectoryConnectivity)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
   connected_component_.MergeFrom(from.connected_component_);
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void TrajectoryConnectivity::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.TrajectoryConnectivity)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void TrajectoryConnectivity::CopyFrom(const TrajectoryConnectivity& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping.proto.TrajectoryConnectivity)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool TrajectoryConnectivity::IsInitialized() const {
-
   return true;
 }
 
 void TrajectoryConnectivity::Swap(TrajectoryConnectivity* other) {
-  if (other != this) {
-    connected_component_.Swap(&other->connected_component_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void TrajectoryConnectivity::InternalSwap(TrajectoryConnectivity* other) {
+  connected_component_.InternalSwap(&other->connected_component_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TrajectoryConnectivity::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = TrajectoryConnectivity_descriptor_;
-  metadata.reflection = TrajectoryConnectivity_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2ftrajectory_5fconnectivity_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// TrajectoryConnectivity
+
+// repeated .cartographer.mapping.proto.TrajectoryConnectivity.ConnectedComponent connected_component = 1;
+int TrajectoryConnectivity::connected_component_size() const {
+  return connected_component_.size();
+}
+void TrajectoryConnectivity::clear_connected_component() {
+  connected_component_.Clear();
+}
+const ::cartographer::mapping::proto::TrajectoryConnectivity_ConnectedComponent& TrajectoryConnectivity::connected_component(int index) const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.TrajectoryConnectivity.connected_component)
+  return connected_component_.Get(index);
+}
+::cartographer::mapping::proto::TrajectoryConnectivity_ConnectedComponent* TrajectoryConnectivity::mutable_connected_component(int index) {
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping.proto.TrajectoryConnectivity.connected_component)
+  return connected_component_.Mutable(index);
+}
+::cartographer::mapping::proto::TrajectoryConnectivity_ConnectedComponent* TrajectoryConnectivity::add_connected_component() {
+  // @@protoc_insertion_point(field_add:cartographer.mapping.proto.TrajectoryConnectivity.connected_component)
+  return connected_component_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::cartographer::mapping::proto::TrajectoryConnectivity_ConnectedComponent >*
+TrajectoryConnectivity::mutable_connected_component() {
+  // @@protoc_insertion_point(field_mutable_list:cartographer.mapping.proto.TrajectoryConnectivity.connected_component)
+  return &connected_component_;
+}
+const ::google::protobuf::RepeatedPtrField< ::cartographer::mapping::proto::TrajectoryConnectivity_ConnectedComponent >&
+TrajectoryConnectivity::connected_component() const {
+  // @@protoc_insertion_point(field_list:cartographer.mapping.proto.TrajectoryConnectivity.connected_component)
+  return connected_component_;
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

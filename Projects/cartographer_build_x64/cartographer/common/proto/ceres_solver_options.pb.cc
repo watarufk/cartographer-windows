@@ -7,6 +7,7 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -19,125 +20,164 @@
 namespace cartographer {
 namespace common {
 namespace proto {
+class CeresSolverOptionsDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CeresSolverOptions> {
+} _CeresSolverOptions_default_instance_;
+
+namespace protobuf_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto {
+
 
 namespace {
 
-const ::google::protobuf::Descriptor* CeresSolverOptions_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  CeresSolverOptions_reflection_ = NULL;
+::google::protobuf::Metadata file_level_metadata[1];
 
 }  // namespace
 
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
+    const TableStruct::entries[] = {
+  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
+};
 
-void protobuf_AssignDesc_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto() {
-  protobuf_AddDesc_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto();
-  const ::google::protobuf::FileDescriptor* file =
-    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
-      "cartographer/common/proto/ceres_solver_options.proto");
-  GOOGLE_CHECK(file != NULL);
-  CeresSolverOptions_descriptor_ = file->message_type(0);
-  static const int CeresSolverOptions_offsets_[3] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CeresSolverOptions, use_nonmonotonic_steps_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CeresSolverOptions, max_num_iterations_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CeresSolverOptions, num_threads_),
-  };
-  CeresSolverOptions_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      CeresSolverOptions_descriptor_,
-      CeresSolverOptions::default_instance_,
-      CeresSolverOptions_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CeresSolverOptions, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CeresSolverOptions, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(CeresSolverOptions));
-}
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
+    const TableStruct::aux[] = {
+  ::google::protobuf::internal::AuxillaryParseTableField(),
+};
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
+    TableStruct::schema[] = {
+  { NULL, NULL, 0, -1, -1, false },
+};
+
+const ::google::protobuf::uint32 TableStruct::offsets[] = {
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CeresSolverOptions, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CeresSolverOptions, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CeresSolverOptions, use_nonmonotonic_steps_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CeresSolverOptions, max_num_iterations_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CeresSolverOptions, num_threads_),
+  0,
+  1,
+  2,
+};
+
+static const ::google::protobuf::internal::MigrationSchema schemas[] = {
+  { 0, 8, sizeof(CeresSolverOptions)},
+};
+
+static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&_CeresSolverOptions_default_instance_),
+};
 
 namespace {
 
-GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
-  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
-                 &protobuf_AssignDesc_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto);
+void protobuf_AssignDescriptors() {
+  AddDescriptors();
+  ::google::protobuf::MessageFactory* factory = NULL;
+  AssignDescriptors(
+      "cartographer/common/proto/ceres_solver_options.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      file_level_metadata, NULL, NULL);
 }
 
+void protobuf_AssignDescriptorsOnce() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+}
+
+void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    CeresSolverOptions_descriptor_, &CeresSolverOptions::default_instance());
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
 }
 
 }  // namespace
 
-void protobuf_ShutdownFile_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto() {
-  delete CeresSolverOptions::default_instance_;
-  delete CeresSolverOptions_reflection_;
+void TableStruct::Shutdown() {
+  _CeresSolverOptions_default_instance_.Shutdown();
+  delete file_level_metadata[0].reflection;
 }
 
-void protobuf_AddDesc_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void TableStruct::InitDefaultsImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n4cartographer/common/proto/ceres_solver"
-    "_options.proto\022\031cartographer.common.prot"
-    "o\"e\n\022CeresSolverOptions\022\036\n\026use_nonmonoto"
-    "nic_steps\030\001 \001(\010\022\032\n\022max_num_iterations\030\002 "
-    "\001(\005\022\023\n\013num_threads\030\003 \001(\005", 184);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "cartographer/common/proto/ceres_solver_options.proto", &protobuf_RegisterTypes);
-  CeresSolverOptions::default_instance_ = new CeresSolverOptions();
-  CeresSolverOptions::default_instance_->InitAsDefaultInstance();
-  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto);
+  ::google::protobuf::internal::InitProtobufDefaults();
+  _CeresSolverOptions_default_instance_.DefaultConstruct();
 }
 
+void InitDefaults() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
+}
+void AddDescriptorsImpl() {
+  InitDefaults();
+  static const char descriptor[] = {
+      "\n4cartographer/common/proto/ceres_solver"
+      "_options.proto\022\031cartographer.common.prot"
+      "o\"e\n\022CeresSolverOptions\022\036\n\026use_nonmonoto"
+      "nic_steps\030\001 \001(\010\022\032\n\022max_num_iterations\030\002 "
+      "\001(\005\022\023\n\013num_threads\030\003 \001(\005"
+  };
+  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+      descriptor, 184);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
+    "cartographer/common/proto/ceres_solver_options.proto", &protobuf_RegisterTypes);
+  ::google::protobuf::internal::OnShutdown(&TableStruct::Shutdown);
+}
+
+void AddDescriptors() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+}
 // Force AddDescriptors() to be called at static initialization time.
-struct StaticDescriptorInitializer_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto {
-  StaticDescriptorInitializer_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto() {
-    protobuf_AddDesc_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto();
+struct StaticDescriptorInitializer {
+  StaticDescriptorInitializer() {
+    AddDescriptors();
   }
-} static_descriptor_initializer_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto_;
+} static_descriptor_initializer;
+
+}  // namespace protobuf_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto
+
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CeresSolverOptions::kUseNonmonotonicStepsFieldNumber;
 const int CeresSolverOptions::kMaxNumIterationsFieldNumber;
 const int CeresSolverOptions::kNumThreadsFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CeresSolverOptions::CeresSolverOptions()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.common.proto.CeresSolverOptions)
 }
-
-void CeresSolverOptions::InitAsDefaultInstance() {
-}
-
 CeresSolverOptions::CeresSolverOptions(const CeresSolverOptions& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&use_nonmonotonic_steps_, &from.use_nonmonotonic_steps_,
+    static_cast<size_t>(reinterpret_cast<char*>(&num_threads_) -
+    reinterpret_cast<char*>(&use_nonmonotonic_steps_)) + sizeof(num_threads_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.common.proto.CeresSolverOptions)
 }
 
 void CeresSolverOptions::SharedCtor() {
   _cached_size_ = 0;
-  use_nonmonotonic_steps_ = false;
-  max_num_iterations_ = 0;
-  num_threads_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&use_nonmonotonic_steps_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&num_threads_) -
+      reinterpret_cast<char*>(&use_nonmonotonic_steps_)) + sizeof(num_threads_));
 }
 
 CeresSolverOptions::~CeresSolverOptions() {
+  // @@protoc_insertion_point(destructor:cartographer.common.proto.CeresSolverOptions)
   SharedDtor();
 }
 
 void CeresSolverOptions::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void CeresSolverOptions::SetCachedSize(int size) const {
@@ -146,89 +186,92 @@ void CeresSolverOptions::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* CeresSolverOptions::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return CeresSolverOptions_descriptor_;
+  protobuf_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const CeresSolverOptions& CeresSolverOptions::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-CeresSolverOptions* CeresSolverOptions::default_instance_ = NULL;
-
-CeresSolverOptions* CeresSolverOptions::New() const {
-  return new CeresSolverOptions;
+CeresSolverOptions* CeresSolverOptions::New(::google::protobuf::Arena* arena) const {
+  CeresSolverOptions* n = new CeresSolverOptions;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void CeresSolverOptions::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    use_nonmonotonic_steps_ = false;
-    max_num_iterations_ = 0;
-    num_threads_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.common.proto.CeresSolverOptions)
+  if (_has_bits_[0 / 32] & 7u) {
+    ::memset(&use_nonmonotonic_steps_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&num_threads_) -
+        reinterpret_cast<char*>(&use_nonmonotonic_steps_)) + sizeof(num_threads_));
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool CeresSolverOptions::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.common.proto.CeresSolverOptions)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bool use_nonmonotonic_steps = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u)) {
+          set_has_use_nonmonotonic_steps();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &use_nonmonotonic_steps_)));
-          set_has_use_nonmonotonic_steps();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(16)) goto parse_max_num_iterations;
         break;
       }
 
       // optional int32 max_num_iterations = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_max_num_iterations:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u)) {
+          set_has_max_num_iterations();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &max_num_iterations_)));
-          set_has_max_num_iterations();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(24)) goto parse_num_threads;
         break;
       }
 
       // optional int32 num_threads = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_num_threads:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u)) {
+          set_has_num_threads();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &num_threads_)));
-          set_has_num_threads();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -236,61 +279,84 @@ bool CeresSolverOptions::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.common.proto.CeresSolverOptions)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.common.proto.CeresSolverOptions)
+  return false;
 #undef DO_
 }
 
 void CeresSolverOptions::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.common.proto.CeresSolverOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional bool use_nonmonotonic_steps = 1;
-  if (has_use_nonmonotonic_steps()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(1, this->use_nonmonotonic_steps(), output);
   }
 
   // optional int32 max_num_iterations = 2;
-  if (has_max_num_iterations()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->max_num_iterations(), output);
   }
 
   // optional int32 num_threads = 3;
-  if (has_num_threads()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->num_threads(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.common.proto.CeresSolverOptions)
 }
 
-::google::protobuf::uint8* CeresSolverOptions::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* CeresSolverOptions::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.common.proto.CeresSolverOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional bool use_nonmonotonic_steps = 1;
-  if (has_use_nonmonotonic_steps()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(1, this->use_nonmonotonic_steps(), target);
   }
 
   // optional int32 max_num_iterations = 2;
-  if (has_max_num_iterations()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->max_num_iterations(), target);
   }
 
   // optional int32 num_threads = 3;
-  if (has_num_threads()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->num_threads(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.common.proto.CeresSolverOptions)
   return target;
 }
 
-int CeresSolverOptions::ByteSize() const {
-  int total_size = 0;
+size_t CeresSolverOptions::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.common.proto.CeresSolverOptions)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 7u) {
     // optional bool use_nonmonotonic_steps = 1;
     if (has_use_nonmonotonic_steps()) {
       total_size += 1 + 1;
@@ -311,81 +377,162 @@ int CeresSolverOptions::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CeresSolverOptions::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.common.proto.CeresSolverOptions)
+  GOOGLE_DCHECK_NE(&from, this);
   const CeresSolverOptions* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const CeresSolverOptions*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const CeresSolverOptions>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.common.proto.CeresSolverOptions)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.common.proto.CeresSolverOptions)
     MergeFrom(*source);
   }
 }
 
 void CeresSolverOptions::MergeFrom(const CeresSolverOptions& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_use_nonmonotonic_steps()) {
-      set_use_nonmonotonic_steps(from.use_nonmonotonic_steps());
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.common.proto.CeresSolverOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 7u) {
+    if (cached_has_bits & 0x00000001u) {
+      use_nonmonotonic_steps_ = from.use_nonmonotonic_steps_;
     }
-    if (from.has_max_num_iterations()) {
-      set_max_num_iterations(from.max_num_iterations());
+    if (cached_has_bits & 0x00000002u) {
+      max_num_iterations_ = from.max_num_iterations_;
     }
-    if (from.has_num_threads()) {
-      set_num_threads(from.num_threads());
+    if (cached_has_bits & 0x00000004u) {
+      num_threads_ = from.num_threads_;
     }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void CeresSolverOptions::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.common.proto.CeresSolverOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CeresSolverOptions::CopyFrom(const CeresSolverOptions& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.common.proto.CeresSolverOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool CeresSolverOptions::IsInitialized() const {
-
   return true;
 }
 
 void CeresSolverOptions::Swap(CeresSolverOptions* other) {
-  if (other != this) {
-    std::swap(use_nonmonotonic_steps_, other->use_nonmonotonic_steps_);
-    std::swap(max_num_iterations_, other->max_num_iterations_);
-    std::swap(num_threads_, other->num_threads_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void CeresSolverOptions::InternalSwap(CeresSolverOptions* other) {
+  std::swap(use_nonmonotonic_steps_, other->use_nonmonotonic_steps_);
+  std::swap(max_num_iterations_, other->max_num_iterations_);
+  std::swap(num_threads_, other->num_threads_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CeresSolverOptions::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = CeresSolverOptions_descriptor_;
-  metadata.reflection = CeresSolverOptions_reflection_;
-  return metadata;
+  protobuf_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fcommon_2fproto_2fceres_5fsolver_5foptions_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// CeresSolverOptions
+
+// optional bool use_nonmonotonic_steps = 1;
+bool CeresSolverOptions::has_use_nonmonotonic_steps() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void CeresSolverOptions::set_has_use_nonmonotonic_steps() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void CeresSolverOptions::clear_has_use_nonmonotonic_steps() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void CeresSolverOptions::clear_use_nonmonotonic_steps() {
+  use_nonmonotonic_steps_ = false;
+  clear_has_use_nonmonotonic_steps();
+}
+bool CeresSolverOptions::use_nonmonotonic_steps() const {
+  // @@protoc_insertion_point(field_get:cartographer.common.proto.CeresSolverOptions.use_nonmonotonic_steps)
+  return use_nonmonotonic_steps_;
+}
+void CeresSolverOptions::set_use_nonmonotonic_steps(bool value) {
+  set_has_use_nonmonotonic_steps();
+  use_nonmonotonic_steps_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.common.proto.CeresSolverOptions.use_nonmonotonic_steps)
+}
+
+// optional int32 max_num_iterations = 2;
+bool CeresSolverOptions::has_max_num_iterations() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void CeresSolverOptions::set_has_max_num_iterations() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void CeresSolverOptions::clear_has_max_num_iterations() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void CeresSolverOptions::clear_max_num_iterations() {
+  max_num_iterations_ = 0;
+  clear_has_max_num_iterations();
+}
+::google::protobuf::int32 CeresSolverOptions::max_num_iterations() const {
+  // @@protoc_insertion_point(field_get:cartographer.common.proto.CeresSolverOptions.max_num_iterations)
+  return max_num_iterations_;
+}
+void CeresSolverOptions::set_max_num_iterations(::google::protobuf::int32 value) {
+  set_has_max_num_iterations();
+  max_num_iterations_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.common.proto.CeresSolverOptions.max_num_iterations)
+}
+
+// optional int32 num_threads = 3;
+bool CeresSolverOptions::has_num_threads() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void CeresSolverOptions::set_has_num_threads() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void CeresSolverOptions::clear_has_num_threads() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void CeresSolverOptions::clear_num_threads() {
+  num_threads_ = 0;
+  clear_has_num_threads();
+}
+::google::protobuf::int32 CeresSolverOptions::num_threads() const {
+  // @@protoc_insertion_point(field_get:cartographer.common.proto.CeresSolverOptions.num_threads)
+  return num_threads_;
+}
+void CeresSolverOptions::set_num_threads(::google::protobuf::int32 value) {
+  set_has_num_threads();
+  num_threads_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.common.proto.CeresSolverOptions.num_threads)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

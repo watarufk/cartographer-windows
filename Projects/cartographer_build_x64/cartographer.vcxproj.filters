@@ -1,0 +1,867 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\ceres_solver_options.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\configuration_file_resolver.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\fixed_ratio_sampler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\histogram.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\lua_parameter_dictionary.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\thread_pool.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\time.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\ground_truth\relations_text_file.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\coloring_points_processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\counting_points_processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\file_writer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\fixed_ratio_sampling_points_processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\hybrid_grid_points_processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\image.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\intensity_to_color_points_processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\min_max_range_filtering_points_processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\outlier_removing_points_processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\pcd_writing_points_processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\ply_writing_points_processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\points_batch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\points_processor_pipeline_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\probability_grid_points_processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\proto_stream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\xray_points_processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\xyz_writing_points_processor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\collated_trajectory_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\detect_floors.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\imu_tracker.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\map_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\odometry_state_tracker.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\pose_graph_trimmer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\probability_values.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph\constraint_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph\optimization_problem_options.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\trajectory_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\trajectory_connectivity.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\global_trajectory_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\local_trajectory_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\local_trajectory_builder_options.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\range_data_inserter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\ray_casting.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\ceres_scan_matcher.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\correlative_scan_matcher.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\fast_correlative_scan_matcher.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\fast_global_localizer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\real_time_correlative_scan_matcher.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph\constraint_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph\optimization_problem.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\submaps.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\ceres_pose.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\global_trajectory_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\imu_integration.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\local_trajectory_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\local_trajectory_builder_options.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\motion_filter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\range_data_inserter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\ceres_scan_matcher.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\fast_correlative_scan_matcher.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\precomputation_grid.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\real_time_correlative_scan_matcher.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\rotational_scan_matcher.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph\constraint_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph\optimization_problem.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\submaps.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\collator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\compressed_point_cloud.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\imu_data.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\ordered_multi_queue.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\point_cloud.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\range_data.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\voxel_filter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\rigid_transform.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\transform.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\transform_interpolation_buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\common\proto\ceres_solver_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\ground_truth\proto\relations.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\map_builder_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\serialization.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\sparse_pose_graph.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\sparse_pose_graph_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\submap.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\submap_visualization.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory_builder_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory_connectivity.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\sparse_pose_graph\proto\constraint_builder_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\sparse_pose_graph\proto\optimization_problem_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\cell_limits.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\local_trajectory_builder_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\map_limits.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\probability_grid.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\range_data_inserter_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\submaps_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\ceres_scan_matcher_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\real_time_correlative_scan_matcher_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\hybrid_grid.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\local_trajectory_builder_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\motion_filter_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\range_data_inserter_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\submaps_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\scan_matching\proto\ceres_scan_matcher_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\sensor\proto\adaptive_voxel_filter_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\sensor\proto\sensor.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\transform\proto\transform.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\blocking_queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\ceres_solver_options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\configuration_file_resolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\fixed_ratio_sampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\histogram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\lua.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\lua_parameter_dictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\lua_parameter_dictionary_test_helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\make_unique.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\port.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\rate_timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\thread_pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\ground_truth\relations_text_file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\coloring_points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\counting_points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\file_writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\fixed_ratio_sampling_points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\hybrid_grid_points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\intensity_to_color_points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\min_max_range_filtering_points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\null_points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\outlier_removing_points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\pcd_writing_points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\ply_writing_points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\points_batch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\points_processor_pipeline_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\probability_grid_points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\proto_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\xray_points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\xyz_writing_points_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\collated_trajectory_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\detect_floors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\global_trajectory_builder_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\id.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\imu_tracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\map_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\odometry_state_tracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\pose_graph_trimmer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\probability_values.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph\constraint_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph\optimization_problem_options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\submaps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\trajectory_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\trajectory_connectivity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\trajectory_node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\global_trajectory_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\local_trajectory_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\local_trajectory_builder_options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\map_limits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\probability_grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\range_data_inserter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\ray_casting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\ceres_scan_matcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\correlative_scan_matcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\fast_correlative_scan_matcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\fast_global_localizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\occupied_space_cost_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\real_time_correlative_scan_matcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\rotation_delta_cost_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\translation_delta_cost_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph\constraint_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph\optimization_problem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph\spa_cost_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\submaps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\xy_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\acceleration_cost_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\ceres_pose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\global_trajectory_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\hybrid_grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\imu_integration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\local_trajectory_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\local_trajectory_builder_options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\motion_filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\range_data_inserter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\rotation_cost_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\ceres_scan_matcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\fast_correlative_scan_matcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\interpolated_grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\occupied_space_cost_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\precomputation_grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\real_time_correlative_scan_matcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\rotation_delta_cost_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\rotational_scan_matcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\translation_delta_cost_functor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph\constraint_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph\optimization_problem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph\spa_cost_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\submaps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\translation_cost_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\collator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\compressed_point_cloud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\imu_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\ordered_multi_queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\point_cloud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\range_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\voxel_filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\rigid_transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\rigid_transform_test_helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\transform_interpolation_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\common\proto\ceres_solver_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\ground_truth\proto\relations.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\map_builder_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\serialization.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\sparse_pose_graph.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\sparse_pose_graph_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\submap.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\submap_visualization.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory_builder_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory_connectivity.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\sparse_pose_graph\proto\constraint_builder_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\sparse_pose_graph\proto\optimization_problem_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\cell_limits.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\local_trajectory_builder_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\map_limits.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\probability_grid.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\range_data_inserter_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\submaps_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\ceres_scan_matcher_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\real_time_correlative_scan_matcher_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\hybrid_grid.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\local_trajectory_builder_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\motion_filter_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\range_data_inserter_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\submaps_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\scan_matching\proto\ceres_scan_matcher_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\sensor\proto\adaptive_voxel_filter_options.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\sensor\proto\sensor.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\transform\proto\transform.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer\CMakeLists.txt" />
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\40989aa91ceb9aedd6b94ba77d6af743\ceres_solver_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\c430293a5f7abd6961e01beb811465f8\relations.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\map_builder_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\serialization.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\sparse_pose_graph.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\sparse_pose_graph_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\submap.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\submap_visualization.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\trajectory.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\trajectory_builder_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\trajectory_connectivity.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\17554408b9bddf6d2b49980e39d29c63\constraint_builder_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\17554408b9bddf6d2b49980e39d29c63\optimization_problem_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\f84c143b89528c6b88638bcee696226b\cell_limits.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\f84c143b89528c6b88638bcee696226b\local_trajectory_builder_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\f84c143b89528c6b88638bcee696226b\map_limits.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\f84c143b89528c6b88638bcee696226b\probability_grid.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\f84c143b89528c6b88638bcee696226b\range_data_inserter_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\f84c143b89528c6b88638bcee696226b\submaps_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\864b00efbca242959f043c81e17fde2c\ceres_scan_matcher_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\864b00efbca242959f043c81e17fde2c\fast_correlative_scan_matcher_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\864b00efbca242959f043c81e17fde2c\real_time_correlative_scan_matcher_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\b39ab81ccbaf1e4d9c1461121210af07\hybrid_grid.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\b39ab81ccbaf1e4d9c1461121210af07\local_trajectory_builder_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\b39ab81ccbaf1e4d9c1461121210af07\motion_filter_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\b39ab81ccbaf1e4d9c1461121210af07\range_data_inserter_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\b39ab81ccbaf1e4d9c1461121210af07\submaps_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\4ade569dad109f76aa8ba3002a627c26\ceres_scan_matcher_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\4ade569dad109f76aa8ba3002a627c26\fast_correlative_scan_matcher_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\1beb3d66de6a5007fc0fcf593b943d00\adaptive_voxel_filter_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\1beb3d66de6a5007fc0fcf593b943d00\sensor.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\ed3478dbc824436a57fcfa2106786435\transform.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AD487F60-7A9A-367C-AB50-1F9FBE962307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1DAE2377-B9C7-322B-8AA9-A55EC2C0B5CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9EA0D7AE-E0BE-3A49-88AB-774C85E641FB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

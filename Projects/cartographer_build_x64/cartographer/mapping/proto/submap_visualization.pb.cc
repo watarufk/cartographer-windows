@@ -7,6 +7,7 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -19,266 +20,281 @@
 namespace cartographer {
 namespace mapping {
 namespace proto {
+class SubmapList_SubmapEntryDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SubmapList_SubmapEntry> {
+} _SubmapList_SubmapEntry_default_instance_;
+class SubmapList_TrajectorySubmapListDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SubmapList_TrajectorySubmapList> {
+} _SubmapList_TrajectorySubmapList_default_instance_;
+class SubmapListDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SubmapList> {
+} _SubmapList_default_instance_;
+class SubmapQuery_RequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SubmapQuery_Request> {
+} _SubmapQuery_Request_default_instance_;
+class SubmapQuery_ResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SubmapQuery_Response> {
+} _SubmapQuery_Response_default_instance_;
+class SubmapQueryDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SubmapQuery> {
+} _SubmapQuery_default_instance_;
+
+namespace protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto {
+
 
 namespace {
 
-const ::google::protobuf::Descriptor* SubmapList_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  SubmapList_reflection_ = NULL;
-const ::google::protobuf::Descriptor* SubmapList_SubmapEntry_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  SubmapList_SubmapEntry_reflection_ = NULL;
-const ::google::protobuf::Descriptor* SubmapList_TrajectorySubmapList_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  SubmapList_TrajectorySubmapList_reflection_ = NULL;
-const ::google::protobuf::Descriptor* SubmapQuery_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  SubmapQuery_reflection_ = NULL;
-const ::google::protobuf::Descriptor* SubmapQuery_Request_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  SubmapQuery_Request_reflection_ = NULL;
-const ::google::protobuf::Descriptor* SubmapQuery_Response_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  SubmapQuery_Response_reflection_ = NULL;
+::google::protobuf::Metadata file_level_metadata[6];
 
 }  // namespace
 
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
+    const TableStruct::entries[] = {
+  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
+};
 
-void protobuf_AssignDesc_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto() {
-  protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto();
-  const ::google::protobuf::FileDescriptor* file =
-    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
-      "cartographer/mapping/proto/submap_visualization.proto");
-  GOOGLE_CHECK(file != NULL);
-  SubmapList_descriptor_ = file->message_type(0);
-  static const int SubmapList_offsets_[1] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList, trajectory_),
-  };
-  SubmapList_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      SubmapList_descriptor_,
-      SubmapList::default_instance_,
-      SubmapList_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(SubmapList));
-  SubmapList_SubmapEntry_descriptor_ = SubmapList_descriptor_->nested_type(0);
-  static const int SubmapList_SubmapEntry_offsets_[2] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_SubmapEntry, submap_version_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_SubmapEntry, pose_),
-  };
-  SubmapList_SubmapEntry_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      SubmapList_SubmapEntry_descriptor_,
-      SubmapList_SubmapEntry::default_instance_,
-      SubmapList_SubmapEntry_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_SubmapEntry, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_SubmapEntry, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(SubmapList_SubmapEntry));
-  SubmapList_TrajectorySubmapList_descriptor_ = SubmapList_descriptor_->nested_type(1);
-  static const int SubmapList_TrajectorySubmapList_offsets_[1] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_TrajectorySubmapList, submap_),
-  };
-  SubmapList_TrajectorySubmapList_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      SubmapList_TrajectorySubmapList_descriptor_,
-      SubmapList_TrajectorySubmapList::default_instance_,
-      SubmapList_TrajectorySubmapList_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_TrajectorySubmapList, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_TrajectorySubmapList, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(SubmapList_TrajectorySubmapList));
-  SubmapQuery_descriptor_ = file->message_type(1);
-  static const int SubmapQuery_offsets_[2] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery, request_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery, response_),
-  };
-  SubmapQuery_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      SubmapQuery_descriptor_,
-      SubmapQuery::default_instance_,
-      SubmapQuery_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(SubmapQuery));
-  SubmapQuery_Request_descriptor_ = SubmapQuery_descriptor_->nested_type(0);
-  static const int SubmapQuery_Request_offsets_[2] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Request, submap_index_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Request, trajectory_id_),
-  };
-  SubmapQuery_Request_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      SubmapQuery_Request_descriptor_,
-      SubmapQuery_Request::default_instance_,
-      SubmapQuery_Request_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Request, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Request, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(SubmapQuery_Request));
-  SubmapQuery_Response_descriptor_ = SubmapQuery_descriptor_->nested_type(1);
-  static const int SubmapQuery_Response_offsets_[7] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, submap_version_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, cells_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, width_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, height_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, resolution_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, slice_pose_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, error_message_),
-  };
-  SubmapQuery_Response_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      SubmapQuery_Response_descriptor_,
-      SubmapQuery_Response::default_instance_,
-      SubmapQuery_Response_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(SubmapQuery_Response));
-}
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
+    const TableStruct::aux[] = {
+  ::google::protobuf::internal::AuxillaryParseTableField(),
+};
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
+    TableStruct::schema[] = {
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+  { NULL, NULL, 0, -1, -1, false },
+};
+
+const ::google::protobuf::uint32 TableStruct::offsets[] = {
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_SubmapEntry, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_SubmapEntry, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_SubmapEntry, submap_version_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_SubmapEntry, pose_),
+  1,
+  0,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_TrajectorySubmapList, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_TrajectorySubmapList, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList_TrajectorySubmapList, submap_),
+  ~0u,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapList, trajectory_),
+  ~0u,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Request, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Request, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Request, submap_index_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Request, trajectory_id_),
+  0,
+  1,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, submap_version_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, cells_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, width_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, height_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, resolution_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, slice_pose_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery_Response, error_message_),
+  3,
+  0,
+  4,
+  6,
+  5,
+  2,
+  1,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery, request_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmapQuery, response_),
+  0,
+  1,
+};
+
+static const ::google::protobuf::internal::MigrationSchema schemas[] = {
+  { 0, 7, sizeof(SubmapList_SubmapEntry)},
+  { 9, 15, sizeof(SubmapList_TrajectorySubmapList)},
+  { 16, 22, sizeof(SubmapList)},
+  { 23, 30, sizeof(SubmapQuery_Request)},
+  { 32, 44, sizeof(SubmapQuery_Response)},
+  { 51, 58, sizeof(SubmapQuery)},
+};
+
+static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&_SubmapList_SubmapEntry_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_SubmapList_TrajectorySubmapList_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_SubmapList_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_SubmapQuery_Request_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_SubmapQuery_Response_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&_SubmapQuery_default_instance_),
+};
 
 namespace {
 
-GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
-  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
-                 &protobuf_AssignDesc_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto);
+void protobuf_AssignDescriptors() {
+  AddDescriptors();
+  ::google::protobuf::MessageFactory* factory = NULL;
+  AssignDescriptors(
+      "cartographer/mapping/proto/submap_visualization.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      file_level_metadata, NULL, NULL);
 }
 
+void protobuf_AssignDescriptorsOnce() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+}
+
+void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    SubmapList_descriptor_, &SubmapList::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    SubmapList_SubmapEntry_descriptor_, &SubmapList_SubmapEntry::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    SubmapList_TrajectorySubmapList_descriptor_, &SubmapList_TrajectorySubmapList::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    SubmapQuery_descriptor_, &SubmapQuery::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    SubmapQuery_Request_descriptor_, &SubmapQuery_Request::default_instance());
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    SubmapQuery_Response_descriptor_, &SubmapQuery_Response::default_instance());
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 6);
 }
 
 }  // namespace
 
-void protobuf_ShutdownFile_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto() {
-  delete SubmapList::default_instance_;
-  delete SubmapList_reflection_;
-  delete SubmapList_SubmapEntry::default_instance_;
-  delete SubmapList_SubmapEntry_reflection_;
-  delete SubmapList_TrajectorySubmapList::default_instance_;
-  delete SubmapList_TrajectorySubmapList_reflection_;
-  delete SubmapQuery::default_instance_;
-  delete SubmapQuery_reflection_;
-  delete SubmapQuery_Request::default_instance_;
-  delete SubmapQuery_Request_reflection_;
-  delete SubmapQuery_Response::default_instance_;
-  delete SubmapQuery_Response_reflection_;
+void TableStruct::Shutdown() {
+  _SubmapList_SubmapEntry_default_instance_.Shutdown();
+  delete file_level_metadata[0].reflection;
+  _SubmapList_TrajectorySubmapList_default_instance_.Shutdown();
+  delete file_level_metadata[1].reflection;
+  _SubmapList_default_instance_.Shutdown();
+  delete file_level_metadata[2].reflection;
+  _SubmapQuery_Request_default_instance_.Shutdown();
+  delete file_level_metadata[3].reflection;
+  _SubmapQuery_Response_default_instance_.Shutdown();
+  delete file_level_metadata[4].reflection;
+  _SubmapQuery_default_instance_.Shutdown();
+  delete file_level_metadata[5].reflection;
 }
 
-void protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void TableStruct::InitDefaultsImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::cartographer::transform::proto::protobuf_AddDesc_cartographer_2ftransform_2fproto_2ftransform_2eproto();
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n5cartographer/mapping/proto/submap_visu"
-    "alization.proto\022\032cartographer.mapping.pr"
-    "oto\032,cartographer/transform/proto/transf"
-    "orm.proto\"\225\002\n\nSubmapList\022O\n\ntrajectory\030\002"
-    " \003(\0132;.cartographer.mapping.proto.Submap"
-    "List.TrajectorySubmapList\032Z\n\013SubmapEntry"
-    "\022\026\n\016submap_version\030\001 \001(\005\0223\n\004pose\030\003 \001(\0132%"
-    ".cartographer.transform.proto.Rigid3d\032Z\n"
-    "\024TrajectorySubmapList\022B\n\006submap\030\001 \003(\01322."
-    "cartographer.mapping.proto.SubmapList.Su"
-    "bmapEntry\"\204\003\n\013SubmapQuery\022@\n\007request\030\001 \001"
-    "(\0132/.cartographer.mapping.proto.SubmapQu"
-    "ery.Request\022B\n\010response\030\002 \001(\01320.cartogra"
-    "pher.mapping.proto.SubmapQuery.Response\032"
-    "6\n\007Request\022\024\n\014submap_index\030\001 \001(\005\022\025\n\rtraj"
-    "ectory_id\030\002 \001(\005\032\266\001\n\010Response\022\026\n\016submap_v"
-    "ersion\030\002 \001(\005\022\r\n\005cells\030\003 \001(\014\022\r\n\005width\030\004 \001"
-    "(\005\022\016\n\006height\030\005 \001(\005\022\022\n\nresolution\030\006 \001(\001\0229"
-    "\n\nslice_pose\030\t \001(\0132%.cartographer.transf"
-    "orm.proto.Rigid3d\022\025\n\rerror_message\030\010 \001(\t", 800);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "cartographer/mapping/proto/submap_visualization.proto", &protobuf_RegisterTypes);
-  SubmapList::default_instance_ = new SubmapList();
-  SubmapList_SubmapEntry::default_instance_ = new SubmapList_SubmapEntry();
-  SubmapList_TrajectorySubmapList::default_instance_ = new SubmapList_TrajectorySubmapList();
-  SubmapQuery::default_instance_ = new SubmapQuery();
-  SubmapQuery_Request::default_instance_ = new SubmapQuery_Request();
-  SubmapQuery_Response::default_instance_ = new SubmapQuery_Response();
-  SubmapList::default_instance_->InitAsDefaultInstance();
-  SubmapList_SubmapEntry::default_instance_->InitAsDefaultInstance();
-  SubmapList_TrajectorySubmapList::default_instance_->InitAsDefaultInstance();
-  SubmapQuery::default_instance_->InitAsDefaultInstance();
-  SubmapQuery_Request::default_instance_->InitAsDefaultInstance();
-  SubmapQuery_Response::default_instance_->InitAsDefaultInstance();
-  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto);
+  ::google::protobuf::internal::InitProtobufDefaults();
+  ::cartographer::transform::proto::protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::InitDefaults();
+  _SubmapList_SubmapEntry_default_instance_.DefaultConstruct();
+  _SubmapList_TrajectorySubmapList_default_instance_.DefaultConstruct();
+  _SubmapList_default_instance_.DefaultConstruct();
+  _SubmapQuery_Request_default_instance_.DefaultConstruct();
+  _SubmapQuery_Response_default_instance_.DefaultConstruct();
+  _SubmapQuery_default_instance_.DefaultConstruct();
+  _SubmapList_SubmapEntry_default_instance_.get_mutable()->pose_ = const_cast< ::cartographer::transform::proto::Rigid3d*>(
+      ::cartographer::transform::proto::Rigid3d::internal_default_instance());
+  _SubmapQuery_Response_default_instance_.get_mutable()->slice_pose_ = const_cast< ::cartographer::transform::proto::Rigid3d*>(
+      ::cartographer::transform::proto::Rigid3d::internal_default_instance());
+  _SubmapQuery_default_instance_.get_mutable()->request_ = const_cast< ::cartographer::mapping::proto::SubmapQuery_Request*>(
+      ::cartographer::mapping::proto::SubmapQuery_Request::internal_default_instance());
+  _SubmapQuery_default_instance_.get_mutable()->response_ = const_cast< ::cartographer::mapping::proto::SubmapQuery_Response*>(
+      ::cartographer::mapping::proto::SubmapQuery_Response::internal_default_instance());
 }
 
+void InitDefaults() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
+}
+void AddDescriptorsImpl() {
+  InitDefaults();
+  static const char descriptor[] = {
+      "\n5cartographer/mapping/proto/submap_visu"
+      "alization.proto\022\032cartographer.mapping.pr"
+      "oto\032,cartographer/transform/proto/transf"
+      "orm.proto\"\225\002\n\nSubmapList\022O\n\ntrajectory\030\002"
+      " \003(\0132;.cartographer.mapping.proto.Submap"
+      "List.TrajectorySubmapList\032Z\n\013SubmapEntry"
+      "\022\026\n\016submap_version\030\001 \001(\005\0223\n\004pose\030\003 \001(\0132%"
+      ".cartographer.transform.proto.Rigid3d\032Z\n"
+      "\024TrajectorySubmapList\022B\n\006submap\030\001 \003(\01322."
+      "cartographer.mapping.proto.SubmapList.Su"
+      "bmapEntry\"\204\003\n\013SubmapQuery\022@\n\007request\030\001 \001"
+      "(\0132/.cartographer.mapping.proto.SubmapQu"
+      "ery.Request\022B\n\010response\030\002 \001(\01320.cartogra"
+      "pher.mapping.proto.SubmapQuery.Response\032"
+      "6\n\007Request\022\024\n\014submap_index\030\001 \001(\005\022\025\n\rtraj"
+      "ectory_id\030\002 \001(\005\032\266\001\n\010Response\022\026\n\016submap_v"
+      "ersion\030\002 \001(\005\022\r\n\005cells\030\003 \001(\014\022\r\n\005width\030\004 \001"
+      "(\005\022\016\n\006height\030\005 \001(\005\022\022\n\nresolution\030\006 \001(\001\0229"
+      "\n\nslice_pose\030\t \001(\0132%.cartographer.transf"
+      "orm.proto.Rigid3d\022\025\n\rerror_message\030\010 \001(\t"
+  };
+  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+      descriptor, 800);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
+    "cartographer/mapping/proto/submap_visualization.proto", &protobuf_RegisterTypes);
+  ::cartographer::transform::proto::protobuf_cartographer_2ftransform_2fproto_2ftransform_2eproto::AddDescriptors();
+  ::google::protobuf::internal::OnShutdown(&TableStruct::Shutdown);
+}
+
+void AddDescriptors() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+}
 // Force AddDescriptors() to be called at static initialization time.
-struct StaticDescriptorInitializer_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto {
-  StaticDescriptorInitializer_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto() {
-    protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto();
+struct StaticDescriptorInitializer {
+  StaticDescriptorInitializer() {
+    AddDescriptors();
   }
-} static_descriptor_initializer_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto_;
+} static_descriptor_initializer;
+
+}  // namespace protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto
+
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SubmapList_SubmapEntry::kSubmapVersionFieldNumber;
 const int SubmapList_SubmapEntry::kPoseFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SubmapList_SubmapEntry::SubmapList_SubmapEntry()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping.proto.SubmapList.SubmapEntry)
 }
-
-void SubmapList_SubmapEntry::InitAsDefaultInstance() {
-  pose_ = const_cast< ::cartographer::transform::proto::Rigid3d*>(&::cartographer::transform::proto::Rigid3d::default_instance());
-}
-
 SubmapList_SubmapEntry::SubmapList_SubmapEntry(const SubmapList_SubmapEntry& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_pose()) {
+    pose_ = new ::cartographer::transform::proto::Rigid3d(*from.pose_);
+  } else {
+    pose_ = NULL;
+  }
+  submap_version_ = from.submap_version_;
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.SubmapList.SubmapEntry)
 }
 
 void SubmapList_SubmapEntry::SharedCtor() {
   _cached_size_ = 0;
-  submap_version_ = 0;
-  pose_ = NULL;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&pose_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&submap_version_) -
+      reinterpret_cast<char*>(&pose_)) + sizeof(submap_version_));
 }
 
 SubmapList_SubmapEntry::~SubmapList_SubmapEntry() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping.proto.SubmapList.SubmapEntry)
   SharedDtor();
 }
 
 void SubmapList_SubmapEntry::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != internal_default_instance()) {
     delete pose_;
   }
 }
@@ -289,72 +305,76 @@ void SubmapList_SubmapEntry::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* SubmapList_SubmapEntry::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return SubmapList_SubmapEntry_descriptor_;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const SubmapList_SubmapEntry& SubmapList_SubmapEntry::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-SubmapList_SubmapEntry* SubmapList_SubmapEntry::default_instance_ = NULL;
-
-SubmapList_SubmapEntry* SubmapList_SubmapEntry::New() const {
-  return new SubmapList_SubmapEntry;
+SubmapList_SubmapEntry* SubmapList_SubmapEntry::New(::google::protobuf::Arena* arena) const {
+  SubmapList_SubmapEntry* n = new SubmapList_SubmapEntry;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void SubmapList_SubmapEntry::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    submap_version_ = 0;
-    if (has_pose()) {
-      if (pose_ != NULL) pose_->::cartographer::transform::proto::Rigid3d::Clear();
-    }
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.SubmapList.SubmapEntry)
+  if (has_pose()) {
+    GOOGLE_DCHECK(pose_ != NULL);
+    pose_->::cartographer::transform::proto::Rigid3d::Clear();
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  submap_version_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool SubmapList_SubmapEntry::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping.proto.SubmapList.SubmapEntry)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 submap_version = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u)) {
+          set_has_submap_version();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &submap_version_)));
-          set_has_submap_version();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_pose;
         break;
       }
 
       // optional .cartographer.transform.proto.Rigid3d pose = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_pose:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_pose()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -362,54 +382,84 @@ bool SubmapList_SubmapEntry::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping.proto.SubmapList.SubmapEntry)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping.proto.SubmapList.SubmapEntry)
+  return false;
 #undef DO_
 }
 
 void SubmapList_SubmapEntry::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping.proto.SubmapList.SubmapEntry)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int32 submap_version = 1;
-  if (has_submap_version()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->submap_version(), output);
   }
 
   // optional .cartographer.transform.proto.Rigid3d pose = 3;
-  if (has_pose()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->pose(), output);
+      3, *this->pose_, output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping.proto.SubmapList.SubmapEntry)
 }
 
-::google::protobuf::uint8* SubmapList_SubmapEntry::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* SubmapList_SubmapEntry::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.SubmapList.SubmapEntry)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int32 submap_version = 1;
-  if (has_submap_version()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->submap_version(), target);
   }
 
   // optional .cartographer.transform.proto.Rigid3d pose = 3;
-  if (has_pose()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        3, this->pose(), target);
+      InternalWriteMessageNoVirtualToArray(
+        3, *this->pose_, deterministic, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.SubmapList.SubmapEntry)
   return target;
 }
 
-int SubmapList_SubmapEntry::ByteSize() const {
-  int total_size = 0;
+size_t SubmapList_SubmapEntry::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.SubmapList.SubmapEntry)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 3u) {
+    // optional .cartographer.transform.proto.Rigid3d pose = 3;
+    if (has_pose()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          *this->pose_);
+    }
+
     // optional int32 submap_version = 1;
     if (has_submap_version()) {
       total_size += 1 +
@@ -417,118 +467,191 @@ int SubmapList_SubmapEntry::ByteSize() const {
           this->submap_version());
     }
 
-    // optional .cartographer.transform.proto.Rigid3d pose = 3;
-    if (has_pose()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->pose());
-    }
-
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SubmapList_SubmapEntry::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.SubmapList.SubmapEntry)
+  GOOGLE_DCHECK_NE(&from, this);
   const SubmapList_SubmapEntry* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const SubmapList_SubmapEntry*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const SubmapList_SubmapEntry>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.SubmapList.SubmapEntry)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.SubmapList.SubmapEntry)
     MergeFrom(*source);
   }
 }
 
 void SubmapList_SubmapEntry::MergeFrom(const SubmapList_SubmapEntry& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_submap_version()) {
-      set_submap_version(from.submap_version());
-    }
-    if (from.has_pose()) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SubmapList.SubmapEntry)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
       mutable_pose()->::cartographer::transform::proto::Rigid3d::MergeFrom(from.pose());
     }
+    if (cached_has_bits & 0x00000002u) {
+      submap_version_ = from.submap_version_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void SubmapList_SubmapEntry::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.SubmapList.SubmapEntry)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void SubmapList_SubmapEntry::CopyFrom(const SubmapList_SubmapEntry& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping.proto.SubmapList.SubmapEntry)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool SubmapList_SubmapEntry::IsInitialized() const {
-
   return true;
 }
 
 void SubmapList_SubmapEntry::Swap(SubmapList_SubmapEntry* other) {
-  if (other != this) {
-    std::swap(submap_version_, other->submap_version_);
-    std::swap(pose_, other->pose_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SubmapList_SubmapEntry::InternalSwap(SubmapList_SubmapEntry* other) {
+  std::swap(pose_, other->pose_);
+  std::swap(submap_version_, other->submap_version_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SubmapList_SubmapEntry::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = SubmapList_SubmapEntry_descriptor_;
-  metadata.reflection = SubmapList_SubmapEntry_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// SubmapList_SubmapEntry
 
-// -------------------------------------------------------------------
+// optional int32 submap_version = 1;
+bool SubmapList_SubmapEntry::has_submap_version() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void SubmapList_SubmapEntry::set_has_submap_version() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void SubmapList_SubmapEntry::clear_has_submap_version() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void SubmapList_SubmapEntry::clear_submap_version() {
+  submap_version_ = 0;
+  clear_has_submap_version();
+}
+::google::protobuf::int32 SubmapList_SubmapEntry::submap_version() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapList.SubmapEntry.submap_version)
+  return submap_version_;
+}
+void SubmapList_SubmapEntry::set_submap_version(::google::protobuf::int32 value) {
+  set_has_submap_version();
+  submap_version_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SubmapList.SubmapEntry.submap_version)
+}
 
-#ifndef _MSC_VER
+// optional .cartographer.transform.proto.Rigid3d pose = 3;
+bool SubmapList_SubmapEntry::has_pose() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void SubmapList_SubmapEntry::set_has_pose() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void SubmapList_SubmapEntry::clear_has_pose() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void SubmapList_SubmapEntry::clear_pose() {
+  if (pose_ != NULL) pose_->::cartographer::transform::proto::Rigid3d::Clear();
+  clear_has_pose();
+}
+const ::cartographer::transform::proto::Rigid3d& SubmapList_SubmapEntry::pose() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapList.SubmapEntry.pose)
+  return pose_ != NULL ? *pose_
+                         : *::cartographer::transform::proto::Rigid3d::internal_default_instance();
+}
+::cartographer::transform::proto::Rigid3d* SubmapList_SubmapEntry::mutable_pose() {
+  set_has_pose();
+  if (pose_ == NULL) {
+    pose_ = new ::cartographer::transform::proto::Rigid3d;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping.proto.SubmapList.SubmapEntry.pose)
+  return pose_;
+}
+::cartographer::transform::proto::Rigid3d* SubmapList_SubmapEntry::release_pose() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping.proto.SubmapList.SubmapEntry.pose)
+  clear_has_pose();
+  ::cartographer::transform::proto::Rigid3d* temp = pose_;
+  pose_ = NULL;
+  return temp;
+}
+void SubmapList_SubmapEntry::set_allocated_pose(::cartographer::transform::proto::Rigid3d* pose) {
+  delete pose_;
+  pose_ = pose;
+  if (pose) {
+    set_has_pose();
+  } else {
+    clear_has_pose();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SubmapList.SubmapEntry.pose)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SubmapList_TrajectorySubmapList::kSubmapFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SubmapList_TrajectorySubmapList::SubmapList_TrajectorySubmapList()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
 }
-
-void SubmapList_TrajectorySubmapList::InitAsDefaultInstance() {
-}
-
 SubmapList_TrajectorySubmapList::SubmapList_TrajectorySubmapList(const SubmapList_TrajectorySubmapList& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0),
+      submap_(from.submap_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
 }
 
 void SubmapList_TrajectorySubmapList::SharedCtor() {
   _cached_size_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 SubmapList_TrajectorySubmapList::~SubmapList_TrajectorySubmapList() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
   SharedDtor();
 }
 
 void SubmapList_TrajectorySubmapList::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void SubmapList_TrajectorySubmapList::SetCachedSize(int size) const {
@@ -537,53 +660,58 @@ void SubmapList_TrajectorySubmapList::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* SubmapList_TrajectorySubmapList::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return SubmapList_TrajectorySubmapList_descriptor_;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const SubmapList_TrajectorySubmapList& SubmapList_TrajectorySubmapList::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-SubmapList_TrajectorySubmapList* SubmapList_TrajectorySubmapList::default_instance_ = NULL;
-
-SubmapList_TrajectorySubmapList* SubmapList_TrajectorySubmapList::New() const {
-  return new SubmapList_TrajectorySubmapList;
+SubmapList_TrajectorySubmapList* SubmapList_TrajectorySubmapList::New(::google::protobuf::Arena* arena) const {
+  SubmapList_TrajectorySubmapList* n = new SubmapList_TrajectorySubmapList;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void SubmapList_TrajectorySubmapList::Clear() {
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
   submap_.Clear();
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool SubmapList_TrajectorySubmapList::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .cartographer.mapping.proto.SubmapList.SubmapEntry submap = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_submap:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                 input, add_submap()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(10)) goto parse_submap;
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -591,147 +719,212 @@ bool SubmapList_TrajectorySubmapList::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
+  return false;
 #undef DO_
 }
 
 void SubmapList_TrajectorySubmapList::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
   // repeated .cartographer.mapping.proto.SubmapList.SubmapEntry submap = 1;
-  for (int i = 0; i < this->submap_size(); i++) {
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->submap_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->submap(i), output);
+      1, this->submap(static_cast<int>(i)), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
 }
 
-::google::protobuf::uint8* SubmapList_TrajectorySubmapList::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* SubmapList_TrajectorySubmapList::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
   // repeated .cartographer.mapping.proto.SubmapList.SubmapEntry submap = 1;
-  for (int i = 0; i < this->submap_size(); i++) {
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->submap_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        1, this->submap(i), target);
+      InternalWriteMessageNoVirtualToArray(
+        1, this->submap(static_cast<int>(i)), deterministic, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
   return target;
 }
 
-int SubmapList_TrajectorySubmapList::ByteSize() const {
-  int total_size = 0;
+size_t SubmapList_TrajectorySubmapList::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
+  size_t total_size = 0;
 
-  // repeated .cartographer.mapping.proto.SubmapList.SubmapEntry submap = 1;
-  total_size += 1 * this->submap_size();
-  for (int i = 0; i < this->submap_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->submap(i));
-  }
-
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
   }
+  // repeated .cartographer.mapping.proto.SubmapList.SubmapEntry submap = 1;
+  {
+    unsigned int count = static_cast<unsigned int>(this->submap_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->submap(static_cast<int>(i)));
+    }
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SubmapList_TrajectorySubmapList::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
+  GOOGLE_DCHECK_NE(&from, this);
   const SubmapList_TrajectorySubmapList* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const SubmapList_TrajectorySubmapList*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const SubmapList_TrajectorySubmapList>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
     MergeFrom(*source);
   }
 }
 
 void SubmapList_TrajectorySubmapList::MergeFrom(const SubmapList_TrajectorySubmapList& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
   submap_.MergeFrom(from.submap_);
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void SubmapList_TrajectorySubmapList::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void SubmapList_TrajectorySubmapList::CopyFrom(const SubmapList_TrajectorySubmapList& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping.proto.SubmapList.TrajectorySubmapList)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool SubmapList_TrajectorySubmapList::IsInitialized() const {
-
   return true;
 }
 
 void SubmapList_TrajectorySubmapList::Swap(SubmapList_TrajectorySubmapList* other) {
-  if (other != this) {
-    submap_.Swap(&other->submap_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SubmapList_TrajectorySubmapList::InternalSwap(SubmapList_TrajectorySubmapList* other) {
+  submap_.InternalSwap(&other->submap_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SubmapList_TrajectorySubmapList::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = SubmapList_TrajectorySubmapList_descriptor_;
-  metadata.reflection = SubmapList_TrajectorySubmapList_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// SubmapList_TrajectorySubmapList
 
-// -------------------------------------------------------------------
+// repeated .cartographer.mapping.proto.SubmapList.SubmapEntry submap = 1;
+int SubmapList_TrajectorySubmapList::submap_size() const {
+  return submap_.size();
+}
+void SubmapList_TrajectorySubmapList::clear_submap() {
+  submap_.Clear();
+}
+const ::cartographer::mapping::proto::SubmapList_SubmapEntry& SubmapList_TrajectorySubmapList::submap(int index) const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapList.TrajectorySubmapList.submap)
+  return submap_.Get(index);
+}
+::cartographer::mapping::proto::SubmapList_SubmapEntry* SubmapList_TrajectorySubmapList::mutable_submap(int index) {
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping.proto.SubmapList.TrajectorySubmapList.submap)
+  return submap_.Mutable(index);
+}
+::cartographer::mapping::proto::SubmapList_SubmapEntry* SubmapList_TrajectorySubmapList::add_submap() {
+  // @@protoc_insertion_point(field_add:cartographer.mapping.proto.SubmapList.TrajectorySubmapList.submap)
+  return submap_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::cartographer::mapping::proto::SubmapList_SubmapEntry >*
+SubmapList_TrajectorySubmapList::mutable_submap() {
+  // @@protoc_insertion_point(field_mutable_list:cartographer.mapping.proto.SubmapList.TrajectorySubmapList.submap)
+  return &submap_;
+}
+const ::google::protobuf::RepeatedPtrField< ::cartographer::mapping::proto::SubmapList_SubmapEntry >&
+SubmapList_TrajectorySubmapList::submap() const {
+  // @@protoc_insertion_point(field_list:cartographer.mapping.proto.SubmapList.TrajectorySubmapList.submap)
+  return submap_;
+}
 
-#ifndef _MSC_VER
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SubmapList::kTrajectoryFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SubmapList::SubmapList()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping.proto.SubmapList)
 }
-
-void SubmapList::InitAsDefaultInstance() {
-}
-
 SubmapList::SubmapList(const SubmapList& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0),
+      trajectory_(from.trajectory_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.SubmapList)
 }
 
 void SubmapList::SharedCtor() {
   _cached_size_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 SubmapList::~SubmapList() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping.proto.SubmapList)
   SharedDtor();
 }
 
 void SubmapList::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void SubmapList::SetCachedSize(int size) const {
@@ -740,53 +933,58 @@ void SubmapList::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* SubmapList::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return SubmapList_descriptor_;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const SubmapList& SubmapList::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-SubmapList* SubmapList::default_instance_ = NULL;
-
-SubmapList* SubmapList::New() const {
-  return new SubmapList;
+SubmapList* SubmapList::New(::google::protobuf::Arena* arena) const {
+  SubmapList* n = new SubmapList;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void SubmapList::Clear() {
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.SubmapList)
   trajectory_.Clear();
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool SubmapList::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping.proto.SubmapList)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .cartographer.mapping.proto.SubmapList.TrajectorySubmapList trajectory = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_trajectory:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                 input, add_trajectory()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_trajectory;
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -794,150 +992,218 @@ bool SubmapList::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping.proto.SubmapList)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping.proto.SubmapList)
+  return false;
 #undef DO_
 }
 
 void SubmapList::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping.proto.SubmapList)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
   // repeated .cartographer.mapping.proto.SubmapList.TrajectorySubmapList trajectory = 2;
-  for (int i = 0; i < this->trajectory_size(); i++) {
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->trajectory_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->trajectory(i), output);
+      2, this->trajectory(static_cast<int>(i)), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping.proto.SubmapList)
 }
 
-::google::protobuf::uint8* SubmapList::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* SubmapList::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.SubmapList)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
   // repeated .cartographer.mapping.proto.SubmapList.TrajectorySubmapList trajectory = 2;
-  for (int i = 0; i < this->trajectory_size(); i++) {
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->trajectory_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        2, this->trajectory(i), target);
+      InternalWriteMessageNoVirtualToArray(
+        2, this->trajectory(static_cast<int>(i)), deterministic, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.SubmapList)
   return target;
 }
 
-int SubmapList::ByteSize() const {
-  int total_size = 0;
+size_t SubmapList::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.SubmapList)
+  size_t total_size = 0;
 
-  // repeated .cartographer.mapping.proto.SubmapList.TrajectorySubmapList trajectory = 2;
-  total_size += 1 * this->trajectory_size();
-  for (int i = 0; i < this->trajectory_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->trajectory(i));
-  }
-
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
   }
+  // repeated .cartographer.mapping.proto.SubmapList.TrajectorySubmapList trajectory = 2;
+  {
+    unsigned int count = static_cast<unsigned int>(this->trajectory_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->trajectory(static_cast<int>(i)));
+    }
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SubmapList::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.SubmapList)
+  GOOGLE_DCHECK_NE(&from, this);
   const SubmapList* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const SubmapList*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const SubmapList>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.SubmapList)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.SubmapList)
     MergeFrom(*source);
   }
 }
 
 void SubmapList::MergeFrom(const SubmapList& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SubmapList)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
   trajectory_.MergeFrom(from.trajectory_);
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void SubmapList::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.SubmapList)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void SubmapList::CopyFrom(const SubmapList& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping.proto.SubmapList)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool SubmapList::IsInitialized() const {
-
   return true;
 }
 
 void SubmapList::Swap(SubmapList* other) {
-  if (other != this) {
-    trajectory_.Swap(&other->trajectory_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SubmapList::InternalSwap(SubmapList* other) {
+  trajectory_.InternalSwap(&other->trajectory_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SubmapList::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = SubmapList_descriptor_;
-  metadata.reflection = SubmapList_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// SubmapList
+
+// repeated .cartographer.mapping.proto.SubmapList.TrajectorySubmapList trajectory = 2;
+int SubmapList::trajectory_size() const {
+  return trajectory_.size();
+}
+void SubmapList::clear_trajectory() {
+  trajectory_.Clear();
+}
+const ::cartographer::mapping::proto::SubmapList_TrajectorySubmapList& SubmapList::trajectory(int index) const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapList.trajectory)
+  return trajectory_.Get(index);
+}
+::cartographer::mapping::proto::SubmapList_TrajectorySubmapList* SubmapList::mutable_trajectory(int index) {
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping.proto.SubmapList.trajectory)
+  return trajectory_.Mutable(index);
+}
+::cartographer::mapping::proto::SubmapList_TrajectorySubmapList* SubmapList::add_trajectory() {
+  // @@protoc_insertion_point(field_add:cartographer.mapping.proto.SubmapList.trajectory)
+  return trajectory_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::cartographer::mapping::proto::SubmapList_TrajectorySubmapList >*
+SubmapList::mutable_trajectory() {
+  // @@protoc_insertion_point(field_mutable_list:cartographer.mapping.proto.SubmapList.trajectory)
+  return &trajectory_;
+}
+const ::google::protobuf::RepeatedPtrField< ::cartographer::mapping::proto::SubmapList_TrajectorySubmapList >&
+SubmapList::trajectory() const {
+  // @@protoc_insertion_point(field_list:cartographer.mapping.proto.SubmapList.trajectory)
+  return trajectory_;
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SubmapQuery_Request::kSubmapIndexFieldNumber;
 const int SubmapQuery_Request::kTrajectoryIdFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SubmapQuery_Request::SubmapQuery_Request()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping.proto.SubmapQuery.Request)
 }
-
-void SubmapQuery_Request::InitAsDefaultInstance() {
-}
-
 SubmapQuery_Request::SubmapQuery_Request(const SubmapQuery_Request& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&submap_index_, &from.submap_index_,
+    static_cast<size_t>(reinterpret_cast<char*>(&trajectory_id_) -
+    reinterpret_cast<char*>(&submap_index_)) + sizeof(trajectory_id_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.SubmapQuery.Request)
 }
 
 void SubmapQuery_Request::SharedCtor() {
   _cached_size_ = 0;
-  submap_index_ = 0;
-  trajectory_id_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&submap_index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&trajectory_id_) -
+      reinterpret_cast<char*>(&submap_index_)) + sizeof(trajectory_id_));
 }
 
 SubmapQuery_Request::~SubmapQuery_Request() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping.proto.SubmapQuery.Request)
   SharedDtor();
 }
 
 void SubmapQuery_Request::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void SubmapQuery_Request::SetCachedSize(int size) const {
@@ -946,72 +1212,78 @@ void SubmapQuery_Request::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* SubmapQuery_Request::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return SubmapQuery_Request_descriptor_;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const SubmapQuery_Request& SubmapQuery_Request::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-SubmapQuery_Request* SubmapQuery_Request::default_instance_ = NULL;
-
-SubmapQuery_Request* SubmapQuery_Request::New() const {
-  return new SubmapQuery_Request;
+SubmapQuery_Request* SubmapQuery_Request::New(::google::protobuf::Arena* arena) const {
+  SubmapQuery_Request* n = new SubmapQuery_Request;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void SubmapQuery_Request::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    submap_index_ = 0;
-    trajectory_id_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.SubmapQuery.Request)
+  if (_has_bits_[0 / 32] & 3u) {
+    ::memset(&submap_index_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&trajectory_id_) -
+        reinterpret_cast<char*>(&submap_index_)) + sizeof(trajectory_id_));
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool SubmapQuery_Request::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping.proto.SubmapQuery.Request)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 submap_index = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u)) {
+          set_has_submap_index();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &submap_index_)));
-          set_has_submap_index();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(16)) goto parse_trajectory_id;
         break;
       }
 
       // optional int32 trajectory_id = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_trajectory_id:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u)) {
+          set_has_trajectory_id();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &trajectory_id_)));
-          set_has_trajectory_id();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -1019,51 +1291,74 @@ bool SubmapQuery_Request::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping.proto.SubmapQuery.Request)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping.proto.SubmapQuery.Request)
+  return false;
 #undef DO_
 }
 
 void SubmapQuery_Request::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping.proto.SubmapQuery.Request)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int32 submap_index = 1;
-  if (has_submap_index()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->submap_index(), output);
   }
 
   // optional int32 trajectory_id = 2;
-  if (has_trajectory_id()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->trajectory_id(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping.proto.SubmapQuery.Request)
 }
 
-::google::protobuf::uint8* SubmapQuery_Request::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* SubmapQuery_Request::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.SubmapQuery.Request)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int32 submap_index = 1;
-  if (has_submap_index()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->submap_index(), target);
   }
 
   // optional int32 trajectory_id = 2;
-  if (has_trajectory_id()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->trajectory_id(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.SubmapQuery.Request)
   return target;
 }
 
-int SubmapQuery_Request::ByteSize() const {
-  int total_size = 0;
+size_t SubmapQuery_Request::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.SubmapQuery.Request)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 3u) {
     // optional int32 submap_index = 1;
     if (has_submap_index()) {
       total_size += 1 +
@@ -1079,81 +1374,138 @@ int SubmapQuery_Request::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SubmapQuery_Request::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.SubmapQuery.Request)
+  GOOGLE_DCHECK_NE(&from, this);
   const SubmapQuery_Request* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const SubmapQuery_Request*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const SubmapQuery_Request>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.SubmapQuery.Request)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.SubmapQuery.Request)
     MergeFrom(*source);
   }
 }
 
 void SubmapQuery_Request::MergeFrom(const SubmapQuery_Request& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_submap_index()) {
-      set_submap_index(from.submap_index());
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SubmapQuery.Request)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      submap_index_ = from.submap_index_;
     }
-    if (from.has_trajectory_id()) {
-      set_trajectory_id(from.trajectory_id());
+    if (cached_has_bits & 0x00000002u) {
+      trajectory_id_ = from.trajectory_id_;
     }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void SubmapQuery_Request::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.SubmapQuery.Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void SubmapQuery_Request::CopyFrom(const SubmapQuery_Request& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping.proto.SubmapQuery.Request)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool SubmapQuery_Request::IsInitialized() const {
-
   return true;
 }
 
 void SubmapQuery_Request::Swap(SubmapQuery_Request* other) {
-  if (other != this) {
-    std::swap(submap_index_, other->submap_index_);
-    std::swap(trajectory_id_, other->trajectory_id_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SubmapQuery_Request::InternalSwap(SubmapQuery_Request* other) {
+  std::swap(submap_index_, other->submap_index_);
+  std::swap(trajectory_id_, other->trajectory_id_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SubmapQuery_Request::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = SubmapQuery_Request_descriptor_;
-  metadata.reflection = SubmapQuery_Request_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// SubmapQuery_Request
 
-// -------------------------------------------------------------------
+// optional int32 submap_index = 1;
+bool SubmapQuery_Request::has_submap_index() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void SubmapQuery_Request::set_has_submap_index() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void SubmapQuery_Request::clear_has_submap_index() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void SubmapQuery_Request::clear_submap_index() {
+  submap_index_ = 0;
+  clear_has_submap_index();
+}
+::google::protobuf::int32 SubmapQuery_Request::submap_index() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapQuery.Request.submap_index)
+  return submap_index_;
+}
+void SubmapQuery_Request::set_submap_index(::google::protobuf::int32 value) {
+  set_has_submap_index();
+  submap_index_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SubmapQuery.Request.submap_index)
+}
 
-#ifndef _MSC_VER
+// optional int32 trajectory_id = 2;
+bool SubmapQuery_Request::has_trajectory_id() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void SubmapQuery_Request::set_has_trajectory_id() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void SubmapQuery_Request::clear_has_trajectory_id() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void SubmapQuery_Request::clear_trajectory_id() {
+  trajectory_id_ = 0;
+  clear_has_trajectory_id();
+}
+::google::protobuf::int32 SubmapQuery_Request::trajectory_id() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapQuery.Request.trajectory_id)
+  return trajectory_id_;
+}
+void SubmapQuery_Request::set_trajectory_id(::google::protobuf::int32 value) {
+  set_has_trajectory_id();
+  trajectory_id_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SubmapQuery.Request.trajectory_id)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SubmapQuery_Response::kSubmapVersionFieldNumber;
 const int SubmapQuery_Response::kCellsFieldNumber;
 const int SubmapQuery_Response::kWidthFieldNumber;
@@ -1161,47 +1513,59 @@ const int SubmapQuery_Response::kHeightFieldNumber;
 const int SubmapQuery_Response::kResolutionFieldNumber;
 const int SubmapQuery_Response::kSlicePoseFieldNumber;
 const int SubmapQuery_Response::kErrorMessageFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SubmapQuery_Response::SubmapQuery_Response()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping.proto.SubmapQuery.Response)
 }
-
-void SubmapQuery_Response::InitAsDefaultInstance() {
-  slice_pose_ = const_cast< ::cartographer::transform::proto::Rigid3d*>(&::cartographer::transform::proto::Rigid3d::default_instance());
-}
-
 SubmapQuery_Response::SubmapQuery_Response(const SubmapQuery_Response& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  cells_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.has_cells()) {
+    cells_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cells_);
+  }
+  error_message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.has_error_message()) {
+    error_message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.error_message_);
+  }
+  if (from.has_slice_pose()) {
+    slice_pose_ = new ::cartographer::transform::proto::Rigid3d(*from.slice_pose_);
+  } else {
+    slice_pose_ = NULL;
+  }
+  ::memcpy(&submap_version_, &from.submap_version_,
+    static_cast<size_t>(reinterpret_cast<char*>(&height_) -
+    reinterpret_cast<char*>(&submap_version_)) + sizeof(height_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.SubmapQuery.Response)
 }
 
 void SubmapQuery_Response::SharedCtor() {
   _cached_size_ = 0;
-  submap_version_ = 0;
-  cells_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  width_ = 0;
-  height_ = 0;
-  resolution_ = 0;
-  slice_pose_ = NULL;
-  error_message_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  cells_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  error_message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(&slice_pose_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&height_) -
+      reinterpret_cast<char*>(&slice_pose_)) + sizeof(height_));
 }
 
 SubmapQuery_Response::~SubmapQuery_Response() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping.proto.SubmapQuery.Response)
   SharedDtor();
 }
 
 void SubmapQuery_Response::SharedDtor() {
-  if (cells_ != &::google::protobuf::internal::kEmptyString) {
-    delete cells_;
-  }
-  if (error_message_ != &::google::protobuf::internal::kEmptyString) {
-    delete error_message_;
-  }
-  if (this != default_instance_) {
+  cells_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  error_message_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) {
     delete slice_pose_;
   }
 }
@@ -1212,164 +1576,160 @@ void SubmapQuery_Response::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* SubmapQuery_Response::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return SubmapQuery_Response_descriptor_;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const SubmapQuery_Response& SubmapQuery_Response::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-SubmapQuery_Response* SubmapQuery_Response::default_instance_ = NULL;
-
-SubmapQuery_Response* SubmapQuery_Response::New() const {
-  return new SubmapQuery_Response;
+SubmapQuery_Response* SubmapQuery_Response::New(::google::protobuf::Arena* arena) const {
+  SubmapQuery_Response* n = new SubmapQuery_Response;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void SubmapQuery_Response::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    submap_version_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.SubmapQuery.Response)
+  if (_has_bits_[0 / 32] & 7u) {
     if (has_cells()) {
-      if (cells_ != &::google::protobuf::internal::kEmptyString) {
-        cells_->clear();
-      }
-    }
-    width_ = 0;
-    height_ = 0;
-    resolution_ = 0;
-    if (has_slice_pose()) {
-      if (slice_pose_ != NULL) slice_pose_->::cartographer::transform::proto::Rigid3d::Clear();
+      GOOGLE_DCHECK(!cells_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
+      (*cells_.UnsafeRawStringPointer())->clear();
     }
     if (has_error_message()) {
-      if (error_message_ != &::google::protobuf::internal::kEmptyString) {
-        error_message_->clear();
-      }
+      GOOGLE_DCHECK(!error_message_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
+      (*error_message_.UnsafeRawStringPointer())->clear();
+    }
+    if (has_slice_pose()) {
+      GOOGLE_DCHECK(slice_pose_ != NULL);
+      slice_pose_->::cartographer::transform::proto::Rigid3d::Clear();
     }
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_has_bits_[0 / 32] & 120u) {
+    ::memset(&submap_version_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&height_) -
+        reinterpret_cast<char*>(&submap_version_)) + sizeof(height_));
+  }
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool SubmapQuery_Response::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping.proto.SubmapQuery.Response)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 submap_version = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u)) {
+          set_has_submap_version();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &submap_version_)));
-          set_has_submap_version();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_cells;
         break;
       }
 
       // optional bytes cells = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_cells:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_cells()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(32)) goto parse_width;
         break;
       }
 
       // optional int32 width = 4;
       case 4: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_width:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(32u)) {
+          set_has_width();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &width_)));
-          set_has_width();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(40)) goto parse_height;
         break;
       }
 
       // optional int32 height = 5;
       case 5: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_height:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(40u)) {
+          set_has_height();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &height_)));
-          set_has_height();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(49)) goto parse_resolution;
         break;
       }
 
       // optional double resolution = 6;
       case 6: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_resolution:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(49u)) {
+          set_has_resolution();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &resolution_)));
-          set_has_resolution();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(66)) goto parse_error_message;
         break;
       }
 
       // optional string error_message = 8;
       case 8: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_error_message:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(66u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_error_message()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
-            this->error_message().data(), this->error_message().length(),
-            ::google::protobuf::internal::WireFormat::PARSE);
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->error_message().data(), static_cast<int>(this->error_message().length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "cartographer.mapping.proto.SubmapQuery.Response.error_message");
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(74)) goto parse_slice_pose;
         break;
       }
 
       // optional .cartographer.transform.proto.Rigid3d slice_pose = 9;
       case 9: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_slice_pose:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(74u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_slice_pose()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -1377,154 +1737,146 @@ bool SubmapQuery_Response::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping.proto.SubmapQuery.Response)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping.proto.SubmapQuery.Response)
+  return false;
 #undef DO_
 }
 
 void SubmapQuery_Response::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping.proto.SubmapQuery.Response)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int32 submap_version = 2;
-  if (has_submap_version()) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->submap_version(), output);
   }
 
   // optional bytes cells = 3;
-  if (has_cells()) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       3, this->cells(), output);
   }
 
   // optional int32 width = 4;
-  if (has_width()) {
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->width(), output);
   }
 
   // optional int32 height = 5;
-  if (has_height()) {
+  if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(5, this->height(), output);
   }
 
   // optional double resolution = 6;
-  if (has_resolution()) {
+  if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(6, this->resolution(), output);
   }
 
   // optional string error_message = 8;
-  if (has_error_message()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
-      this->error_message().data(), this->error_message().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
-    ::google::protobuf::internal::WireFormatLite::WriteString(
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->error_message().data(), static_cast<int>(this->error_message().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "cartographer.mapping.proto.SubmapQuery.Response.error_message");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       8, this->error_message(), output);
   }
 
   // optional .cartographer.transform.proto.Rigid3d slice_pose = 9;
-  if (has_slice_pose()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      9, this->slice_pose(), output);
+      9, *this->slice_pose_, output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping.proto.SubmapQuery.Response)
 }
 
-::google::protobuf::uint8* SubmapQuery_Response::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* SubmapQuery_Response::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.SubmapQuery.Response)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int32 submap_version = 2;
-  if (has_submap_version()) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->submap_version(), target);
   }
 
   // optional bytes cells = 3;
-  if (has_cells()) {
+  if (cached_has_bits & 0x00000001u) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         3, this->cells(), target);
   }
 
   // optional int32 width = 4;
-  if (has_width()) {
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->width(), target);
   }
 
   // optional int32 height = 5;
-  if (has_height()) {
+  if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(5, this->height(), target);
   }
 
   // optional double resolution = 6;
-  if (has_resolution()) {
+  if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(6, this->resolution(), target);
   }
 
   // optional string error_message = 8;
-  if (has_error_message()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
-      this->error_message().data(), this->error_message().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->error_message().data(), static_cast<int>(this->error_message().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "cartographer.mapping.proto.SubmapQuery.Response.error_message");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         8, this->error_message(), target);
   }
 
   // optional .cartographer.transform.proto.Rigid3d slice_pose = 9;
-  if (has_slice_pose()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        9, this->slice_pose(), target);
+      InternalWriteMessageNoVirtualToArray(
+        9, *this->slice_pose_, deterministic, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.SubmapQuery.Response)
   return target;
 }
 
-int SubmapQuery_Response::ByteSize() const {
-  int total_size = 0;
+size_t SubmapQuery_Response::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.SubmapQuery.Response)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional int32 submap_version = 2;
-    if (has_submap_version()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->submap_version());
-    }
-
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 127u) {
     // optional bytes cells = 3;
     if (has_cells()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->cells());
-    }
-
-    // optional int32 width = 4;
-    if (has_width()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->width());
-    }
-
-    // optional int32 height = 5;
-    if (has_height()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->height());
-    }
-
-    // optional double resolution = 6;
-    if (has_resolution()) {
-      total_size += 1 + 8;
-    }
-
-    // optional .cartographer.transform.proto.Rigid3d slice_pose = 9;
-    if (has_slice_pose()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->slice_pose());
     }
 
     // optional string error_message = 8;
@@ -1534,136 +1886,461 @@ int SubmapQuery_Response::ByteSize() const {
           this->error_message());
     }
 
+    // optional .cartographer.transform.proto.Rigid3d slice_pose = 9;
+    if (has_slice_pose()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          *this->slice_pose_);
+    }
+
+    // optional int32 submap_version = 2;
+    if (has_submap_version()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->submap_version());
+    }
+
+    // optional int32 width = 4;
+    if (has_width()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->width());
+    }
+
+    // optional double resolution = 6;
+    if (has_resolution()) {
+      total_size += 1 + 8;
+    }
+
+    // optional int32 height = 5;
+    if (has_height()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->height());
+    }
+
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SubmapQuery_Response::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.SubmapQuery.Response)
+  GOOGLE_DCHECK_NE(&from, this);
   const SubmapQuery_Response* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const SubmapQuery_Response*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const SubmapQuery_Response>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.SubmapQuery.Response)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.SubmapQuery.Response)
     MergeFrom(*source);
   }
 }
 
 void SubmapQuery_Response::MergeFrom(const SubmapQuery_Response& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_submap_version()) {
-      set_submap_version(from.submap_version());
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SubmapQuery.Response)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 127u) {
+    if (cached_has_bits & 0x00000001u) {
+      set_has_cells();
+      cells_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cells_);
     }
-    if (from.has_cells()) {
-      set_cells(from.cells());
+    if (cached_has_bits & 0x00000002u) {
+      set_has_error_message();
+      error_message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.error_message_);
     }
-    if (from.has_width()) {
-      set_width(from.width());
-    }
-    if (from.has_height()) {
-      set_height(from.height());
-    }
-    if (from.has_resolution()) {
-      set_resolution(from.resolution());
-    }
-    if (from.has_slice_pose()) {
+    if (cached_has_bits & 0x00000004u) {
       mutable_slice_pose()->::cartographer::transform::proto::Rigid3d::MergeFrom(from.slice_pose());
     }
-    if (from.has_error_message()) {
-      set_error_message(from.error_message());
+    if (cached_has_bits & 0x00000008u) {
+      submap_version_ = from.submap_version_;
     }
+    if (cached_has_bits & 0x00000010u) {
+      width_ = from.width_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      resolution_ = from.resolution_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      height_ = from.height_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void SubmapQuery_Response::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.SubmapQuery.Response)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void SubmapQuery_Response::CopyFrom(const SubmapQuery_Response& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping.proto.SubmapQuery.Response)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool SubmapQuery_Response::IsInitialized() const {
-
   return true;
 }
 
 void SubmapQuery_Response::Swap(SubmapQuery_Response* other) {
-  if (other != this) {
-    std::swap(submap_version_, other->submap_version_);
-    std::swap(cells_, other->cells_);
-    std::swap(width_, other->width_);
-    std::swap(height_, other->height_);
-    std::swap(resolution_, other->resolution_);
-    std::swap(slice_pose_, other->slice_pose_);
-    std::swap(error_message_, other->error_message_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SubmapQuery_Response::InternalSwap(SubmapQuery_Response* other) {
+  cells_.Swap(&other->cells_);
+  error_message_.Swap(&other->error_message_);
+  std::swap(slice_pose_, other->slice_pose_);
+  std::swap(submap_version_, other->submap_version_);
+  std::swap(width_, other->width_);
+  std::swap(resolution_, other->resolution_);
+  std::swap(height_, other->height_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SubmapQuery_Response::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = SubmapQuery_Response_descriptor_;
-  metadata.reflection = SubmapQuery_Response_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// SubmapQuery_Response
 
-// -------------------------------------------------------------------
+// optional int32 submap_version = 2;
+bool SubmapQuery_Response::has_submap_version() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void SubmapQuery_Response::set_has_submap_version() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void SubmapQuery_Response::clear_has_submap_version() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void SubmapQuery_Response::clear_submap_version() {
+  submap_version_ = 0;
+  clear_has_submap_version();
+}
+::google::protobuf::int32 SubmapQuery_Response::submap_version() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapQuery.Response.submap_version)
+  return submap_version_;
+}
+void SubmapQuery_Response::set_submap_version(::google::protobuf::int32 value) {
+  set_has_submap_version();
+  submap_version_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SubmapQuery.Response.submap_version)
+}
 
-#ifndef _MSC_VER
+// optional bytes cells = 3;
+bool SubmapQuery_Response::has_cells() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void SubmapQuery_Response::set_has_cells() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void SubmapQuery_Response::clear_has_cells() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void SubmapQuery_Response::clear_cells() {
+  cells_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_cells();
+}
+const ::std::string& SubmapQuery_Response::cells() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapQuery.Response.cells)
+  return cells_.GetNoArena();
+}
+void SubmapQuery_Response::set_cells(const ::std::string& value) {
+  set_has_cells();
+  cells_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SubmapQuery.Response.cells)
+}
+#if LANG_CXX11
+void SubmapQuery_Response::set_cells(::std::string&& value) {
+  set_has_cells();
+  cells_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:cartographer.mapping.proto.SubmapQuery.Response.cells)
+}
+#endif
+void SubmapQuery_Response::set_cells(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  set_has_cells();
+  cells_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:cartographer.mapping.proto.SubmapQuery.Response.cells)
+}
+void SubmapQuery_Response::set_cells(const void* value, size_t size) {
+  set_has_cells();
+  cells_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:cartographer.mapping.proto.SubmapQuery.Response.cells)
+}
+::std::string* SubmapQuery_Response::mutable_cells() {
+  set_has_cells();
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping.proto.SubmapQuery.Response.cells)
+  return cells_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* SubmapQuery_Response::release_cells() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping.proto.SubmapQuery.Response.cells)
+  clear_has_cells();
+  return cells_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void SubmapQuery_Response::set_allocated_cells(::std::string* cells) {
+  if (cells != NULL) {
+    set_has_cells();
+  } else {
+    clear_has_cells();
+  }
+  cells_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), cells);
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SubmapQuery.Response.cells)
+}
+
+// optional int32 width = 4;
+bool SubmapQuery_Response::has_width() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+void SubmapQuery_Response::set_has_width() {
+  _has_bits_[0] |= 0x00000010u;
+}
+void SubmapQuery_Response::clear_has_width() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+void SubmapQuery_Response::clear_width() {
+  width_ = 0;
+  clear_has_width();
+}
+::google::protobuf::int32 SubmapQuery_Response::width() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapQuery.Response.width)
+  return width_;
+}
+void SubmapQuery_Response::set_width(::google::protobuf::int32 value) {
+  set_has_width();
+  width_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SubmapQuery.Response.width)
+}
+
+// optional int32 height = 5;
+bool SubmapQuery_Response::has_height() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+void SubmapQuery_Response::set_has_height() {
+  _has_bits_[0] |= 0x00000040u;
+}
+void SubmapQuery_Response::clear_has_height() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+void SubmapQuery_Response::clear_height() {
+  height_ = 0;
+  clear_has_height();
+}
+::google::protobuf::int32 SubmapQuery_Response::height() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapQuery.Response.height)
+  return height_;
+}
+void SubmapQuery_Response::set_height(::google::protobuf::int32 value) {
+  set_has_height();
+  height_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SubmapQuery.Response.height)
+}
+
+// optional double resolution = 6;
+bool SubmapQuery_Response::has_resolution() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+void SubmapQuery_Response::set_has_resolution() {
+  _has_bits_[0] |= 0x00000020u;
+}
+void SubmapQuery_Response::clear_has_resolution() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+void SubmapQuery_Response::clear_resolution() {
+  resolution_ = 0;
+  clear_has_resolution();
+}
+double SubmapQuery_Response::resolution() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapQuery.Response.resolution)
+  return resolution_;
+}
+void SubmapQuery_Response::set_resolution(double value) {
+  set_has_resolution();
+  resolution_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SubmapQuery.Response.resolution)
+}
+
+// optional .cartographer.transform.proto.Rigid3d slice_pose = 9;
+bool SubmapQuery_Response::has_slice_pose() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void SubmapQuery_Response::set_has_slice_pose() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void SubmapQuery_Response::clear_has_slice_pose() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void SubmapQuery_Response::clear_slice_pose() {
+  if (slice_pose_ != NULL) slice_pose_->::cartographer::transform::proto::Rigid3d::Clear();
+  clear_has_slice_pose();
+}
+const ::cartographer::transform::proto::Rigid3d& SubmapQuery_Response::slice_pose() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapQuery.Response.slice_pose)
+  return slice_pose_ != NULL ? *slice_pose_
+                         : *::cartographer::transform::proto::Rigid3d::internal_default_instance();
+}
+::cartographer::transform::proto::Rigid3d* SubmapQuery_Response::mutable_slice_pose() {
+  set_has_slice_pose();
+  if (slice_pose_ == NULL) {
+    slice_pose_ = new ::cartographer::transform::proto::Rigid3d;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping.proto.SubmapQuery.Response.slice_pose)
+  return slice_pose_;
+}
+::cartographer::transform::proto::Rigid3d* SubmapQuery_Response::release_slice_pose() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping.proto.SubmapQuery.Response.slice_pose)
+  clear_has_slice_pose();
+  ::cartographer::transform::proto::Rigid3d* temp = slice_pose_;
+  slice_pose_ = NULL;
+  return temp;
+}
+void SubmapQuery_Response::set_allocated_slice_pose(::cartographer::transform::proto::Rigid3d* slice_pose) {
+  delete slice_pose_;
+  slice_pose_ = slice_pose;
+  if (slice_pose) {
+    set_has_slice_pose();
+  } else {
+    clear_has_slice_pose();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SubmapQuery.Response.slice_pose)
+}
+
+// optional string error_message = 8;
+bool SubmapQuery_Response::has_error_message() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void SubmapQuery_Response::set_has_error_message() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void SubmapQuery_Response::clear_has_error_message() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void SubmapQuery_Response::clear_error_message() {
+  error_message_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_error_message();
+}
+const ::std::string& SubmapQuery_Response::error_message() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapQuery.Response.error_message)
+  return error_message_.GetNoArena();
+}
+void SubmapQuery_Response::set_error_message(const ::std::string& value) {
+  set_has_error_message();
+  error_message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SubmapQuery.Response.error_message)
+}
+#if LANG_CXX11
+void SubmapQuery_Response::set_error_message(::std::string&& value) {
+  set_has_error_message();
+  error_message_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:cartographer.mapping.proto.SubmapQuery.Response.error_message)
+}
+#endif
+void SubmapQuery_Response::set_error_message(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  set_has_error_message();
+  error_message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:cartographer.mapping.proto.SubmapQuery.Response.error_message)
+}
+void SubmapQuery_Response::set_error_message(const char* value, size_t size) {
+  set_has_error_message();
+  error_message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:cartographer.mapping.proto.SubmapQuery.Response.error_message)
+}
+::std::string* SubmapQuery_Response::mutable_error_message() {
+  set_has_error_message();
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping.proto.SubmapQuery.Response.error_message)
+  return error_message_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* SubmapQuery_Response::release_error_message() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping.proto.SubmapQuery.Response.error_message)
+  clear_has_error_message();
+  return error_message_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void SubmapQuery_Response::set_allocated_error_message(::std::string* error_message) {
+  if (error_message != NULL) {
+    set_has_error_message();
+  } else {
+    clear_has_error_message();
+  }
+  error_message_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), error_message);
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SubmapQuery.Response.error_message)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SubmapQuery::kRequestFieldNumber;
 const int SubmapQuery::kResponseFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SubmapQuery::SubmapQuery()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping.proto.SubmapQuery)
 }
-
-void SubmapQuery::InitAsDefaultInstance() {
-  request_ = const_cast< ::cartographer::mapping::proto::SubmapQuery_Request*>(&::cartographer::mapping::proto::SubmapQuery_Request::default_instance());
-  response_ = const_cast< ::cartographer::mapping::proto::SubmapQuery_Response*>(&::cartographer::mapping::proto::SubmapQuery_Response::default_instance());
-}
-
 SubmapQuery::SubmapQuery(const SubmapQuery& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_request()) {
+    request_ = new ::cartographer::mapping::proto::SubmapQuery_Request(*from.request_);
+  } else {
+    request_ = NULL;
+  }
+  if (from.has_response()) {
+    response_ = new ::cartographer::mapping::proto::SubmapQuery_Response(*from.response_);
+  } else {
+    response_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.SubmapQuery)
 }
 
 void SubmapQuery::SharedCtor() {
   _cached_size_ = 0;
-  request_ = NULL;
-  response_ = NULL;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&request_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&response_) -
+      reinterpret_cast<char*>(&request_)) + sizeof(response_));
 }
 
 SubmapQuery::~SubmapQuery() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping.proto.SubmapQuery)
   SharedDtor();
 }
 
 void SubmapQuery::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != internal_default_instance()) {
     delete request_;
+  }
+  if (this != internal_default_instance()) {
     delete response_;
   }
 }
@@ -1674,72 +2351,79 @@ void SubmapQuery::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* SubmapQuery::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return SubmapQuery_descriptor_;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const SubmapQuery& SubmapQuery::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-SubmapQuery* SubmapQuery::default_instance_ = NULL;
-
-SubmapQuery* SubmapQuery::New() const {
-  return new SubmapQuery;
+SubmapQuery* SubmapQuery::New(::google::protobuf::Arena* arena) const {
+  SubmapQuery* n = new SubmapQuery;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void SubmapQuery::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.SubmapQuery)
+  if (_has_bits_[0 / 32] & 3u) {
     if (has_request()) {
-      if (request_ != NULL) request_->::cartographer::mapping::proto::SubmapQuery_Request::Clear();
+      GOOGLE_DCHECK(request_ != NULL);
+      request_->::cartographer::mapping::proto::SubmapQuery_Request::Clear();
     }
     if (has_response()) {
-      if (response_ != NULL) response_->::cartographer::mapping::proto::SubmapQuery_Response::Clear();
+      GOOGLE_DCHECK(response_ != NULL);
+      response_->::cartographer::mapping::proto::SubmapQuery_Response::Clear();
     }
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool SubmapQuery::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping.proto.SubmapQuery)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .cartographer.mapping.proto.SubmapQuery.Request request = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_request()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_response;
         break;
       }
 
       // optional .cartographer.mapping.proto.SubmapQuery.Response response = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_response:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_response()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -1747,143 +2431,264 @@ bool SubmapQuery::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping.proto.SubmapQuery)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping.proto.SubmapQuery)
+  return false;
 #undef DO_
 }
 
 void SubmapQuery::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping.proto.SubmapQuery)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional .cartographer.mapping.proto.SubmapQuery.Request request = 1;
-  if (has_request()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->request(), output);
+      1, *this->request_, output);
   }
 
   // optional .cartographer.mapping.proto.SubmapQuery.Response response = 2;
-  if (has_response()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->response(), output);
+      2, *this->response_, output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping.proto.SubmapQuery)
 }
 
-::google::protobuf::uint8* SubmapQuery::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* SubmapQuery::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.SubmapQuery)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional .cartographer.mapping.proto.SubmapQuery.Request request = 1;
-  if (has_request()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        1, this->request(), target);
+      InternalWriteMessageNoVirtualToArray(
+        1, *this->request_, deterministic, target);
   }
 
   // optional .cartographer.mapping.proto.SubmapQuery.Response response = 2;
-  if (has_response()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        2, this->response(), target);
+      InternalWriteMessageNoVirtualToArray(
+        2, *this->response_, deterministic, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.SubmapQuery)
   return target;
 }
 
-int SubmapQuery::ByteSize() const {
-  int total_size = 0;
+size_t SubmapQuery::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.SubmapQuery)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 3u) {
     // optional .cartographer.mapping.proto.SubmapQuery.Request request = 1;
     if (has_request()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->request());
+          *this->request_);
     }
 
     // optional .cartographer.mapping.proto.SubmapQuery.Response response = 2;
     if (has_response()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->response());
+          *this->response_);
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SubmapQuery::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.SubmapQuery)
+  GOOGLE_DCHECK_NE(&from, this);
   const SubmapQuery* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const SubmapQuery*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const SubmapQuery>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.SubmapQuery)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.SubmapQuery)
     MergeFrom(*source);
   }
 }
 
 void SubmapQuery::MergeFrom(const SubmapQuery& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_request()) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SubmapQuery)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
       mutable_request()->::cartographer::mapping::proto::SubmapQuery_Request::MergeFrom(from.request());
     }
-    if (from.has_response()) {
+    if (cached_has_bits & 0x00000002u) {
       mutable_response()->::cartographer::mapping::proto::SubmapQuery_Response::MergeFrom(from.response());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void SubmapQuery::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.SubmapQuery)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void SubmapQuery::CopyFrom(const SubmapQuery& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping.proto.SubmapQuery)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool SubmapQuery::IsInitialized() const {
-
   return true;
 }
 
 void SubmapQuery::Swap(SubmapQuery* other) {
-  if (other != this) {
-    std::swap(request_, other->request_);
-    std::swap(response_, other->response_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SubmapQuery::InternalSwap(SubmapQuery* other) {
+  std::swap(request_, other->request_);
+  std::swap(response_, other->response_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SubmapQuery::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = SubmapQuery_descriptor_;
-  metadata.reflection = SubmapQuery_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsubmap_5fvisualization_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// SubmapQuery
+
+// optional .cartographer.mapping.proto.SubmapQuery.Request request = 1;
+bool SubmapQuery::has_request() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void SubmapQuery::set_has_request() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void SubmapQuery::clear_has_request() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void SubmapQuery::clear_request() {
+  if (request_ != NULL) request_->::cartographer::mapping::proto::SubmapQuery_Request::Clear();
+  clear_has_request();
+}
+const ::cartographer::mapping::proto::SubmapQuery_Request& SubmapQuery::request() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapQuery.request)
+  return request_ != NULL ? *request_
+                         : *::cartographer::mapping::proto::SubmapQuery_Request::internal_default_instance();
+}
+::cartographer::mapping::proto::SubmapQuery_Request* SubmapQuery::mutable_request() {
+  set_has_request();
+  if (request_ == NULL) {
+    request_ = new ::cartographer::mapping::proto::SubmapQuery_Request;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping.proto.SubmapQuery.request)
+  return request_;
+}
+::cartographer::mapping::proto::SubmapQuery_Request* SubmapQuery::release_request() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping.proto.SubmapQuery.request)
+  clear_has_request();
+  ::cartographer::mapping::proto::SubmapQuery_Request* temp = request_;
+  request_ = NULL;
+  return temp;
+}
+void SubmapQuery::set_allocated_request(::cartographer::mapping::proto::SubmapQuery_Request* request) {
+  delete request_;
+  request_ = request;
+  if (request) {
+    set_has_request();
+  } else {
+    clear_has_request();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SubmapQuery.request)
+}
+
+// optional .cartographer.mapping.proto.SubmapQuery.Response response = 2;
+bool SubmapQuery::has_response() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void SubmapQuery::set_has_response() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void SubmapQuery::clear_has_response() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void SubmapQuery::clear_response() {
+  if (response_ != NULL) response_->::cartographer::mapping::proto::SubmapQuery_Response::Clear();
+  clear_has_response();
+}
+const ::cartographer::mapping::proto::SubmapQuery_Response& SubmapQuery::response() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SubmapQuery.response)
+  return response_ != NULL ? *response_
+                         : *::cartographer::mapping::proto::SubmapQuery_Response::internal_default_instance();
+}
+::cartographer::mapping::proto::SubmapQuery_Response* SubmapQuery::mutable_response() {
+  set_has_response();
+  if (response_ == NULL) {
+    response_ = new ::cartographer::mapping::proto::SubmapQuery_Response;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping.proto.SubmapQuery.response)
+  return response_;
+}
+::cartographer::mapping::proto::SubmapQuery_Response* SubmapQuery::release_response() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping.proto.SubmapQuery.response)
+  clear_has_response();
+  ::cartographer::mapping::proto::SubmapQuery_Response* temp = response_;
+  response_ = NULL;
+  return temp;
+}
+void SubmapQuery::set_allocated_response(::cartographer::mapping::proto::SubmapQuery_Response* response) {
+  delete response_;
+  response_ = response;
+  if (response) {
+    set_has_response();
+  } else {
+    clear_has_response();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SubmapQuery.response)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

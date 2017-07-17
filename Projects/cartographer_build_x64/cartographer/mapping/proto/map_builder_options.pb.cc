@@ -7,6 +7,7 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -19,133 +20,181 @@
 namespace cartographer {
 namespace mapping {
 namespace proto {
+class MapBuilderOptionsDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<MapBuilderOptions> {
+} _MapBuilderOptions_default_instance_;
+
+namespace protobuf_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto {
+
 
 namespace {
 
-const ::google::protobuf::Descriptor* MapBuilderOptions_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  MapBuilderOptions_reflection_ = NULL;
+::google::protobuf::Metadata file_level_metadata[1];
 
 }  // namespace
 
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
+    const TableStruct::entries[] = {
+  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
+};
 
-void protobuf_AssignDesc_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto() {
-  protobuf_AddDesc_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto();
-  const ::google::protobuf::FileDescriptor* file =
-    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
-      "cartographer/mapping/proto/map_builder_options.proto");
-  GOOGLE_CHECK(file != NULL);
-  MapBuilderOptions_descriptor_ = file->message_type(0);
-  static const int MapBuilderOptions_offsets_[4] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MapBuilderOptions, use_trajectory_builder_2d_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MapBuilderOptions, use_trajectory_builder_3d_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MapBuilderOptions, num_background_threads_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MapBuilderOptions, sparse_pose_graph_options_),
-  };
-  MapBuilderOptions_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      MapBuilderOptions_descriptor_,
-      MapBuilderOptions::default_instance_,
-      MapBuilderOptions_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MapBuilderOptions, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MapBuilderOptions, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(MapBuilderOptions));
-}
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
+    const TableStruct::aux[] = {
+  ::google::protobuf::internal::AuxillaryParseTableField(),
+};
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
+    TableStruct::schema[] = {
+  { NULL, NULL, 0, -1, -1, false },
+};
+
+const ::google::protobuf::uint32 TableStruct::offsets[] = {
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MapBuilderOptions, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MapBuilderOptions, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MapBuilderOptions, use_trajectory_builder_2d_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MapBuilderOptions, use_trajectory_builder_3d_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MapBuilderOptions, num_background_threads_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MapBuilderOptions, sparse_pose_graph_options_),
+  1,
+  2,
+  3,
+  0,
+};
+
+static const ::google::protobuf::internal::MigrationSchema schemas[] = {
+  { 0, 9, sizeof(MapBuilderOptions)},
+};
+
+static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&_MapBuilderOptions_default_instance_),
+};
 
 namespace {
 
-GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
-  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
-                 &protobuf_AssignDesc_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto);
+void protobuf_AssignDescriptors() {
+  AddDescriptors();
+  ::google::protobuf::MessageFactory* factory = NULL;
+  AssignDescriptors(
+      "cartographer/mapping/proto/map_builder_options.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      file_level_metadata, NULL, NULL);
 }
 
+void protobuf_AssignDescriptorsOnce() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+}
+
+void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    MapBuilderOptions_descriptor_, &MapBuilderOptions::default_instance());
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
 }
 
 }  // namespace
 
-void protobuf_ShutdownFile_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto() {
-  delete MapBuilderOptions::default_instance_;
-  delete MapBuilderOptions_reflection_;
+void TableStruct::Shutdown() {
+  _MapBuilderOptions_default_instance_.Shutdown();
+  delete file_level_metadata[0].reflection;
 }
 
-void protobuf_AddDesc_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void TableStruct::InitDefaultsImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::cartographer::mapping::proto::protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto();
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n4cartographer/mapping/proto/map_builder"
-    "_options.proto\022\032cartographer.mapping.pro"
-    "to\032:cartographer/mapping/proto/sparse_po"
-    "se_graph_options.proto\"\320\001\n\021MapBuilderOpt"
-    "ions\022!\n\031use_trajectory_builder_2d\030\001 \001(\010\022"
-    "!\n\031use_trajectory_builder_3d\030\002 \001(\010\022\036\n\026nu"
-    "m_background_threads\030\003 \001(\005\022U\n\031sparse_pos"
-    "e_graph_options\030\004 \001(\01322.cartographer.map"
-    "ping.proto.SparsePoseGraphOptions", 353);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "cartographer/mapping/proto/map_builder_options.proto", &protobuf_RegisterTypes);
-  MapBuilderOptions::default_instance_ = new MapBuilderOptions();
-  MapBuilderOptions::default_instance_->InitAsDefaultInstance();
-  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto);
+  ::google::protobuf::internal::InitProtobufDefaults();
+  ::cartographer::mapping::proto::protobuf_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto::InitDefaults();
+  _MapBuilderOptions_default_instance_.DefaultConstruct();
+  _MapBuilderOptions_default_instance_.get_mutable()->sparse_pose_graph_options_ = const_cast< ::cartographer::mapping::proto::SparsePoseGraphOptions*>(
+      ::cartographer::mapping::proto::SparsePoseGraphOptions::internal_default_instance());
 }
 
+void InitDefaults() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
+}
+void AddDescriptorsImpl() {
+  InitDefaults();
+  static const char descriptor[] = {
+      "\n4cartographer/mapping/proto/map_builder"
+      "_options.proto\022\032cartographer.mapping.pro"
+      "to\032:cartographer/mapping/proto/sparse_po"
+      "se_graph_options.proto\"\320\001\n\021MapBuilderOpt"
+      "ions\022!\n\031use_trajectory_builder_2d\030\001 \001(\010\022"
+      "!\n\031use_trajectory_builder_3d\030\002 \001(\010\022\036\n\026nu"
+      "m_background_threads\030\003 \001(\005\022U\n\031sparse_pos"
+      "e_graph_options\030\004 \001(\01322.cartographer.map"
+      "ping.proto.SparsePoseGraphOptions"
+  };
+  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+      descriptor, 353);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
+    "cartographer/mapping/proto/map_builder_options.proto", &protobuf_RegisterTypes);
+  ::cartographer::mapping::proto::protobuf_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto::AddDescriptors();
+  ::google::protobuf::internal::OnShutdown(&TableStruct::Shutdown);
+}
+
+void AddDescriptors() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+}
 // Force AddDescriptors() to be called at static initialization time.
-struct StaticDescriptorInitializer_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto {
-  StaticDescriptorInitializer_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto() {
-    protobuf_AddDesc_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto();
+struct StaticDescriptorInitializer {
+  StaticDescriptorInitializer() {
+    AddDescriptors();
   }
-} static_descriptor_initializer_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto_;
+} static_descriptor_initializer;
+
+}  // namespace protobuf_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto
+
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int MapBuilderOptions::kUseTrajectoryBuilder2DFieldNumber;
 const int MapBuilderOptions::kUseTrajectoryBuilder3DFieldNumber;
 const int MapBuilderOptions::kNumBackgroundThreadsFieldNumber;
 const int MapBuilderOptions::kSparsePoseGraphOptionsFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 MapBuilderOptions::MapBuilderOptions()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping.proto.MapBuilderOptions)
 }
-
-void MapBuilderOptions::InitAsDefaultInstance() {
-  sparse_pose_graph_options_ = const_cast< ::cartographer::mapping::proto::SparsePoseGraphOptions*>(&::cartographer::mapping::proto::SparsePoseGraphOptions::default_instance());
-}
-
 MapBuilderOptions::MapBuilderOptions(const MapBuilderOptions& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_sparse_pose_graph_options()) {
+    sparse_pose_graph_options_ = new ::cartographer::mapping::proto::SparsePoseGraphOptions(*from.sparse_pose_graph_options_);
+  } else {
+    sparse_pose_graph_options_ = NULL;
+  }
+  ::memcpy(&use_trajectory_builder_2d_, &from.use_trajectory_builder_2d_,
+    static_cast<size_t>(reinterpret_cast<char*>(&num_background_threads_) -
+    reinterpret_cast<char*>(&use_trajectory_builder_2d_)) + sizeof(num_background_threads_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.MapBuilderOptions)
 }
 
 void MapBuilderOptions::SharedCtor() {
   _cached_size_ = 0;
-  use_trajectory_builder_2d_ = false;
-  use_trajectory_builder_3d_ = false;
-  num_background_threads_ = 0;
-  sparse_pose_graph_options_ = NULL;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&sparse_pose_graph_options_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&num_background_threads_) -
+      reinterpret_cast<char*>(&sparse_pose_graph_options_)) + sizeof(num_background_threads_));
 }
 
 MapBuilderOptions::~MapBuilderOptions() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping.proto.MapBuilderOptions)
   SharedDtor();
 }
 
 void MapBuilderOptions::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != internal_default_instance()) {
     delete sparse_pose_graph_options_;
   }
 }
@@ -156,106 +205,108 @@ void MapBuilderOptions::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* MapBuilderOptions::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return MapBuilderOptions_descriptor_;
+  protobuf_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const MapBuilderOptions& MapBuilderOptions::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-MapBuilderOptions* MapBuilderOptions::default_instance_ = NULL;
-
-MapBuilderOptions* MapBuilderOptions::New() const {
-  return new MapBuilderOptions;
+MapBuilderOptions* MapBuilderOptions::New(::google::protobuf::Arena* arena) const {
+  MapBuilderOptions* n = new MapBuilderOptions;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void MapBuilderOptions::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    use_trajectory_builder_2d_ = false;
-    use_trajectory_builder_3d_ = false;
-    num_background_threads_ = 0;
-    if (has_sparse_pose_graph_options()) {
-      if (sparse_pose_graph_options_ != NULL) sparse_pose_graph_options_->::cartographer::mapping::proto::SparsePoseGraphOptions::Clear();
-    }
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.MapBuilderOptions)
+  if (has_sparse_pose_graph_options()) {
+    GOOGLE_DCHECK(sparse_pose_graph_options_ != NULL);
+    sparse_pose_graph_options_->::cartographer::mapping::proto::SparsePoseGraphOptions::Clear();
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_has_bits_[0 / 32] & 14u) {
+    ::memset(&use_trajectory_builder_2d_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&num_background_threads_) -
+        reinterpret_cast<char*>(&use_trajectory_builder_2d_)) + sizeof(num_background_threads_));
+  }
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool MapBuilderOptions::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping.proto.MapBuilderOptions)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bool use_trajectory_builder_2d = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u)) {
+          set_has_use_trajectory_builder_2d();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &use_trajectory_builder_2d_)));
-          set_has_use_trajectory_builder_2d();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(16)) goto parse_use_trajectory_builder_3d;
         break;
       }
 
       // optional bool use_trajectory_builder_3d = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_use_trajectory_builder_3d:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u)) {
+          set_has_use_trajectory_builder_3d();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &use_trajectory_builder_3d_)));
-          set_has_use_trajectory_builder_3d();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(24)) goto parse_num_background_threads;
         break;
       }
 
       // optional int32 num_background_threads = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_num_background_threads:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u)) {
+          set_has_num_background_threads();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &num_background_threads_)));
-          set_has_num_background_threads();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(34)) goto parse_sparse_pose_graph_options;
         break;
       }
 
       // optional .cartographer.mapping.proto.SparsePoseGraphOptions sparse_pose_graph_options = 4;
       case 4: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_sparse_pose_graph_options:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(34u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_sparse_pose_graph_options()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -263,74 +314,104 @@ bool MapBuilderOptions::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping.proto.MapBuilderOptions)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping.proto.MapBuilderOptions)
+  return false;
 #undef DO_
 }
 
 void MapBuilderOptions::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping.proto.MapBuilderOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional bool use_trajectory_builder_2d = 1;
-  if (has_use_trajectory_builder_2d()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(1, this->use_trajectory_builder_2d(), output);
   }
 
   // optional bool use_trajectory_builder_3d = 2;
-  if (has_use_trajectory_builder_3d()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->use_trajectory_builder_3d(), output);
   }
 
   // optional int32 num_background_threads = 3;
-  if (has_num_background_threads()) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->num_background_threads(), output);
   }
 
   // optional .cartographer.mapping.proto.SparsePoseGraphOptions sparse_pose_graph_options = 4;
-  if (has_sparse_pose_graph_options()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->sparse_pose_graph_options(), output);
+      4, *this->sparse_pose_graph_options_, output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping.proto.MapBuilderOptions)
 }
 
-::google::protobuf::uint8* MapBuilderOptions::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* MapBuilderOptions::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.MapBuilderOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional bool use_trajectory_builder_2d = 1;
-  if (has_use_trajectory_builder_2d()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(1, this->use_trajectory_builder_2d(), target);
   }
 
   // optional bool use_trajectory_builder_3d = 2;
-  if (has_use_trajectory_builder_3d()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->use_trajectory_builder_3d(), target);
   }
 
   // optional int32 num_background_threads = 3;
-  if (has_num_background_threads()) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->num_background_threads(), target);
   }
 
   // optional .cartographer.mapping.proto.SparsePoseGraphOptions sparse_pose_graph_options = 4;
-  if (has_sparse_pose_graph_options()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        4, this->sparse_pose_graph_options(), target);
+      InternalWriteMessageNoVirtualToArray(
+        4, *this->sparse_pose_graph_options_, deterministic, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.MapBuilderOptions)
   return target;
 }
 
-int MapBuilderOptions::ByteSize() const {
-  int total_size = 0;
+size_t MapBuilderOptions::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.MapBuilderOptions)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 15u) {
+    // optional .cartographer.mapping.proto.SparsePoseGraphOptions sparse_pose_graph_options = 4;
+    if (has_sparse_pose_graph_options()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          *this->sparse_pose_graph_options_);
+    }
+
     // optional bool use_trajectory_builder_2d = 1;
     if (has_use_trajectory_builder_2d()) {
       total_size += 1 + 1;
@@ -348,93 +429,212 @@ int MapBuilderOptions::ByteSize() const {
           this->num_background_threads());
     }
 
-    // optional .cartographer.mapping.proto.SparsePoseGraphOptions sparse_pose_graph_options = 4;
-    if (has_sparse_pose_graph_options()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->sparse_pose_graph_options());
-    }
-
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void MapBuilderOptions::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.MapBuilderOptions)
+  GOOGLE_DCHECK_NE(&from, this);
   const MapBuilderOptions* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const MapBuilderOptions*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const MapBuilderOptions>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.MapBuilderOptions)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.MapBuilderOptions)
     MergeFrom(*source);
   }
 }
 
 void MapBuilderOptions::MergeFrom(const MapBuilderOptions& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_use_trajectory_builder_2d()) {
-      set_use_trajectory_builder_2d(from.use_trajectory_builder_2d());
-    }
-    if (from.has_use_trajectory_builder_3d()) {
-      set_use_trajectory_builder_3d(from.use_trajectory_builder_3d());
-    }
-    if (from.has_num_background_threads()) {
-      set_num_background_threads(from.num_background_threads());
-    }
-    if (from.has_sparse_pose_graph_options()) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.MapBuilderOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 15u) {
+    if (cached_has_bits & 0x00000001u) {
       mutable_sparse_pose_graph_options()->::cartographer::mapping::proto::SparsePoseGraphOptions::MergeFrom(from.sparse_pose_graph_options());
     }
+    if (cached_has_bits & 0x00000002u) {
+      use_trajectory_builder_2d_ = from.use_trajectory_builder_2d_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      use_trajectory_builder_3d_ = from.use_trajectory_builder_3d_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      num_background_threads_ = from.num_background_threads_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void MapBuilderOptions::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.MapBuilderOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MapBuilderOptions::CopyFrom(const MapBuilderOptions& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping.proto.MapBuilderOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool MapBuilderOptions::IsInitialized() const {
-
   return true;
 }
 
 void MapBuilderOptions::Swap(MapBuilderOptions* other) {
-  if (other != this) {
-    std::swap(use_trajectory_builder_2d_, other->use_trajectory_builder_2d_);
-    std::swap(use_trajectory_builder_3d_, other->use_trajectory_builder_3d_);
-    std::swap(num_background_threads_, other->num_background_threads_);
-    std::swap(sparse_pose_graph_options_, other->sparse_pose_graph_options_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void MapBuilderOptions::InternalSwap(MapBuilderOptions* other) {
+  std::swap(sparse_pose_graph_options_, other->sparse_pose_graph_options_);
+  std::swap(use_trajectory_builder_2d_, other->use_trajectory_builder_2d_);
+  std::swap(use_trajectory_builder_3d_, other->use_trajectory_builder_3d_);
+  std::swap(num_background_threads_, other->num_background_threads_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata MapBuilderOptions::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = MapBuilderOptions_descriptor_;
-  metadata.reflection = MapBuilderOptions_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fmap_5fbuilder_5foptions_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// MapBuilderOptions
+
+// optional bool use_trajectory_builder_2d = 1;
+bool MapBuilderOptions::has_use_trajectory_builder_2d() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void MapBuilderOptions::set_has_use_trajectory_builder_2d() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void MapBuilderOptions::clear_has_use_trajectory_builder_2d() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void MapBuilderOptions::clear_use_trajectory_builder_2d() {
+  use_trajectory_builder_2d_ = false;
+  clear_has_use_trajectory_builder_2d();
+}
+bool MapBuilderOptions::use_trajectory_builder_2d() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.MapBuilderOptions.use_trajectory_builder_2d)
+  return use_trajectory_builder_2d_;
+}
+void MapBuilderOptions::set_use_trajectory_builder_2d(bool value) {
+  set_has_use_trajectory_builder_2d();
+  use_trajectory_builder_2d_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.MapBuilderOptions.use_trajectory_builder_2d)
+}
+
+// optional bool use_trajectory_builder_3d = 2;
+bool MapBuilderOptions::has_use_trajectory_builder_3d() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void MapBuilderOptions::set_has_use_trajectory_builder_3d() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void MapBuilderOptions::clear_has_use_trajectory_builder_3d() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void MapBuilderOptions::clear_use_trajectory_builder_3d() {
+  use_trajectory_builder_3d_ = false;
+  clear_has_use_trajectory_builder_3d();
+}
+bool MapBuilderOptions::use_trajectory_builder_3d() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.MapBuilderOptions.use_trajectory_builder_3d)
+  return use_trajectory_builder_3d_;
+}
+void MapBuilderOptions::set_use_trajectory_builder_3d(bool value) {
+  set_has_use_trajectory_builder_3d();
+  use_trajectory_builder_3d_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.MapBuilderOptions.use_trajectory_builder_3d)
+}
+
+// optional int32 num_background_threads = 3;
+bool MapBuilderOptions::has_num_background_threads() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void MapBuilderOptions::set_has_num_background_threads() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void MapBuilderOptions::clear_has_num_background_threads() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void MapBuilderOptions::clear_num_background_threads() {
+  num_background_threads_ = 0;
+  clear_has_num_background_threads();
+}
+::google::protobuf::int32 MapBuilderOptions::num_background_threads() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.MapBuilderOptions.num_background_threads)
+  return num_background_threads_;
+}
+void MapBuilderOptions::set_num_background_threads(::google::protobuf::int32 value) {
+  set_has_num_background_threads();
+  num_background_threads_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.MapBuilderOptions.num_background_threads)
+}
+
+// optional .cartographer.mapping.proto.SparsePoseGraphOptions sparse_pose_graph_options = 4;
+bool MapBuilderOptions::has_sparse_pose_graph_options() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void MapBuilderOptions::set_has_sparse_pose_graph_options() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void MapBuilderOptions::clear_has_sparse_pose_graph_options() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void MapBuilderOptions::clear_sparse_pose_graph_options() {
+  if (sparse_pose_graph_options_ != NULL) sparse_pose_graph_options_->::cartographer::mapping::proto::SparsePoseGraphOptions::Clear();
+  clear_has_sparse_pose_graph_options();
+}
+const ::cartographer::mapping::proto::SparsePoseGraphOptions& MapBuilderOptions::sparse_pose_graph_options() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.MapBuilderOptions.sparse_pose_graph_options)
+  return sparse_pose_graph_options_ != NULL ? *sparse_pose_graph_options_
+                         : *::cartographer::mapping::proto::SparsePoseGraphOptions::internal_default_instance();
+}
+::cartographer::mapping::proto::SparsePoseGraphOptions* MapBuilderOptions::mutable_sparse_pose_graph_options() {
+  set_has_sparse_pose_graph_options();
+  if (sparse_pose_graph_options_ == NULL) {
+    sparse_pose_graph_options_ = new ::cartographer::mapping::proto::SparsePoseGraphOptions;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping.proto.MapBuilderOptions.sparse_pose_graph_options)
+  return sparse_pose_graph_options_;
+}
+::cartographer::mapping::proto::SparsePoseGraphOptions* MapBuilderOptions::release_sparse_pose_graph_options() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping.proto.MapBuilderOptions.sparse_pose_graph_options)
+  clear_has_sparse_pose_graph_options();
+  ::cartographer::mapping::proto::SparsePoseGraphOptions* temp = sparse_pose_graph_options_;
+  sparse_pose_graph_options_ = NULL;
+  return temp;
+}
+void MapBuilderOptions::set_allocated_sparse_pose_graph_options(::cartographer::mapping::proto::SparsePoseGraphOptions* sparse_pose_graph_options) {
+  delete sparse_pose_graph_options_;
+  sparse_pose_graph_options_ = sparse_pose_graph_options;
+  if (sparse_pose_graph_options) {
+    set_has_sparse_pose_graph_options();
+  } else {
+    clear_has_sparse_pose_graph_options();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.MapBuilderOptions.sparse_pose_graph_options)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

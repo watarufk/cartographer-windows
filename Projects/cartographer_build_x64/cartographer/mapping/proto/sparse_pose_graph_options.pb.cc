@@ -7,6 +7,7 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -19,109 +20,154 @@
 namespace cartographer {
 namespace mapping {
 namespace proto {
+class SparsePoseGraphOptionsDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SparsePoseGraphOptions> {
+} _SparsePoseGraphOptions_default_instance_;
+
+namespace protobuf_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto {
+
 
 namespace {
 
-const ::google::protobuf::Descriptor* SparsePoseGraphOptions_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  SparsePoseGraphOptions_reflection_ = NULL;
+::google::protobuf::Metadata file_level_metadata[1];
 
 }  // namespace
 
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
+    const TableStruct::entries[] = {
+  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
+};
 
-void protobuf_AssignDesc_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto() {
-  protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto();
-  const ::google::protobuf::FileDescriptor* file =
-    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
-      "cartographer/mapping/proto/sparse_pose_graph_options.proto");
-  GOOGLE_CHECK(file != NULL);
-  SparsePoseGraphOptions_descriptor_ = file->message_type(0);
-  static const int SparsePoseGraphOptions_offsets_[7] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, optimize_every_n_scans_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, constraint_builder_options_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, matcher_translation_weight_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, matcher_rotation_weight_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, optimization_problem_options_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, max_num_final_iterations_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, global_sampling_ratio_),
-  };
-  SparsePoseGraphOptions_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      SparsePoseGraphOptions_descriptor_,
-      SparsePoseGraphOptions::default_instance_,
-      SparsePoseGraphOptions_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(SparsePoseGraphOptions));
-}
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
+    const TableStruct::aux[] = {
+  ::google::protobuf::internal::AuxillaryParseTableField(),
+};
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
+    TableStruct::schema[] = {
+  { NULL, NULL, 0, -1, -1, false },
+};
+
+const ::google::protobuf::uint32 TableStruct::offsets[] = {
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, optimize_every_n_scans_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, constraint_builder_options_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, matcher_translation_weight_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, matcher_rotation_weight_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, optimization_problem_options_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, max_num_final_iterations_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparsePoseGraphOptions, global_sampling_ratio_),
+  2,
+  0,
+  5,
+  6,
+  1,
+  3,
+  4,
+};
+
+static const ::google::protobuf::internal::MigrationSchema schemas[] = {
+  { 0, 12, sizeof(SparsePoseGraphOptions)},
+};
+
+static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&_SparsePoseGraphOptions_default_instance_),
+};
 
 namespace {
 
-GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
-  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
-                 &protobuf_AssignDesc_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto);
+void protobuf_AssignDescriptors() {
+  AddDescriptors();
+  ::google::protobuf::MessageFactory* factory = NULL;
+  AssignDescriptors(
+      "cartographer/mapping/proto/sparse_pose_graph_options.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      file_level_metadata, NULL, NULL);
 }
 
+void protobuf_AssignDescriptorsOnce() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+}
+
+void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    SparsePoseGraphOptions_descriptor_, &SparsePoseGraphOptions::default_instance());
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
 }
 
 }  // namespace
 
-void protobuf_ShutdownFile_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto() {
-  delete SparsePoseGraphOptions::default_instance_;
-  delete SparsePoseGraphOptions_reflection_;
+void TableStruct::Shutdown() {
+  _SparsePoseGraphOptions_default_instance_.Shutdown();
+  delete file_level_metadata[0].reflection;
 }
 
-void protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void TableStruct::InitDefaultsImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::cartographer::mapping::sparse_pose_graph::proto::protobuf_AddDesc_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2fconstraint_5fbuilder_5foptions_2eproto();
-  ::cartographer::mapping::sparse_pose_graph::proto::protobuf_AddDesc_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto();
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n:cartographer/mapping/proto/sparse_pose"
-    "_graph_options.proto\022\032cartographer.mappi"
-    "ng.proto\032Mcartographer/mapping/sparse_po"
-    "se_graph/proto/constraint_builder_option"
-    "s.proto\032Ocartographer/mapping/sparse_pos"
-    "e_graph/proto/optimization_problem_optio"
-    "ns.proto\"\232\003\n\026SparsePoseGraphOptions\022\036\n\026o"
-    "ptimize_every_n_scans\030\001 \001(\005\022j\n\032constrain"
-    "t_builder_options\030\003 \001(\0132F.cartographer.m"
-    "apping.sparse_pose_graph.proto.Constrain"
-    "tBuilderOptions\022\"\n\032matcher_translation_w"
-    "eight\030\007 \001(\001\022\037\n\027matcher_rotation_weight\030\010"
-    " \001(\001\022n\n\034optimization_problem_options\030\004 \001"
-    "(\0132H.cartographer.mapping.sparse_pose_gr"
-    "aph.proto.OptimizationProblemOptions\022 \n\030"
-    "max_num_final_iterations\030\006 \001(\005\022\035\n\025global"
-    "_sampling_ratio\030\005 \001(\001", 661);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "cartographer/mapping/proto/sparse_pose_graph_options.proto", &protobuf_RegisterTypes);
-  SparsePoseGraphOptions::default_instance_ = new SparsePoseGraphOptions();
-  SparsePoseGraphOptions::default_instance_->InitAsDefaultInstance();
-  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto);
+  ::google::protobuf::internal::InitProtobufDefaults();
+  ::cartographer::mapping::sparse_pose_graph::proto::protobuf_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2fconstraint_5fbuilder_5foptions_2eproto::InitDefaults();
+  ::cartographer::mapping::sparse_pose_graph::proto::protobuf_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto::InitDefaults();
+  _SparsePoseGraphOptions_default_instance_.DefaultConstruct();
+  _SparsePoseGraphOptions_default_instance_.get_mutable()->constraint_builder_options_ = const_cast< ::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions*>(
+      ::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions::internal_default_instance());
+  _SparsePoseGraphOptions_default_instance_.get_mutable()->optimization_problem_options_ = const_cast< ::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions*>(
+      ::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions::internal_default_instance());
 }
 
+void InitDefaults() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
+}
+void AddDescriptorsImpl() {
+  InitDefaults();
+  static const char descriptor[] = {
+      "\n:cartographer/mapping/proto/sparse_pose"
+      "_graph_options.proto\022\032cartographer.mappi"
+      "ng.proto\032Mcartographer/mapping/sparse_po"
+      "se_graph/proto/constraint_builder_option"
+      "s.proto\032Ocartographer/mapping/sparse_pos"
+      "e_graph/proto/optimization_problem_optio"
+      "ns.proto\"\232\003\n\026SparsePoseGraphOptions\022\036\n\026o"
+      "ptimize_every_n_scans\030\001 \001(\005\022j\n\032constrain"
+      "t_builder_options\030\003 \001(\0132F.cartographer.m"
+      "apping.sparse_pose_graph.proto.Constrain"
+      "tBuilderOptions\022\"\n\032matcher_translation_w"
+      "eight\030\007 \001(\001\022\037\n\027matcher_rotation_weight\030\010"
+      " \001(\001\022n\n\034optimization_problem_options\030\004 \001"
+      "(\0132H.cartographer.mapping.sparse_pose_gr"
+      "aph.proto.OptimizationProblemOptions\022 \n\030"
+      "max_num_final_iterations\030\006 \001(\005\022\035\n\025global"
+      "_sampling_ratio\030\005 \001(\001"
+  };
+  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+      descriptor, 661);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
+    "cartographer/mapping/proto/sparse_pose_graph_options.proto", &protobuf_RegisterTypes);
+  ::cartographer::mapping::sparse_pose_graph::proto::protobuf_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2fconstraint_5fbuilder_5foptions_2eproto::AddDescriptors();
+  ::cartographer::mapping::sparse_pose_graph::proto::protobuf_cartographer_2fmapping_2fsparse_5fpose_5fgraph_2fproto_2foptimization_5fproblem_5foptions_2eproto::AddDescriptors();
+  ::google::protobuf::internal::OnShutdown(&TableStruct::Shutdown);
+}
+
+void AddDescriptors() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+}
 // Force AddDescriptors() to be called at static initialization time.
-struct StaticDescriptorInitializer_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto {
-  StaticDescriptorInitializer_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto() {
-    protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto();
+struct StaticDescriptorInitializer {
+  StaticDescriptorInitializer() {
+    AddDescriptors();
   }
-} static_descriptor_initializer_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto_;
+} static_descriptor_initializer;
+
+}  // namespace protobuf_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto
+
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SparsePoseGraphOptions::kOptimizeEveryNScansFieldNumber;
 const int SparsePoseGraphOptions::kConstraintBuilderOptionsFieldNumber;
 const int SparsePoseGraphOptions::kMatcherTranslationWeightFieldNumber;
@@ -129,43 +175,55 @@ const int SparsePoseGraphOptions::kMatcherRotationWeightFieldNumber;
 const int SparsePoseGraphOptions::kOptimizationProblemOptionsFieldNumber;
 const int SparsePoseGraphOptions::kMaxNumFinalIterationsFieldNumber;
 const int SparsePoseGraphOptions::kGlobalSamplingRatioFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SparsePoseGraphOptions::SparsePoseGraphOptions()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping.proto.SparsePoseGraphOptions)
 }
-
-void SparsePoseGraphOptions::InitAsDefaultInstance() {
-  constraint_builder_options_ = const_cast< ::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions*>(&::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions::default_instance());
-  optimization_problem_options_ = const_cast< ::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions*>(&::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions::default_instance());
-}
-
 SparsePoseGraphOptions::SparsePoseGraphOptions(const SparsePoseGraphOptions& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_constraint_builder_options()) {
+    constraint_builder_options_ = new ::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions(*from.constraint_builder_options_);
+  } else {
+    constraint_builder_options_ = NULL;
+  }
+  if (from.has_optimization_problem_options()) {
+    optimization_problem_options_ = new ::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions(*from.optimization_problem_options_);
+  } else {
+    optimization_problem_options_ = NULL;
+  }
+  ::memcpy(&optimize_every_n_scans_, &from.optimize_every_n_scans_,
+    static_cast<size_t>(reinterpret_cast<char*>(&matcher_rotation_weight_) -
+    reinterpret_cast<char*>(&optimize_every_n_scans_)) + sizeof(matcher_rotation_weight_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping.proto.SparsePoseGraphOptions)
 }
 
 void SparsePoseGraphOptions::SharedCtor() {
   _cached_size_ = 0;
-  optimize_every_n_scans_ = 0;
-  constraint_builder_options_ = NULL;
-  matcher_translation_weight_ = 0;
-  matcher_rotation_weight_ = 0;
-  optimization_problem_options_ = NULL;
-  max_num_final_iterations_ = 0;
-  global_sampling_ratio_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&constraint_builder_options_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&matcher_rotation_weight_) -
+      reinterpret_cast<char*>(&constraint_builder_options_)) + sizeof(matcher_rotation_weight_));
 }
 
 SparsePoseGraphOptions::~SparsePoseGraphOptions() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping.proto.SparsePoseGraphOptions)
   SharedDtor();
 }
 
 void SparsePoseGraphOptions::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != internal_default_instance()) {
     delete constraint_builder_options_;
+  }
+  if (this != internal_default_instance()) {
     delete optimization_problem_options_;
   }
 }
@@ -176,157 +234,154 @@ void SparsePoseGraphOptions::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* SparsePoseGraphOptions::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return SparsePoseGraphOptions_descriptor_;
+  protobuf_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const SparsePoseGraphOptions& SparsePoseGraphOptions::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-SparsePoseGraphOptions* SparsePoseGraphOptions::default_instance_ = NULL;
-
-SparsePoseGraphOptions* SparsePoseGraphOptions::New() const {
-  return new SparsePoseGraphOptions;
+SparsePoseGraphOptions* SparsePoseGraphOptions::New(::google::protobuf::Arena* arena) const {
+  SparsePoseGraphOptions* n = new SparsePoseGraphOptions;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void SparsePoseGraphOptions::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    optimize_every_n_scans_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping.proto.SparsePoseGraphOptions)
+  if (_has_bits_[0 / 32] & 3u) {
     if (has_constraint_builder_options()) {
-      if (constraint_builder_options_ != NULL) constraint_builder_options_->::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions::Clear();
+      GOOGLE_DCHECK(constraint_builder_options_ != NULL);
+      constraint_builder_options_->::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions::Clear();
     }
-    matcher_translation_weight_ = 0;
-    matcher_rotation_weight_ = 0;
     if (has_optimization_problem_options()) {
-      if (optimization_problem_options_ != NULL) optimization_problem_options_->::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions::Clear();
+      GOOGLE_DCHECK(optimization_problem_options_ != NULL);
+      optimization_problem_options_->::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions::Clear();
     }
-    max_num_final_iterations_ = 0;
-    global_sampling_ratio_ = 0;
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_has_bits_[0 / 32] & 124u) {
+    ::memset(&optimize_every_n_scans_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&matcher_rotation_weight_) -
+        reinterpret_cast<char*>(&optimize_every_n_scans_)) + sizeof(matcher_rotation_weight_));
+  }
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool SparsePoseGraphOptions::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping.proto.SparsePoseGraphOptions)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 optimize_every_n_scans = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u)) {
+          set_has_optimize_every_n_scans();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &optimize_every_n_scans_)));
-          set_has_optimize_every_n_scans();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_constraint_builder_options;
         break;
       }
 
       // optional .cartographer.mapping.sparse_pose_graph.proto.ConstraintBuilderOptions constraint_builder_options = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_constraint_builder_options:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_constraint_builder_options()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(34)) goto parse_optimization_problem_options;
         break;
       }
 
       // optional .cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions optimization_problem_options = 4;
       case 4: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_optimization_problem_options:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(34u)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_optimization_problem_options()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(41)) goto parse_global_sampling_ratio;
         break;
       }
 
       // optional double global_sampling_ratio = 5;
       case 5: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_global_sampling_ratio:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(41u)) {
+          set_has_global_sampling_ratio();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &global_sampling_ratio_)));
-          set_has_global_sampling_ratio();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(48)) goto parse_max_num_final_iterations;
         break;
       }
 
       // optional int32 max_num_final_iterations = 6;
       case 6: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_max_num_final_iterations:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(48u)) {
+          set_has_max_num_final_iterations();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &max_num_final_iterations_)));
-          set_has_max_num_final_iterations();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(57)) goto parse_matcher_translation_weight;
         break;
       }
 
       // optional double matcher_translation_weight = 7;
       case 7: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_matcher_translation_weight:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(57u)) {
+          set_has_matcher_translation_weight();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &matcher_translation_weight_)));
-          set_has_matcher_translation_weight();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(65)) goto parse_matcher_rotation_weight;
         break;
       }
 
       // optional double matcher_rotation_weight = 8;
       case 8: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_matcher_rotation_weight:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(65u)) {
+          set_has_matcher_rotation_weight();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &matcher_rotation_weight_)));
-          set_has_matcher_rotation_weight();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -334,136 +389,149 @@ bool SparsePoseGraphOptions::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping.proto.SparsePoseGraphOptions)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping.proto.SparsePoseGraphOptions)
+  return false;
 #undef DO_
 }
 
 void SparsePoseGraphOptions::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping.proto.SparsePoseGraphOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int32 optimize_every_n_scans = 1;
-  if (has_optimize_every_n_scans()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->optimize_every_n_scans(), output);
   }
 
   // optional .cartographer.mapping.sparse_pose_graph.proto.ConstraintBuilderOptions constraint_builder_options = 3;
-  if (has_constraint_builder_options()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->constraint_builder_options(), output);
+      3, *this->constraint_builder_options_, output);
   }
 
   // optional .cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions optimization_problem_options = 4;
-  if (has_optimization_problem_options()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->optimization_problem_options(), output);
+      4, *this->optimization_problem_options_, output);
   }
 
   // optional double global_sampling_ratio = 5;
-  if (has_global_sampling_ratio()) {
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(5, this->global_sampling_ratio(), output);
   }
 
   // optional int32 max_num_final_iterations = 6;
-  if (has_max_num_final_iterations()) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(6, this->max_num_final_iterations(), output);
   }
 
   // optional double matcher_translation_weight = 7;
-  if (has_matcher_translation_weight()) {
+  if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(7, this->matcher_translation_weight(), output);
   }
 
   // optional double matcher_rotation_weight = 8;
-  if (has_matcher_rotation_weight()) {
+  if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(8, this->matcher_rotation_weight(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping.proto.SparsePoseGraphOptions)
 }
 
-::google::protobuf::uint8* SparsePoseGraphOptions::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* SparsePoseGraphOptions::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping.proto.SparsePoseGraphOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional int32 optimize_every_n_scans = 1;
-  if (has_optimize_every_n_scans()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->optimize_every_n_scans(), target);
   }
 
   // optional .cartographer.mapping.sparse_pose_graph.proto.ConstraintBuilderOptions constraint_builder_options = 3;
-  if (has_constraint_builder_options()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        3, this->constraint_builder_options(), target);
+      InternalWriteMessageNoVirtualToArray(
+        3, *this->constraint_builder_options_, deterministic, target);
   }
 
   // optional .cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions optimization_problem_options = 4;
-  if (has_optimization_problem_options()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteMessageNoVirtualToArray(
-        4, this->optimization_problem_options(), target);
+      InternalWriteMessageNoVirtualToArray(
+        4, *this->optimization_problem_options_, deterministic, target);
   }
 
   // optional double global_sampling_ratio = 5;
-  if (has_global_sampling_ratio()) {
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(5, this->global_sampling_ratio(), target);
   }
 
   // optional int32 max_num_final_iterations = 6;
-  if (has_max_num_final_iterations()) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(6, this->max_num_final_iterations(), target);
   }
 
   // optional double matcher_translation_weight = 7;
-  if (has_matcher_translation_weight()) {
+  if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(7, this->matcher_translation_weight(), target);
   }
 
   // optional double matcher_rotation_weight = 8;
-  if (has_matcher_rotation_weight()) {
+  if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(8, this->matcher_rotation_weight(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping.proto.SparsePoseGraphOptions)
   return target;
 }
 
-int SparsePoseGraphOptions::ByteSize() const {
-  int total_size = 0;
+size_t SparsePoseGraphOptions::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping.proto.SparsePoseGraphOptions)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional int32 optimize_every_n_scans = 1;
-    if (has_optimize_every_n_scans()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->optimize_every_n_scans());
-    }
-
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 127u) {
     // optional .cartographer.mapping.sparse_pose_graph.proto.ConstraintBuilderOptions constraint_builder_options = 3;
     if (has_constraint_builder_options()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->constraint_builder_options());
-    }
-
-    // optional double matcher_translation_weight = 7;
-    if (has_matcher_translation_weight()) {
-      total_size += 1 + 8;
-    }
-
-    // optional double matcher_rotation_weight = 8;
-    if (has_matcher_rotation_weight()) {
-      total_size += 1 + 8;
+          *this->constraint_builder_options_);
     }
 
     // optional .cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions optimization_problem_options = 4;
     if (has_optimization_problem_options()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->optimization_problem_options());
+          *this->optimization_problem_options_);
+    }
+
+    // optional int32 optimize_every_n_scans = 1;
+    if (has_optimize_every_n_scans()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->optimize_every_n_scans());
     }
 
     // optional int32 max_num_final_iterations = 6;
@@ -478,98 +546,327 @@ int SparsePoseGraphOptions::ByteSize() const {
       total_size += 1 + 8;
     }
 
+    // optional double matcher_translation_weight = 7;
+    if (has_matcher_translation_weight()) {
+      total_size += 1 + 8;
+    }
+
+    // optional double matcher_rotation_weight = 8;
+    if (has_matcher_rotation_weight()) {
+      total_size += 1 + 8;
+    }
+
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SparsePoseGraphOptions::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping.proto.SparsePoseGraphOptions)
+  GOOGLE_DCHECK_NE(&from, this);
   const SparsePoseGraphOptions* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const SparsePoseGraphOptions*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const SparsePoseGraphOptions>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping.proto.SparsePoseGraphOptions)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping.proto.SparsePoseGraphOptions)
     MergeFrom(*source);
   }
 }
 
 void SparsePoseGraphOptions::MergeFrom(const SparsePoseGraphOptions& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_optimize_every_n_scans()) {
-      set_optimize_every_n_scans(from.optimize_every_n_scans());
-    }
-    if (from.has_constraint_builder_options()) {
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping.proto.SparsePoseGraphOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 127u) {
+    if (cached_has_bits & 0x00000001u) {
       mutable_constraint_builder_options()->::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions::MergeFrom(from.constraint_builder_options());
     }
-    if (from.has_matcher_translation_weight()) {
-      set_matcher_translation_weight(from.matcher_translation_weight());
-    }
-    if (from.has_matcher_rotation_weight()) {
-      set_matcher_rotation_weight(from.matcher_rotation_weight());
-    }
-    if (from.has_optimization_problem_options()) {
+    if (cached_has_bits & 0x00000002u) {
       mutable_optimization_problem_options()->::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions::MergeFrom(from.optimization_problem_options());
     }
-    if (from.has_max_num_final_iterations()) {
-      set_max_num_final_iterations(from.max_num_final_iterations());
+    if (cached_has_bits & 0x00000004u) {
+      optimize_every_n_scans_ = from.optimize_every_n_scans_;
     }
-    if (from.has_global_sampling_ratio()) {
-      set_global_sampling_ratio(from.global_sampling_ratio());
+    if (cached_has_bits & 0x00000008u) {
+      max_num_final_iterations_ = from.max_num_final_iterations_;
     }
+    if (cached_has_bits & 0x00000010u) {
+      global_sampling_ratio_ = from.global_sampling_ratio_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      matcher_translation_weight_ = from.matcher_translation_weight_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      matcher_rotation_weight_ = from.matcher_rotation_weight_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void SparsePoseGraphOptions::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping.proto.SparsePoseGraphOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void SparsePoseGraphOptions::CopyFrom(const SparsePoseGraphOptions& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping.proto.SparsePoseGraphOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool SparsePoseGraphOptions::IsInitialized() const {
-
   return true;
 }
 
 void SparsePoseGraphOptions::Swap(SparsePoseGraphOptions* other) {
-  if (other != this) {
-    std::swap(optimize_every_n_scans_, other->optimize_every_n_scans_);
-    std::swap(constraint_builder_options_, other->constraint_builder_options_);
-    std::swap(matcher_translation_weight_, other->matcher_translation_weight_);
-    std::swap(matcher_rotation_weight_, other->matcher_rotation_weight_);
-    std::swap(optimization_problem_options_, other->optimization_problem_options_);
-    std::swap(max_num_final_iterations_, other->max_num_final_iterations_);
-    std::swap(global_sampling_ratio_, other->global_sampling_ratio_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SparsePoseGraphOptions::InternalSwap(SparsePoseGraphOptions* other) {
+  std::swap(constraint_builder_options_, other->constraint_builder_options_);
+  std::swap(optimization_problem_options_, other->optimization_problem_options_);
+  std::swap(optimize_every_n_scans_, other->optimize_every_n_scans_);
+  std::swap(max_num_final_iterations_, other->max_num_final_iterations_);
+  std::swap(global_sampling_ratio_, other->global_sampling_ratio_);
+  std::swap(matcher_translation_weight_, other->matcher_translation_weight_);
+  std::swap(matcher_rotation_weight_, other->matcher_rotation_weight_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SparsePoseGraphOptions::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = SparsePoseGraphOptions_descriptor_;
-  metadata.reflection = SparsePoseGraphOptions_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_2fproto_2fsparse_5fpose_5fgraph_5foptions_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// SparsePoseGraphOptions
+
+// optional int32 optimize_every_n_scans = 1;
+bool SparsePoseGraphOptions::has_optimize_every_n_scans() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void SparsePoseGraphOptions::set_has_optimize_every_n_scans() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void SparsePoseGraphOptions::clear_has_optimize_every_n_scans() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void SparsePoseGraphOptions::clear_optimize_every_n_scans() {
+  optimize_every_n_scans_ = 0;
+  clear_has_optimize_every_n_scans();
+}
+::google::protobuf::int32 SparsePoseGraphOptions::optimize_every_n_scans() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SparsePoseGraphOptions.optimize_every_n_scans)
+  return optimize_every_n_scans_;
+}
+void SparsePoseGraphOptions::set_optimize_every_n_scans(::google::protobuf::int32 value) {
+  set_has_optimize_every_n_scans();
+  optimize_every_n_scans_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SparsePoseGraphOptions.optimize_every_n_scans)
+}
+
+// optional .cartographer.mapping.sparse_pose_graph.proto.ConstraintBuilderOptions constraint_builder_options = 3;
+bool SparsePoseGraphOptions::has_constraint_builder_options() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void SparsePoseGraphOptions::set_has_constraint_builder_options() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void SparsePoseGraphOptions::clear_has_constraint_builder_options() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void SparsePoseGraphOptions::clear_constraint_builder_options() {
+  if (constraint_builder_options_ != NULL) constraint_builder_options_->::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions::Clear();
+  clear_has_constraint_builder_options();
+}
+const ::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions& SparsePoseGraphOptions::constraint_builder_options() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SparsePoseGraphOptions.constraint_builder_options)
+  return constraint_builder_options_ != NULL ? *constraint_builder_options_
+                         : *::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions::internal_default_instance();
+}
+::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions* SparsePoseGraphOptions::mutable_constraint_builder_options() {
+  set_has_constraint_builder_options();
+  if (constraint_builder_options_ == NULL) {
+    constraint_builder_options_ = new ::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping.proto.SparsePoseGraphOptions.constraint_builder_options)
+  return constraint_builder_options_;
+}
+::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions* SparsePoseGraphOptions::release_constraint_builder_options() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping.proto.SparsePoseGraphOptions.constraint_builder_options)
+  clear_has_constraint_builder_options();
+  ::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions* temp = constraint_builder_options_;
+  constraint_builder_options_ = NULL;
+  return temp;
+}
+void SparsePoseGraphOptions::set_allocated_constraint_builder_options(::cartographer::mapping::sparse_pose_graph::proto::ConstraintBuilderOptions* constraint_builder_options) {
+  delete constraint_builder_options_;
+  constraint_builder_options_ = constraint_builder_options;
+  if (constraint_builder_options) {
+    set_has_constraint_builder_options();
+  } else {
+    clear_has_constraint_builder_options();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SparsePoseGraphOptions.constraint_builder_options)
+}
+
+// optional double matcher_translation_weight = 7;
+bool SparsePoseGraphOptions::has_matcher_translation_weight() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+void SparsePoseGraphOptions::set_has_matcher_translation_weight() {
+  _has_bits_[0] |= 0x00000020u;
+}
+void SparsePoseGraphOptions::clear_has_matcher_translation_weight() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+void SparsePoseGraphOptions::clear_matcher_translation_weight() {
+  matcher_translation_weight_ = 0;
+  clear_has_matcher_translation_weight();
+}
+double SparsePoseGraphOptions::matcher_translation_weight() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SparsePoseGraphOptions.matcher_translation_weight)
+  return matcher_translation_weight_;
+}
+void SparsePoseGraphOptions::set_matcher_translation_weight(double value) {
+  set_has_matcher_translation_weight();
+  matcher_translation_weight_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SparsePoseGraphOptions.matcher_translation_weight)
+}
+
+// optional double matcher_rotation_weight = 8;
+bool SparsePoseGraphOptions::has_matcher_rotation_weight() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+void SparsePoseGraphOptions::set_has_matcher_rotation_weight() {
+  _has_bits_[0] |= 0x00000040u;
+}
+void SparsePoseGraphOptions::clear_has_matcher_rotation_weight() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+void SparsePoseGraphOptions::clear_matcher_rotation_weight() {
+  matcher_rotation_weight_ = 0;
+  clear_has_matcher_rotation_weight();
+}
+double SparsePoseGraphOptions::matcher_rotation_weight() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SparsePoseGraphOptions.matcher_rotation_weight)
+  return matcher_rotation_weight_;
+}
+void SparsePoseGraphOptions::set_matcher_rotation_weight(double value) {
+  set_has_matcher_rotation_weight();
+  matcher_rotation_weight_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SparsePoseGraphOptions.matcher_rotation_weight)
+}
+
+// optional .cartographer.mapping.sparse_pose_graph.proto.OptimizationProblemOptions optimization_problem_options = 4;
+bool SparsePoseGraphOptions::has_optimization_problem_options() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void SparsePoseGraphOptions::set_has_optimization_problem_options() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void SparsePoseGraphOptions::clear_has_optimization_problem_options() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void SparsePoseGraphOptions::clear_optimization_problem_options() {
+  if (optimization_problem_options_ != NULL) optimization_problem_options_->::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions::Clear();
+  clear_has_optimization_problem_options();
+}
+const ::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions& SparsePoseGraphOptions::optimization_problem_options() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SparsePoseGraphOptions.optimization_problem_options)
+  return optimization_problem_options_ != NULL ? *optimization_problem_options_
+                         : *::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions::internal_default_instance();
+}
+::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions* SparsePoseGraphOptions::mutable_optimization_problem_options() {
+  set_has_optimization_problem_options();
+  if (optimization_problem_options_ == NULL) {
+    optimization_problem_options_ = new ::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions;
+  }
+  // @@protoc_insertion_point(field_mutable:cartographer.mapping.proto.SparsePoseGraphOptions.optimization_problem_options)
+  return optimization_problem_options_;
+}
+::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions* SparsePoseGraphOptions::release_optimization_problem_options() {
+  // @@protoc_insertion_point(field_release:cartographer.mapping.proto.SparsePoseGraphOptions.optimization_problem_options)
+  clear_has_optimization_problem_options();
+  ::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions* temp = optimization_problem_options_;
+  optimization_problem_options_ = NULL;
+  return temp;
+}
+void SparsePoseGraphOptions::set_allocated_optimization_problem_options(::cartographer::mapping::sparse_pose_graph::proto::OptimizationProblemOptions* optimization_problem_options) {
+  delete optimization_problem_options_;
+  optimization_problem_options_ = optimization_problem_options;
+  if (optimization_problem_options) {
+    set_has_optimization_problem_options();
+  } else {
+    clear_has_optimization_problem_options();
+  }
+  // @@protoc_insertion_point(field_set_allocated:cartographer.mapping.proto.SparsePoseGraphOptions.optimization_problem_options)
+}
+
+// optional int32 max_num_final_iterations = 6;
+bool SparsePoseGraphOptions::has_max_num_final_iterations() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void SparsePoseGraphOptions::set_has_max_num_final_iterations() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void SparsePoseGraphOptions::clear_has_max_num_final_iterations() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void SparsePoseGraphOptions::clear_max_num_final_iterations() {
+  max_num_final_iterations_ = 0;
+  clear_has_max_num_final_iterations();
+}
+::google::protobuf::int32 SparsePoseGraphOptions::max_num_final_iterations() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SparsePoseGraphOptions.max_num_final_iterations)
+  return max_num_final_iterations_;
+}
+void SparsePoseGraphOptions::set_max_num_final_iterations(::google::protobuf::int32 value) {
+  set_has_max_num_final_iterations();
+  max_num_final_iterations_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SparsePoseGraphOptions.max_num_final_iterations)
+}
+
+// optional double global_sampling_ratio = 5;
+bool SparsePoseGraphOptions::has_global_sampling_ratio() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+void SparsePoseGraphOptions::set_has_global_sampling_ratio() {
+  _has_bits_[0] |= 0x00000010u;
+}
+void SparsePoseGraphOptions::clear_has_global_sampling_ratio() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+void SparsePoseGraphOptions::clear_global_sampling_ratio() {
+  global_sampling_ratio_ = 0;
+  clear_has_global_sampling_ratio();
+}
+double SparsePoseGraphOptions::global_sampling_ratio() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping.proto.SparsePoseGraphOptions.global_sampling_ratio)
+  return global_sampling_ratio_;
+}
+void SparsePoseGraphOptions::set_global_sampling_ratio(double value) {
+  set_has_global_sampling_ratio();
+  global_sampling_ratio_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping.proto.SparsePoseGraphOptions.global_sampling_ratio)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

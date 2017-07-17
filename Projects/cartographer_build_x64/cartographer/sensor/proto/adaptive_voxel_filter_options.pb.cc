@@ -7,6 +7,7 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -19,125 +20,164 @@
 namespace cartographer {
 namespace sensor {
 namespace proto {
+class AdaptiveVoxelFilterOptionsDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AdaptiveVoxelFilterOptions> {
+} _AdaptiveVoxelFilterOptions_default_instance_;
+
+namespace protobuf_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto {
+
 
 namespace {
 
-const ::google::protobuf::Descriptor* AdaptiveVoxelFilterOptions_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  AdaptiveVoxelFilterOptions_reflection_ = NULL;
+::google::protobuf::Metadata file_level_metadata[1];
 
 }  // namespace
 
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
+    const TableStruct::entries[] = {
+  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
+};
 
-void protobuf_AssignDesc_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto() {
-  protobuf_AddDesc_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto();
-  const ::google::protobuf::FileDescriptor* file =
-    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
-      "cartographer/sensor/proto/adaptive_voxel_filter_options.proto");
-  GOOGLE_CHECK(file != NULL);
-  AdaptiveVoxelFilterOptions_descriptor_ = file->message_type(0);
-  static const int AdaptiveVoxelFilterOptions_offsets_[3] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AdaptiveVoxelFilterOptions, max_length_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AdaptiveVoxelFilterOptions, min_num_points_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AdaptiveVoxelFilterOptions, max_range_),
-  };
-  AdaptiveVoxelFilterOptions_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      AdaptiveVoxelFilterOptions_descriptor_,
-      AdaptiveVoxelFilterOptions::default_instance_,
-      AdaptiveVoxelFilterOptions_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AdaptiveVoxelFilterOptions, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AdaptiveVoxelFilterOptions, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(AdaptiveVoxelFilterOptions));
-}
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
+    const TableStruct::aux[] = {
+  ::google::protobuf::internal::AuxillaryParseTableField(),
+};
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
+    TableStruct::schema[] = {
+  { NULL, NULL, 0, -1, -1, false },
+};
+
+const ::google::protobuf::uint32 TableStruct::offsets[] = {
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AdaptiveVoxelFilterOptions, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AdaptiveVoxelFilterOptions, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AdaptiveVoxelFilterOptions, max_length_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AdaptiveVoxelFilterOptions, min_num_points_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AdaptiveVoxelFilterOptions, max_range_),
+  0,
+  1,
+  2,
+};
+
+static const ::google::protobuf::internal::MigrationSchema schemas[] = {
+  { 0, 8, sizeof(AdaptiveVoxelFilterOptions)},
+};
+
+static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&_AdaptiveVoxelFilterOptions_default_instance_),
+};
 
 namespace {
 
-GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
-  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
-                 &protobuf_AssignDesc_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto);
+void protobuf_AssignDescriptors() {
+  AddDescriptors();
+  ::google::protobuf::MessageFactory* factory = NULL;
+  AssignDescriptors(
+      "cartographer/sensor/proto/adaptive_voxel_filter_options.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      file_level_metadata, NULL, NULL);
 }
 
+void protobuf_AssignDescriptorsOnce() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+}
+
+void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    AdaptiveVoxelFilterOptions_descriptor_, &AdaptiveVoxelFilterOptions::default_instance());
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
 }
 
 }  // namespace
 
-void protobuf_ShutdownFile_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto() {
-  delete AdaptiveVoxelFilterOptions::default_instance_;
-  delete AdaptiveVoxelFilterOptions_reflection_;
+void TableStruct::Shutdown() {
+  _AdaptiveVoxelFilterOptions_default_instance_.Shutdown();
+  delete file_level_metadata[0].reflection;
 }
 
-void protobuf_AddDesc_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void TableStruct::InitDefaultsImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n=cartographer/sensor/proto/adaptive_vox"
-    "el_filter_options.proto\022\031cartographer.se"
-    "nsor.proto\"[\n\032AdaptiveVoxelFilterOptions"
-    "\022\022\n\nmax_length\030\001 \001(\002\022\026\n\016min_num_points\030\002"
-    " \001(\002\022\021\n\tmax_range\030\003 \001(\002", 183);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "cartographer/sensor/proto/adaptive_voxel_filter_options.proto", &protobuf_RegisterTypes);
-  AdaptiveVoxelFilterOptions::default_instance_ = new AdaptiveVoxelFilterOptions();
-  AdaptiveVoxelFilterOptions::default_instance_->InitAsDefaultInstance();
-  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto);
+  ::google::protobuf::internal::InitProtobufDefaults();
+  _AdaptiveVoxelFilterOptions_default_instance_.DefaultConstruct();
 }
 
+void InitDefaults() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
+}
+void AddDescriptorsImpl() {
+  InitDefaults();
+  static const char descriptor[] = {
+      "\n=cartographer/sensor/proto/adaptive_vox"
+      "el_filter_options.proto\022\031cartographer.se"
+      "nsor.proto\"[\n\032AdaptiveVoxelFilterOptions"
+      "\022\022\n\nmax_length\030\001 \001(\002\022\026\n\016min_num_points\030\002"
+      " \001(\002\022\021\n\tmax_range\030\003 \001(\002"
+  };
+  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+      descriptor, 183);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
+    "cartographer/sensor/proto/adaptive_voxel_filter_options.proto", &protobuf_RegisterTypes);
+  ::google::protobuf::internal::OnShutdown(&TableStruct::Shutdown);
+}
+
+void AddDescriptors() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+}
 // Force AddDescriptors() to be called at static initialization time.
-struct StaticDescriptorInitializer_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto {
-  StaticDescriptorInitializer_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto() {
-    protobuf_AddDesc_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto();
+struct StaticDescriptorInitializer {
+  StaticDescriptorInitializer() {
+    AddDescriptors();
   }
-} static_descriptor_initializer_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto_;
+} static_descriptor_initializer;
+
+}  // namespace protobuf_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto
+
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int AdaptiveVoxelFilterOptions::kMaxLengthFieldNumber;
 const int AdaptiveVoxelFilterOptions::kMinNumPointsFieldNumber;
 const int AdaptiveVoxelFilterOptions::kMaxRangeFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 AdaptiveVoxelFilterOptions::AdaptiveVoxelFilterOptions()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
 }
-
-void AdaptiveVoxelFilterOptions::InitAsDefaultInstance() {
-}
-
 AdaptiveVoxelFilterOptions::AdaptiveVoxelFilterOptions(const AdaptiveVoxelFilterOptions& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&max_length_, &from.max_length_,
+    static_cast<size_t>(reinterpret_cast<char*>(&max_range_) -
+    reinterpret_cast<char*>(&max_length_)) + sizeof(max_range_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
 }
 
 void AdaptiveVoxelFilterOptions::SharedCtor() {
   _cached_size_ = 0;
-  max_length_ = 0;
-  min_num_points_ = 0;
-  max_range_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&max_length_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&max_range_) -
+      reinterpret_cast<char*>(&max_length_)) + sizeof(max_range_));
 }
 
 AdaptiveVoxelFilterOptions::~AdaptiveVoxelFilterOptions() {
+  // @@protoc_insertion_point(destructor:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
   SharedDtor();
 }
 
 void AdaptiveVoxelFilterOptions::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void AdaptiveVoxelFilterOptions::SetCachedSize(int size) const {
@@ -146,89 +186,92 @@ void AdaptiveVoxelFilterOptions::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* AdaptiveVoxelFilterOptions::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return AdaptiveVoxelFilterOptions_descriptor_;
+  protobuf_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const AdaptiveVoxelFilterOptions& AdaptiveVoxelFilterOptions::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-AdaptiveVoxelFilterOptions* AdaptiveVoxelFilterOptions::default_instance_ = NULL;
-
-AdaptiveVoxelFilterOptions* AdaptiveVoxelFilterOptions::New() const {
-  return new AdaptiveVoxelFilterOptions;
+AdaptiveVoxelFilterOptions* AdaptiveVoxelFilterOptions::New(::google::protobuf::Arena* arena) const {
+  AdaptiveVoxelFilterOptions* n = new AdaptiveVoxelFilterOptions;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void AdaptiveVoxelFilterOptions::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    max_length_ = 0;
-    min_num_points_ = 0;
-    max_range_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
+  if (_has_bits_[0 / 32] & 7u) {
+    ::memset(&max_length_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&max_range_) -
+        reinterpret_cast<char*>(&max_length_)) + sizeof(max_range_));
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool AdaptiveVoxelFilterOptions::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional float max_length = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(13u)) {
+          set_has_max_length();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &max_length_)));
-          set_has_max_length();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(21)) goto parse_min_num_points;
         break;
       }
 
       // optional float min_num_points = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_min_num_points:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(21u)) {
+          set_has_min_num_points();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &min_num_points_)));
-          set_has_min_num_points();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(29)) goto parse_max_range;
         break;
       }
 
       // optional float max_range = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
-         parse_max_range:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(29u)) {
+          set_has_max_range();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &max_range_)));
-          set_has_max_range();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -236,61 +279,84 @@ bool AdaptiveVoxelFilterOptions::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
+  return false;
 #undef DO_
 }
 
 void AdaptiveVoxelFilterOptions::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional float max_length = 1;
-  if (has_max_length()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(1, this->max_length(), output);
   }
 
   // optional float min_num_points = 2;
-  if (has_min_num_points()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(2, this->min_num_points(), output);
   }
 
   // optional float max_range = 3;
-  if (has_max_range()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->max_range(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
 }
 
-::google::protobuf::uint8* AdaptiveVoxelFilterOptions::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* AdaptiveVoxelFilterOptions::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional float max_length = 1;
-  if (has_max_length()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(1, this->max_length(), target);
   }
 
   // optional float min_num_points = 2;
-  if (has_min_num_points()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(2, this->min_num_points(), target);
   }
 
   // optional float max_range = 3;
-  if (has_max_range()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->max_range(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
   return target;
 }
 
-int AdaptiveVoxelFilterOptions::ByteSize() const {
-  int total_size = 0;
+size_t AdaptiveVoxelFilterOptions::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 7u) {
     // optional float max_length = 1;
     if (has_max_length()) {
       total_size += 1 + 4;
@@ -307,81 +373,162 @@ int AdaptiveVoxelFilterOptions::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void AdaptiveVoxelFilterOptions::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
+  GOOGLE_DCHECK_NE(&from, this);
   const AdaptiveVoxelFilterOptions* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const AdaptiveVoxelFilterOptions*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const AdaptiveVoxelFilterOptions>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
     MergeFrom(*source);
   }
 }
 
 void AdaptiveVoxelFilterOptions::MergeFrom(const AdaptiveVoxelFilterOptions& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_max_length()) {
-      set_max_length(from.max_length());
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 7u) {
+    if (cached_has_bits & 0x00000001u) {
+      max_length_ = from.max_length_;
     }
-    if (from.has_min_num_points()) {
-      set_min_num_points(from.min_num_points());
+    if (cached_has_bits & 0x00000002u) {
+      min_num_points_ = from.min_num_points_;
     }
-    if (from.has_max_range()) {
-      set_max_range(from.max_range());
+    if (cached_has_bits & 0x00000004u) {
+      max_range_ = from.max_range_;
     }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void AdaptiveVoxelFilterOptions::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void AdaptiveVoxelFilterOptions::CopyFrom(const AdaptiveVoxelFilterOptions& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.sensor.proto.AdaptiveVoxelFilterOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool AdaptiveVoxelFilterOptions::IsInitialized() const {
-
   return true;
 }
 
 void AdaptiveVoxelFilterOptions::Swap(AdaptiveVoxelFilterOptions* other) {
-  if (other != this) {
-    std::swap(max_length_, other->max_length_);
-    std::swap(min_num_points_, other->min_num_points_);
-    std::swap(max_range_, other->max_range_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AdaptiveVoxelFilterOptions::InternalSwap(AdaptiveVoxelFilterOptions* other) {
+  std::swap(max_length_, other->max_length_);
+  std::swap(min_num_points_, other->min_num_points_);
+  std::swap(max_range_, other->max_range_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AdaptiveVoxelFilterOptions::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = AdaptiveVoxelFilterOptions_descriptor_;
-  metadata.reflection = AdaptiveVoxelFilterOptions_reflection_;
-  return metadata;
+  protobuf_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fsensor_2fproto_2fadaptive_5fvoxel_5ffilter_5foptions_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// AdaptiveVoxelFilterOptions
+
+// optional float max_length = 1;
+bool AdaptiveVoxelFilterOptions::has_max_length() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void AdaptiveVoxelFilterOptions::set_has_max_length() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void AdaptiveVoxelFilterOptions::clear_has_max_length() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void AdaptiveVoxelFilterOptions::clear_max_length() {
+  max_length_ = 0;
+  clear_has_max_length();
+}
+float AdaptiveVoxelFilterOptions::max_length() const {
+  // @@protoc_insertion_point(field_get:cartographer.sensor.proto.AdaptiveVoxelFilterOptions.max_length)
+  return max_length_;
+}
+void AdaptiveVoxelFilterOptions::set_max_length(float value) {
+  set_has_max_length();
+  max_length_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.sensor.proto.AdaptiveVoxelFilterOptions.max_length)
+}
+
+// optional float min_num_points = 2;
+bool AdaptiveVoxelFilterOptions::has_min_num_points() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void AdaptiveVoxelFilterOptions::set_has_min_num_points() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void AdaptiveVoxelFilterOptions::clear_has_min_num_points() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void AdaptiveVoxelFilterOptions::clear_min_num_points() {
+  min_num_points_ = 0;
+  clear_has_min_num_points();
+}
+float AdaptiveVoxelFilterOptions::min_num_points() const {
+  // @@protoc_insertion_point(field_get:cartographer.sensor.proto.AdaptiveVoxelFilterOptions.min_num_points)
+  return min_num_points_;
+}
+void AdaptiveVoxelFilterOptions::set_min_num_points(float value) {
+  set_has_min_num_points();
+  min_num_points_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.sensor.proto.AdaptiveVoxelFilterOptions.min_num_points)
+}
+
+// optional float max_range = 3;
+bool AdaptiveVoxelFilterOptions::has_max_range() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void AdaptiveVoxelFilterOptions::set_has_max_range() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void AdaptiveVoxelFilterOptions::clear_has_max_range() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void AdaptiveVoxelFilterOptions::clear_max_range() {
+  max_range_ = 0;
+  clear_has_max_range();
+}
+float AdaptiveVoxelFilterOptions::max_range() const {
+  // @@protoc_insertion_point(field_get:cartographer.sensor.proto.AdaptiveVoxelFilterOptions.max_range)
+  return max_range_;
+}
+void AdaptiveVoxelFilterOptions::set_max_range(float value) {
+  set_has_max_range();
+  max_range_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.sensor.proto.AdaptiveVoxelFilterOptions.max_range)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

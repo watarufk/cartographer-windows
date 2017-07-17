@@ -1,0 +1,962 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{4FB3BDBB-4986-3243-A820-1BC917779CF5}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>cartographer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cartographer.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cartographer</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  -pthread -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\cartographer-windows\Projects\cartographer\..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;C:\SDKs\eigen\eigen3\include\eigen3;C:\SDKs\ceres-solver\ceres-solver\include;D:\cartographer-windows\Projects\cartographer;C:\SDKs\boost_1_64_0;C:\SDKs\google\protobuf\include;D:\cartographer-windows\Projects\cartographer_build_x64;C:\SDKs\google\googletest\include;C:\SDKs\google\glog\include;C:\SDKs\gflags\gflags\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;GFLAGS_IS_A_DLL=0;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;GFLAGS_IS_A_DLL=0;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cartographer-windows\Projects\cartographer\..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;C:\SDKs\eigen\eigen3\include\eigen3;C:\SDKs\ceres-solver\ceres-solver\include;D:\cartographer-windows\Projects\cartographer;C:\SDKs\boost_1_64_0;C:\SDKs\google\protobuf\include;D:\cartographer-windows\Projects\cartographer_build_x64;C:\SDKs\google\googletest\include;C:\SDKs\google\glog\include;C:\SDKs\gflags\gflags\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cartographer-windows\Projects\cartographer\..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;C:\SDKs\eigen\eigen3\include\eigen3;C:\SDKs\ceres-solver\ceres-solver\include;D:\cartographer-windows\Projects\cartographer;C:\SDKs\boost_1_64_0;C:\SDKs\google\protobuf\include;D:\cartographer-windows\Projects\cartographer_build_x64;C:\SDKs\google\googletest\include;C:\SDKs\google\glog\include;C:\SDKs\gflags\gflags\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cartographer-windows/Projects/cartographer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/cartographer-windows/Projects/cartographer -BD:/cartographer-windows/Projects/cartographer_build_x64 --check-stamp-file D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer/CMakeLists.txt;D:\cartographer-windows\Projects\cartographer\CMakeLists.txt;D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\3.8.0\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\3.8.0\CMakeCCompiler.cmake;D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\3.8.0\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\3.8.0\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\cartographer-windows\Projects\cartographer\cmake\functions.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;D:\cartographer-windows\Projects\cartographer_build_x64\AllFiles.cmake;D:\cartographer-windows\Projects\cartographer\cmake\modules\FindGMock.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindBoost.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\CeresConfigVersion.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\CeresConfig.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\FindEigen.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3ConfigVersion.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3Config.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3Targets.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\FindGlog.cmake;C:\SDKs\google\glog\lib\cmake\glog\glog-config-version.cmake;C:\SDKs\google\glog\lib\cmake\glog\glog-config.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeFindDependencyMacro.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\FindGflags.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-config-version.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-config.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-targets.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-targets-release.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\SDKs\google\glog\lib\cmake\glog\glog-targets.cmake;C:\SDKs\google\glog\lib\cmake\glog\glog-targets-release.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\FindGflags.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-config-version.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-config.cmake;C:\SDKs\gflags\gflags\lib\cmake\gflags\gflags-targets.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\CeresTargets.cmake;C:\SDKs\ceres-solver\ceres-solver\CMake\CeresTargets-release.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3ConfigVersion.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3Config.cmake;C:\SDKs\eigen\eigen3\share\eigen3\cmake\Eigen3Targets.cmake;D:\cartographer-windows\Projects\cartographer\cmake\modules\FindLuaGoogle.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindProtobuf.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\cartographer-windows\Projects\cartographer\cmake\modules\FindSphinx.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\cartographer-windows\Projects\cartographer\cartographer\common\config.h.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\WriteBasicConfigVersionFile.cmake;D:\cartographer-windows\Projects\cartographer\cartographer-config.cmake.in;D:\cartographer-windows\Projects\cartographer\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\40989aa91ceb9aedd6b94ba77d6af743\ceres_solver_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/common/proto/ceres_solver_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/common/proto/ceres_solver_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/40989aa91ceb9aedd6b94ba77d6af743/ceres_solver_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\common\proto\ceres_solver_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\common\proto\ceres_solver_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\common\proto\ceres_solver_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\c430293a5f7abd6961e01beb811465f8\relations.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/ground_truth/proto/relations.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/ground_truth/proto/relations.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/c430293a5f7abd6961e01beb811465f8/relations.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\ground_truth\proto\relations.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\ground_truth\proto\relations.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\ground_truth\proto\relations.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\map_builder_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/map_builder_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/map_builder_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/9c079fa9da9d9d127670d87c7a923dd8/map_builder_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping\proto\map_builder_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\map_builder_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\map_builder_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\serialization.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/serialization.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/serialization.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/9c079fa9da9d9d127670d87c7a923dd8/serialization.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping\proto\serialization.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\serialization.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\serialization.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\sparse_pose_graph.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/sparse_pose_graph.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/sparse_pose_graph.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/9c079fa9da9d9d127670d87c7a923dd8/sparse_pose_graph.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping\proto\sparse_pose_graph.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\sparse_pose_graph.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\sparse_pose_graph.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\sparse_pose_graph_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/sparse_pose_graph_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/sparse_pose_graph_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/9c079fa9da9d9d127670d87c7a923dd8/sparse_pose_graph_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping\proto\sparse_pose_graph_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\sparse_pose_graph_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\sparse_pose_graph_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\submap.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/submap.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/submap.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/9c079fa9da9d9d127670d87c7a923dd8/submap.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping\proto\submap.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\submap.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\submap.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\submap_visualization.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/submap_visualization.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/submap_visualization.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/9c079fa9da9d9d127670d87c7a923dd8/submap_visualization.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping\proto\submap_visualization.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\submap_visualization.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\submap_visualization.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\trajectory.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/trajectory.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/trajectory.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/9c079fa9da9d9d127670d87c7a923dd8/trajectory.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping\proto\trajectory.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\trajectory_builder_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/trajectory_builder_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/trajectory_builder_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/9c079fa9da9d9d127670d87c7a923dd8/trajectory_builder_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping\proto\trajectory_builder_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory_builder_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory_builder_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\9c079fa9da9d9d127670d87c7a923dd8\trajectory_connectivity.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/trajectory_connectivity.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping/proto/trajectory_connectivity.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/9c079fa9da9d9d127670d87c7a923dd8/trajectory_connectivity.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping\proto\trajectory_connectivity.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory_connectivity.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory_connectivity.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\17554408b9bddf6d2b49980e39d29c63\constraint_builder_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping/sparse_pose_graph/proto/constraint_builder_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping/sparse_pose_graph/proto/constraint_builder_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/17554408b9bddf6d2b49980e39d29c63/constraint_builder_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph\proto\constraint_builder_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\sparse_pose_graph\proto\constraint_builder_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\sparse_pose_graph\proto\constraint_builder_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\17554408b9bddf6d2b49980e39d29c63\optimization_problem_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping/sparse_pose_graph/proto/optimization_problem_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping/sparse_pose_graph/proto/optimization_problem_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/17554408b9bddf6d2b49980e39d29c63/optimization_problem_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph\proto\optimization_problem_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\sparse_pose_graph\proto\optimization_problem_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\sparse_pose_graph\proto\optimization_problem_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\f84c143b89528c6b88638bcee696226b\cell_limits.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/proto/cell_limits.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/proto/cell_limits.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/f84c143b89528c6b88638bcee696226b/cell_limits.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\proto\cell_limits.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\cell_limits.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\cell_limits.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\f84c143b89528c6b88638bcee696226b\local_trajectory_builder_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/proto/local_trajectory_builder_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/proto/local_trajectory_builder_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/f84c143b89528c6b88638bcee696226b/local_trajectory_builder_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\proto\local_trajectory_builder_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\local_trajectory_builder_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\local_trajectory_builder_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\f84c143b89528c6b88638bcee696226b\map_limits.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/proto/map_limits.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/proto/map_limits.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/f84c143b89528c6b88638bcee696226b/map_limits.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\proto\map_limits.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\map_limits.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\map_limits.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\f84c143b89528c6b88638bcee696226b\probability_grid.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/proto/probability_grid.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/proto/probability_grid.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/f84c143b89528c6b88638bcee696226b/probability_grid.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\proto\probability_grid.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\probability_grid.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\probability_grid.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\f84c143b89528c6b88638bcee696226b\range_data_inserter_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/proto/range_data_inserter_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/proto/range_data_inserter_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/f84c143b89528c6b88638bcee696226b/range_data_inserter_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\proto\range_data_inserter_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\range_data_inserter_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\range_data_inserter_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\f84c143b89528c6b88638bcee696226b\submaps_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/proto/submaps_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/proto/submaps_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/f84c143b89528c6b88638bcee696226b/submaps_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\proto\submaps_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\submaps_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\submaps_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\864b00efbca242959f043c81e17fde2c\ceres_scan_matcher_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/scan_matching/proto/ceres_scan_matcher_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/scan_matching/proto/ceres_scan_matcher_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/864b00efbca242959f043c81e17fde2c/ceres_scan_matcher_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\proto\ceres_scan_matcher_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\ceres_scan_matcher_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\ceres_scan_matcher_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\864b00efbca242959f043c81e17fde2c\fast_correlative_scan_matcher_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/scan_matching/proto/fast_correlative_scan_matcher_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/scan_matching/proto/fast_correlative_scan_matcher_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/864b00efbca242959f043c81e17fde2c/fast_correlative_scan_matcher_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\proto\fast_correlative_scan_matcher_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\864b00efbca242959f043c81e17fde2c\real_time_correlative_scan_matcher_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/scan_matching/proto/real_time_correlative_scan_matcher_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_2d/scan_matching/proto/real_time_correlative_scan_matcher_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/864b00efbca242959f043c81e17fde2c/real_time_correlative_scan_matcher_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\proto\real_time_correlative_scan_matcher_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\real_time_correlative_scan_matcher_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\real_time_correlative_scan_matcher_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\b39ab81ccbaf1e4d9c1461121210af07\hybrid_grid.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/proto/hybrid_grid.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/proto/hybrid_grid.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/b39ab81ccbaf1e4d9c1461121210af07/hybrid_grid.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\proto\hybrid_grid.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\hybrid_grid.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\hybrid_grid.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\b39ab81ccbaf1e4d9c1461121210af07\local_trajectory_builder_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/proto/local_trajectory_builder_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/proto/local_trajectory_builder_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/b39ab81ccbaf1e4d9c1461121210af07/local_trajectory_builder_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\proto\local_trajectory_builder_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\local_trajectory_builder_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\local_trajectory_builder_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\b39ab81ccbaf1e4d9c1461121210af07\motion_filter_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/proto/motion_filter_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/proto/motion_filter_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/b39ab81ccbaf1e4d9c1461121210af07/motion_filter_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\proto\motion_filter_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\motion_filter_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\motion_filter_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\b39ab81ccbaf1e4d9c1461121210af07\range_data_inserter_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/proto/range_data_inserter_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/proto/range_data_inserter_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/b39ab81ccbaf1e4d9c1461121210af07/range_data_inserter_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\proto\range_data_inserter_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\range_data_inserter_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\range_data_inserter_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\b39ab81ccbaf1e4d9c1461121210af07\submaps_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/proto/submaps_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/proto/submaps_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/b39ab81ccbaf1e4d9c1461121210af07/submaps_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\proto\submaps_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\submaps_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\submaps_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\4ade569dad109f76aa8ba3002a627c26\ceres_scan_matcher_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/scan_matching/proto/ceres_scan_matcher_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/scan_matching/proto/ceres_scan_matcher_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/4ade569dad109f76aa8ba3002a627c26/ceres_scan_matcher_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\proto\ceres_scan_matcher_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\scan_matching\proto\ceres_scan_matcher_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\scan_matching\proto\ceres_scan_matcher_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\4ade569dad109f76aa8ba3002a627c26\fast_correlative_scan_matcher_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/scan_matching/proto/fast_correlative_scan_matcher_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/mapping_3d/scan_matching/proto/fast_correlative_scan_matcher_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/4ade569dad109f76aa8ba3002a627c26/fast_correlative_scan_matcher_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\proto\fast_correlative_scan_matcher_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\1beb3d66de6a5007fc0fcf593b943d00\adaptive_voxel_filter_options.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/sensor/proto/adaptive_voxel_filter_options.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/sensor/proto/adaptive_voxel_filter_options.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/1beb3d66de6a5007fc0fcf593b943d00/adaptive_voxel_filter_options.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\sensor\proto\adaptive_voxel_filter_options.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\sensor\proto\adaptive_voxel_filter_options.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\sensor\proto\adaptive_voxel_filter_options.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\1beb3d66de6a5007fc0fcf593b943d00\sensor.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/sensor/proto/sensor.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/sensor/proto/sensor.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/1beb3d66de6a5007fc0fcf593b943d00/sensor.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\sensor\proto\sensor.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\sensor\proto\sensor.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\sensor\proto\sensor.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cartographer-windows\Projects\cartographer_build_x64\CMakeFiles\ed3478dbc824436a57fcfa2106786435\transform.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++ protocol buffer compiler on D:/cartographer-windows/Projects/cartographer/cartographer/transform/proto/transform.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\SDKs\google\protobuf\bin\protoc.exe --cpp_out D:/cartographer-windows/Projects/cartographer_build_x64 -I D:/cartographer-windows/Projects/cartographer D:/cartographer-windows/Projects/cartographer/cartographer/transform/proto/transform.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/cartographer-windows/Projects/cartographer_build_x64/CMakeFiles/ed3478dbc824436a57fcfa2106786435/transform.pb.cc.rule;D:\cartographer-windows\Projects\cartographer\cartographer\transform\proto\transform.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\transform\proto\transform.pb.cc;D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\transform\proto\transform.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\blocking_queue.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\ceres_solver_options.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\configuration_file_resolver.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\fixed_ratio_sampler.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\histogram.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\lua.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\lua_parameter_dictionary.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\lua_parameter_dictionary_test_helpers.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\make_unique.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\math.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\mutex.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\port.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\rate_timer.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\thread_pool.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\time.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\ground_truth\relations_text_file.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\coloring_points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\counting_points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\file_writer.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\fixed_ratio_sampling_points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\hybrid_grid_points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\image.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\intensity_to_color_points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\min_max_range_filtering_points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\null_points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\outlier_removing_points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\pcd_writing_points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\ply_writing_points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\points_batch.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\points_processor_pipeline_builder.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\probability_grid_points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\proto_stream.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\xray_points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\xyz_writing_points_processor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\collated_trajectory_builder.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\detect_floors.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\global_trajectory_builder_interface.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\id.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\imu_tracker.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\map_builder.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\odometry_state_tracker.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\pose_graph_trimmer.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\probability_values.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph\constraint_builder.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph\optimization_problem_options.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\submaps.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\trajectory_builder.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\trajectory_connectivity.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\trajectory_node.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\global_trajectory_builder.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\local_trajectory_builder.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\local_trajectory_builder_options.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\map_limits.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\probability_grid.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\range_data_inserter.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\ray_casting.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\ceres_scan_matcher.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\correlative_scan_matcher.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\fast_correlative_scan_matcher.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\fast_global_localizer.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\occupied_space_cost_functor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\real_time_correlative_scan_matcher.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\rotation_delta_cost_functor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\translation_delta_cost_functor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph\constraint_builder.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph\optimization_problem.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph\spa_cost_function.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\submaps.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\xy_index.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\acceleration_cost_function.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\ceres_pose.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\global_trajectory_builder.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\hybrid_grid.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\imu_integration.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\local_trajectory_builder.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\local_trajectory_builder_options.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\motion_filter.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\range_data_inserter.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\rotation_cost_function.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\ceres_scan_matcher.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\fast_correlative_scan_matcher.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\interpolated_grid.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\occupied_space_cost_functor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\precomputation_grid.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\real_time_correlative_scan_matcher.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\rotation_delta_cost_functor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\rotational_scan_matcher.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\translation_delta_cost_functor.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph\constraint_builder.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph\optimization_problem.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph\spa_cost_function.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\submaps.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\translation_cost_function.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\collator.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\compressed_point_cloud.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\data.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\imu_data.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\ordered_multi_queue.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\point_cloud.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\range_data.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\voxel_filter.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\rigid_transform.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\rigid_transform_test_helpers.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\transform.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\transform_interpolation_buffer.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\common\proto\ceres_solver_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\ground_truth\proto\relations.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\map_builder_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\serialization.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\sparse_pose_graph.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\sparse_pose_graph_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\submap.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\submap_visualization.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory_builder_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory_connectivity.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\sparse_pose_graph\proto\constraint_builder_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\sparse_pose_graph\proto\optimization_problem_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\cell_limits.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\local_trajectory_builder_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\map_limits.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\probability_grid.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\range_data_inserter_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\submaps_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\ceres_scan_matcher_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\real_time_correlative_scan_matcher_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\hybrid_grid.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\local_trajectory_builder_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\motion_filter_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\range_data_inserter_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\submaps_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\scan_matching\proto\ceres_scan_matcher_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\sensor\proto\adaptive_voxel_filter_options.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\sensor\proto\sensor.pb.h" />
+    <ClInclude Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\transform\proto\transform.pb.h" />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\ceres_solver_options.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\configuration_file_resolver.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\fixed_ratio_sampler.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\histogram.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\lua_parameter_dictionary.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\thread_pool.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\common\time.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\ground_truth\relations_text_file.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\coloring_points_processor.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\counting_points_processor.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\file_writer.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\fixed_ratio_sampling_points_processor.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\hybrid_grid_points_processor.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\image.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\intensity_to_color_points_processor.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\min_max_range_filtering_points_processor.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\outlier_removing_points_processor.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\pcd_writing_points_processor.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\ply_writing_points_processor.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\points_batch.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\points_processor_pipeline_builder.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\probability_grid_points_processor.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\proto_stream.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\xray_points_processor.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\io\xyz_writing_points_processor.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\collated_trajectory_builder.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\detect_floors.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\imu_tracker.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\map_builder.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\odometry_state_tracker.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\pose_graph_trimmer.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\probability_values.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping/sparse_pose_graph.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph\constraint_builder.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping/sparse_pose_graph/constraint_builder.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\sparse_pose_graph\optimization_problem_options.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\trajectory_builder.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping\trajectory_connectivity.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\global_trajectory_builder.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/global_trajectory_builder.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\local_trajectory_builder.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/local_trajectory_builder.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\local_trajectory_builder_options.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/local_trajectory_builder_options.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\range_data_inserter.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/range_data_inserter.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\ray_casting.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\ceres_scan_matcher.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/scan_matching/ceres_scan_matcher.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\correlative_scan_matcher.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\fast_correlative_scan_matcher.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/scan_matching/fast_correlative_scan_matcher.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\fast_global_localizer.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\scan_matching\real_time_correlative_scan_matcher.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/scan_matching/real_time_correlative_scan_matcher.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/sparse_pose_graph.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph\constraint_builder.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/sparse_pose_graph/constraint_builder.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\sparse_pose_graph\optimization_problem.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/sparse_pose_graph/optimization_problem.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_2d\submaps.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/submaps.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\ceres_pose.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\global_trajectory_builder.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/global_trajectory_builder.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\imu_integration.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\local_trajectory_builder.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/local_trajectory_builder.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\local_trajectory_builder_options.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/local_trajectory_builder_options.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\motion_filter.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\range_data_inserter.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/range_data_inserter.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\ceres_scan_matcher.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/scan_matching/ceres_scan_matcher.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\fast_correlative_scan_matcher.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/scan_matching/fast_correlative_scan_matcher.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\precomputation_grid.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\real_time_correlative_scan_matcher.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/scan_matching/real_time_correlative_scan_matcher.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\scan_matching\rotational_scan_matcher.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/sparse_pose_graph.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph\constraint_builder.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/sparse_pose_graph/constraint_builder.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\sparse_pose_graph\optimization_problem.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/sparse_pose_graph/optimization_problem.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\mapping_3d\submaps.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/submaps.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\collator.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\compressed_point_cloud.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\imu_data.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\ordered_multi_queue.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\point_cloud.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\range_data.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\sensor\voxel_filter.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\rigid_transform.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\transform.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer\cartographer\transform\transform_interpolation_buffer.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\common\proto\ceres_solver_options.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\ground_truth\proto\relations.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\map_builder_options.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\serialization.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\sparse_pose_graph.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\sparse_pose_graph_options.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\submap.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\submap_visualization.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory_builder_options.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\proto\trajectory_connectivity.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\sparse_pose_graph\proto\constraint_builder_options.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping\sparse_pose_graph\proto\optimization_problem_options.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\cell_limits.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\local_trajectory_builder_options.pb.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/proto/local_trajectory_builder_options.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\map_limits.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\probability_grid.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\range_data_inserter_options.pb.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/proto/range_data_inserter_options.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\proto\submaps_options.pb.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/proto/submaps_options.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\ceres_scan_matcher_options.pb.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/scan_matching/proto/ceres_scan_matcher_options.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_2d/scan_matching/proto/fast_correlative_scan_matcher_options.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_2d\scan_matching\proto\real_time_correlative_scan_matcher_options.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\hybrid_grid.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\local_trajectory_builder_options.pb.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/proto/local_trajectory_builder_options.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\motion_filter_options.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\range_data_inserter_options.pb.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/proto/range_data_inserter_options.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\proto\submaps_options.pb.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/proto/submaps_options.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\scan_matching\proto\ceres_scan_matcher_options.pb.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/scan_matching/proto/ceres_scan_matcher_options.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\mapping_3d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.cc" >
+      <ObjectFileName>$(IntDir)/cartographer/mapping_3d/scan_matching/proto/fast_correlative_scan_matcher_options.pb.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\sensor\proto\adaptive_voxel_filter_options.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\sensor\proto\sensor.pb.cc"  />
+    <ClCompile Include="D:\cartographer-windows\Projects\cartographer_build_x64\cartographer\transform\proto\transform.pb.cc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\cartographer-windows\Projects\cartographer_build_x64\ZERO_CHECK.vcxproj">
+      <Project>56520080-6B1B-3CDC-828A-DE5DE2FADC93</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

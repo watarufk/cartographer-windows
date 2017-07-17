@@ -7,6 +7,7 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -19,125 +20,164 @@
 namespace cartographer {
 namespace mapping_3d {
 namespace proto {
+class MotionFilterOptionsDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<MotionFilterOptions> {
+} _MotionFilterOptions_default_instance_;
+
+namespace protobuf_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto {
+
 
 namespace {
 
-const ::google::protobuf::Descriptor* MotionFilterOptions_descriptor_ = NULL;
-const ::google::protobuf::internal::GeneratedMessageReflection*
-  MotionFilterOptions_reflection_ = NULL;
+::google::protobuf::Metadata file_level_metadata[1];
 
 }  // namespace
 
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
+    const TableStruct::entries[] = {
+  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
+};
 
-void protobuf_AssignDesc_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto() {
-  protobuf_AddDesc_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto();
-  const ::google::protobuf::FileDescriptor* file =
-    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
-      "cartographer/mapping_3d/proto/motion_filter_options.proto");
-  GOOGLE_CHECK(file != NULL);
-  MotionFilterOptions_descriptor_ = file->message_type(0);
-  static const int MotionFilterOptions_offsets_[3] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MotionFilterOptions, max_time_seconds_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MotionFilterOptions, max_distance_meters_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MotionFilterOptions, max_angle_radians_),
-  };
-  MotionFilterOptions_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
-      MotionFilterOptions_descriptor_,
-      MotionFilterOptions::default_instance_,
-      MotionFilterOptions_offsets_,
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MotionFilterOptions, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MotionFilterOptions, _unknown_fields_),
-      -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(MotionFilterOptions));
-}
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
+    const TableStruct::aux[] = {
+  ::google::protobuf::internal::AuxillaryParseTableField(),
+};
+PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
+    TableStruct::schema[] = {
+  { NULL, NULL, 0, -1, -1, false },
+};
+
+const ::google::protobuf::uint32 TableStruct::offsets[] = {
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MotionFilterOptions, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MotionFilterOptions, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MotionFilterOptions, max_time_seconds_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MotionFilterOptions, max_distance_meters_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MotionFilterOptions, max_angle_radians_),
+  0,
+  1,
+  2,
+};
+
+static const ::google::protobuf::internal::MigrationSchema schemas[] = {
+  { 0, 8, sizeof(MotionFilterOptions)},
+};
+
+static ::google::protobuf::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::google::protobuf::Message*>(&_MotionFilterOptions_default_instance_),
+};
 
 namespace {
 
-GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
-  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
-                 &protobuf_AssignDesc_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto);
+void protobuf_AssignDescriptors() {
+  AddDescriptors();
+  ::google::protobuf::MessageFactory* factory = NULL;
+  AssignDescriptors(
+      "cartographer/mapping_3d/proto/motion_filter_options.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      file_level_metadata, NULL, NULL);
 }
 
+void protobuf_AssignDescriptorsOnce() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+}
+
+void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    MotionFilterOptions_descriptor_, &MotionFilterOptions::default_instance());
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
 }
 
 }  // namespace
 
-void protobuf_ShutdownFile_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto() {
-  delete MotionFilterOptions::default_instance_;
-  delete MotionFilterOptions_reflection_;
+void TableStruct::Shutdown() {
+  _MotionFilterOptions_default_instance_.Shutdown();
+  delete file_level_metadata[0].reflection;
 }
 
-void protobuf_AddDesc_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void TableStruct::InitDefaultsImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n9cartographer/mapping_3d/proto/motion_f"
-    "ilter_options.proto\022\035cartographer.mappin"
-    "g_3d.proto\"g\n\023MotionFilterOptions\022\030\n\020max"
-    "_time_seconds\030\001 \001(\001\022\033\n\023max_distance_mete"
-    "rs\030\002 \001(\001\022\031\n\021max_angle_radians\030\003 \001(\001", 195);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "cartographer/mapping_3d/proto/motion_filter_options.proto", &protobuf_RegisterTypes);
-  MotionFilterOptions::default_instance_ = new MotionFilterOptions();
-  MotionFilterOptions::default_instance_->InitAsDefaultInstance();
-  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto);
+  ::google::protobuf::internal::InitProtobufDefaults();
+  _MotionFilterOptions_default_instance_.DefaultConstruct();
 }
 
+void InitDefaults() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
+}
+void AddDescriptorsImpl() {
+  InitDefaults();
+  static const char descriptor[] = {
+      "\n9cartographer/mapping_3d/proto/motion_f"
+      "ilter_options.proto\022\035cartographer.mappin"
+      "g_3d.proto\"g\n\023MotionFilterOptions\022\030\n\020max"
+      "_time_seconds\030\001 \001(\001\022\033\n\023max_distance_mete"
+      "rs\030\002 \001(\001\022\031\n\021max_angle_radians\030\003 \001(\001"
+  };
+  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+      descriptor, 195);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
+    "cartographer/mapping_3d/proto/motion_filter_options.proto", &protobuf_RegisterTypes);
+  ::google::protobuf::internal::OnShutdown(&TableStruct::Shutdown);
+}
+
+void AddDescriptors() {
+  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
+  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+}
 // Force AddDescriptors() to be called at static initialization time.
-struct StaticDescriptorInitializer_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto {
-  StaticDescriptorInitializer_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto() {
-    protobuf_AddDesc_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto();
+struct StaticDescriptorInitializer {
+  StaticDescriptorInitializer() {
+    AddDescriptors();
   }
-} static_descriptor_initializer_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto_;
+} static_descriptor_initializer;
+
+}  // namespace protobuf_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto
+
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int MotionFilterOptions::kMaxTimeSecondsFieldNumber;
 const int MotionFilterOptions::kMaxDistanceMetersFieldNumber;
 const int MotionFilterOptions::kMaxAngleRadiansFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 MotionFilterOptions::MotionFilterOptions()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
+    protobuf_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto::InitDefaults();
+  }
   SharedCtor();
+  // @@protoc_insertion_point(constructor:cartographer.mapping_3d.proto.MotionFilterOptions)
 }
-
-void MotionFilterOptions::InitAsDefaultInstance() {
-}
-
 MotionFilterOptions::MotionFilterOptions(const MotionFilterOptions& from)
-  : ::google::protobuf::Message() {
-  SharedCtor();
-  MergeFrom(from);
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_),
+      _cached_size_(0) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&max_time_seconds_, &from.max_time_seconds_,
+    static_cast<size_t>(reinterpret_cast<char*>(&max_angle_radians_) -
+    reinterpret_cast<char*>(&max_time_seconds_)) + sizeof(max_angle_radians_));
+  // @@protoc_insertion_point(copy_constructor:cartographer.mapping_3d.proto.MotionFilterOptions)
 }
 
 void MotionFilterOptions::SharedCtor() {
   _cached_size_ = 0;
-  max_time_seconds_ = 0;
-  max_distance_meters_ = 0;
-  max_angle_radians_ = 0;
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  ::memset(&max_time_seconds_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&max_angle_radians_) -
+      reinterpret_cast<char*>(&max_time_seconds_)) + sizeof(max_angle_radians_));
 }
 
 MotionFilterOptions::~MotionFilterOptions() {
+  // @@protoc_insertion_point(destructor:cartographer.mapping_3d.proto.MotionFilterOptions)
   SharedDtor();
 }
 
 void MotionFilterOptions::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void MotionFilterOptions::SetCachedSize(int size) const {
@@ -146,89 +186,92 @@ void MotionFilterOptions::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* MotionFilterOptions::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return MotionFilterOptions_descriptor_;
+  protobuf_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const MotionFilterOptions& MotionFilterOptions::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto();
-  return *default_instance_;
+  protobuf_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto::InitDefaults();
+  return *internal_default_instance();
 }
 
-MotionFilterOptions* MotionFilterOptions::default_instance_ = NULL;
-
-MotionFilterOptions* MotionFilterOptions::New() const {
-  return new MotionFilterOptions;
+MotionFilterOptions* MotionFilterOptions::New(::google::protobuf::Arena* arena) const {
+  MotionFilterOptions* n = new MotionFilterOptions;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void MotionFilterOptions::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    max_time_seconds_ = 0;
-    max_distance_meters_ = 0;
-    max_angle_radians_ = 0;
+// @@protoc_insertion_point(message_clear_start:cartographer.mapping_3d.proto.MotionFilterOptions)
+  if (_has_bits_[0 / 32] & 7u) {
+    ::memset(&max_time_seconds_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&max_angle_radians_) -
+        reinterpret_cast<char*>(&max_time_seconds_)) + sizeof(max_angle_radians_));
   }
-  ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 bool MotionFilterOptions::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:cartographer.mapping_3d.proto.MotionFilterOptions)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional double max_time_seconds = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(9u)) {
+          set_has_max_time_seconds();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &max_time_seconds_)));
-          set_has_max_time_seconds();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(17)) goto parse_max_distance_meters;
         break;
       }
 
       // optional double max_distance_meters = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_max_distance_meters:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(17u)) {
+          set_has_max_distance_meters();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &max_distance_meters_)));
-          set_has_max_distance_meters();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(25)) goto parse_max_angle_radians;
         break;
       }
 
       // optional double max_angle_radians = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
-         parse_max_angle_radians:
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(25u)) {
+          set_has_max_angle_radians();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &max_angle_radians_)));
-          set_has_max_angle_radians();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -236,61 +279,84 @@ bool MotionFilterOptions::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:cartographer.mapping_3d.proto.MotionFilterOptions)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:cartographer.mapping_3d.proto.MotionFilterOptions)
+  return false;
 #undef DO_
 }
 
 void MotionFilterOptions::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:cartographer.mapping_3d.proto.MotionFilterOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional double max_time_seconds = 1;
-  if (has_max_time_seconds()) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->max_time_seconds(), output);
   }
 
   // optional double max_distance_meters = 2;
-  if (has_max_distance_meters()) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->max_distance_meters(), output);
   }
 
   // optional double max_angle_radians = 3;
-  if (has_max_angle_radians()) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->max_angle_radians(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:cartographer.mapping_3d.proto.MotionFilterOptions)
 }
 
-::google::protobuf::uint8* MotionFilterOptions::SerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
+::google::protobuf::uint8* MotionFilterOptions::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:cartographer.mapping_3d.proto.MotionFilterOptions)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
   // optional double max_time_seconds = 1;
-  if (has_max_time_seconds()) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->max_time_seconds(), target);
   }
 
   // optional double max_distance_meters = 2;
-  if (has_max_distance_meters()) {
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->max_distance_meters(), target);
   }
 
   // optional double max_angle_radians = 3;
-  if (has_max_angle_radians()) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->max_angle_radians(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:cartographer.mapping_3d.proto.MotionFilterOptions)
   return target;
 }
 
-int MotionFilterOptions::ByteSize() const {
-  int total_size = 0;
+size_t MotionFilterOptions::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:cartographer.mapping_3d.proto.MotionFilterOptions)
+  size_t total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  if (_has_bits_[0 / 32] & 7u) {
     // optional double max_time_seconds = 1;
     if (has_max_time_seconds()) {
       total_size += 1 + 8;
@@ -307,81 +373,162 @@ int MotionFilterOptions::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        unknown_fields());
-  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void MotionFilterOptions::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
+// @@protoc_insertion_point(generalized_merge_from_start:cartographer.mapping_3d.proto.MotionFilterOptions)
+  GOOGLE_DCHECK_NE(&from, this);
   const MotionFilterOptions* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const MotionFilterOptions*>(
-      &from);
+      ::google::protobuf::internal::DynamicCastToGenerated<const MotionFilterOptions>(
+          &from);
   if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:cartographer.mapping_3d.proto.MotionFilterOptions)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:cartographer.mapping_3d.proto.MotionFilterOptions)
     MergeFrom(*source);
   }
 }
 
 void MotionFilterOptions::MergeFrom(const MotionFilterOptions& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    if (from.has_max_time_seconds()) {
-      set_max_time_seconds(from.max_time_seconds());
+// @@protoc_insertion_point(class_specific_merge_from_start:cartographer.mapping_3d.proto.MotionFilterOptions)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 7u) {
+    if (cached_has_bits & 0x00000001u) {
+      max_time_seconds_ = from.max_time_seconds_;
     }
-    if (from.has_max_distance_meters()) {
-      set_max_distance_meters(from.max_distance_meters());
+    if (cached_has_bits & 0x00000002u) {
+      max_distance_meters_ = from.max_distance_meters_;
     }
-    if (from.has_max_angle_radians()) {
-      set_max_angle_radians(from.max_angle_radians());
+    if (cached_has_bits & 0x00000004u) {
+      max_angle_radians_ = from.max_angle_radians_;
     }
+    _has_bits_[0] |= cached_has_bits;
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void MotionFilterOptions::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:cartographer.mapping_3d.proto.MotionFilterOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MotionFilterOptions::CopyFrom(const MotionFilterOptions& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:cartographer.mapping_3d.proto.MotionFilterOptions)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool MotionFilterOptions::IsInitialized() const {
-
   return true;
 }
 
 void MotionFilterOptions::Swap(MotionFilterOptions* other) {
-  if (other != this) {
-    std::swap(max_time_seconds_, other->max_time_seconds_);
-    std::swap(max_distance_meters_, other->max_distance_meters_);
-    std::swap(max_angle_radians_, other->max_angle_radians_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void MotionFilterOptions::InternalSwap(MotionFilterOptions* other) {
+  std::swap(max_time_seconds_, other->max_time_seconds_);
+  std::swap(max_distance_meters_, other->max_distance_meters_);
+  std::swap(max_angle_radians_, other->max_angle_radians_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata MotionFilterOptions::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::Metadata metadata;
-  metadata.descriptor = MotionFilterOptions_descriptor_;
-  metadata.reflection = MotionFilterOptions_reflection_;
-  return metadata;
+  protobuf_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cartographer_2fmapping_5f3d_2fproto_2fmotion_5ffilter_5foptions_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// MotionFilterOptions
+
+// optional double max_time_seconds = 1;
+bool MotionFilterOptions::has_max_time_seconds() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void MotionFilterOptions::set_has_max_time_seconds() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void MotionFilterOptions::clear_has_max_time_seconds() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void MotionFilterOptions::clear_max_time_seconds() {
+  max_time_seconds_ = 0;
+  clear_has_max_time_seconds();
+}
+double MotionFilterOptions::max_time_seconds() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_3d.proto.MotionFilterOptions.max_time_seconds)
+  return max_time_seconds_;
+}
+void MotionFilterOptions::set_max_time_seconds(double value) {
+  set_has_max_time_seconds();
+  max_time_seconds_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_3d.proto.MotionFilterOptions.max_time_seconds)
+}
+
+// optional double max_distance_meters = 2;
+bool MotionFilterOptions::has_max_distance_meters() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void MotionFilterOptions::set_has_max_distance_meters() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void MotionFilterOptions::clear_has_max_distance_meters() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void MotionFilterOptions::clear_max_distance_meters() {
+  max_distance_meters_ = 0;
+  clear_has_max_distance_meters();
+}
+double MotionFilterOptions::max_distance_meters() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_3d.proto.MotionFilterOptions.max_distance_meters)
+  return max_distance_meters_;
+}
+void MotionFilterOptions::set_max_distance_meters(double value) {
+  set_has_max_distance_meters();
+  max_distance_meters_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_3d.proto.MotionFilterOptions.max_distance_meters)
+}
+
+// optional double max_angle_radians = 3;
+bool MotionFilterOptions::has_max_angle_radians() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void MotionFilterOptions::set_has_max_angle_radians() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void MotionFilterOptions::clear_has_max_angle_radians() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void MotionFilterOptions::clear_max_angle_radians() {
+  max_angle_radians_ = 0;
+  clear_has_max_angle_radians();
+}
+double MotionFilterOptions::max_angle_radians() const {
+  // @@protoc_insertion_point(field_get:cartographer.mapping_3d.proto.MotionFilterOptions.max_angle_radians)
+  return max_angle_radians_;
+}
+void MotionFilterOptions::set_max_angle_radians(double value) {
+  set_has_max_angle_radians();
+  max_angle_radians_ = value;
+  // @@protoc_insertion_point(field_set:cartographer.mapping_3d.proto.MotionFilterOptions.max_angle_radians)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

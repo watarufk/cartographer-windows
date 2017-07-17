@@ -64,6 +64,10 @@ cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
 -DCARTOGRAPHER_CONFIGURATION_FILES_DIRECTORY:PATH="../../cartographer/configuration_files" ^
 -DCMAKE_INSTALL_PREFIX:PATH="C:/SDKs/googlecartographer/cartographer"
 
+echo ^
+-DLUA_INCLUDE_PREFIX="C:/SDKs/lua/lua/include" ^
+ 
+
 REM cmake.exe --build "." --target "ALL_BUILD" --config "Release"
 REM cmake.exe --build "." --target "RUN_TESTS" --config "Release"
 REM cmake.exe --build "." --target "INSTALL" --config "Release"

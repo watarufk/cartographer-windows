@@ -297,3 +297,4 @@ eigen-eigen-5a0156e40feb_build_x64
 lua_build_x64
 protobuf_cmake_build_x64
 cairo_build_x64
+Projects/cartographer_build_x64/CMakeFiles

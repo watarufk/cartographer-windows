@@ -39,8 +39,8 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalOptions>%(AdditionalOptions)  -pthread -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\cartographer-windows\Projects\cartographer\..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;D:\cartographer-windows\Projects\cartographer\cartographer;C:\SDKs\google\googletest\include;C:\SDKs\eigen\eigen3\include\eigen3;C:\SDKs\ceres-solver\ceres-solver\include;D:\cartographer-windows\Projects\cartographer;C:\SDKs\boost_1_64_0;C:\SDKs\google\protobuf\include;D:\cartographer-windows\Projects\cartographer_build_x64;C:\SDKs\google\glog\include;C:\SDKs\gflags\gflags\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions)  -pthread -O3</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/SDKs/GerHobbelt/pthread-win32;C:/SDKs/lua/lua/include;../win32;D:\cartographer-windows\Projects\cartographer\..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;D:\cartographer-windows\Projects\cartographer\cartographer;C:\SDKs\google\googletest\include;C:\SDKs\eigen\eigen3\include\eigen3;C:\SDKs\ceres-solver\ceres-solver\include;C:\SDKs\lua\lua\include;C:\SDKs\boost_1_64_0;D:\cartographer-windows\Projects\cartographer;C:\SDKs\google\protobuf\include;D:\cartographer-windows\Projects\cartographer_build_x64;C:\SDKs\google\glog\include;C:\SDKs\gflags\gflags\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <CppLanguageStandard>c++11</CppLanguageStandard>
@@ -50,17 +50,17 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <WarningLevel>EnableAllWarnings</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;GFLAGS_IS_A_DLL=0;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;GFLAGS_IS_A_DLL=0;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat></DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;GFLAGS_IS_A_DLL=0;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\cartographer-windows\Projects\cartographer\..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;D:\cartographer-windows\Projects\cartographer\cartographer;C:\SDKs\google\googletest\include;C:\SDKs\eigen\eigen3\include\eigen3;C:\SDKs\ceres-solver\ceres-solver\include;D:\cartographer-windows\Projects\cartographer;C:\SDKs\boost_1_64_0;C:\SDKs\google\protobuf\include;D:\cartographer-windows\Projects\cartographer_build_x64;C:\SDKs\google\glog\include;C:\SDKs\gflags\gflags\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;GFLAGS_DLL_DECLARE_FLAG=;GFLAGS_DLL_DEFINE_FLAG=;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;GFLAGS_IS_A_DLL=0;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cartographer-windows\Projects\cartographer\..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;D:\cartographer-windows\Projects\cartographer\cartographer;C:\SDKs\google\googletest\include;C:\SDKs\eigen\eigen3\include\eigen3;C:\SDKs\ceres-solver\ceres-solver\include;C:\SDKs\lua\lua\include;C:\SDKs\boost_1_64_0;D:\cartographer-windows\Projects\cartographer;C:\SDKs\google\protobuf\include;D:\cartographer-windows\Projects\cartographer_build_x64;C:\SDKs\google\glog\include;C:\SDKs\gflags\gflags\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\cartographer-windows\Projects\cartographer\..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;D:\cartographer-windows\Projects\cartographer\cartographer;C:\SDKs\google\googletest\include;C:\SDKs\eigen\eigen3\include\eigen3;C:\SDKs\ceres-solver\ceres-solver\include;D:\cartographer-windows\Projects\cartographer;C:\SDKs\boost_1_64_0;C:\SDKs\google\protobuf\include;D:\cartographer-windows\Projects\cartographer_build_x64;C:\SDKs\google\glog\include;C:\SDKs\gflags\gflags\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\cartographer-windows\Projects\cartographer\..\..\gtkPlusBuiltFilesForWindows\gtk-build\gtk\x64\include;D:\cartographer-windows\Projects\cartographer\cartographer;C:\SDKs\google\googletest\include;C:\SDKs\eigen\eigen3\include\eigen3;C:\SDKs\ceres-solver\ceres-solver\include;C:\SDKs\lua\lua\include;C:\SDKs\boost_1_64_0;D:\cartographer-windows\Projects\cartographer;C:\SDKs\google\protobuf\include;D:\cartographer-windows\Projects\cartographer_build_x64;C:\SDKs\google\glog\include;C:\SDKs\gflags\gflags\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -69,8 +69,8 @@
     </Midl>
     <Link>
       <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Release\cartographer.lib;C:\SDKs\ceres-solver\ceres-solver\lib\ceres.lib;C:\SDKs\google\glog\lib\glog.lib;C:\SDKs\gflags\gflags\lib\gflags_static.lib;C:\SDKs\lua\lua\lib\lua.lib;boost_iostreams-vc141-mt-1_64.lib;boost_regex-vc141-mt-1_64.lib;glog.lib;C:\SDKs\gflags\gflags\lib\gflags_static.lib;shlwapi.lib;pthread.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:/cartographer-windows/Projects/cartographer/../../gtkPlusBuiltFilesForWindows/gtk-build/gtk/x64/lib;D:/cartographer-windows/Projects/cartographer/../../gtkPlusBuiltFilesForWindows/gtk-build/gtk/x64/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Release\cartographer.lib;C:\SDKs\ceres-solver\ceres-solver\lib\ceres.lib;C:\SDKs\google\glog\lib\glog.lib;C:\SDKs\gflags\gflags\lib\gflags_static.lib;C:\SDKs\lua\lua\lib\lua.lib;libboost_iostreams-vc141-mt-s-1_64.lib;libboost_regex-vc141-mt-s-1_64.lib;glog.lib;C:\SDKs\gflags\gflags\lib\gflags_static.lib;shlwapi.lib;pthread.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/cartographer-windows/Projects/cartographer/../../gtkPlusBuiltFilesForWindows/gtk-build/gtk/x64/lib;D:/cartographer-windows/Projects/cartographer/../../gtkPlusBuiltFilesForWindows/gtk-build/gtk/x64/lib/$(Configuration);%(AdditionalLibraryDirectories);C:/SDKs/boost_1_64_0/lib64-msvc-14.1;C:/SDKs/google/glog/lib;C:/SDKs/GerHobbelt/pthread-win32/bin/x64_MSVC2015.Release</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>D:/cartographer-windows/Projects/cartographer_build_x64/Release/cartographer.mapping_2d.range_data_inserter_test.lib</ImportLibrary>

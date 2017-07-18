@@ -429,7 +429,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_GMock:INTERNAL=[C:/SDKs/google/googletest/lib][C:/S
 //Details about finding Gflags
 FIND_PACKAGE_MESSAGE_DETAILS_Gflags:INTERNAL=[C:/SDKs/gflags/gflags/include][gflags_static][google][v()]
 //Details about finding Lua
-FIND_PACKAGE_MESSAGE_DETAILS_Lua:INTERNAL=[C:/SDKs/lua/lua/lib/lua.lib][C:/SDKs/lua/lua/include][v5.1.5()]
+FIND_PACKAGE_MESSAGE_DETAILS_Lua:INTERNAL=[C:/SDKs/lua/lua/lib/lua.lib][C:/SDKs/lua/lua/include][v5.3.2()]
 //Details about finding Protobuf
 FIND_PACKAGE_MESSAGE_DETAILS_Protobuf:INTERNAL=[C:/SDKs/google/protobuf/lib][C:/SDKs/google/protobuf/include][v3.3.0()]
 //Details about finding Sphinx

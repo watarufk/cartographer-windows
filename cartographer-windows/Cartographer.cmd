@@ -9,6 +9,8 @@ SET SdksFolderPath=C:/SDKs
 
 REM Please set "Assume Unchanged" to these files with your git client.
 xcopy /E /D /Y /Q "Projects\cartographer" "..\Projects\cartographer\"
+copy "C:\SDKs\boost_1_64_0\lib64-msvc-14.1\libboost_zlib-vc141-mt-1_64.lib" "C:\SDKs\boost_1_64_0\lib64-msvc-14.1\libboost_zlib-vc140-mt-1_64.lib" 
+copy "C:\SDKs\boost_1_64_0\lib64-msvc-14.1\libboost_iostreams-vc141-mt-1_64.lib" "C:\SDKs\boost_1_64_0\lib64-msvc-14.1\libboost_iostreams-vc140-mt-1_64.lib" 
 
 
 
@@ -46,10 +48,13 @@ cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
 -DBOOST_INCLUDEDIR:PATH="%SdksFolderPath%/boost_1_64_0" ^
 -DBOOST_LIBRARYDIR:PATH="%SdksFolderPath%/boost_1_64_0/lib64-msvc-14.1" ^
 -DBOOST_ROOT:PATH="%SdksFolderPath%/boost_1_64_0/boost" ^
--DBoost_IOSTREAMS_LIBRARY_DEBUG:FILEPATH="boost_iostreams-vc141-mt-gd-1_64.lib" ^
--DBoost_IOSTREAMS_LIBRARY_RELEASE:FILEPATH="boost_iostreams-vc141-mt-1_64.lib" ^
--DBoost_REGEX_LIBRARY_DEBUG:FILEPATH="boost_regex-vc141-mt-gd-1_64.lib" ^
--DBoost_REGEX_LIBRARY_RELEASE:FILEPATH="boost_regex-vc141-mt-1_64.lib" ^
+-DBoost_DIR:PATH="%SdksFolderPath%/boost_1_64_0" ^
+-DBoost_INCLUDE_DIR:PATH="%SdksFolderPath%/boost_1_64_0" ^
+-DBoost_LIBRARY_DIR:PATH="%SdksFolderPath%/boost_1_64_0/lib64-msvc-14.1" ^
+-DBoost_IOSTREAMS_LIBRARY_DEBUG:FILEPATH="libboost_iostreams-vc141-mt-sgd-1_64.lib" ^
+-DBoost_IOSTREAMS_LIBRARY_RELEASE:FILEPATH="libboost_iostreams-vc141-mt-s-1_64.lib" ^
+-DBoost_REGEX_LIBRARY_DEBUG:FILEPATH="libboost_regex-vc141-mt-sgd-1_64.lib" ^
+-DBoost_REGEX_LIBRARY_RELEASE:FILEPATH="libboost_regex-vc141-mt-s-1_64.lib" ^
 -DLUA_INCLUDE_PREFIX="%SdksFolderPath%/lua/lua/include" ^
 -DLUA_INCLUDE_DIR="%SdksFolderPath%/lua/lua/include" ^
 -DLUA_LIBRARIES="%SdksFolderPath%/lua/lua/lib" ^
@@ -72,17 +77,14 @@ cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
 echo ^
 -DTHREADS_PTHREADS_INCLUDE_DIR:PATH="%SdksFolderPath%/GerHobbelt/pthread-win32" ^
 -DTHREADS_PTHREADS_LIBRARY_DIR:PATH="%SdksFolderPath%/GerHobbelt/pthread-win32/bin/x64_MSVC2015.Release" ^
--DBoost_DIR:PATH="%SdksFolderPath%/boost_1_64_0" ^
--DBoost_INCLUDE_DIR:PATH="%SdksFolderPath%/boost_1_64_0" ^
--DBoost_LIBRARY_DIR:PATH="%SdksFolderPath%/boost_1_64_0/lib64-msvc-14.1" ^
  
 
 
 copy "..\..\cartographer-windows\Projects\cartographer_build_x64\AllFiles.cmake" .
 
 
-cmake.exe .
-REM cmake.exe --build "." --target "ALL_BUILD" --config "Release"
+cmake.exe . -G "Visual Studio 14 2015 Win64"
+cmake.exe --build "." --target "ALL_BUILD" --config "Release"
 REM cmake.exe --build "." --target "RUN_TESTS" --config "Release"
 REM cmake.exe --build "." --target "INSTALL" --config "Release"
 

@@ -298,3 +298,4 @@ lua_build_x64
 protobuf_cmake_build_x64
 cairo_build_x64
 Projects/cartographer_build_x64/CMakeFiles
+/Projects/cartographer_build_x64/docs/html/.doctrees

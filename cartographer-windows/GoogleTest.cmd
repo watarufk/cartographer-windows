@@ -16,7 +16,7 @@ cmake.exe ../googletest -G "Visual Studio 14 2015 Win64" ^
 -Dgmock_build_tests:BOOL=TRUE ^
 -Dgtest_disable_pthreads:BOOL=TRUE ^
 -Dgtest_force_shared_crt:BOOL=FALSE ^
--Dgtest_hide_internal_symbols:BOOL=TRUE ^
+-Dgtest_hide_internal_symbols:BOOL=FALSE ^
 -DCMAKE_INSTALL_PREFIX:PATH="%SdksFolderPath%/google/googletest"
 
 cmake.exe --build "." --target "ALL_BUILD" --config "Release"

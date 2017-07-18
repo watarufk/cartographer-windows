@@ -7,8 +7,8 @@ SET SdksFolderPath=C:/SDKs
 
 
 
-REM On your git client, please set "Assume Unchanged" to the "..\Projects\cartographer\CMakeLists.txt".
-copy cartographer\CMakeLists.txt ..\Projects\cartographer
+REM Please set "Assume Unchanged" to these files with your git client.
+xcopy /E /D /Y /Q "Projects\cartographer" "..\Projects\cartographer\"
 
 
 
@@ -29,8 +29,8 @@ cd cartographer_build_x64
 
 cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
 -DCMAKE_CONFIGURATION_TYPES:STRING="Release" ^
--DTHREADS_PTHREADS_INCLUDE_DIR:PATH="%SdksFolderPath%/GerHobbelt/pthread-win32" ^
--DTHREADS_PTHREADS_LIBRARY_DIR:PATH="%SdksFolderPath%/GerHobbelt/pthread-win32/bin/x64_MSVC2015.Release" ^
+-DCMAKE_CXX_FLAGS:STRING="/DWIN32 /D_WINDOWS /D_USE_MATH_DEFINES /W3 /GR /EHsc /I\"%SdksFolderPath%/GerHobbelt/pthread-win32\" /I\"%SdksFolderPath%/lua/lua/include\" /I\"../win32\"" ^
+-DCMAKE_EXE_LINKER_FLAGS:STRING="/machine:x64 /LIBPATH:\"C:/SDKs/boost_1_64_0/lib64-msvc-14.1\" /LIBPATH:\"C:/SDKs/google/glog/lib\" /LIBPATH:\"C:/SDKs/GerHobbelt/pthread-win32/bin/x64_MSVC2015.Release\"" ^
 -Dgflags_DIR:PATH="%SdksFolderPath%/gflags/gflags/lib/cmake/gflags" ^
 -DGFLAGS_NAMESPACE:STRING="google" ^
 -Dglog_DIR:PATH="%SdksFolderPath%/google/glog/lib/cmake/glog" ^
@@ -69,8 +69,20 @@ cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
 -DCARTOGRAPHER_CONFIGURATION_FILES_DIRECTORY:PATH="../../cartographer/configuration_files" ^
 -DCMAKE_INSTALL_PREFIX:PATH="%SdksFolderPath%/googlecartographer/cartographer"
 
-REM cmake.exe --build "." --target "ALL_BUILD" --config "Release"
-REM cmake.exe --build "." --target "RUN_TESTS" --config "Release"
-REM cmake.exe --build "." --target "INSTALL" --config "Release"
+echo ^
+-DTHREADS_PTHREADS_INCLUDE_DIR:PATH="%SdksFolderPath%/GerHobbelt/pthread-win32" ^
+-DTHREADS_PTHREADS_LIBRARY_DIR:PATH="%SdksFolderPath%/GerHobbelt/pthread-win32/bin/x64_MSVC2015.Release" ^
+ 
+
+
+copy "..\..\cartographer-windows\Projects\cartographer_build_x64\AllFiles.cmake" .
+
+
+cmake.exe .
+cmake.exe --build "." --target "ALL_BUILD" --config "Release"
+cmake.exe --build "." --target "RUN_TESTS" --config "Release"
+cmake.exe --build "." --target "INSTALL" --config "Release"
+
+
 
 cd /d "%~dp0"

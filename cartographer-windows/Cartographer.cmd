@@ -5,6 +5,7 @@ echo on
 
 REM On your git client, please set "Assume Unchanged" to the "..\Projects\cartographer\CMakeLists.txt".
 copy cartographer\CMakeLists.txt ..\Projects\cartographer
+copy cartographer\cartographer\common\lua_parameter_dictionary.cc ..\Projects\cartographer\cartographer\common
 
 
 

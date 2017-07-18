@@ -43,9 +43,9 @@ cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
 -DGMOCK_INCLUDE_DIRS:PATH="%SdksFolderPath%/google/googletest/include" ^
 -DGMOCK_LIBRARIES:FILEPATH="%SdksFolderPath%/google/googletest/lib" ^
 -Dgmock_build_tests:BOOL=FALSE ^
--DBoost_DIR:PATH="%SdksFolderPath%/boost_1_64_0" ^
--DBoost_INCLUDE_DIR:PATH="%SdksFolderPath%/boost_1_64_0" ^
--DBoost_LIBRARY_DIR:FILEPATH="%SdksFolderPath%/boost_1_64_0/lib64-msvc-14.1" ^
+-DBOOST_INCLUDEDIR:PATH="%SdksFolderPath%/boost_1_64_0" ^
+-DBOOST_LIBRARYDIR:PATH="%SdksFolderPath%/boost_1_64_0/lib64-msvc-14.1" ^
+-DBOOST_ROOT:PATH="%SdksFolderPath%/boost_1_64_0/boost" ^
 -DBoost_IOSTREAMS_LIBRARY_DEBUG:FILEPATH="boost_iostreams-vc141-mt-gd-1_64.lib" ^
 -DBoost_IOSTREAMS_LIBRARY_RELEASE:FILEPATH="boost_iostreams-vc141-mt-1_64.lib" ^
 -DBoost_REGEX_LIBRARY_DEBUG:FILEPATH="boost_regex-vc141-mt-gd-1_64.lib" ^
@@ -72,6 +72,9 @@ cmake.exe ../cartographer -G "Visual Studio 14 2015 Win64" ^
 echo ^
 -DTHREADS_PTHREADS_INCLUDE_DIR:PATH="%SdksFolderPath%/GerHobbelt/pthread-win32" ^
 -DTHREADS_PTHREADS_LIBRARY_DIR:PATH="%SdksFolderPath%/GerHobbelt/pthread-win32/bin/x64_MSVC2015.Release" ^
+-DBoost_DIR:PATH="%SdksFolderPath%/boost_1_64_0" ^
+-DBoost_INCLUDE_DIR:PATH="%SdksFolderPath%/boost_1_64_0" ^
+-DBoost_LIBRARY_DIR:PATH="%SdksFolderPath%/boost_1_64_0/lib64-msvc-14.1" ^
  
 
 
@@ -79,9 +82,9 @@ copy "..\..\cartographer-windows\Projects\cartographer_build_x64\AllFiles.cmake"
 
 
 cmake.exe .
-cmake.exe --build "." --target "ALL_BUILD" --config "Release"
-cmake.exe --build "." --target "RUN_TESTS" --config "Release"
-cmake.exe --build "." --target "INSTALL" --config "Release"
+REM cmake.exe --build "." --target "ALL_BUILD" --config "Release"
+REM cmake.exe --build "." --target "RUN_TESTS" --config "Release"
+REM cmake.exe --build "." --target "INSTALL" --config "Release"
 
 
 

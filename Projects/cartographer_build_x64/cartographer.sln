@@ -436,7 +436,6 @@ Global
 		{68F3D58A-DFD2-3615-A288-E7F2FE268FED}.Release|x64.ActiveCfg = Release|x64
 		{68F3D58A-DFD2-3615-A288-E7F2FE268FED}.Release|x64.Build.0 = Release|x64
 		{F788E70F-324F-45E9-B83C-C71565CA69A2}.Release|x64.ActiveCfg = Release|x64
-		{F788E70F-324F-45E9-B83C-C71565CA69A2}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
